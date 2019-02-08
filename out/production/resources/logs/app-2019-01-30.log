@@ -1,0 +1,15 @@
+16:36:57.772 INFO  LoginPageTests -Supplier was created, his Number is: S0030
+16:36:57.777 INFO  LoginPageTests -------------------------------------------------------
+16:37:03.588 INFO  LoginPageTests -Approved Supplier number is: S0030
+16:37:04.294 INFO  LoginPageTests -Supplier successfully passed first approval stage.
+16:37:04.294 INFO  LoginPageTests -------------------------------------------------------
+16:37:12.108 INFO  LoginPageTests -Supplier was approved, his number is: S0030
+16:37:15.919 INFO  LoginPageTests -Supplier successfully passed second approval stage.
+16:37:15.919 INFO  LoginPageTests -------------------------------------------------------
+16:37:24.308 INFO  SupplierCreateAndReject -Created Supplier number is: S0031
+16:37:24.308 INFO  SupplierCreateAndReject -------------------------------------------------------
+16:37:29.991 INFO  SupplierCreateAndReject -Supplier was chosen for Rejecting, his number is: S0031
+16:37:30.601 INFO  SupplierCreateAndReject -Supplier was Rejected
+16:37:30.601 INFO  SupplierCreateAndReject -------------------------------------------------------
+16:37:38.618 INFO  SupplierCreateAndSave -Supplier was saved, his number is: S0032Supplier status is New.
+16:37:38.618 INFO  SupplierCreateAndSave -------------------------------------------------------
