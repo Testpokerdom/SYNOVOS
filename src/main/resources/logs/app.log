@@ -1,20 +1,45 @@
-19:08:18.047 INFO  LoginPageTests -Supplier was approved, his number is: S0055
-19:20:31.793 INFO  LoginPageTests -Supplier was created, his Number is: S0056
-19:20:31.797 INFO  LoginPageTests -------------------------------------------------------
-19:20:37.609 INFO  LoginPageTests -Approved Supplier number is: S0056
-19:20:38.231 INFO  LoginPageTests -Supplier successfully passed first approval stage.
-19:20:38.231 INFO  LoginPageTests -------------------------------------------------------
-19:20:55.302 INFO  LoginPageTests -Supplier was approved, his number is: S0056
-19:20:57.386 INFO  LoginPageTests -Supplier successfully passed second approval stage.
-19:20:57.386 INFO  LoginPageTests -------------------------------------------------------
-19:21:06.364 INFO  SupplierCreateAndReject -Created Supplier number is: S0057
-19:21:06.364 INFO  SupplierCreateAndReject -------------------------------------------------------
-19:21:12.300 INFO  SupplierCreateAndReject -Supplier was chosen for Rejecting, his number is: S0057
-19:21:12.908 INFO  SupplierCreateAndReject -Supplier was Rejected
-19:21:12.909 INFO  SupplierCreateAndReject -------------------------------------------------------
-19:21:20.877 INFO  SupplierCreateAndSave -Supplier was saved, his number is: S0058 Supplier status is New.
-19:21:20.877 INFO  SupplierCreateAndSave -------------------------------------------------------
-19:21:29.133 INFO  SupplierCreateEmergancy -Emergency Supplier was created, his number is: S0059
-19:21:29.133 INFO  SupplierCreateEmergancy -------------------------------------------------------
-19:26:37.052 INFO  SupplierCreateEmergancy -Emergency Supplier was created, his number is: S0060
-19:26:37.056 INFO  SupplierCreateEmergancy -------------------------------------------------------
+20:24:00.559 INFO  WebHelpers -Open URL: https://www.webtma.net/login.aspx
+20:24:00.674 INFO  WebHelpers -Send text to WebElement Login: "sss999"
+20:24:00.769 INFO  WebHelpers -Send text to WebElement Password: "tma1"
+20:24:00.884 INFO  WebHelpers -Send text to WebElement Client: "Jefferson Test"
+20:24:02.650 INFO  WebHelpers -Click Button "Log In"
+20:24:12.001 INFO  WebHelpers -Switch to the new window: WebTMA 5.1.0 - Thomas Jefferson University and Hospital - Synovos Sync (sss999)
+20:24:12.146 INFO  WebHelpers -Click WebElement: "Material "
+20:24:12.731 INFO  WebHelpers -Wait web element presence: "Purchase Requisitions" for seconds - 5
+20:24:15.573 INFO  WebHelpers -Click Button  with value - "null" - Purchase Requisitions - 
+20:24:35.738 INFO  WebHelpers -Switch to IFrame: Proxy element for: DefaultElementLocator 'By.id: mainFrame'
+20:24:35.967 INFO  WebHelpers -Click Button  with value - "null" - Add - 
+20:24:56.037 INFO  WebHelpers -Switch to IFrame: Proxy element for: DefaultElementLocator 'By.id: frameidentity'
+20:24:59.484 INFO  WebHelpers -Wait web element presence: "PO" for seconds - 5
+20:24:59.637 INFO  WebHelpers -Send text: PO - to the WebElement - [[ChromeDriver: chrome on XP (1f2b02dcd4e9a2b59c7545c832eb4eda)] -> id: txtType_ComboBox_Input]
+20:25:01.347 INFO  WebHelpers -Wait web element presence: "FS" for seconds - 5
+20:25:01.468 INFO  WebHelpers -Send text: FS - to the WebElement - [[ChromeDriver: chrome on XP (1f2b02dcd4e9a2b59c7545c832eb4eda)] -> id: txtRepairCenter_ComboBox_Input]
+20:25:04.096 INFO  WebHelpers -Click WebElement: "Add Item "
+20:25:24.201 INFO  WebHelpers -Switch to IFrame: Proxy element for: DefaultElementLocator 'By.name: PurchReqDialog'
+20:25:25.286 INFO  CreatePurchaseRequisition -Send text to WebElement - Account: "030-89000-6902"
+20:25:27.124 INFO  CreatePurchaseRequisition -Send text to WebElement - Part Code: "180017"
+20:25:27.183 INFO  WebHelpers -Wait web element presence: "" for seconds - 10
+20:25:27.278 INFO  WebHelpers -Send text to WebElement: "[[ChromeDriver: chrome on XP (1f2b02dcd4e9a2b59c7545c832eb4eda)] -> id: txtQuantity]". Text: " 100"
+20:25:27.279 INFO  WebHelpers -Just wait for some web element.
+20:25:28.603 INFO  WebHelpers -Click Button  with value - "Save & Close" -  - btnSave
+20:25:29.768 INFO  WebHelpers -Click Button  with value - " " -  - grdPR_ctl00_ctl04_GECBtnExpandColumn
+20:25:32.247 INFO  WebHelpers -Click Button  with value - "null" - Add Distribution - grdPR_ctl00_ctl05_Detail10_ctl02_ctl00_lblAddDistribution
+20:25:52.364 INFO  WebHelpers -Switch to IFrame: Proxy element for: DefaultElementLocator 'By.name: PurchaseOrderDistributionDialog'
+20:25:57.947 INFO  WebHelpers -Send text to WebElement: "[[ChromeDriver: chrome on XP (1f2b02dcd4e9a2b59c7545c832eb4eda)] -> id: txtRequiredQty]". Text: " 100"
+20:25:58.179 INFO  WebHelpers -Click Button  with value - "Save & Close" -  - btnSave
+20:26:18.270 INFO  WebHelpers -Switch to IFrame: Proxy element for: DefaultElementLocator 'By.id: mainFrame'
+20:26:19.503 INFO  WebHelpers -Click WebElement: " "
+20:26:39.610 INFO  WebHelpers -Switch to IFrame: Proxy element for: DefaultElementLocator 'By.id: frameidentity'
+20:26:39.630 INFO  WebHelpers -WebElement text "PR-195" was received: 
+20:26:39.642 INFO  CreatePurchaseRequisition -Purchase requisition numder is: PR-195
+20:26:39.642 INFO  CreatePurchaseRequisition -----------------------------------------------------------------------------------------------------------------------
+20:26:41.452 INFO  WebHelpers -Click Button  with value - "null" - Authorize - 
+20:27:01.589 INFO  WebHelpers -Switch to IFrame: Proxy element for: DefaultElementLocator 'By.id: mainFrame'
+20:27:21.710 INFO  WebHelpers -Switch to IFrame: Proxy element for: DefaultElementLocator 'By.name: RoutingWindow'
+20:27:21.915 INFO  WebHelpers -Click Button  with value - "Authorize" -  - btnAuthorize
+20:27:26.750 INFO  WebHelpers -Click Button  with value - "" -  - btnFastFind
+20:27:26.999 INFO  WebHelpers -Click Button  with value - "null" - Export - 
+20:27:47.081 INFO  WebHelpers -Switch to IFrame: Proxy element for: DefaultElementLocator 'By.id: mainFrame'
+20:27:48.658 INFO  WebHelpers -Click Button  with value - "null" - OK - 
+20:27:48.658 INFO  CreatePurchaseRequisition -The Requisition was successfully created and scheduled to be exported.
+20:27:48.658 INFO  CreatePurchaseRequisition -----------------------------------------------------------------------------------------------------------------------

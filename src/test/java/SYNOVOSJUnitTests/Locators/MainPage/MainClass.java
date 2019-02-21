@@ -38,8 +38,8 @@ public class MainClass {
         clickButton(loginPageLocators.buttonLogin);
         logger.info("dddddddddddddddddddddddddddddddddddddddddd");
         /*
-        clickElement(mainPageLocators.tablePurchasing);
-        clickButton(mainPageLocators.linkApproveSupplier);
+        clickElement(homePageLocators.tablePurchasing);
+        clickButton(homePageLocators.linkApproveSupplier);
         selectWebElementFromDropDownList(approveSupplierPage.dropdownlistSiteName, "AEROJET PROPULSION");
         //findLastRawInTableAndClick();
         findLastRawInTableAndClick2(driver,"//table[@id='approvalProcessData']/tbody/tr[last()]/td[last()]");

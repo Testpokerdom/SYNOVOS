@@ -119,7 +119,7 @@ public class SupplierCreateAndApprove {
     @Test
     @Description("Create Supplier with Max Length Comment")
     public void test_4(){
-        clickElement(mainPageLocators.linkSupplier);
+        clickElement(homePageLocators.linkSupplier);
         selectWebElementFromDropDownList(supplierSearchCreatePage.dropdownListSiteCode, "130");
         clickButton(supplierSearchCreatePage.buttonCreate);
         sendTextToWebElement(createSupplierPage.fieldSupplierName, "TEST_Supplier_01/17/2019_02_" + randomName2());
