@@ -6,6 +6,7 @@ import TMA_SYNC.Locators.LoginPageLocators;
 import com.sun.org.glassfish.gmbal.Description;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.WebDriver;
@@ -36,6 +37,7 @@ public class CreatePurchaseRequisition {
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.manage().window().maximize();
 
+        logger.info("----------------------------------------------------------------------------------------------------------------------");
         goToUrl(driver,"https://www.webtma.net/login.aspx");
         //logger.info("TMA web site was opened.");
         sendTextToMultipleWebElements(loginPageLocators.fieldLogin, "sss999", loginPageLocators.filedPassword, "tma1", loginPageLocators.filedClient, "Jefferson Test");
@@ -43,13 +45,13 @@ public class CreatePurchaseRequisition {
         switchToNewWindow(driver);
 
     }
-/*
+
     @After
     public void afterEach(){
 
         driver.quit();
     }
-*/
+
 
     @Test
     @Description("Create PR with valid items parameters")
@@ -115,8 +117,7 @@ public class CreatePurchaseRequisition {
         switchToIFrame(driver, editPurchaseRequisition.iFramePR_Identity);
         String a = getTextFromWebElementAttribute(editPurchaseRequisition.purchaseRequisitionNumber);
         //System.out.println("Purchase requisition numder is: " + editPurchaseRequisition.purchaseRequisitionNumber.getAttribute("value"));  //getTextFromWebElement(editPurchaseRequisition.purchaseRequisitionNumber));
-        logger.info("Purchase requisition numder is: " + editPurchaseRequisition.purchaseRequisitionNumber.getAttribute("value"));
-        logger.info("----------------------------------------------------------------------------------------------------------------------");
+        logger.info("++++++++++++++" + " Purchase requisition numder is: " + editPurchaseRequisition.purchaseRequisitionNumber.getAttribute("value") + "++++++++++++++");
 
         driver.switchTo().defaultContent();
         clickButtonIfEnable(editPurchaseRequisition.buttonAuthorize);
