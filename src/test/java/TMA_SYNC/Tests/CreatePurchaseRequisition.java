@@ -77,10 +77,10 @@ public class CreatePurchaseRequisition {
         }
         waitElementAttributeShouldHaveValue(driver, 5, editPurchaseRequisition.textFieldVendor_Synovos, "value", "Synovos");
         sendTextToWebElementFromDropDownList2(editPurchaseRequisition.inputFieldTypeCode, "PO", editPurchaseRequisition.stringSpecificTypeCode2, driver); // Send Type Code equals to: PO
-        waitElementAttributeShouldHaveValue(driver, 5, editPurchaseRequisition.textFieldTypeCode_RegularPO, "value", "Regular PO");
+        waitElementAttributeShouldHaveValue(driver, 10, editPurchaseRequisition.textFieldTypeCode_RegularPO, "value", "Regular PO");
         sendTextToWebElementFromDropDownList2(editPurchaseRequisition.inputFieldRepairCenterCode, "FS", editPurchaseRequisition.stringSpecificCenterCode2, driver); // Send Repair Center Code equals to: FS
 
-        // Click button "Items" + switch to
+        // Click button "Items" + switch to Purchase Requisition Entry pop-up + feel the fields "Account", "Part Code", "Quantity", "Unit Coast"
         clickWebElementIfEnable(editPurchaseRequisition.buttonItems);
         switchToIFrame(driver, editPurchaseRequisition.iFramePurchRequisitionDialog);
         sendTextToWebElementFromDropDownList(editPurchaseRequisition.fieldAccount, editPurchaseRequisition.stringSpecificAccount); //sendTextToWebElement(editPurchaseRequisition.fieldAccount, "030-89000-6902");
@@ -97,10 +97,12 @@ public class CreatePurchaseRequisition {
             clickButtonIfEnable(editPurchaseRequisition.buttonSaveAndClose);
         }
 
+        // Click button "Expand" after that click button "Add Distribution" - ADD DISTRIBUTION
         driver.switchTo().parentFrame();
         clickButtonIfEnable(editPurchaseRequisition.buttonExpendIntoItemsTable);
         clickButtonIfEnable(editPurchaseRequisition.buttonAddDistribution);
 
+        //
         switchToIFrame(driver, editPurchaseRequisition.iFrameDistributionDialogPO);
         sendTextToWebElementFromDropDownList(editPurchaseRequisition.fieldWorkOrder, editPurchaseRequisition.stringWorkOrderElement);
         if (editPurchaseRequisition.fieldTask.getText() == "FLS05-General Fire/Life Safety"){

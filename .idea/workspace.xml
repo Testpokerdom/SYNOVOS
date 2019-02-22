@@ -45,11 +45,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/TMA_SYNC/Tests/CreatePurchaseRequisition.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-136">
-              <caret line="113" column="43" lean-forward="true" selection-start-line="113" selection-start-column="43" selection-end-line="113" selection-end-column="43" />
+            <state relative-caret-position="391">
+              <caret line="104" column="11" selection-start-line="104" selection-start-column="11" selection-end-line="104" selection-end-column="11" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -97,9 +97,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/logs/app.log">
-          <provider selected="true" editor-type-id="LogFileEditorProvider" />
+          <provider selected="true" editor-type-id="LogFileEditorProvider">
+            <state relative-caret-position="-252" />
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -178,8 +180,8 @@
         <option value="$PROJECT_DIR$/src/test/java/TMA_SYNC/Tests/Login.java" />
         <option value="$PROJECT_DIR$/src/main/java/WebHelpers/WebHelpers.java" />
         <option value="$PROJECT_DIR$/src/test/java/TMA_SYNC/Locators/EditPurchaseRequisition.java" />
-        <option value="$PROJECT_DIR$/src/test/java/TMA_SYNC/Tests/CreatePurchaseRequisition.java" />
         <option value="$PROJECT_DIR$/src/main/resources/logs/app.log" />
+        <option value="$PROJECT_DIR$/src/test/java/TMA_SYNC/Tests/CreatePurchaseRequisition.java" />
       </list>
     </option>
   </component>
@@ -312,7 +314,7 @@
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550837973385" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550845450373" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../SeleniumWebDriver/client-combined-3.141.59-sources.jar!/" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.0" />
@@ -435,9 +437,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CreatePurchaseRequisition - 2019.02.21 at 19h 50m 12s.xml">
-      <configuration name="CreatePurchaseRequisition" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="CreatePurchaseRequisition - 2019.02.21 at 19h 53m 50s.xml">
       <configuration name="CreatePurchaseRequisition" configurationId="JUnit" />
     </history-entry>
@@ -465,6 +464,9 @@
     <history-entry file="CreatePurchaseRequisition - 2019.02.22 at 14h 19m 17s.xml">
       <configuration name="CreatePurchaseRequisition" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="CreatePurchaseRequisition - 2019.02.22 at 16h 10m 54s.xml">
+      <configuration name="CreatePurchaseRequisition" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
@@ -475,7 +477,7 @@
       <window_info id="UI Designer" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Image Layers" order="4" />
-      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.24840085" />
+      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.24840085" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="0" weight="0.32936078" />
       <window_info anchor="bottom" id="Event Log" order="1" sideWeight="0.50053304" side_tool="true" weight="0.36078006" />
@@ -484,7 +486,7 @@
       <window_info anchor="bottom" id="Version Control" order="4" />
       <window_info anchor="bottom" id="Message" order="5" />
       <window_info anchor="bottom" id="Find" order="6" weight="0.30769232" />
-      <window_info anchor="bottom" id="Run" order="7" sideWeight="0.49946696" visible="true" weight="0.3066089" />
+      <window_info active="true" anchor="bottom" id="Run" order="7" sideWeight="0.49946696" visible="true" weight="0.3066089" />
       <window_info anchor="bottom" id="Debug" order="8" weight="0.3997833" />
       <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
@@ -815,16 +817,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/TMA_SYNC/Tests/CreatePurchaseRequisition.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-136">
-          <caret line="113" column="43" lean-forward="true" selection-start-line="113" selection-start-column="43" selection-end-line="113" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/WebHelpers/WebHelpers.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="197">
@@ -841,7 +833,19 @@
           <caret line="18" column="96" selection-start-line="18" selection-start-column="91" selection-end-line="18" selection-end-column="96" />
         </state>
       </provider>
-      <provider selected="true" editor-type-id="LogFileEditorProvider" />
+      <provider selected="true" editor-type-id="LogFileEditorProvider">
+        <state relative-caret-position="-252" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/TMA_SYNC/Tests/CreatePurchaseRequisition.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="104" column="11" selection-start-line="104" selection-start-column="11" selection-end-line="104" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
     </entry>
   </component>
   <component name="masterDetails">
