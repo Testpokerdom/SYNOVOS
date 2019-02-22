@@ -3,6 +3,7 @@ package TMA_SYNC.Tests;
 import TMA_SYNC.Locators.EditPurchaseRequisition;
 import TMA_SYNC.Locators.HomePageLocators;
 import TMA_SYNC.Locators.LoginPageLocators;
+import TMA_SYNC.VendorTypeCodeRepairCenterTable;
 import com.sun.org.glassfish.gmbal.Description;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -22,6 +23,7 @@ public class CreatePurchaseRequisition {
     public static LoginPageLocators loginPageLocators= null;
     public static HomePageLocators homePageLocators = null;
     public static EditPurchaseRequisition editPurchaseRequisition = null;
+    public static VendorTypeCodeRepairCenterTable vendorTypeCodeRepairCenterTable = null;
 
     public static final Logger logger = LogManager.getLogger(CreatePurchaseRequisition.class);
 
@@ -33,6 +35,7 @@ public class CreatePurchaseRequisition {
         loginPageLocators = new LoginPageLocators(driver);
         homePageLocators = new HomePageLocators(driver);
         editPurchaseRequisition = new EditPurchaseRequisition(driver);
+        vendorTypeCodeRepairCenterTable = new VendorTypeCodeRepairCenterTable();
 
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.manage().window().maximize();
@@ -66,9 +69,12 @@ public class CreatePurchaseRequisition {
         // Switch to Iframe "mainFrame" + click button "ADD"
         switchToIFrame(driver, editPurchaseRequisition.iFrameMain);
         clickButtonIfEnable(editPurchaseRequisition.buttonAdd);
-
         // Switch to Iframe "frameidentity" + feel the fields "Vendor", "Type Code", "Repair Center Code"
         switchToIFrame(driver, editPurchaseRequisition.iFramePR_Identity);
+        vendorTypeCodeRepairCenterTable.sendTextTOVendorTypeCodeRepeairCenterFileds(driver, editPurchaseRequisition.inputFieldVendor, editPurchaseRequisition.stringSpecificVendorCode,
+                editPurchaseRequisition.textFieldVendor_Synovos, editPurchaseRequisition.inputFieldTypeCode, editPurchaseRequisition.stringSpecificTypeCode2,
+                editPurchaseRequisition.textFieldTypeCode_RegularPO, editPurchaseRequisition.inputFieldRepairCenterCode, editPurchaseRequisition.stringSpecificCenterCode2);
+      /*
         if(editPurchaseRequisition.inputFieldVendor.isEnabled() == true){
             sendTextToWebElementFromDropDownList(editPurchaseRequisition.inputFieldVendor, editPurchaseRequisition.stringSpecificVendorCode); // Send Vendor Code equals to: 00000023652
         } else {
@@ -79,6 +85,7 @@ public class CreatePurchaseRequisition {
         sendTextToWebElementFromDropDownList2(editPurchaseRequisition.inputFieldTypeCode, "PO", editPurchaseRequisition.stringSpecificTypeCode2, driver); // Send Type Code equals to: PO
         waitElementAttributeShouldHaveValue(driver, 10, editPurchaseRequisition.textFieldTypeCode_RegularPO, "value", "Regular PO");
         sendTextToWebElementFromDropDownList2(editPurchaseRequisition.inputFieldRepairCenterCode, "FS", editPurchaseRequisition.stringSpecificCenterCode2, driver); // Send Repair Center Code equals to: FS
+        */
 
         // Click button "Items" + switch to Purchase Requisition Entry pop-up + feel the fields "Account", "Part Code", "Quantity", "Unit Coast"
         clickWebElementIfEnable(editPurchaseRequisition.buttonItems);
@@ -102,7 +109,7 @@ public class CreatePurchaseRequisition {
         clickButtonIfEnable(editPurchaseRequisition.buttonExpendIntoItemsTable);
         clickButtonIfEnable(editPurchaseRequisition.buttonAddDistribution);
 
-        //
+        // Send text ot the fields: "Work Order", "Task", "Required Qty"
         switchToIFrame(driver, editPurchaseRequisition.iFrameDistributionDialogPO);
         sendTextToWebElementFromDropDownList(editPurchaseRequisition.fieldWorkOrder, editPurchaseRequisition.stringWorkOrderElement);
         if (editPurchaseRequisition.fieldTask.getText() == "FLS05-General Fire/Life Safety"){
@@ -113,6 +120,7 @@ public class CreatePurchaseRequisition {
         }
         clickButtonIfEnable(editPurchaseRequisition.buttonSaveAndCloseDistributionEntry);
 
+        //
         driver.switchTo().defaultContent();
         switchToIFrame(driver, editPurchaseRequisition.iFrameMain);
         clickWebElementIfEnable(editPurchaseRequisition.buttonSaveMain);
