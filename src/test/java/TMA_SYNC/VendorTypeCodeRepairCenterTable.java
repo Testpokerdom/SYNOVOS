@@ -13,6 +13,8 @@ import static WebHelpers.WebHelpers.sendTextToWebElementFromDropDownList2;
 
 public class VendorTypeCodeRepairCenterTable{
 
+    //public EditPurchaseRequisition editPurchaseRequisition = new EditPurchaseRequisition();
+
 
     public void sendTextTOVendorTypeCodeRepeairCenterFileds(WebDriver driver, WebElement fieldVendor, WebElement stringVendorCode, WebElement stringVendor_Synovos, WebElement typeCode, WebElement stringTypeCode, WebElement stringTypeCode_PO, WebElement fieldRepairCenterCode, WebElement stringRepairCenterCode){
 
@@ -28,4 +30,21 @@ public class VendorTypeCodeRepairCenterTable{
         sendTextToWebElementFromDropDownList2(fieldRepairCenterCode, "FS", stringRepairCenterCode, driver); // Send Repair Center Code equals to: FS
 
     }
+
+    /*
+    public void feelVendorTypeCodeRepeairCenterFileds (WebDriver driver){
+        waitElementPresence(driver, 5, editPurchaseRequisition.inputFieldVendor);
+        editPurchaseRequisition.inputFieldVendor.click();
+        editPurchaseRequisition.stringSpecificVendorCode.click();
+        waitElementAttributeShouldHaveValue(driver, 5, editPurchaseRequisition.textFieldVendor_Synovos, "value", "Synovos");
+        editPurchaseRequisition.inputFieldTypeCode.click();
+        editPurchaseRequisition.inputFieldTypeCode.sendKeys("PO");
+        waitElementPresence(driver, 5, editPurchaseRequisition.stringSpecificTypeCode2);
+        waitElementAttributeShouldHaveValue(driver, 10, editPurchaseRequisition.textFieldTypeCode_RegularPO, "value", "Regular PO");
+        editPurchaseRequisition.inputFieldRepairCenterCode.click();
+        editPurchaseRequisition.inputFieldRepairCenterCode.sendKeys("FS");
+        waitElementPresence(driver, 5, editPurchaseRequisition.stringSpecificCenterCode2);
+
+    }
+    */
 }

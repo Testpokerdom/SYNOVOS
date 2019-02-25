@@ -35,7 +35,7 @@ public class CreatePurchaseRequisition {
         loginPageLocators = new LoginPageLocators(driver);
         homePageLocators = new HomePageLocators(driver);
         editPurchaseRequisition = new EditPurchaseRequisition(driver);
-        vendorTypeCodeRepairCenterTable = new VendorTypeCodeRepairCenterTable();
+        vendorTypeCodeRepairCenterTable = new VendorTypeCodeRepairCenterTable(driver);
 
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.manage().window().maximize();
@@ -72,9 +72,12 @@ public class CreatePurchaseRequisition {
         clickButtonIfEnable(editPurchaseRequisition.buttonAdd);
         // Switch to Iframe "frameidentity" + feel the fields "Vendor", "Type Code", "Repair Center Code"
         switchToIFrame(driver, editPurchaseRequisition.iFramePR_Identity);
+        /*
         vendorTypeCodeRepairCenterTable.sendTextTOVendorTypeCodeRepeairCenterFileds(driver, editPurchaseRequisition.inputFieldVendor, editPurchaseRequisition.stringSpecificVendorCode,
                 editPurchaseRequisition.textFieldVendor_Synovos, editPurchaseRequisition.inputFieldTypeCode, editPurchaseRequisition.stringSpecificTypeCode2,
                 editPurchaseRequisition.textFieldTypeCode_RegularPO, editPurchaseRequisition.inputFieldRepairCenterCode, editPurchaseRequisition.stringSpecificCenterCode2);
+                */
+        vendorTypeCodeRepairCenterTable.feelVendorTypeCodeRepeairCenterFileds(driver);
       /*
         if(editPurchaseRequisition.inputFieldVendor.isEnabled() == true){
             sendTextToWebElementFromDropDownList(editPurchaseRequisition.inputFieldVendor, editPurchaseRequisition.stringSpecificVendorCode); // Send Vendor Code equals to: 00000023652

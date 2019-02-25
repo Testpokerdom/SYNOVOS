@@ -2,13 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d2c9d834-2c96-438e-87d1-c0a1f5a802dc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/out/test/classes/TMA_SYNC/VendorTypeCodeRepairCenterTable.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/TMA_SYNC/VendorTypeCodeRepairCenterTable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/logs/app.log" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/resources/logs/app.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/TMA_SYNC/Tests/CreatePurchaseRequisition.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/TMA_SYNC/Tests/CreatePurchaseRequisition.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/logs/app.log" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/logs/app.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/TMA_SYNC/Tests/CreatePurchaseRequisition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TMA_SYNC/Tests/CreatePurchaseRequisition.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TMA_SYNC/VendorTypeCodeRepairCenterTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TMA_SYNC/VendorTypeCodeRepairCenterTable.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -29,8 +25,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/TMA_SYNC/VendorTypeCodeRepairCenterTable.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="29" column="5" lean-forward="true" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
+            <state relative-caret-position="357">
+              <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -41,8 +37,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/TMA_SYNC/Locators/LoginPageLocators.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="8" lean-forward="true" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="47" />
+            <state relative-caret-position="323">
+              <caret line="19" column="32" lean-forward="true" selection-start-line="19" selection-start-column="32" selection-end-line="19" selection-end-column="32" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -53,7 +49,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/TMA_SYNC/Locators/EditPurchaseRequisition.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1224">
+            <state relative-caret-position="-969">
               <caret line="72" column="45" selection-start-line="72" selection-start-column="22" selection-end-line="72" selection-end-column="45" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -67,8 +63,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/WebHelpers/WebHelpers.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-14">
-              <caret line="91" column="39" lean-forward="true" selection-start-line="91" selection-start-column="39" selection-end-line="91" selection-end-column="39" />
+            <state relative-caret-position="282">
+              <caret line="108" column="27" lean-forward="true" selection-start-line="108" selection-start-column="8" selection-end-line="108" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -79,8 +75,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/logs/app.log">
           <provider selected="true" editor-type-id="LogFileEditorProvider">
-            <state relative-caret-position="-286">
-              <caret line="43" column="116" lean-forward="true" selection-start-line="43" selection-start-column="46" selection-end-line="43" selection-end-column="116" />
+            <state relative-caret-position="-102">
+              <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
             </state>
           </provider>
         </entry>
@@ -88,8 +84,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/TMA_SYNC/Tests/CreatePurchaseRequisition.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="37" column="78" selection-start-line="37" selection-start-column="78" selection-end-line="37" selection-end-column="78" />
+            <state relative-caret-position="197">
+              <caret line="37" column="86" lean-forward="true" selection-start-line="37" selection-start-column="86" selection-end-line="37" selection-end-column="86" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -291,7 +287,7 @@
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550855998251" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551112000279" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../SeleniumWebDriver/client-combined-3.141.59-sources.jar!/" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.0" />
@@ -414,12 +410,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CreatePurchaseRequisition - 2019.02.22 at 14h 08m 53s.xml">
-      <configuration name="CreatePurchaseRequisition" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CreatePurchaseRequisition - 2019.02.22 at 14h 13m 40s.xml">
-      <configuration name="CreatePurchaseRequisition" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="CreatePurchaseRequisition - 2019.02.22 at 14h 19m 17s.xml">
       <configuration name="CreatePurchaseRequisition" configurationId="JUnit" />
     </history-entry>
@@ -444,9 +434,16 @@
     <history-entry file="CreatePurchaseRequisition - 2019.02.22 at 19h 19m 47s.xml">
       <configuration name="CreatePurchaseRequisition" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="CreatePurchaseRequisition - 2019.02.25 at 18h 20m 17s.xml">
+      <configuration name="CreatePurchaseRequisition" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CreatePurchaseRequisition - 2019.02.25 at 18h 21m 59s.xml">
+      <configuration name="CreatePurchaseRequisition" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Designer" order="0" />
       <window_info id="Capture Tool" order="1" />
@@ -755,8 +752,8 @@
         </state>
       </provider>
       <provider selected="true" editor-type-id="LogFileEditorProvider">
-        <state relative-caret-position="-286">
-          <caret line="43" column="116" lean-forward="true" selection-start-line="43" selection-start-column="46" selection-end-line="43" selection-end-column="116" />
+        <state relative-caret-position="-102">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
         </state>
       </provider>
     </entry>
@@ -784,8 +781,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/WebHelpers/WebHelpers.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-14">
-          <caret line="91" column="39" lean-forward="true" selection-start-line="91" selection-start-column="39" selection-end-line="91" selection-end-column="39" />
+        <state relative-caret-position="282">
+          <caret line="108" column="27" lean-forward="true" selection-start-line="108" selection-start-column="8" selection-end-line="108" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -794,8 +791,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/TMA_SYNC/Locators/LoginPageLocators.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="8" lean-forward="true" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="47" />
+        <state relative-caret-position="323">
+          <caret line="19" column="32" lean-forward="true" selection-start-line="19" selection-start-column="32" selection-end-line="19" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -804,7 +801,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/TMA_SYNC/Locators/EditPurchaseRequisition.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1224">
+        <state relative-caret-position="-969">
           <caret line="72" column="45" selection-start-line="72" selection-start-column="22" selection-end-line="72" selection-end-column="45" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -816,8 +813,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/TMA_SYNC/VendorTypeCodeRepairCenterTable.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="29" column="5" lean-forward="true" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
+        <state relative-caret-position="357">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -826,8 +823,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/TMA_SYNC/Tests/CreatePurchaseRequisition.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="37" column="78" selection-start-line="37" selection-start-column="78" selection-end-line="37" selection-end-column="78" />
+        <state relative-caret-position="197">
+          <caret line="37" column="86" lean-forward="true" selection-start-line="37" selection-start-column="86" selection-end-line="37" selection-end-column="86" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
