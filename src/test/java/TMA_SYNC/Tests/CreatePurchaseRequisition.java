@@ -23,7 +23,7 @@ public class CreatePurchaseRequisition {
     public static LoginPageLocators loginPageLocators= null;
     public static HomePageLocators homePageLocators = null;
     public static EditPurchaseRequisition editPurchaseRequisition = null;
-    public static VendorTypeCodeRepairCenterTable vendorTypeCodeRepairCenterTable = null;
+    //public static VendorTypeCodeRepairCenterTable vendorTypeCodeRepairCenterTable = null;
 
     public static final Logger logger = LogManager.getLogger(CreatePurchaseRequisition.class);
 
@@ -35,7 +35,7 @@ public class CreatePurchaseRequisition {
         loginPageLocators = new LoginPageLocators(driver);
         homePageLocators = new HomePageLocators(driver);
         editPurchaseRequisition = new EditPurchaseRequisition(driver);
-        vendorTypeCodeRepairCenterTable = new VendorTypeCodeRepairCenterTable(driver);
+        //vendorTypeCodeRepairCenterTable = new VendorTypeCodeRepairCenterTable();
 
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.manage().window().maximize();
@@ -77,8 +77,6 @@ public class CreatePurchaseRequisition {
                 editPurchaseRequisition.textFieldVendor_Synovos, editPurchaseRequisition.inputFieldTypeCode, editPurchaseRequisition.stringSpecificTypeCode2,
                 editPurchaseRequisition.textFieldTypeCode_RegularPO, editPurchaseRequisition.inputFieldRepairCenterCode, editPurchaseRequisition.stringSpecificCenterCode2);
                 */
-        vendorTypeCodeRepairCenterTable.feelVendorTypeCodeRepeairCenterFileds(driver);
-      /*
         if(editPurchaseRequisition.inputFieldVendor.isEnabled() == true){
             sendTextToWebElementFromDropDownList(editPurchaseRequisition.inputFieldVendor, editPurchaseRequisition.stringSpecificVendorCode); // Send Vendor Code equals to: 00000023652
         } else {
@@ -89,7 +87,7 @@ public class CreatePurchaseRequisition {
         sendTextToWebElementFromDropDownList2(editPurchaseRequisition.inputFieldTypeCode, "PO", editPurchaseRequisition.stringSpecificTypeCode2, driver); // Send Type Code equals to: PO
         waitElementAttributeShouldHaveValue(driver, 10, editPurchaseRequisition.textFieldTypeCode_RegularPO, "value", "Regular PO");
         sendTextToWebElementFromDropDownList2(editPurchaseRequisition.inputFieldRepairCenterCode, "FS", editPurchaseRequisition.stringSpecificCenterCode2, driver); // Send Repair Center Code equals to: FS
-        */
+
 
         // Click button "Items" + switch to Purchase Requisition Entry pop-up + feel the fields "Account", "Part Code", "Quantity", "Unit Coast"
         clickWebElementIfEnable(editPurchaseRequisition.buttonItems);
