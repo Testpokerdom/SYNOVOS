@@ -4,6 +4,9 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
+import static WebHelpers.WebHelpers.*;
+import static WebHelpers.WebHelpers.sendTextToWebElementFromDropDownList2;
+
 public class IdentityIFrame_Identity extends MainPage{
 
     public IdentityIFrame_Identity(WebDriver driver){
@@ -40,5 +43,26 @@ public class IdentityIFrame_Identity extends MainPage{
     @FindBy (id = "txtRequisition")
     public WebElement purchaseRequisitionNumber;
     @FindBy (id = "grdPR_ctl00_ctl02_ctl00_lblAddItem")
-    public WebElement buttonItems;
+    public WebElement buttonAddItems;
+
+    public void switchToIFrameIdentityAndFillFieldsVendorTypeCodeAndRepeirCenterCode(WebDriver driver){
+        switchToIFrame(driver, iFramePR_Identity);
+        if(inputFieldVendor.isEnabled() == true){
+            sendTextToWebElementFromDropDownList(inputFieldVendor, stringSpecificVendorCode); // Send Vendor Code equals to: 00000023652
+        } else {
+            waitElementPresence(driver, 5, inputFieldVendor);
+            sendTextToWebElementFromDropDownList(inputFieldVendor, stringSpecificVendorCode);
+        }
+        waitElementAttributeShouldHaveValue(driver, 5, textFieldVendor_Synovos, "value", "Synovos");
+        sendTextToWebElementFromDropDownList2(inputFieldTypeCode, "PO", stringSpecificTypeCode2, driver); // Send Type Code equals to: PO
+        waitElementAttributeShouldHaveValue(driver, 10, textFieldTypeCode_RegularPO, "value", "Regular PO");
+        sendTextToWebElementFromDropDownList2(inputFieldRepairCenterCode, "FS", stringSpecificCenterCode2, driver); // Send Repair Center Code equals to: FS
+        clickButtonIfEnable(buttonAddItems);
+    }
+
+    public void receivePR_RequisitionNumber(WebDriver driver){
+        switchToIFrame(driver, iFramePR_Identity);
+        String a = getTextFromWebElementAttribute(purchaseRequisitionNumber);
+        logger.info("++++++++++++++" + " Purchase requisition numder is: " + purchaseRequisitionNumber.getAttribute("value") + "++++++++++++++");
+    }
 }

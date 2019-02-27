@@ -3,7 +3,6 @@ package TMA_SYNC.Tests;
 import TMA_SYNC.Locators.EditPurchaseRequisition;
 import TMA_SYNC.Locators.HomePageLocators;
 import TMA_SYNC.Locators.LoginPageLocators;
-import TMA_SYNC.VendorTypeCodeRepairCenterTable;
 import com.sun.org.glassfish.gmbal.Description;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -90,7 +89,7 @@ public class CreatePurchaseRequisition {
 
 
         // Click button "Items" + switch to Purchase Requisition Entry pop-up + feel the fields "Account", "Part Code", "Quantity", "Unit Coast"
-        clickWebElementIfEnable(editPurchaseRequisition.buttonItems);
+        clickWebElementIfEnable(editPurchaseRequisition.buttonAddItems);
         switchToIFrame(driver, editPurchaseRequisition.iFramePurchRequisitionDialog);
         sendTextToWebElementFromDropDownList(editPurchaseRequisition.fieldAccount, editPurchaseRequisition.stringSpecificAccount); //sendTextToWebElement(editPurchaseRequisition.fieldAccount, "030-89000-6902");
         logger.info("Send text to WebElement - Account: \"030-89000-6902\"");

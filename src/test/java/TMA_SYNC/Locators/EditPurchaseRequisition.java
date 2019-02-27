@@ -82,7 +82,7 @@ public class EditPurchaseRequisition extends LoginPageLocators {
     @FindBy (id = "txtRequisition")
     public WebElement purchaseRequisitionNumber;
     @FindBy (id = "grdPR_ctl00_ctl02_ctl00_lblAddItem")
-    public WebElement buttonItems;
+    public WebElement buttonAddItems;
 
     // Button Items elements inside Purchase Requisition Iframe
     @FindBy (id = "grdPR_ctl00_ctl04_GECBtnExpandColumn")

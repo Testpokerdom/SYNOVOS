@@ -4,9 +4,12 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-public class MainIFrame_PurchaseRequisitionmain extends MainPage {
+import static WebHelpers.WebHelpers.*;
 
-    public MainIFrame_PurchaseRequisitionmain (WebDriver driver){
+public class MainIFrame_PurchaseRequisitionMain extends MainPage {
+
+    public MainIFrame_PurchaseRequisitionMain(WebDriver driver)
+    {
         super(driver);
     }
 
@@ -44,4 +47,19 @@ public class MainIFrame_PurchaseRequisitionmain extends MainPage {
     @FindBy (xpath = "//div[@id='confirm1550751353006_content']//span[text()='Cancel']")
     public WebElement buttonCancelExportPurchaseRequsition;
 
+    public void clickButtonAdd(WebDriver driver){
+        switchToIFrame(driver, iFrameMain);
+        clickButtonIfEnable(buttonAdd);
+    }
+
+    public void clickButtonsExpandAndAddDistribution(WebDriver driver){
+        driver.switchTo().parentFrame();
+        clickButtonIfEnable(buttonExpendIntoItemsTable);
+        clickButtonIfEnable(buttonAddDistribution);
+    }
+
+    public void switchToIFrameMainAndClickButtonSave(WebDriver driver){
+        switchToIFrame(driver, iFrameMain);
+        clickWebElementIfEnable(buttonSaveMain);
+    }
 }

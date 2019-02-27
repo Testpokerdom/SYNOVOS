@@ -5,6 +5,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import static WebHelpers.WebHelpers.*;
+
 public class MainPage {
     public MainPage(WebDriver driver) {
 
@@ -36,4 +38,10 @@ public class MainPage {
     public WebElement linkPurchaseRequisitionOnMaterialTab;
     @FindBy (xpath = "//span[@class='rpText'][text()='Purchase Orders']")
     public WebElement linkMaterialTabPurchaseOrder;
+
+    public void switchToMaterialTabAndClickPurchaseRequisitionLink(WebDriver driver){
+        clickWebElementIfEnable(tabMaterial);
+        waitElementPresence(driver, 5, linkPurchaseRequisitionOnMaterialTab);
+        clickButtonIfEnable(linkPurchaseRequisitionOnMaterialTab);
+    }
 }
