@@ -4,6 +4,9 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
+import static WebHelpers.WebHelpers.clickButtonIfEnable;
+import static WebHelpers.WebHelpers.switchToIFrame;
+
 public class RoutingWindowIFrame_PurchaseRequisitionAuthorization extends MainPage{
 
     public RoutingWindowIFrame_PurchaseRequisitionAuthorization(WebDriver driver){
@@ -21,4 +24,9 @@ public class RoutingWindowIFrame_PurchaseRequisitionAuthorization extends MainPa
     public WebElement buttonRejectPurchaseRequisitionAuthorization;
     @FindBy (id = "btnIgnore")
     public WebElement buttonIgnorePurchaseRequisitionAuthorization;
+
+    public void switchToIframePRAutorizationAndClickButtonAutorize(WebDriver driver){
+        switchToIFrame(driver, iFramePurchaseRequisitionAuthorization);
+        clickButtonIfEnable(buttonAuthorizePurchaseRequisitionAuthorization);
+    }
 }

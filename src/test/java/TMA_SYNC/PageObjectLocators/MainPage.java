@@ -6,6 +6,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import static WebHelpers.WebHelpers.*;
+import static WebHelpers.WebHelpers.clickButtonIfEnable;
 
 public class MainPage {
     public MainPage(WebDriver driver) {
@@ -26,6 +27,12 @@ public class MainPage {
     @FindBy (xpath = "//span[contains(text(),'Tutorials')]")
     public WebElement tabTuturials;
 
+    // "Action Menu" elements:
+    @FindBy (xpath = "//div[@id='RadPanelbar1']//span[text()='Authorize']")
+    public WebElement buttonAuthorize;
+    @FindBy (xpath = "//div[@id='RadPanelbar1']//span[text()='Export']")
+    public WebElement buttonExport;
+
     // Home and Logout links
     @FindBy ()
     public WebElement buttonHome;
@@ -43,5 +50,10 @@ public class MainPage {
         clickWebElementIfEnable(tabMaterial);
         waitElementPresence(driver, 5, linkPurchaseRequisitionOnMaterialTab);
         clickButtonIfEnable(linkPurchaseRequisitionOnMaterialTab);
+    }
+
+    public void switchToDefaultContentAndClickButtonExport(WebDriver driver){
+        driver.switchTo().defaultContent();
+        clickButtonIfEnable(buttonAuthorize);
     }
 }

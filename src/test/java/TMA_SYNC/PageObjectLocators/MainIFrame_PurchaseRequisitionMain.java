@@ -47,7 +47,7 @@ public class MainIFrame_PurchaseRequisitionMain extends MainPage {
     @FindBy (xpath = "//div[@id='confirm1550751353006_content']//span[text()='Cancel']")
     public WebElement buttonCancelExportPurchaseRequsition;
 
-    public void clickButtonAdd(WebDriver driver){
+    public void switchToTheIFrameMainAndclickButtonAdd(WebDriver driver){
         switchToIFrame(driver, iFrameMain);
         clickButtonIfEnable(buttonAdd);
     }

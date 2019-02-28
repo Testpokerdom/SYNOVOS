@@ -1,5 +1,8 @@
 package TMA_SYNC.PageObjectLocators;
 
+import TMA_SYNC.Tests.CreatePurchaseRequisition;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -8,6 +11,7 @@ import static WebHelpers.WebHelpers.*;
 import static WebHelpers.WebHelpers.sendTextToWebElementFromDropDownList2;
 
 public class IdentityIFrame_Identity extends MainPage{
+    public static final Logger logger = LogManager.getLogger(IdentityIFrame_Identity.class);
 
     public IdentityIFrame_Identity(WebDriver driver){
         super(driver);
@@ -62,7 +66,7 @@ public class IdentityIFrame_Identity extends MainPage{
 
     public void receivePR_RequisitionNumber(WebDriver driver){
         switchToIFrame(driver, iFramePR_Identity);
-        String a = getTextFromWebElementAttribute(purchaseRequisitionNumber);
-        logger.info("++++++++++++++" + " Purchase requisition numder is: " + purchaseRequisitionNumber.getAttribute("value") + "++++++++++++++");
+        //String a = getTextFromWebElementAttribute(purchaseRequisitionNumber);
+        logger.info("++++++++++++++" + " Purchase requisition numder is:  " + purchaseRequisitionNumber.getAttribute("value") + "  ++++++++++++++");
     }
 }

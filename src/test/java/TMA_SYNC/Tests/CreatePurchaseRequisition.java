@@ -87,7 +87,6 @@ public class CreatePurchaseRequisition {
         waitElementAttributeShouldHaveValue(driver, 10, editPurchaseRequisition.textFieldTypeCode_RegularPO, "value", "Regular PO");
         sendTextToWebElementFromDropDownList2(editPurchaseRequisition.inputFieldRepairCenterCode, "FS", editPurchaseRequisition.stringSpecificCenterCode2, driver); // Send Repair Center Code equals to: FS
 
-
         // Click button "Items" + switch to Purchase Requisition Entry pop-up + feel the fields "Account", "Part Code", "Quantity", "Unit Coast"
         clickWebElementIfEnable(editPurchaseRequisition.buttonAddItems);
         switchToIFrame(driver, editPurchaseRequisition.iFramePurchRequisitionDialog);
