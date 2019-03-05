@@ -17,3 +17,43 @@ repositories {
     compile group: 'org.apache.logging.log4j', name: 'log4j-core', version: '2.11.1'
 
 }
+/*
+test {
+    useJUnitPlatform()
+    // use the syntax below to exclude based on filepath
+    // exclude(["**/webdriver/*", "**/pagefactory/*"] as List)
+    // The syntax below works for Tags - either String names or Tag objects work
+    options {
+        setExcludeTags(["Framework", "Blocking", "Navigation"] as Set)
+    }
+    // Finally we have access to parallel running for junit 5 tests!
+    maxParallelForks 4
+}
+*/
+test {
+    if (project.hasProperty('maxParallelForks'))
+        maxParallelForks = project.maxParallelForks as int
+    if (project.hasProperty('forkEvery'))
+        forkEvery = project.forkEvery as int
+}
+
+packages = 10
+tests = 30
+
+task createTests << {
+    (0..packages).each { packageCounter ->
+        def packageName = "gradletest${packageCounter}"
+        (0..tests).each { classCounter ->
+            def testClassName = "Gradle${classCounter}Test"
+            copy {
+                from 'src/templates'
+                into 'src/test/java'
+                expand([packageName: packageName, testClassName: testClassName])
+                rename '(.*).java', packageName + '/' + testClassName + '.java'
+                include 'SampleTest.java'
+            }
+        }
+    }
+}
+
+

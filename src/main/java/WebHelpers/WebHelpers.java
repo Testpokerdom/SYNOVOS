@@ -25,6 +25,12 @@ public class WebHelpers {
         logger.info("Open URL: " + url);
     }
 
+    public void login(WebDriver driver, String uname, String pwd){
+        String TEST_ENVIRONMENT = "us01.dynamicseam.com";
+        String URL = "https://" + uname + ":" + pwd + "@" + TEST_ENVIRONMENT;
+        driver.get(URL);
+    }
+
     public static void clickButton(WebElement button){
         String buttonValue = button.getAttribute("value");
         button.click();

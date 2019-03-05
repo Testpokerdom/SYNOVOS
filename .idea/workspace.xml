@@ -2,13 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d2c9d834-2c96-438e-87d1-c0a1f5a802dc" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/SYNC/Locators/LoginPageLocators.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/SYNC/Locators/MainPageLocators.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/SYNC/Locators/WorkPlaceLocators.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/SYNC/Tests/LoginPageTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/WebHelpers/WebHelpers.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/WebHelpers/WebHelpers.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/logs/app.log" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/resources/logs/app.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/TMA_SYNC/PageObjectLocators/RoutingWindowIFrame_PurchaseRequisitionAuthorization.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/TMA_SYNC/PageObjectLocators/RoutingWindowIFrame_PurchaseRequisitionAuthorization.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/TMA_SYNC/Tests/CreatePR.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/TMA_SYNC/Tests/CreatePR.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/TMA_SYNC/Tests/CreatePurchaseRequisition.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/TMA_SYNC/Tests/CreatePurchaseRequisition.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/WebHelpers/WebHelpers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/WebHelpers/WebHelpers.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/logs/app.log" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/logs/app.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/TMA_SYNC/PageObjectLocators/IdentityIFrame_Identity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TMA_SYNC/PageObjectLocators/IdentityIFrame_Identity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/TMA_SYNC/PageObjectLocators/MainIFrame_PurchaseRequisitionMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TMA_SYNC/PageObjectLocators/MainIFrame_PurchaseRequisitionMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/TMA_SYNC/PageObjectLocators/MainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TMA_SYNC/PageObjectLocators/MainPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/TMA_SYNC/PageObjectLocators/RoutingWindowIFrame_PurchaseRequisitionAuthorization.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TMA_SYNC/PageObjectLocators/RoutingWindowIFrame_PurchaseRequisitionAuthorization.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/TMA_SYNC/Tests/CreatePR.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TMA_SYNC/Tests/CreatePR.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/TMA_SYNC/Tests/CreatePurchaseRequisition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TMA_SYNC/Tests/CreatePurchaseRequisition.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -27,34 +35,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/TMA_SYNC/Tests/CreatePurchaseRequisition.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="167">
-              <caret line="136" column="101" lean-forward="true" selection-start-line="64" selection-start-column="8" selection-end-line="136" selection-end-column="101" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/WebHelpers/WebHelpers.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="82" column="29" lean-forward="true" selection-start-line="82" selection-start-column="29" selection-end-line="82" selection-end-column="29" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/TMA_SYNC/PageObjectLocators/IdentityIFrame_Identity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="722">
-              <caret line="69" column="74" selection-start-line="69" selection-start-column="74" selection-end-line="69" selection-end-column="74" />
+            <state relative-caret-position="299">
+              <caret line="27" column="17" lean-forward="true" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="17" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -65,8 +49,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/TMA_SYNC/Locators/EditPurchaseRequisition.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="41" column="22" selection-start-line="41" selection-start-column="22" selection-end-line="41" selection-end-column="22" />
+            <state relative-caret-position="170">
+              <caret line="10" column="54" selection-start-line="10" selection-start-column="54" selection-end-line="10" selection-end-column="54" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#229#230#0" expanded="true" />
@@ -79,8 +63,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/TMA_SYNC/Tests/CreatePR.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="214">
-              <caret line="64" column="8" selection-start-line="64" selection-start-column="8" selection-end-line="76" selection-end-column="120" />
+            <state relative-caret-position="473">
+              <caret line="50" column="57" lean-forward="true" selection-start-line="50" selection-start-column="24" selection-end-line="50" selection-end-column="57" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -88,11 +72,70 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/SYNC/Locators/LoginPageLocators.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" column="30" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="30" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#183#184#0" expanded="true" />
+                <element signature="e#208#209#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/SYNC/Tests/LoginPageTests.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="388">
+              <caret line="58" column="47" lean-forward="true" selection-start-line="58" selection-start-column="47" selection-end-line="58" selection-end-column="47" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/SYNC/Locators/MainPageLocators.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="13" column="119" selection-start-line="13" selection-start-column="119" selection-end-line="13" selection-end-column="119" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#202#203#0" expanded="true" />
+                <element signature="e#225#226#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/SYNC/Locators/WorkPlaceLocators.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="405">
+              <caret line="35" column="22" selection-start-line="35" selection-start-column="22" selection-end-line="35" selection-end-column="22" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#168#169#0" expanded="true" />
+                <element signature="e#191#192#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/logs/app.log">
-          <provider selected="true" editor-type-id="LogFileEditorProvider">
-            <state relative-caret-position="428">
-              <caret line="151" column="92" selection-start-line="151" selection-start-column="92" selection-end-line="151" selection-end-column="98" />
+          <provider selected="true" editor-type-id="LogFileEditorProvider" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/build.gradle">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="524">
+              <caret line="56" selection-start-line="56" selection-end-line="56" />
             </state>
           </provider>
         </entry>
@@ -116,8 +159,9 @@
       <find>frameidentity</find>
       <find>txtWONumber_ComboBox_Input</find>
       <find>PurchaseOrderDistributionDialog</find>
-      <find>stringSpecificTypeCode2</find>
       <find>send</find>
+      <find>wait</find>
+      <find>stringSpecificTypeCode2</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -126,11 +170,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/test/java/SYNOVOSJUnitTests/Tests/SupplierCreateAndReject.java" />
-        <option value="$PROJECT_DIR$/src/test/java/SYNOVOSJUnitTests/Locators/PurchasingPage/ApproveSupplierPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/SYNOVOSJUnitTests/Locators/PurchasingPage/Purchasing_CreateSupplierPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/SYNOVOSJUnitTests/Tests/SupplierCreateAndSave.java" />
-        <option value="$PROJECT_DIR$/src/test/java/SYNOVOSJUnitTests/Locators/PurchasingPage/ApprovalProcessSelectionPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/SYNOVOSJUnitTests/Locators/PurchasingPage/SearchSuppliersPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/SYNOVOSJUnitTests/Locators/LoginPage/LoginPageLocators.java" />
         <option value="$PROJECT_DIR$/src/test/java/SYNOVOSJUnitTests/Locators/Trash/MainClass.java" />
@@ -142,7 +181,6 @@
         <option value="$PROJECT_DIR$/src/main/java/resources/log4j2.properties" />
         <option value="$PROJECT_DIR$/src/main/resources/log4j2.properties" />
         <option value="$PROJECT_DIR$/src/main/resources2/log4j.properties" />
-        <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/src/main/resources/log4j.properties" />
         <option value="$PROJECT_DIR$/src/main/resources/log4j2.xml" />
         <option value="$PROJECT_DIR$/src/test/java/SYNOVOSJUnitTests/Locators/MainPage/MainClass.java" />
@@ -161,7 +199,6 @@
         <option value="$PROJECT_DIR$/src/test/java/TMA_SYNC/Locators/LoginPageLocators.java" />
         <option value="$PROJECT_DIR$/src/test/java/TMA_SYNC/Locators/MainPageLocators.java" />
         <option value="$PROJECT_DIR$/src/test/java/TMA_SYNC/Locators/HomePageLocators.java" />
-        <option value="$PROJECT_DIR$/src/main/java/WebHelpers/WebHelpers.java" />
         <option value="$PROJECT_DIR$/src/test/java/TMA_SYNC/Tests/Login.java" />
         <option value="$PROJECT_DIR$/src/test/java/TMA_SYNC/VendorTypeCodeRepairCenterTable.java" />
         <option value="$PROJECT_DIR$/src/test/java/TMA_SYNC/PageObjectLocators/Identity_IFrame_Identity.java" />
@@ -173,10 +210,17 @@
         <option value="$PROJECT_DIR$/src/test/java/TMA_SYNC/PageObjectLocators/IdentityIFrame_Identity.java" />
         <option value="$PROJECT_DIR$/src/test/java/TMA_SYNC/PageObjectLocators/MainPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/TMA_SYNC/PageObjectLocators/MainIFrame_PurchaseRequisitionMain.java" />
-        <option value="$PROJECT_DIR$/src/test/java/TMA_SYNC/PageObjectLocators/RoutingWindowIFrame_PurchaseRequisitionAuthorization.java" />
-        <option value="$PROJECT_DIR$/src/test/java/TMA_SYNC/Tests/CreatePR.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/logs/app.log" />
         <option value="$PROJECT_DIR$/src/test/java/TMA_SYNC/Tests/CreatePurchaseRequisition.java" />
+        <option value="$PROJECT_DIR$/src/test/java/TMA_SYNC/PageObjectLocators/RoutingWindowIFrame_PurchaseRequisitionAuthorization.java" />
+        <option value="$PROJECT_DIR$/build.gradle" />
+        <option value="$PROJECT_DIR$/src/main/resources/logs/app.log" />
+        <option value="$PROJECT_DIR$/src/test/java/TMA_SYNC/Tests/CreatePR.java" />
+        <option value="$PROJECT_DIR$/src/test/java/SYNC/MainPageLocators.java" />
+        <option value="$PROJECT_DIR$/src/test/java/SYNC/Locators/LoginPageLocators.java" />
+        <option value="$PROJECT_DIR$/src/main/java/WebHelpers/WebHelpers.java" />
+        <option value="$PROJECT_DIR$/src/test/java/SYNC/Tests/LoginPageTests.java" />
+        <option value="$PROJECT_DIR$/src/test/java/SYNC/Locators/MainPageLocators.java" />
+        <option value="$PROJECT_DIR$/src/test/java/SYNC/Locators/WorkPlaceLocators.java" />
       </list>
     </option>
   </component>
@@ -237,14 +281,6 @@
               <item name="Synovo" type="b2602c69:ProjectViewProjectNode" />
               <item name="Synovo" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="logs" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Synovo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Synovo" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
             <path>
@@ -260,7 +296,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="TMA_SYNC" type="462c0819:PsiDirectoryNode" />
+              <item name="SYNC" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Synovo" type="b2602c69:ProjectViewProjectNode" />
@@ -268,8 +304,17 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="TMA_SYNC" type="462c0819:PsiDirectoryNode" />
-              <item name="PageObjectLocators" type="462c0819:PsiDirectoryNode" />
+              <item name="SYNC" type="462c0819:PsiDirectoryNode" />
+              <item name="Locators" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Synovo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Synovo" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="SYNC" type="462c0819:PsiDirectoryNode" />
+              <item name="Tests" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -283,7 +328,7 @@
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551375608065" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551794391678" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../SeleniumWebDriver/client-combined-3.141.59-sources.jar!/" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.0" />
@@ -311,7 +356,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.CreatePR">
+  <component name="RunManager" selected="JUnit.LoginPageTests">
     <configuration name="CreatePR" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Synovo.test" />
       <extension name="coverage">
@@ -354,6 +399,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="LoginPageTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Synovo.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="SYNC.Tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="SYNC.Tests" />
+      <option name="MAIN_CLASS_NAME" value="SYNC.Tests.LoginPageTests" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="SupplierCreateEmergancy" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Synovo.test" />
       <extension name="coverage">
@@ -368,27 +427,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test_Suite_Create_Approve_Reject_Save_Supplier" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Synovo.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="SYNOVOSJUnitTests.TestSuites.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="SYNOVOSJUnitTests.TestSuites" />
-      <option name="MAIN_CLASS_NAME" value="SYNOVOSJUnitTests.TestSuites.Test_Suite_Create_Approve_Reject_Save_Supplier" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.LoginPageTests" />
         <item itemvalue="JUnit.CreatePR" />
         <item itemvalue="JUnit.CreatePurchaseRequisition" />
         <item itemvalue="JUnit.Login" />
         <item itemvalue="JUnit.SupplierCreateEmergancy" />
-        <item itemvalue="JUnit.Test_Suite_Create_Approve_Reject_Save_Supplier" />
       </list>
     </recent_temporary>
   </component>
@@ -406,35 +451,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CreatePR - 2019.02.28 at 13h 53m 23s.xml">
-      <configuration name="CreatePR" configurationId="JUnit" />
+    <history-entry file="LoginPageTests - 2019.03.05 at 14h 08m 33s.xml">
+      <configuration name="LoginPageTests" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CreatePR - 2019.02.28 at 13h 56m 32s.xml">
-      <configuration name="CreatePR" configurationId="JUnit" />
+    <history-entry file="LoginPageTests - 2019.03.05 at 14h 08m 51s.xml">
+      <configuration name="LoginPageTests" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CreatePR - 2019.02.28 at 14h 00m 54s.xml">
-      <configuration name="CreatePR" configurationId="JUnit" />
+    <history-entry file="LoginPageTests - 2019.03.05 at 14h 09m 35s.xml">
+      <configuration name="LoginPageTests" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CreatePR - 2019.02.28 at 14h 21m 17s.xml">
-      <configuration name="CreatePR" configurationId="JUnit" />
+    <history-entry file="LoginPageTests - 2019.03.05 at 14h 15m 46s.xml">
+      <configuration name="LoginPageTests" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CreatePR - 2019.02.28 at 15h 34m 33s.xml">
-      <configuration name="CreatePR" configurationId="JUnit" />
+    <history-entry file="LoginPageTests - 2019.03.05 at 14h 20m 41s.xml">
+      <configuration name="LoginPageTests" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CreatePR - 2019.02.28 at 17h 21m 51s.xml">
-      <configuration name="CreatePR" configurationId="JUnit" />
+    <history-entry file="LoginPageTests - 2019.03.05 at 14h 31m 42s.xml">
+      <configuration name="LoginPageTests" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CreatePR - 2019.02.28 at 17h 25m 19s.xml">
-      <configuration name="CreatePR" configurationId="JUnit" />
+    <history-entry file="LoginPageTests - 2019.03.05 at 14h 36m 52s.xml">
+      <configuration name="LoginPageTests" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CreatePR - 2019.02.28 at 17h 36m 46s.xml">
-      <configuration name="CreatePR" configurationId="JUnit" />
+    <history-entry file="LoginPageTests - 2019.03.05 at 15h 00m 24s.xml">
+      <configuration name="LoginPageTests" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CreatePR - 2019.02.28 at 17h 42m 23s.xml">
-      <configuration name="CreatePR" configurationId="JUnit" />
+    <history-entry file="LoginPageTests - 2019.03.05 at 15h 05m 40s.xml">
+      <configuration name="LoginPageTests" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CreatePR - 2019.02.28 at 17h 56m 39s.xml">
-      <configuration name="CreatePR" configurationId="JUnit" />
+    <history-entry file="LoginPageTests - 2019.03.05 at 15h 12m 05s.xml">
+      <configuration name="LoginPageTests" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -446,7 +491,7 @@
       <window_info id="UI Designer" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Image Layers" order="4" />
-      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.24840085" />
+      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.24840085" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="0" weight="0.32936078" />
       <window_info anchor="bottom" id="Event Log" order="1" sideWeight="0.50053304" side_tool="true" weight="0.36078006" />
@@ -455,7 +500,7 @@
       <window_info anchor="bottom" id="Version Control" order="4" />
       <window_info anchor="bottom" id="Message" order="5" />
       <window_info anchor="bottom" id="Find" order="6" weight="0.30769232" />
-      <window_info active="true" anchor="bottom" id="Run" order="7" sideWeight="0.49946696" visible="true" weight="0.3066089" />
+      <window_info anchor="bottom" id="Run" order="7" sideWeight="0.49946696" visible="true" weight="0.3066089" />
       <window_info anchor="bottom" id="Debug" order="8" weight="0.3997833" />
       <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
@@ -472,30 +517,6 @@
     </layout>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/java/SYNOVOSJUnitTests/Locators/MainPage/MainPageLocators.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="39" column="22" selection-start-line="39" selection-start-column="22" selection-end-line="39" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/SYNOVOSJUnitTests/Locators/PurchasingPage/SupplierDetailPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="22" column="41" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../Downloads/4-Log4j2.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/log" />
     <entry file="file://$PROJECT_DIR$/../Downloads/2-LoggingDemo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -517,13 +538,6 @@
     <entry file="file://$PROJECT_DIR$/C/Users/viktor.bibik/Synovo/logapp.log" />
     <entry file="file://$PROJECT_DIR$/log/app.log" />
     <entry file="file://$PROJECT_DIR$/logs/propertieslogs.log" />
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="58" selection-start-line="12" selection-start-column="58" selection-end-line="12" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/SYNOVOSJUnitTests/Locators/MainPage/MainClass.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-7">
@@ -544,16 +558,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret selection-end-line="22" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/SYNOVOSJUnitTests/Tests/Supplier_Create_Save_Reject_Emergancy/SupplierCreateAndReject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="358">
-          <caret line="89" column="78" selection-start-line="89" selection-start-column="78" selection-end-line="89" selection-end-column="78" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -712,16 +716,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/TMA_SYNC/Locators/LoginPageLocators.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" selection-start-line="8" selection-end-line="12" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/TMA_SYNC/VendorTypeCodeRepairCenterTable.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
@@ -736,28 +730,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="405">
           <caret line="33" column="22" selection-start-line="33" selection-start-column="22" selection-end-line="33" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/TMA_SYNC/Locators/EditPurchaseRequisition.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="41" column="22" selection-start-line="41" selection-start-column="22" selection-end-line="41" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#229#230#0" expanded="true" />
-            <element signature="e#249#250#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/TMA_SYNC/PageObjectLocators/MainPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="490">
-          <caret line="54" column="58" selection-start-line="54" selection-start-column="16" selection-end-line="54" selection-end-column="58" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -794,10 +766,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/TMA_SYNC/PageObjectLocators/IdentityIFrame_Identity.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/TMA_SYNC/PageObjectLocators/MainPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="722">
-          <caret line="69" column="74" selection-start-line="69" selection-start-column="74" selection-end-line="69" selection-end-column="74" />
+        <state relative-caret-position="326">
+          <caret line="48" column="16" selection-start-line="48" selection-start-column="16" selection-end-line="48" selection-end-column="16" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -806,41 +778,38 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/TMA_SYNC/PageObjectLocators/RoutingWindowIFrame_PurchaseRequisitionAuthorization.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="65" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="65" />
+        <state relative-caret-position="493">
+          <caret line="33" column="9" selection-start-line="33" selection-start-column="9" selection-end-line="33" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/WebHelpers/WebHelpers.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/TMA_SYNC/PageObjectLocators/IdentityIFrame_Identity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="82" column="29" lean-forward="true" selection-start-line="82" selection-start-column="29" selection-end-line="82" selection-end-column="29" />
+        <state relative-caret-position="358">
+          <caret line="60" column="28" selection-start-line="60" selection-start-column="28" selection-end-line="60" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/TMA_SYNC/Tests/CreatePR.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/SYNOVOSJUnitTests/Tests/Supplier_Create_Save_Reject_Emergancy/SupplierCreateAndReject.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="214">
-          <caret line="64" column="8" selection-start-line="64" selection-start-column="8" selection-end-line="76" selection-end-column="120" />
+        <state relative-caret-position="306">
+          <caret line="63" column="9" selection-start-line="63" selection-start-column="9" selection-end-line="63" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/TMA_SYNC/Tests/CreatePurchaseRequisition.java">
+    <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="167">
-          <caret line="136" column="101" lean-forward="true" selection-start-line="64" selection-start-column="8" selection-end-line="136" selection-end-column="101" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="524">
+          <caret line="56" selection-start-line="56" selection-end-line="56" />
         </state>
       </provider>
     </entry>
@@ -850,9 +819,103 @@
           <caret line="18" column="96" selection-start-line="18" selection-start-column="91" selection-end-line="18" selection-end-column="96" />
         </state>
       </provider>
-      <provider selected="true" editor-type-id="LogFileEditorProvider">
-        <state relative-caret-position="428">
-          <caret line="151" column="92" selection-start-line="151" selection-start-column="92" selection-end-line="151" selection-end-column="98" />
+      <provider selected="true" editor-type-id="LogFileEditorProvider" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/TMA_SYNC/Locators/LoginPageLocators.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="47" lean-forward="true" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/TMA_SYNC/Locators/EditPurchaseRequisition.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="54" selection-start-line="10" selection-start-column="54" selection-end-line="10" selection-end-column="54" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#229#230#0" expanded="true" />
+            <element signature="e#249#250#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/TMA_SYNC/Tests/CreatePurchaseRequisition.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="490">
+          <caret line="137" lean-forward="true" selection-start-line="137" selection-end-line="137" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/WebHelpers/WebHelpers.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="27" column="17" lean-forward="true" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/TMA_SYNC/Tests/CreatePR.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="473">
+          <caret line="50" column="57" lean-forward="true" selection-start-line="50" selection-start-column="24" selection-end-line="50" selection-end-column="57" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/SYNC/Tests/LoginPageTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="388">
+          <caret line="58" column="47" lean-forward="true" selection-start-line="58" selection-start-column="47" selection-end-line="58" selection-end-column="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/SYNC/Locators/LoginPageLocators.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="30" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#183#184#0" expanded="true" />
+            <element signature="e#208#209#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/SYNC/Locators/MainPageLocators.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="119" selection-start-line="13" selection-start-column="119" selection-end-line="13" selection-end-column="119" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#202#203#0" expanded="true" />
+            <element signature="e#225#226#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/SYNC/Locators/WorkPlaceLocators.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="35" column="22" selection-start-line="35" selection-start-column="22" selection-end-line="35" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#168#169#0" expanded="true" />
+            <element signature="e#191#192#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

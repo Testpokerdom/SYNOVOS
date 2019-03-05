@@ -9,6 +9,9 @@ import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.junit.experimental.ParallelComputer;
+import org.junit.runner.JUnitCore;
+
 
 import java.util.concurrent.TimeUnit;
 
@@ -31,6 +34,7 @@ public class CreatePR {
     public void beforEeach() {
         System.setProperty("webdriver.chrome.driver", "C://Users//viktor.bibik//webdrivers//Chromedriver//chromedriver.exe");
         driver = new ChromeDriver();
+        JUnitCore.runClasses(ParallelComputer.methods());
 
         loginPageLocators = new LoginPageLocators(driver);
         mainPageLocators = new MainPage(driver);
@@ -52,13 +56,12 @@ public class CreatePR {
 
     }
 
-    /*
     @After
     public void afterEach(){
 
         driver.quit();
     }
-    */
+
     @Test
     public void _1_PR_SpecifiedQty_100_ReqQty_100(){
 
@@ -79,7 +82,6 @@ public class CreatePR {
 
     }
 
-    /*
     @Test
     public void _2_PR_SpecifiedQty_100_ReqQty_0(){
 
@@ -136,5 +138,5 @@ public class CreatePR {
         switchToIFrame(driver, mainIFramePurchaseRequisition.iFrameMain);
         routingWindowIFrame_purchaseRequisitionAuthorization.switchToIframePRAutorizationAndClickButtonAutorize(driver);
     }
-    */
+
 }

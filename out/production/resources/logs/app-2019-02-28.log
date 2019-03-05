@@ -1,0 +1,78 @@
+20:18:48.036 INFO  CreatePurchaseRequisition -----------------------------------------------------------------------------------------------------------------------
+20:18:49.870 INFO  WebHelpers -Open URL: https://www.webtma.net/login.aspx
+20:18:50.060 INFO  WebHelpers -Send text to WebElement Login: "sss999"
+20:18:50.210 INFO  WebHelpers -Send text to WebElement Password: "tma1"
+20:18:50.428 INFO  WebHelpers -Send text to WebElement Client: "Jefferson Test"
+20:18:52.890 INFO  WebHelpers -Click Button "Log In"
+20:18:54.128 INFO  WebHelpers -Switch to the new window: WebTMA 5.1.0 - Thomas Jefferson University and Hospital - Synovos Sync (sss999)
+20:18:54.128 INFO  CreatePurchaseRequisition -Purchase requisition with SpecifiedQty = 100 and ReqQty = 100
+20:19:04.422 INFO  WebHelpers -Click WebElement: "Material "
+20:19:05.016 INFO  WebHelpers -Wait web element presence: "Purchase Requisitions" for seconds - 5
+20:19:07.739 INFO  WebHelpers -Click Button  with value - "null" - Purchase Requisitions - 
+20:19:27.928 INFO  WebHelpers -Switch to IFrame: Proxy element for: DefaultElementLocator 'By.id: mainFrame'
+20:19:28.406 INFO  WebHelpers -Click Button  with value - "null" - Add - 
+20:19:48.548 INFO  WebHelpers -Switch to IFrame: Proxy element for: DefaultElementLocator 'By.id: frameidentity'
+20:19:52.017 INFO  WebHelpers -Wait web element presence: "PO" for seconds - 5
+20:19:52.172 INFO  WebHelpers -Send text: PO - to the WebElement - [[ChromeDriver: chrome on XP (1f68205208785e5cf2f11e14119ab286)] -> id: txtType_ComboBox_Input]
+20:19:53.932 INFO  WebHelpers -Wait web element presence: "FS" for seconds - 5
+20:19:54.064 INFO  WebHelpers -Send text: FS - to the WebElement - [[ChromeDriver: chrome on XP (1f68205208785e5cf2f11e14119ab286)] -> id: txtRepairCenter_ComboBox_Input]
+20:19:56.418 INFO  WebHelpers -Click Button  with value - "null" - Add Item - grdPR_ctl00_ctl02_ctl00_lblAddItem
+20:20:16.525 INFO  WebHelpers -Switch to IFrame: Proxy element for: DefaultElementLocator 'By.name: PurchReqDialog'
+20:20:17.474 INFO  PurchReqDialogIFrame_PurchaseRequisitionEntry -Send text to WebElement - Account: "030-89000-6902"
+20:20:18.542 INFO  PurchReqDialogIFrame_PurchaseRequisitionEntry -Send text to WebElement - Part Code: "180017"
+20:20:18.601 INFO  WebHelpers -Wait web element presence: "" for seconds - 10
+20:20:18.741 INFO  WebHelpers -Send text to WebElement: "[[ChromeDriver: chrome on XP (1f68205208785e5cf2f11e14119ab286)] -> id: txtQuantity]". Text: " 100"
+20:20:18.741 INFO  WebHelpers -Just wait for some web element.
+20:20:19.560 INFO  WebHelpers -Click Button  with value - "Save & Close" -  - btnSave
+20:20:20.837 INFO  WebHelpers -Click Button  with value - " " -  - grdPR_ctl00_ctl04_GECBtnExpandColumn
+20:20:23.282 INFO  WebHelpers -Click Button  with value - "null" - Add Distribution - grdPR_ctl00_ctl05_Detail10_ctl02_ctl00_lblAddDistribution
+20:20:43.422 INFO  WebHelpers -Switch to IFrame: Proxy element for: DefaultElementLocator 'By.name: PurchaseOrderDistributionDialog'
+20:20:45.607 INFO  WebHelpers -Send text to WebElement: "[[ChromeDriver: chrome on XP (1f68205208785e5cf2f11e14119ab286)] -> id: txtRequiredQty]". Text: " 100"
+20:20:45.853 INFO  WebHelpers -Click Button  with value - "Save & Close" -  - btnSave
+20:21:05.977 INFO  WebHelpers -Switch to IFrame: Proxy element for: DefaultElementLocator 'By.id: mainFrame'
+20:21:07.394 INFO  WebHelpers -Click WebElement: " "
+20:21:27.526 INFO  WebHelpers -Switch to IFrame: Proxy element for: DefaultElementLocator 'By.id: frameidentity'
+20:21:27.570 INFO  IdentityIFrame_Identity -++++++++++++++ Purchase requisition numder is:  PR-234  ++++++++++++++
+20:21:29.910 INFO  WebHelpers -Click Button  with value - "null" - Authorize - 
+20:21:50.049 INFO  WebHelpers -Switch to IFrame: Proxy element for: DefaultElementLocator 'By.id: mainFrame'
+20:22:10.215 INFO  WebHelpers -Switch to IFrame: Proxy element for: DefaultElementLocator 'By.name: RoutingWindow'
+20:22:10.428 INFO  WebHelpers -Click Button  with value - "Authorize" -  - btnAuthorize
+20:25:35.815 INFO  CreatePurchaseRequisition -----------------------------------------------------------------------------------------------------------------------
+20:25:37.501 INFO  WebHelpers -Open URL: https://www.webtma.net/login.aspx
+20:25:37.649 INFO  WebHelpers -Send text to WebElement Login: "sss999"
+20:25:37.782 INFO  WebHelpers -Send text to WebElement Password: "tma1"
+20:25:37.985 INFO  WebHelpers -Send text to WebElement Client: "Jefferson Test"
+20:25:39.983 INFO  WebHelpers -Click Button "Log In"
+20:25:41.042 INFO  WebHelpers -Switch to the new window: WebTMA 5.1.0 - Thomas Jefferson University and Hospital - Synovos Sync (sss999)
+20:25:41.042 INFO  CreatePurchaseRequisition -Purchase requisition with SpecifiedQty = 100 and ReqQty = 100
+20:25:48.737 INFO  WebHelpers -Click WebElement: "Material "
+20:25:49.333 INFO  WebHelpers -Wait web element presence: "Purchase Requisitions" for seconds - 5
+20:25:51.950 INFO  WebHelpers -Click Button  with value - "null" - Purchase Requisitions - 
+20:26:12.108 INFO  WebHelpers -Switch to IFrame: Proxy element for: DefaultElementLocator 'By.id: mainFrame'
+20:26:12.415 INFO  WebHelpers -Click Button  with value - "null" - Add - 
+20:26:32.544 INFO  WebHelpers -Switch to IFrame: Proxy element for: DefaultElementLocator 'By.id: frameidentity'
+20:26:36.207 INFO  WebHelpers -Wait web element presence: "PO" for seconds - 5
+20:26:36.372 INFO  WebHelpers -Send text: PO - to the WebElement - [[ChromeDriver: chrome on XP (c1f4818fe7567fa4d5ae04b49fa75bd8)] -> id: txtType_ComboBox_Input]
+20:26:38.120 INFO  WebHelpers -Wait web element presence: "FS" for seconds - 5
+20:26:38.347 INFO  WebHelpers -Send text: FS - to the WebElement - [[ChromeDriver: chrome on XP (c1f4818fe7567fa4d5ae04b49fa75bd8)] -> id: txtRepairCenter_ComboBox_Input]
+20:26:41.031 INFO  WebHelpers -Click Button  with value - "null" - Add Item - grdPR_ctl00_ctl02_ctl00_lblAddItem
+20:27:01.194 INFO  WebHelpers -Switch to IFrame: Proxy element for: DefaultElementLocator 'By.name: PurchReqDialog'
+20:27:02.131 INFO  PurchReqDialogIFrame_PurchaseRequisitionEntry -Send text to WebElement - Account: "030-89000-6902"
+20:27:03.433 INFO  PurchReqDialogIFrame_PurchaseRequisitionEntry -Send text to WebElement - Part Code: "180017"
+20:27:03.489 INFO  WebHelpers -Wait web element presence: "" for seconds - 10
+20:27:03.603 INFO  WebHelpers -Send text to WebElement: "[[ChromeDriver: chrome on XP (c1f4818fe7567fa4d5ae04b49fa75bd8)] -> id: txtQuantity]". Text: " 100"
+20:27:03.603 INFO  WebHelpers -Just wait for some web element.
+20:27:04.448 INFO  WebHelpers -Click Button  with value - "Save & Close" -  - btnSave
+20:27:05.765 INFO  WebHelpers -Click Button  with value - " " -  - grdPR_ctl00_ctl04_GECBtnExpandColumn
+20:27:07.998 INFO  WebHelpers -Click Button  with value - "null" - Add Distribution - grdPR_ctl00_ctl05_Detail10_ctl02_ctl00_lblAddDistribution
+20:27:28.129 INFO  WebHelpers -Switch to IFrame: Proxy element for: DefaultElementLocator 'By.name: PurchaseOrderDistributionDialog'
+20:27:29.921 INFO  WebHelpers -Send text to WebElement: "[[ChromeDriver: chrome on XP (c1f4818fe7567fa4d5ae04b49fa75bd8)] -> id: txtRequiredQty]". Text: " 100"
+20:27:30.153 INFO  WebHelpers -Click Button  with value - "Save & Close" -  - btnSave
+20:27:50.298 INFO  WebHelpers -Switch to IFrame: Proxy element for: DefaultElementLocator 'By.id: mainFrame'
+20:27:51.401 INFO  WebHelpers -Click WebElement: " "
+20:28:11.498 INFO  WebHelpers -Switch to IFrame: Proxy element for: DefaultElementLocator 'By.id: frameidentity'
+20:28:11.517 INFO  IdentityIFrame_Identity -++++++++++++++ Purchase requisition numder is:  PR-235  ++++++++++++++
+20:28:13.915 INFO  WebHelpers -Click Button  with value - "null" - Authorize - 
+20:28:34.076 INFO  WebHelpers -Switch to IFrame: Proxy element for: DefaultElementLocator 'By.id: mainFrame'
+20:28:54.196 INFO  WebHelpers -Switch to IFrame: Proxy element for: DefaultElementLocator 'By.name: RoutingWindow'
+20:28:54.465 INFO  WebHelpers -Click Button  with value - "Authorize" -  - btnAuthorize

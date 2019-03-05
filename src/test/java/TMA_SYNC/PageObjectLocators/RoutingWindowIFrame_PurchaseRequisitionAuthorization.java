@@ -4,8 +4,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-import static WebHelpers.WebHelpers.clickButtonIfEnable;
-import static WebHelpers.WebHelpers.switchToIFrame;
+import static WebHelpers.WebHelpers.*;
 
 public class RoutingWindowIFrame_PurchaseRequisitionAuthorization extends MainPage{
 
@@ -27,6 +26,11 @@ public class RoutingWindowIFrame_PurchaseRequisitionAuthorization extends MainPa
 
     public void switchToIframePRAutorizationAndClickButtonAutorize(WebDriver driver){
         switchToIFrame(driver, iFramePurchaseRequisitionAuthorization);
-        clickButtonIfEnable(buttonAuthorizePurchaseRequisitionAuthorization);
+        if(buttonAuthorizePurchaseRequisitionAuthorization.isEnabled() != true){
+            waitElementPresence(driver,5, buttonAuthorizePurchaseRequisitionAuthorization);
+            clickButtonIfEnable(buttonAuthorizePurchaseRequisitionAuthorization);
+        } else {
+            clickButtonIfEnable(buttonAuthorizePurchaseRequisitionAuthorization);
+        }
     }
 }

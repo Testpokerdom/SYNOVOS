@@ -1,0 +1,27 @@
+15:22:45.112 INFO  CreatePurchaseRequisition -----------------------------------------------------------------------------------------------------------------------
+15:22:46.657 INFO  WebHelpers -Open URL: https://www.webtma.net/login.aspx
+15:22:46.801 INFO  WebHelpers -Send text to WebElement Login: "sss999"
+15:22:46.923 INFO  WebHelpers -Send text to WebElement Password: "tma1"
+15:22:47.099 INFO  WebHelpers -Send text to WebElement Client: "Jefferson Test"
+15:22:49.055 INFO  WebHelpers -Click Button "Log In"
+15:23:02.173 INFO  WebHelpers -Switch to the new window: WebTMA 5.1.0 - Thomas Jefferson University and Hospital - Synovos Sync (sss999)
+15:23:02.174 INFO  CreatePurchaseRequisition -Purchase requisition with SpecifiedQty = 100 and ReqQty = 85.23
+15:23:02.365 INFO  WebHelpers -Click WebElement: "Material "
+15:23:02.973 INFO  WebHelpers -Wait web element presence: "Purchase Requisitions" for seconds - 5
+15:23:05.778 INFO  WebHelpers -Click Button  with value - "null" - Purchase Requisitions - 
+15:23:25.925 INFO  WebHelpers -Switch to IFrame: Proxy element for: DefaultElementLocator 'By.id: mainFrame'
+15:23:26.197 INFO  WebHelpers -Click Button  with value - "null" - Add - 
+15:23:46.362 INFO  WebHelpers -Switch to IFrame: Proxy element for: DefaultElementLocator 'By.id: frameidentity'
+15:23:49.387 INFO  WebHelpers -Wait web element presence: "PO" for seconds - 5
+15:23:49.571 INFO  WebHelpers -Send text: PO - to the WebElement - [[ChromeDriver: chrome on XP (7ca49683482a7b369c33117137180857)] -> id: txtType_ComboBox_Input]
+15:23:54.533 INFO  CreatePurchaseRequisition -----------------------------------------------------------------------------------------------------------------------
+15:23:55.876 INFO  WebHelpers -Open URL: https://www.webtma.net/login.aspx
+15:23:56.035 INFO  WebHelpers -Send text to WebElement Login: "sss999"
+15:23:56.174 INFO  WebHelpers -Send text to WebElement Password: "tma1"
+15:23:56.390 INFO  WebHelpers -Send text to WebElement Client: "Jefferson Test"
+15:23:58.210 INFO  WebHelpers -Click Button "Log In"
+15:23:59.257 INFO  WebHelpers -Switch to the new window: WebTMA 5.1.0 - Thomas Jefferson University and Hospital - Synovos Sync (sss999)
+15:23:59.258 INFO  CreatePurchaseRequisition -Purchase requisition with SpecifiedQty = 100 and ReqQty = 100
+15:24:05.971 INFO  WebHelpers -Click WebElement: "Material "
+15:24:06.559 INFO  WebHelpers -Wait web element presence: "Purchase Requisitions" for seconds - 5
+15:24:09.372 INFO  WebHelpers -Click Button  with value - "null" - Purchase Requisitions - 
