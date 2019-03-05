@@ -12,7 +12,7 @@ public class LoginPageLocators {
 
     }
 
-    // Main page login/password web elements
+    // Main page loginWithPopUp/password web elements
     @FindBy (name = "txtLogin")
     public WebElement fieldLogin;
     @FindBy (name = "txtPassword")

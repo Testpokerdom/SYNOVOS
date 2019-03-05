@@ -48,7 +48,7 @@ public class CreatePR {
         driver.manage().window().maximize();
 
         logger.info("----------------------------------------------------------------------------------------------------------------------");
-        goToUrl(driver,"https://www.webtma.net/login.aspx");
+        goToUrl(driver,"https://www.webtma.net/loginWithPopUp.aspx");
         //logger.info("TMA web site was opened.");
         sendTextToMultipleWebElements(loginPageLocators.fieldLogin, "sss999", loginPageLocators.filedPassword, "tma1", loginPageLocators.filedClient, "Jefferson Test");
         clickButton(loginPageLocators.buttonLogin);

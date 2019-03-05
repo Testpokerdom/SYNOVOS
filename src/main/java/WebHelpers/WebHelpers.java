@@ -25,10 +25,9 @@ public class WebHelpers {
         logger.info("Open URL: " + url);
     }
 
-    public void login(WebDriver driver, String uname, String pwd){
-        String TEST_ENVIRONMENT = "us01.dynamicseam.com";
-        String URL = "https://" + uname + ":" + pwd + "@" + TEST_ENVIRONMENT;
-        driver.get(URL);
+    public static void loginWithPopUp(WebDriver driver, String uname, String pwd, String url){
+        driver.get("https://" + uname + ":" + pwd + "@" + url);
+        logger.info("Open URL: " + url);
     }
 
     public static void clickButton(WebElement button){
@@ -285,6 +284,7 @@ public class WebHelpers {
     public static void switchToNewWindow(WebDriver driver){
 
         String parentWindow = driver.getWindowHandle();
+        System.out.println("Parent window handle is: " + parentWindow);
         Set<String> handles =  driver.getWindowHandles();
         for(String windowHandle  : handles)
         {
