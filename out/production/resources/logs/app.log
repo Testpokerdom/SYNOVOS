@@ -1,112 +1,159 @@
-12:59:44.692 INFO  LoginPageTests -----------------------------------------------------------------------------------------------------------------------
-13:15:22.876 INFO  LoginPageTests -----------------------------------------------------------------------------------------------------------------------
-13:16:22.793 INFO  LoginPageTests -----------------------------------------------------------------------------------------------------------------------
-13:19:12.693 INFO  LoginPageTests -----------------------------------------------------------------------------------------------------------------------
-13:36:27.803 INFO  LoginPageTests -----------------------------------------------------------------------------------------------------------------------
-13:37:44.519 INFO  LoginPageTests -----------------------------------------------------------------------------------------------------------------------
-13:40:04.984 INFO  LoginPageTests -----------------------------------------------------------------------------------------------------------------------
-13:41:24.116 INFO  LoginPageTests -----------------------------------------------------------------------------------------------------------------------
-13:50:53.017 INFO  LoginPageTests -----------------------------------------------------------------------------------------------------------------------
-13:51:52.891 INFO  WebHelpers -Open URL: https://us01.dynamicseam.com
-13:59:51.201 INFO  LoginPageTests -----------------------------------------------------------------------------------------------------------------------
-14:07:21.869 INFO  LoginPageTests -----------------------------------------------------------------------------------------------------------------------
-14:08:31.026 INFO  WebHelpers -Open URL: https://us01.dynamicseam.com
-14:08:45.953 INFO  LoginPageTests -----------------------------------------------------------------------------------------------------------------------
-14:09:17.172 INFO  LoginPageTests -----------------------------------------------------------------------------------------------------------------------
-14:09:34.309 INFO  WebHelpers -Open URL: https://us01.dynamicseam.com
-14:15:28.245 INFO  LoginPageTests -----------------------------------------------------------------------------------------------------------------------
-14:16:12.954 INFO  LoginPageTests -----------------------------------------------------------------------------------------------------------------------
-14:28:43.296 INFO  LoginPageTests -----------------------------------------------------------------------------------------------------------------------
-14:31:52.204 INFO  LoginPageTests -----------------------------------------------------------------------------------------------------------------------
-14:58:38.142 INFO  LoginPageTests -----------------------------------------------------------------------------------------------------------------------
-15:00:40.026 INFO  LoginPageTests -----------------------------------------------------------------------------------------------------------------------
-15:07:04.862 INFO  LoginPageTests -----------------------------------------------------------------------------------------------------------------------
-16:44:28.053 INFO  LoginPageTests -----------------------------------------------------------------------------------------------------------------------
-16:49:25.505 INFO  LoginPageTests -----------------------------------------------------------------------------------------------------------------------
-16:50:32.674 INFO  LoginPageTests -----------------------------------------------------------------------------------------------------------------------
-16:56:51.969 INFO  LoginPageTests -----------------------------------------------------------------------------------------------------------------------
-16:57:16.071 INFO  LoginPageTests -----------------------------------------------------------------------------------------------------------------------
-16:57:36.814 INFO  WebHelpers -Open URL: us01.dynamicseam.com
-17:30:46.172 INFO  LoginPageTests -----------------------------------------------------------------------------------------------------------------------
-17:31:02.019 INFO  WebHelpers -Open URL: us01.dynamicseam.com
-17:31:04.517 INFO  WebHelpers -Click Button  with value - "null" - Enterprise Applications - 
-17:32:06.089 INFO  LoginPageTests -----------------------------------------------------------------------------------------------------------------------
-17:32:25.110 INFO  WebHelpers -Open URL: us01.dynamicseam.com
-17:32:28.943 INFO  WebHelpers -Click Button  with value - "null" - Enterprise Applications - 
-17:34:13.596 INFO  LoginPageTests -----------------------------------------------------------------------------------------------------------------------
-17:34:21.529 INFO  WebHelpers -Open URL: us01.dynamicseam.com
-17:34:26.298 INFO  WebHelpers -Click Button  with value - "null" - Enterprise Applications - 
-17:38:21.072 INFO  LoginPageTests -----------------------------------------------------------------------------------------------------------------------
-17:38:26.869 INFO  WebHelpers -Open URL: us01.dynamicseam.com
-17:38:28.584 INFO  WebHelpers -Click Button  with value - "null" - Enterprise Applications - 
-17:39:02.065 INFO  LoginPageTests -----------------------------------------------------------------------------------------------------------------------
-17:39:07.932 INFO  WebHelpers -Open URL: us01.dynamicseam.com
-17:39:09.258 INFO  WebHelpers -Click Button  with value - "null" - Enterprise Applications - 
-17:39:29.419 INFO  WebHelpers -Switch to IFrame: Proxy element for: DefaultElementLocator 'By.id: contentIFrame'
-17:39:56.704 INFO  LoginPageTests -----------------------------------------------------------------------------------------------------------------------
-17:40:02.795 INFO  WebHelpers -Open URL: us01.dynamicseam.com
-17:40:04.539 INFO  WebHelpers -Click Button  with value - "null" - Enterprise Applications - 
-17:40:24.806 INFO  WebHelpers -Switch to IFrame: Proxy element for: DefaultElementLocator 'By.id: contentIFrame'
-17:40:25.358 INFO  WebHelpers -Click Button  with value - "null" - Finance Site Settings - 
-17:40:27.142 INFO  WebHelpers -Switch to the new window: Finance Site Settings
-17:40:48.299 INFO  LoginPageTests -----------------------------------------------------------------------------------------------------------------------
-17:40:53.599 INFO  WebHelpers -Open URL: us01.dynamicseam.com
-17:40:55.078 INFO  WebHelpers -Click Button  with value - "null" - Enterprise Applications - 
-17:41:15.230 INFO  WebHelpers -Switch to IFrame: Proxy element for: DefaultElementLocator 'By.id: contentIFrame'
-17:41:15.518 INFO  WebHelpers -Click Button  with value - "null" - Finance Site Settings - 
-17:41:16.953 INFO  WebHelpers -Switch to the new window: Finance Site Settings
-17:41:38.068 INFO  LoginPageTests -----------------------------------------------------------------------------------------------------------------------
-17:41:44.016 INFO  WebHelpers -Open URL: us01.dynamicseam.com
-17:41:45.072 INFO  WebHelpers -Click Button  with value - "null" - Enterprise Applications - 
-17:42:05.185 INFO  WebHelpers -Switch to IFrame: Proxy element for: DefaultElementLocator 'By.id: contentIFrame'
-17:42:05.491 INFO  WebHelpers -Click Button  with value - "null" - Finance Site Settings - 
-17:42:06.576 INFO  WebHelpers -Switch to the new window: Finance Site Settings
-17:45:58.396 INFO  LoginPageTests -----------------------------------------------------------------------------------------------------------------------
-17:46:04.985 INFO  WebHelpers -Open URL: us01.dynamicseam.com
-17:46:06.157 INFO  WebHelpers -Click Button  with value - "null" - Enterprise Applications - 
-17:46:26.327 INFO  WebHelpers -Switch to IFrame: Proxy element for: DefaultElementLocator 'By.id: contentIFrame'
-17:46:26.612 INFO  WebHelpers -Click Button  with value - "null" - Finance Site Settings - 
-17:46:27.681 INFO  WebHelpers -Switch to the new window: Finance Site Settings
-17:46:28.154 INFO  WebHelpers -Click Button  with value - "null" - Export to Excel - a_export
-17:59:07.939 INFO  LoginPageTests -----------------------------------------------------------------------------------------------------------------------
-17:59:14.881 INFO  WebHelpers -Open URL: us01.dynamicseam.com
-17:59:16.234 INFO  WebHelpers -Click Button  with value - "null" - Enterprise Applications - 
-17:59:36.370 INFO  WebHelpers -Switch to IFrame: Proxy element for: DefaultElementLocator 'By.id: contentIFrame'
-17:59:36.743 INFO  WebHelpers -Click Button  with value - "null" - Finance Site Settings - 
-17:59:38.036 INFO  WebHelpers -Switch to the new window: Finance Site Settings
-17:59:38.536 INFO  WebHelpers -Click Button  with value - "null" - Export to Excel - a_export
-18:00:08.001 INFO  LoginPageTests -----------------------------------------------------------------------------------------------------------------------
-18:00:13.853 INFO  WebHelpers -Open URL: us01.dynamicseam.com
-18:00:14.952 INFO  WebHelpers -Click Button  with value - "null" - Enterprise Applications - 
-18:00:35.162 INFO  WebHelpers -Switch to IFrame: Proxy element for: DefaultElementLocator 'By.id: contentIFrame'
-18:00:35.481 INFO  WebHelpers -Click Button  with value - "null" - Finance Site Settings - 
-18:00:36.899 INFO  WebHelpers -Switch to the new window: Finance Site Settings
-18:00:37.379 INFO  WebHelpers -Click Button  with value - "null" - Export to Excel - a_export
-18:24:45.056 INFO  LoginPageTests -----------------------------------------------------------------------------------------------------------------------
-18:24:52.677 INFO  WebHelpers -Open URL: us01.dynamicseam.com
-18:24:53.935 INFO  WebHelpers -Click Button  with value - "null" - Enterprise Applications - 
-18:25:14.133 INFO  WebHelpers -Switch to IFrame: Proxy element for: DefaultElementLocator 'By.id: contentIFrame'
-18:25:14.398 INFO  WebHelpers -Click Button  with value - "null" - Finance Site Settings - 
-18:25:15.476 INFO  WebHelpers -Switch to the new window: Finance Site Settings
-18:25:15.902 INFO  WebHelpers -Click Button  with value - "null" - Export to Excel - a_export
-18:25:16.529 INFO  WebHelpers -Click Button  with value - "null" - Transmission Summary (last 3 months) - a_export1
-18:25:21.165 INFO  LoginPageTests -----------------------------------------------------------------------------------------------------------------------
-18:25:26.343 INFO  WebHelpers -Open URL: us01.dynamicseam.com
-18:25:27.875 INFO  WebHelpers -Click Button  with value - "null" - Enterprise Applications - 
-18:25:47.986 INFO  WebHelpers -Switch to IFrame: Proxy element for: DefaultElementLocator 'By.id: contentIFrame'
-18:25:48.284 INFO  WebHelpers -Click Button  with value - "null" - Finance Site Settings - 
-18:25:49.350 INFO  WebHelpers -Switch to the new window: Finance Site Settings
-18:26:09.898 INFO  LoginPageTests -----------------------------------------------------------------------------------------------------------------------
-18:26:15.109 INFO  WebHelpers -Open URL: us01.dynamicseam.com
-18:26:16.335 INFO  WebHelpers -Click Button  with value - "null" - Enterprise Applications - 
-18:26:36.460 INFO  WebHelpers -Switch to IFrame: Proxy element for: DefaultElementLocator 'By.id: contentIFrame'
-18:26:36.731 INFO  WebHelpers -Click Button  with value - "null" - Finance Site Settings - 
-18:26:38.129 INFO  WebHelpers -Switch to the new window: Finance Site Settings
-18:26:38.573 INFO  WebHelpers -Click Button  with value - "null" - Export to Excel - a_export
-18:26:39.315 INFO  WebHelpers -Click Button  with value - "null" - Transmission Summary (last 3 months) - a_export1
-18:26:43.396 INFO  LoginPageTests -----------------------------------------------------------------------------------------------------------------------
-18:26:49.130 INFO  WebHelpers -Open URL: us01.dynamicseam.com
-18:26:50.334 INFO  WebHelpers -Click Button  with value - "null" - Enterprise Applications - 
-18:27:10.519 INFO  WebHelpers -Switch to IFrame: Proxy element for: DefaultElementLocator 'By.id: contentIFrame'
-18:27:10.813 INFO  WebHelpers -Click Button  with value - "null" - Finance Site Settings - 
-18:27:11.867 INFO  WebHelpers -Switch to the new window: Finance Site Settings
+21:19:42.179 INFO  LoginPageTests -----------------------------------------------------------------------------------------------------------------------
+21:19:47.895 INFO  WebHelpers -Open URL: us01.dynamicseam.com
+21:19:48.919 INFO  WebHelpers -Click Button  with value - "null" - Enterprise Applications - 
+21:20:08.997 INFO  WebHelpers -Switch to IFrame: Proxy element for: DefaultElementLocator 'By.id: contentIFrame'
+21:20:09.190 INFO  WebHelpers -Click Button  with value - "null" - Finance Site Settings - 
+21:20:10.243 INFO  WebHelpers -Switch to the new window: Finance Site Settings
+21:20:10.561 INFO  WebHelpers -Click Button  with value - "null" - Export to Excel - a_export
+21:20:14.563 INFO  LoginPageTests -----------------------------------------------------------------------------------------------------------------------
+21:20:19.682 INFO  WebHelpers -Open URL: us01.dynamicseam.com
+21:20:20.713 INFO  WebHelpers -Click Button  with value - "null" - Enterprise Applications - 
+21:20:40.801 INFO  WebHelpers -Switch to IFrame: Proxy element for: DefaultElementLocator 'By.id: contentIFrame'
+21:20:41.037 INFO  WebHelpers -Click Button  with value - "null" - Finance Site Settings - 
+21:20:42.288 INFO  WebHelpers -Switch to the new window: Finance Site Settings
+21:20:42.628 INFO  WebHelpers -Click Button  with value - "null" - Transmission Summary (last 3 months) - a_export1
+21:20:48.693 INFO  LoginPageTests -----------------------------------------------------------------------------------------------------------------------
+21:20:53.991 INFO  WebHelpers -Open URL: us01.dynamicseam.com
+21:20:55.181 INFO  WebHelpers -Click Button  with value - "null" - Enterprise Applications - 
+21:21:15.276 INFO  WebHelpers -Switch to IFrame: Proxy element for: DefaultElementLocator 'By.id: contentIFrame'
+21:21:15.476 INFO  WebHelpers -Click Button  with value - "null" - Finance Site Settings - 
+21:21:16.523 INFO  WebHelpers -Switch to the new window: Finance Site Settings
+21:21:20.847 INFO  LoginPageTests -----------------------------------------------------------------------------------------------------------------------
+21:21:25.985 INFO  WebHelpers -Open URL: us01.dynamicseam.com
+21:21:27.027 INFO  WebHelpers -Click Button  with value - "null" - Enterprise Applications - 
+21:21:47.120 INFO  WebHelpers -Switch to IFrame: Proxy element for: DefaultElementLocator 'By.id: contentIFrame'
+21:21:47.310 INFO  WebHelpers -Click Button  with value - "null" - Finance Site Settings - 
+21:21:48.349 INFO  WebHelpers -Switch to the new window: Finance Site Settings
+21:21:52.578 INFO  LoginPageTests -----------------------------------------------------------------------------------------------------------------------
+21:21:57.636 INFO  WebHelpers -Open URL: us01.dynamicseam.com
+21:21:58.657 INFO  WebHelpers -Click Button  with value - "null" - Enterprise Applications - 
+21:22:18.738 INFO  WebHelpers -Switch to IFrame: Proxy element for: DefaultElementLocator 'By.id: contentIFrame'
+21:22:18.934 INFO  WebHelpers -Click Button  with value - "null" - Finance Site Settings - 
+21:22:19.967 INFO  WebHelpers -Switch to the new window: Finance Site Settings
+21:22:20.269 INFO  WebHelpers -Click Button  with value - "null" - Transmission Summary (last 3 months) - a_export1
+21:22:24.470 INFO  LoginPageTests -----------------------------------------------------------------------------------------------------------------------
+21:22:29.493 INFO  WebHelpers -Open URL: us01.dynamicseam.com
+21:22:30.537 INFO  WebHelpers -Click Button  with value - "null" - Enterprise Applications - 
+21:22:50.661 INFO  WebHelpers -Switch to IFrame: Proxy element for: DefaultElementLocator 'By.id: contentIFrame'
+21:22:50.852 INFO  WebHelpers -Click Button  with value - "null" - Finance Site Settings - 
+21:22:51.896 INFO  WebHelpers -Switch to the new window: Finance Site Settings
+21:22:52.154 INFO  WebHelpers -Click Button  with value - "null" - Export to Excel - a_export
+21:22:58.270 INFO  LoginPageTests -----------------------------------------------------------------------------------------------------------------------
+21:23:03.431 INFO  WebHelpers -Open URL: us01.dynamicseam.com
+21:23:04.443 INFO  WebHelpers -Click Button  with value - "null" - Enterprise Applications - 
+21:23:24.526 INFO  WebHelpers -Switch to IFrame: Proxy element for: DefaultElementLocator 'By.id: contentIFrame'
+21:23:24.715 INFO  WebHelpers -Click Button  with value - "null" - Finance Site Settings - 
+21:23:25.749 INFO  WebHelpers -Switch to the new window: Finance Site Settings
+21:23:56.416 INFO  LoginPageTests -----------------------------------------------------------------------------------------------------------------------
+21:24:01.562 INFO  WebHelpers -Open URL: us01.dynamicseam.com
+21:24:02.595 INFO  WebHelpers -Click Button  with value - "null" - Enterprise Applications - 
+21:24:22.714 INFO  WebHelpers -Switch to IFrame: Proxy element for: DefaultElementLocator 'By.id: contentIFrame'
+21:24:22.910 INFO  WebHelpers -Click Button  with value - "null" - Finance Site Settings - 
+21:24:24.266 INFO  WebHelpers -Switch to the new window: Finance Site Settings
+21:24:24.576 INFO  WebHelpers -Click Button  with value - "null" - Export to Excel - a_export
+21:24:28.910 INFO  LoginPageTests -----------------------------------------------------------------------------------------------------------------------
+21:24:35.144 INFO  WebHelpers -Open URL: us01.dynamicseam.com
+21:24:36.156 INFO  WebHelpers -Click Button  with value - "null" - Enterprise Applications - 
+21:24:56.227 INFO  WebHelpers -Switch to IFrame: Proxy element for: DefaultElementLocator 'By.id: contentIFrame'
+21:24:56.410 INFO  WebHelpers -Click Button  with value - "null" - Finance Site Settings - 
+21:24:57.449 INFO  WebHelpers -Switch to the new window: Finance Site Settings
+21:24:57.734 INFO  WebHelpers -Click Button  with value - "null" - Transmission Summary (last 3 months) - a_export1
+21:25:03.957 INFO  LoginPageTests -----------------------------------------------------------------------------------------------------------------------
+21:25:08.960 INFO  WebHelpers -Open URL: us01.dynamicseam.com
+21:25:10.134 INFO  WebHelpers -Click Button  with value - "null" - Enterprise Applications - 
+21:25:30.266 INFO  WebHelpers -Switch to IFrame: Proxy element for: DefaultElementLocator 'By.id: contentIFrame'
+21:25:30.463 INFO  WebHelpers -Click Button  with value - "null" - Finance Site Settings - 
+21:25:31.506 INFO  WebHelpers -Switch to the new window: Finance Site Settings
+21:26:07.025 INFO  LoginPageTests -----------------------------------------------------------------------------------------------------------------------
+21:26:12.204 INFO  WebHelpers -Open URL: us01.dynamicseam.com
+21:26:13.218 INFO  WebHelpers -Click Button  with value - "null" - Enterprise Applications - 
+21:26:33.334 INFO  WebHelpers -Switch to IFrame: Proxy element for: DefaultElementLocator 'By.id: contentIFrame'
+21:26:33.544 INFO  WebHelpers -Click Button  with value - "null" - Finance Site Settings - 
+21:26:34.579 INFO  WebHelpers -Switch to the new window: Finance Site Settings
+21:26:34.895 INFO  WebHelpers -Click Button  with value - "null" - Export to Excel - a_export
+21:26:39.126 INFO  LoginPageTests -----------------------------------------------------------------------------------------------------------------------
+21:26:44.522 INFO  WebHelpers -Open URL: us01.dynamicseam.com
+21:26:47.032 INFO  WebHelpers -Click Button  with value - "null" - Enterprise Applications - 
+21:27:07.115 INFO  WebHelpers -Switch to IFrame: Proxy element for: DefaultElementLocator 'By.id: contentIFrame'
+21:27:07.330 INFO  WebHelpers -Click Button  with value - "null" - Finance Site Settings - 
+21:27:08.367 INFO  WebHelpers -Switch to the new window: Finance Site Settings
+21:27:08.652 INFO  WebHelpers -Click Button  with value - "null" - Transmission Summary (last 3 months) - a_export1
+21:27:14.740 INFO  LoginPageTests -----------------------------------------------------------------------------------------------------------------------
+21:27:20.092 INFO  WebHelpers -Open URL: us01.dynamicseam.com
+21:27:23.715 INFO  WebHelpers -Click Button  with value - "null" - Enterprise Applications - 
+21:28:07.326 INFO  LoginPageTests -----------------------------------------------------------------------------------------------------------------------
+21:28:12.629 INFO  WebHelpers -Open URL: us01.dynamicseam.com
+21:28:13.838 INFO  WebHelpers -Click Button  with value - "null" - Enterprise Applications - 
+21:28:33.996 INFO  WebHelpers -Switch to IFrame: Proxy element for: DefaultElementLocator 'By.id: contentIFrame'
+21:28:34.251 INFO  WebHelpers -Click Button  with value - "null" - Finance Site Settings - 
+21:28:35.575 INFO  WebHelpers -Switch to the new window: Finance Site Settings
+21:28:39.881 INFO  LoginPageTests -----------------------------------------------------------------------------------------------------------------------
+21:28:46.488 INFO  WebHelpers -Open URL: us01.dynamicseam.com
+21:28:48.478 INFO  WebHelpers -Click Button  with value - "null" - Enterprise Applications - 
+21:29:08.661 INFO  WebHelpers -Switch to IFrame: Proxy element for: DefaultElementLocator 'By.id: contentIFrame'
+21:29:08.864 INFO  WebHelpers -Click Button  with value - "null" - Finance Site Settings - 
+21:29:09.897 INFO  WebHelpers -Switch to the new window: Finance Site Settings
+21:29:10.195 INFO  WebHelpers -Click Button  with value - "null" - Transmission Summary (last 3 months) - a_export1
+21:29:16.184 INFO  LoginPageTests -----------------------------------------------------------------------------------------------------------------------
+21:29:21.182 INFO  WebHelpers -Open URL: us01.dynamicseam.com
+21:29:22.223 INFO  WebHelpers -Click Button  with value - "null" - Enterprise Applications - 
+21:30:07.848 INFO  LoginPageTests -----------------------------------------------------------------------------------------------------------------------
+21:30:13.359 INFO  WebHelpers -Open URL: us01.dynamicseam.com
+21:30:14.409 INFO  WebHelpers -Click Button  with value - "null" - Enterprise Applications - 
+21:30:34.544 INFO  WebHelpers -Switch to IFrame: Proxy element for: DefaultElementLocator 'By.id: contentIFrame'
+21:30:34.748 INFO  WebHelpers -Click Button  with value - "null" - Finance Site Settings - 
+21:30:35.792 INFO  WebHelpers -Switch to the new window: Finance Site Settings
+21:30:36.075 INFO  WebHelpers -Click Button  with value - "null" - Transmission Summary (last 3 months) - a_export1
+21:30:42.165 INFO  LoginPageTests -----------------------------------------------------------------------------------------------------------------------
+21:30:47.909 INFO  WebHelpers -Open URL: us01.dynamicseam.com
+21:30:49.047 INFO  WebHelpers -Click Button  with value - "null" - Enterprise Applications - 
+21:31:09.159 INFO  WebHelpers -Switch to IFrame: Proxy element for: DefaultElementLocator 'By.id: contentIFrame'
+21:31:09.356 INFO  WebHelpers -Click Button  with value - "null" - Finance Site Settings - 
+21:31:10.393 INFO  WebHelpers -Switch to the new window: Finance Site Settings
+21:31:10.697 INFO  WebHelpers -Click Button  with value - "null" - Export to Excel - a_export
+21:33:45.707 INFO  LoginPageTests -----------------------------------------------------------------------------------------------------------------------
+21:33:54.755 INFO  WebHelpers -Open URL: us01.dynamicseam.com
+21:33:59.450 INFO  WebHelpers -Click Button  with value - "null" - Enterprise Applications - 
+21:34:19.604 INFO  WebHelpers -Switch to IFrame: Proxy element for: DefaultElementLocator 'By.id: contentIFrame'
+21:34:19.810 INFO  WebHelpers -Click Button  with value - "null" - Finance Site Settings - 
+21:34:21.412 INFO  WebHelpers -Switch to the new window: Finance Site Settings
+21:34:21.727 INFO  WebHelpers -Click Button  with value - "null" - Export to Excel - a_export
+21:34:45.316 INFO  LoginPageTests -----------------------------------------------------------------------------------------------------------------------
+21:34:50.990 INFO  WebHelpers -Open URL: us01.dynamicseam.com
+21:34:52.017 INFO  WebHelpers -Click Button  with value - "null" - Enterprise Applications - 
+21:35:12.141 INFO  WebHelpers -Switch to IFrame: Proxy element for: DefaultElementLocator 'By.id: contentIFrame'
+21:35:12.337 INFO  WebHelpers -Click Button  with value - "null" - Finance Site Settings - 
+21:35:14.220 INFO  WebHelpers -Switch to the new window: Finance Site Settings
+21:35:14.530 INFO  WebHelpers -Click Button  with value - "null" - Export to Excel - a_export
+21:35:20.693 INFO  LoginPageTests -----------------------------------------------------------------------------------------------------------------------
+21:35:25.969 INFO  WebHelpers -Open URL: us01.dynamicseam.com
+21:35:28.123 INFO  WebHelpers -Click Button  with value - "null" - Enterprise Applications - 
+21:35:48.243 INFO  WebHelpers -Switch to IFrame: Proxy element for: DefaultElementLocator 'By.id: contentIFrame'
+21:35:48.442 INFO  WebHelpers -Click Button  with value - "null" - Finance Site Settings - 
+21:35:49.861 INFO  WebHelpers -Switch to the new window: Finance Site Settings
+21:36:18.982 INFO  LoginPageTests -----------------------------------------------------------------------------------------------------------------------
+21:36:26.158 INFO  WebHelpers -Open URL: us01.dynamicseam.com
+21:36:27.969 INFO  WebHelpers -Click Button  with value - "null" - Enterprise Applications - 
+21:36:48.124 INFO  WebHelpers -Switch to IFrame: Proxy element for: DefaultElementLocator 'By.id: contentIFrame'
+21:36:48.356 INFO  WebHelpers -Click Button  with value - "null" - Finance Site Settings - 
+21:36:49.425 INFO  WebHelpers -Switch to the new window: Finance Site Settings
+21:36:49.707 INFO  WebHelpers -Click Button  with value - "null" - Export to Excel - a_export
+21:36:55.929 INFO  LoginPageTests -----------------------------------------------------------------------------------------------------------------------
+21:37:03.499 INFO  WebHelpers -Open URL: us01.dynamicseam.com
+21:37:04.643 INFO  WebHelpers -Click Button  with value - "null" - Enterprise Applications - 
+21:37:24.729 INFO  WebHelpers -Switch to IFrame: Proxy element for: DefaultElementLocator 'By.id: contentIFrame'
+21:37:24.921 INFO  WebHelpers -Click Button  with value - "null" - Finance Site Settings - 
+21:37:25.960 INFO  WebHelpers -Switch to the new window: Finance Site Settings
+21:37:30.310 INFO  LoginPageTests -----------------------------------------------------------------------------------------------------------------------
+21:37:36.938 INFO  WebHelpers -Open URL: us01.dynamicseam.com
+21:37:38.443 INFO  WebHelpers -Click Button  with value - "null" - Enterprise Applications - 
+21:37:58.546 INFO  WebHelpers -Switch to IFrame: Proxy element for: DefaultElementLocator 'By.id: contentIFrame'
+21:37:58.753 INFO  WebHelpers -Click Button  with value - "null" - Finance Site Settings - 
+21:37:59.792 INFO  WebHelpers -Switch to the new window: Finance Site Settings
+21:38:00.182 INFO  WebHelpers -Click Button  with value - "null" - Transmission Summary (last 3 months) - a_export1
+21:38:06.255 INFO  LoginPageTests -----------------------------------------------------------------------------------------------------------------------
+21:38:13.635 INFO  WebHelpers -Open URL: us01.dynamicseam.com
+21:38:16.722 INFO  WebHelpers -Click Button  with value - "null" - Enterprise Applications - 
+21:38:36.817 INFO  WebHelpers -Switch to IFrame: Proxy element for: DefaultElementLocator 'By.id: contentIFrame'
+21:38:37.006 INFO  WebHelpers -Click Button  with value - "null" - Finance Site Settings - 
+21:38:40.035 INFO  WebHelpers -Switch to the new window: Finance Site Settings

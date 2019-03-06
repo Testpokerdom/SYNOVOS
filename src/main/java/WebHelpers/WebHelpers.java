@@ -1,5 +1,6 @@
 package WebHelpers;
 
+import junit.framework.Assert;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
@@ -10,9 +11,13 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.io.File;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.*;
+
+import static org.openqa.selenium.support.ui.ExpectedConditions.not;
+import static sun.nio.cs.Surrogate.is;
 
 
 public class WebHelpers {
@@ -330,6 +335,51 @@ public class WebHelpers {
             }
         }
         */
+    }
+
+    public static boolean isFileDownloaded(String downloadPath, String fileName) {
+        File dir = new File(downloadPath);
+        File[] dirContents = dir.listFiles();
+
+        for (int i = 0; i < dirContents.length; i++) {
+            if (dirContents[i].getName().equals(fileName)) {
+                Assert.assertEquals(1, dirContents.length);
+                System.out.println("File was downloaded successfully. File name is " + fileName);
+                logger.info("File with name - " + fileName + " was downloaded successfully.");
+                dirContents[i].delete();
+                return true;
+            } else if(dir.exists()){
+                Assert.assertEquals(1, dirContents.length);
+                System.out.println("File exists. File name is " + fileName);
+                logger.info("File with name - " + fileName + " was downloaded successfully.");
+                dirContents[i].delete();
+                return true;
+            } else if (!dirContents[i].getName().equals(fileName)){
+                Assert.assertEquals(1, dirContents.length);
+                System.out.println("File was deleted. But file name was not equal to the downloaded file " + fileName);
+                logger.info("File with name - " + fileName + " was downloaded successfully.");
+                dirContents[i].delete();
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public static boolean isFileDownloaded2(String downloadPath, String fileName){
+
+        File dir = new File(downloadPath);
+
+        if(dir != null){
+            if(dir.exists() == true){
+                System.out.println("File is exist: " + dir.getName());
+                dir.delete();
+            } else {
+                System.out.println("File does not exist");
+            }
+        }
+
+        return false;
+
     }
 
 }
