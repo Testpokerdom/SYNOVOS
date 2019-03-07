@@ -244,9 +244,9 @@ public class WebHelpers {
         }
         return characters;
     }
-    public static void findLastRawInTableAndClick(WebDriver driver){
+    public static void findLastRawInTableAndClick(WebDriver driver, String xPath){
 
-        List<WebElement> columnOfLastRow= driver.findElements(By.xpath("//table[@id='approvalProcessData']/tbody/tr[last()]/td[last()]"));
+        List<WebElement> columnOfLastRow= driver.findElements(By.xpath(xPath)); //  "//table[@id='approvalProcessData']/tbody/tr[last()]/td[last()]"
         //List<WebElement> columnOfLastRow= driver.findElement(By.xpath(xpath));
         for( WebElement e:columnOfLastRow)
         {
@@ -342,7 +342,7 @@ public class WebHelpers {
         File[] dirContents = dir.listFiles();
 
         for (int i = 0; i < dirContents.length; i++) {
-            if (dirContents[i].getName().equals(fileName)) {
+            if (dirContents[i].getName() == fileName) {
                 Assert.assertEquals(1, dirContents.length);
                 System.out.println("File was downloaded successfully. File name is " + fileName);
                 logger.info("File with name - " + fileName + " was downloaded successfully.");
@@ -354,7 +354,7 @@ public class WebHelpers {
                 logger.info("File with name - " + fileName + " was downloaded successfully.");
                 dirContents[i].delete();
                 return true;
-            } else if (!dirContents[i].getName().equals(fileName)){
+            } else if (dirContents[i].getName() != fileName){
                 Assert.assertEquals(1, dirContents.length);
                 System.out.println("File was deleted. But file name was not equal to the downloaded file " + fileName);
                 logger.info("File with name - " + fileName + " was downloaded successfully.");

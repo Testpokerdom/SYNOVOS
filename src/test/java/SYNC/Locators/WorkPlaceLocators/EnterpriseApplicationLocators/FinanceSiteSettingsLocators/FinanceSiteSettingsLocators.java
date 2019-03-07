@@ -1,12 +1,12 @@
-package SYNC.Locators.WorkPlaceLocators.EnterpriseApplicationLocators;
+package SYNC.Locators.WorkPlaceLocators.EnterpriseApplicationLocators.FinanceSiteSettingsLocators;
 
 import SYNC.Locators.LoginPageLocators;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-public class FinanceSiteSettings extends LoginPageLocators {
-    public FinanceSiteSettings(WebDriver driver){
+public class FinanceSiteSettingsLocators extends LoginPageLocators {
+    public FinanceSiteSettingsLocators(WebDriver driver){
         super(driver);
     }
 
