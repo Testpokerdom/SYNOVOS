@@ -2,21 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d2c9d834-2c96-438e-87d1-c0a1f5a802dc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/SYNC/Locators/WorkPlaceLocators/EnterpriseApplicationLocators/InvoicStatusTransmitionLocators/InvoicingStatusTransmitionLocators.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/SYNC/Locators/WorkPlaceLocators/EnterpriseApplicationLocators/ItemsWithoutManufacturerCreatedIn30DaysLocators/ItemsWithoutManufacturer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/SYNC/TestSuites/Test_Suite_FinancePage_InvoicingPage_ItemsWithoutPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/SYNC/Tests/InvoicingStatusTransmissionPageTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/SYNC/Tests/ItemsWithoutManufacturer30DaysTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/SYNC/Locators/WorkPlaceLocators/EnterpriseApplicationLocators/MRLineDetailsWaitingForAQuoteLocators/MRLineDetailsWaitingForAQuoteLocators.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/SYNC/Locators/WorkPlaceLocators/EnterpriseApplicationLocators/MRLineSummaryWaitingForAQuoteClientPrice/MrLineSummaryLocators.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/SYNC/Locators/WorkPlaceLocators/EnterpriseApplicationLocators/PGTListPriceRequests/PGTListPriceRequestsLocators.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/SYNC/TestSuites/Test_Suite_ItemsWithoutPage_MRLineDetailsWaiting.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/SYNC/Tests/MRLineDetailsWaitingForAQuoteTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/SYNC/Tests/MRLineSummaryTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/SYNC/Tests/PGTListPriceRequestsTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/classes/WebHelpers/WebHelpers.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/WebHelpers/WebHelpers.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/resources/logs/app.log" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/resources/logs/app.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/SYNC/Locators/WorkPlaceLocators/EnterpriseApplicationLocators/FinanceSiteSettings.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/SYNC/Tests/LoginPageTests.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/SYNC/Locators/WorkPlaceLocators/EnterpriseApplicationLocators/InvoicStatusTransmitionLocators/InvoicingStatusTransmitionLocators.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/SYNC/Locators/WorkPlaceLocators/EnterpriseApplicationLocators/InvoicStatusTransmitionLocators/InvoicingStatusTransmitionLocators.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/SYNC/Locators/WorkPlaceLocators/EnterpriseApplicationLocators/ItemsWithoutManufacturerCreatedIn30DaysLocators/ItemsWithoutManufacturer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/SYNC/TestSuites/Test_Suite_FinancePage_InvoicingPage_ItemsWithoutPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/SYNC/Tests/InvoicingStatusTransmissionPageTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/SYNC/Tests/InvoicingStatusTransmissionPageTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/SYNC/Tests/ItemsWithoutManufacturer30DaysTests.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/WebHelpers/WebHelpers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/WebHelpers/WebHelpers.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/logs/app.log" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/logs/app.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/SYNC/Locators/WorkPlaceLocators/EnterpriseApplicationLocators/FinanceSiteSettings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SYNC/Locators/WorkPlaceLocators/EnterpriseApplicationLocators/FinanceSiteSettingsLocators/FinanceSiteSettingsLocators.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/SYNC/Tests/LoginPageTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SYNC/Tests/FinanceSiteSettingsPageTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/SYNC/Locators/WorkPlaceLocators/EnterpriseApplicationLocators/InvoicStatusTransmitionLocators/InvoicingStatusTransmitionLocators.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SYNC/Locators/WorkPlaceLocators/EnterpriseApplicationLocators/InvoicStatusTransmitionLocators/InvoicingStatusTransmitionLocators.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/SYNC/Locators/WorkPlaceLocators/EnterpriseApplicationLocators/ItemsWithoutManufacturerCreatedIn30DaysLocators/ItemsWithoutManufacturer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SYNC/Locators/WorkPlaceLocators/EnterpriseApplicationLocators/ItemsWithoutManufacturerCreatedIn30DaysLocators/ItemsWithoutManufacturerLocators.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/SYNC/TestSuites/Test_Suite_FinancePage_InvoicingPage_ItemsWithoutPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SYNC/TestSuites/Test_Suite_FinancePage_InvoicingPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/SYNC/Tests/InvoicingStatusTransmissionPageTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SYNC/Tests/InvoicingStatusTransmissionPageTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/SYNC/Tests/ItemsWithoutManufacturer30DaysTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SYNC/Tests/ItemsWithoutManufacturerLocators30DaysTests.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -34,59 +41,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/WebHelpers/WebHelpers.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="401">
-              <caret line="360" column="16" selection-start-line="360" selection-start-column="16" selection-end-line="360" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/SYNC/Tests/FinanceSiteSettingsPageTests.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="76" column="81" selection-start-line="76" selection-start-column="58" selection-end-line="76" selection-end-column="81" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/SYNOVOSJUnitTests/TestSuites/Test_Suite_Approved_Rejected_New_supplier.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="27" lean-forward="true" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/SYNC/Tests/InvoicingStatusTransmissionPageTests.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="337">
-              <caret line="85" column="89" selection-start-line="85" selection-start-column="89" selection-end-line="85" selection-end-column="89" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/SYNC/Tests/ItemsWithoutManufacturer30DaysTests.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="102" column="101" selection-start-line="102" selection-start-column="101" selection-end-line="102" selection-end-column="101" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="728">
+              <caret line="357" column="27" selection-start-line="357" selection-start-column="23" selection-end-line="357" selection-end-column="27" />
             </state>
           </provider>
         </entry>
@@ -94,8 +53,46 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/SYNC/Locators/WorkPlaceLocators/EnterpriseApplicationLocators/EnterpriseApplicationLocators.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="22" column="52" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="65" />
+            <state relative-caret-position="469">
+              <caret line="30" column="47" selection-start-line="30" selection-start-column="22" selection-end-line="30" selection-end-column="47" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/SYNC/Locators/WorkPlaceLocators/EnterpriseApplicationLocators/PGTListPriceRequests/PGTListPriceRequestsLocators.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="19" column="61" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="61" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#283#284#0" expanded="true" />
+                <element signature="e#306#307#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/SYNC/Tests/PGTListPriceRequestsTests.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="405">
+              <caret line="112" column="44" selection-start-line="112" selection-start-column="44" selection-end-line="112" selection-end-column="44" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/SYNC/Tests/ItemsWithoutManufacturerLocators30DaysTests.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="394">
+              <caret line="85" column="8" lean-forward="true" selection-start-line="85" selection-start-column="8" selection-end-line="88" selection-end-column="73" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -123,8 +120,9 @@
       <find>txtWONumber_ComboBox_Input</find>
       <find>PurchaseOrderDistributionDialog</find>
       <find>send</find>
-      <find>wait</find>
       <find>stringSpecificTypeCode2</find>
+      <find>wait</find>
+      <find>Test_Suite_ItemsWithoutPage_MRLineDetailsWaiting</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -133,18 +131,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/resources/log4j.properties" />
-        <option value="$PROJECT_DIR$/src/main/resources/log4j2.xml" />
-        <option value="$PROJECT_DIR$/src/test/java/SYNOVOSJUnitTests/Locators/MainPage/MainClass.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/log4j2-test.properties" />
-        <option value="$PROJECT_DIR$/src/test/java/SYNOVOSJUnitTests/Tests/LoginPage/LoginPageTests.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/Log4j2.xml" />
-        <option value="$PROJECT_DIR$/src/test/java/SYNOVOSJUnitTests/Tests/Supplier_Create_Save_Reject_Emergancy/SupplierCreateAndReject.java" />
-        <option value="$PROJECT_DIR$/src/test/java/SYNOVOSJUnitTests/Tests/Supplier_Create_Save_Reject_Emergancy/SupplierCreateEmergancy.java" />
-        <option value="$PROJECT_DIR$/src/test/java/SYNOVOSJUnitTests/TestSuites/Test_Suite_Approved_Rejected_New_supplier.java" />
-        <option value="$PROJECT_DIR$/src/test/java/SYNOVOSJUnitTests/Tests/Supplier_Create_Save_Reject_Emergancy/SupplierCreateAndSave.java" />
-        <option value="$PROJECT_DIR$/src/test/java/SYNOVOSJUnitTests/Locators/PurchasingPage/CreateSupplierPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/SYNOVOSJUnitTests/Tests/Supplier_Create_Save_Reject_Emergancy/SupplierCreateAndApprove.java" />
         <option value="$PROJECT_DIR$/src/test/java/SYNOVOSJUnitTests/WebHelpers/WebHelpers.java" />
         <option value="$PROJECT_DIR$/src/test/java/TMA_SYNC/Locators/Tests/LoginPageLocators.java" />
         <option value="$PROJECT_DIR$/src/test/java/TMA_SYNC/LoginPageLocators.java" />
@@ -173,23 +159,35 @@
         <option value="$PROJECT_DIR$/src/test/java/SYNC/Locators/FinanceSiteSettings.java" />
         <option value="$PROJECT_DIR$/src/test/java/SYNC/Locators/WorkPlaceLocators/EnterpriseApplicationLocators/EnterpriseApplicationLocators.java" />
         <option value="$PROJECT_DIR$/src/test/java/SYNC/Locators/WorkPlaceLocators/EnterpriseApplicationLocators/FinanceSiteSettings.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/logs/app.log" />
         <option value="$PROJECT_DIR$/src/test/java/SYNC/Tests/LoginPageTests.java" />
         <option value="$PROJECT_DIR$/src/test/java/SYNC/Locators/WorkPlaceLocators/EnterpriseApplicationLocators/FinanceSiteSettingsLocators/FinanceSiteSettingsLocators.java" />
         <option value="$PROJECT_DIR$/build.gradle" />
-        <option value="$PROJECT_DIR$/src/test/java/SYNC/Locators/WorkPlaceLocators/EnterpriseApplicationLocators/InvoicStatusTransmitionLocators/InvoicingStatusTransmitionLocators.java" />
-        <option value="$PROJECT_DIR$/src/test/java/SYNC/Locators/WorkPlaceLocators/EnterpriseApplicationLocators/ItemsWithoutManufacturerCreatedIn30DaysLocators/ItemsWithoutManufacturer.java" />
-        <option value="$PROJECT_DIR$/src/test/java/SYNC/Tests/ItemsWithoutManufacturer30DaysTests.java" />
-        <option value="$PROJECT_DIR$/src/test/java/SYNC/Tests/InvoicingStatusTransmissionPageTests.java" />
         <option value="$PROJECT_DIR$/src/test/java/SYNC/Tests/FinanceSiteSettingsPageTests.java" />
+        <option value="$PROJECT_DIR$/src/test/java/SYNC/Locators/WorkPlaceLocators/EnterpriseApplicationLocators/InvoicStatusTransmitionLocators/InvoicingStatusTransmitionLocators.java" />
+        <option value="$PROJECT_DIR$/src/test/java/SYNC/Locators/WorkPlaceLocators/EnterpriseApplicationLocators/MRLineDetailsWaitingForAQuoteLocators/MELineDetailsWaitingForAQuote.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/logs/app.log" />
         <option value="$PROJECT_DIR$/src/main/java/WebHelpers/WebHelpers.java" />
+        <option value="$PROJECT_DIR$/src/test/java/SYNC/TestSuites/Test_Suite_.java" />
         <option value="$PROJECT_DIR$/src/test/java/SYNC/TestSuites/Test_Suite_FinancePage_InvoicingPage_ItemsWithoutPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/SYNC/TestSuites/Test_Suite_FinancePage_InvoicingPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/SYNC/TestSuites/Test_Suite_ItemsWithoutPage_MRLineDetailsWaiting.java" />
+        <option value="$PROJECT_DIR$/src/test/java/SYNC/Tests/ItemsWithoutManufacturer30DaysTests.java" />
+        <option value="$PROJECT_DIR$/src/test/java/SYNC/Locators/WorkPlaceLocators/EnterpriseApplicationLocators/ItemsWithoutManufacturerCreatedIn30DaysLocators/ItemsWithoutManufacturer.java" />
+        <option value="$PROJECT_DIR$/src/test/java/SYNC/Tests/MRLineDetailsWaitingForAQuoteTests.java" />
+        <option value="$PROJECT_DIR$/src/test/java/SYNC/Locators/WorkPlaceLocators/EnterpriseApplicationLocators/MRLineDetailsWaitingForAQuoteLocators/MRLineDetailsWaitingForAQuote.java" />
+        <option value="$PROJECT_DIR$/src/test/java/SYNC/Tests/MRLineSummary.java" />
+        <option value="$PROJECT_DIR$/src/test/java/SYNC/Locators/WorkPlaceLocators/EnterpriseApplicationLocators/MRLineSummaryWaitingForAQuoteClientPrice/MrLineSummary.java" />
+        <option value="$PROJECT_DIR$/src/test/java/SYNC/Tests/MRLineSummaryTests.java" />
+        <option value="$PROJECT_DIR$/src/test/java/SYNC/Tests/InvoicingStatusTransmissionPageTests.java" />
+        <option value="$PROJECT_DIR$/src/test/java/SYNC/Locators/WorkPlaceLocators/EnterpriseApplicationLocators/PGTListPriceRequests/PGTListPriceRequests.java" />
+        <option value="$PROJECT_DIR$/src/test/java/SYNC/Locators/WorkPlaceLocators/EnterpriseApplicationLocators/PGTListPriceRequests/PGTListPriceRequestsLocators.java" />
+        <option value="$PROJECT_DIR$/src/test/java/SYNC/Tests/PGTListPriceRequestsTests.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="2252" />
-    <option name="y" value="23" />
+    <option name="x" value="1965" />
+    <option name="y" value="24" />
     <option name="width" value="1299" />
     <option name="height" value="1000" />
   </component>
@@ -297,43 +295,16 @@
               <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="SYNC" type="462c0819:PsiDirectoryNode" />
-              <item name="Locators" type="462c0819:PsiDirectoryNode" />
-              <item name="WorkPlaceLocators" type="462c0819:PsiDirectoryNode" />
-              <item name="EnterpriseApplicationLocators" type="462c0819:PsiDirectoryNode" />
-              <item name="FinanceSiteSettingsLocators" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Synovo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Synovo" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="SYNC" type="462c0819:PsiDirectoryNode" />
-              <item name="Locators" type="462c0819:PsiDirectoryNode" />
-              <item name="WorkPlaceLocators" type="462c0819:PsiDirectoryNode" />
-              <item name="EnterpriseApplicationLocators" type="462c0819:PsiDirectoryNode" />
-              <item name="InvoicStatusTransmitionLocators" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Synovo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Synovo" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="SYNC" type="462c0819:PsiDirectoryNode" />
-              <item name="Locators" type="462c0819:PsiDirectoryNode" />
-              <item name="WorkPlaceLocators" type="462c0819:PsiDirectoryNode" />
-              <item name="EnterpriseApplicationLocators" type="462c0819:PsiDirectoryNode" />
-              <item name="ItemsWithoutManufacturerCreatedIn30DaysLocators" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Synovo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Synovo" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="SYNC" type="462c0819:PsiDirectoryNode" />
               <item name="Tests" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Synovo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Synovo" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="SYNC" type="462c0819:PsiDirectoryNode" />
+              <item name="TestSuites" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -348,7 +319,7 @@
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551979853029" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552556219376" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../SeleniumWebDriver/client-combined-3.141.59-sources.jar!/" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.0" />
@@ -376,22 +347,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.Test_Suite_FinancePage_InvoicingPage_ItemsWithoutPage">
-    <configuration name="CreatePR" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Synovo.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="TMA_SYNC.Tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="TMA_SYNC.Tests" />
-      <option name="MAIN_CLASS_NAME" value="TMA_SYNC.Tests.CreatePR" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="FinanceSiteSettingsPageTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.PGTListPriceRequestsTests">
+    <configuration name="ItemsWithoutManufacturerLocators30DaysTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Synovo.test" />
       <extension name="coverage">
         <pattern>
@@ -400,12 +357,12 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="SYNC.Tests" />
-      <option name="MAIN_CLASS_NAME" value="SYNC.Tests.FinanceSiteSettingsPageTests" />
+      <option name="MAIN_CLASS_NAME" value="SYNC.Tests.ItemsWithoutManufacturerLocators30DaysTests" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="InvoicingStatusTransmissionPageTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MRLineDetailsWaitingForAQuoteTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Synovo.test" />
       <extension name="coverage">
         <pattern>
@@ -414,12 +371,12 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="SYNC.Tests" />
-      <option name="MAIN_CLASS_NAME" value="SYNC.Tests.InvoicingStatusTransmissionPageTests" />
+      <option name="MAIN_CLASS_NAME" value="SYNC.Tests.MRLineDetailsWaitingForAQuoteTests" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ItemsWithoutManufacturer30DaysTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MRLineDetailsWaitingForAQuoteTests.checkMRLineDetails_ButtonExportToExcelIsEnable_FileIsDownloaded" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Synovo.test" />
       <extension name="coverage">
         <pattern>
@@ -428,32 +385,48 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="SYNC.Tests" />
-      <option name="MAIN_CLASS_NAME" value="SYNC.Tests.ItemsWithoutManufacturer30DaysTests" />
+      <option name="MAIN_CLASS_NAME" value="SYNC.Tests.MRLineDetailsWaitingForAQuoteTests" />
+      <option name="METHOD_NAME" value="checkMRLineDetails_ButtonExportToExcelIsEnable_FileIsDownloaded" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test_Suite_FinancePage_InvoicingPage_ItemsWithoutPage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MRLineSummaryTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Synovo.test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="SYNC.TestSuites.*" />
+          <option name="PATTERN" value="SYNC.Tests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="SYNC.TestSuites" />
-      <option name="MAIN_CLASS_NAME" value="SYNC.TestSuites.Test_Suite_FinancePage_InvoicingPage_ItemsWithoutPage" />
+      <option name="PACKAGE_NAME" value="SYNC.Tests" />
+      <option name="MAIN_CLASS_NAME" value="SYNC.Tests.MRLineSummaryTests" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PGTListPriceRequestsTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Synovo.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="SYNC.Tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="SYNC.Tests" />
+      <option name="MAIN_CLASS_NAME" value="SYNC.Tests.PGTListPriceRequestsTests" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.Test_Suite_FinancePage_InvoicingPage_ItemsWithoutPage" />
-        <item itemvalue="JUnit.FinanceSiteSettingsPageTests" />
-        <item itemvalue="JUnit.ItemsWithoutManufacturer30DaysTests" />
-        <item itemvalue="JUnit.InvoicingStatusTransmissionPageTests" />
-        <item itemvalue="JUnit.CreatePR" />
+        <item itemvalue="JUnit.PGTListPriceRequestsTests" />
+        <item itemvalue="JUnit.MRLineDetailsWaitingForAQuoteTests.checkMRLineDetails_ButtonExportToExcelIsEnable_FileIsDownloaded" />
+        <item itemvalue="JUnit.MRLineSummaryTests" />
+        <item itemvalue="JUnit.MRLineDetailsWaitingForAQuoteTests" />
+        <item itemvalue="JUnit.ItemsWithoutManufacturerLocators30DaysTests" />
       </list>
     </recent_temporary>
   </component>
@@ -471,47 +444,46 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ItemsWithoutManufacturer30DaysTests - 2019.03.07 at 18h 55m 50s.xml">
+    <history-entry file="ItemsWithoutManufacturer30DaysTests - 2019.03.13 at 18h 40m 44s.xml">
       <configuration name="ItemsWithoutManufacturer30DaysTests" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ItemsWithoutManufacturer30DaysTests - 2019.03.07 at 18h 58m 05s.xml">
-      <configuration name="ItemsWithoutManufacturer30DaysTests" configurationId="JUnit" />
+    <history-entry file="MRLineDetailsWaitingForAQuoteTests - 2019.03.13 at 18h 46m 20s.xml">
+      <configuration name="MRLineDetailsWaitingForAQuoteTests" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FinanceSiteSettingsPageTests - 2019.03.07 at 18h 59m 55s.xml">
-      <configuration name="FinanceSiteSettingsPageTests" configurationId="JUnit" />
+    <history-entry file="MRLineSummaryTests - 2019.03.13 at 18h 52m 18s.xml">
+      <configuration name="MRLineSummaryTests" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FinanceSiteSettingsPageTests - 2019.03.07 at 19h 02m 03s.xml">
-      <configuration name="FinanceSiteSettingsPageTests" configurationId="JUnit" />
+    <history-entry file="PGTListPriceRequestsTests - 2019.03.14 at 11h 15m 24s.xml">
+      <configuration name="PGTListPriceRequestsTests" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="InvoicingStatusTransmissionPageTests - 2019.03.07 at 19h 02m 50s.xml">
-      <configuration name="InvoicingStatusTransmissionPageTests" configurationId="JUnit" />
+    <history-entry file="PGTListPriceRequestsTests - 2019.03.14 at 11h 25m 18s.xml">
+      <configuration name="PGTListPriceRequestsTests" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="InvoicingStatusTransmissionPageTests - 2019.03.07 at 19h 05m 13s.xml">
-      <configuration name="InvoicingStatusTransmissionPageTests" configurationId="JUnit" />
+    <history-entry file="MRLineDetailsWaitingForAQuoteTests_checkMRLineDetails_ButtonExportToExcelIsEnable_FileIsDownloaded - 2019.03.14 at 11h 26m 05s.xml">
+      <configuration name="MRLineDetailsWaitingForAQuoteTests.checkMRLineDetails_ButtonExportToExcelIsEnable_FileIsDownloaded" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ItemsWithoutManufacturer30DaysTests - 2019.03.07 at 19h 06m 00s.xml">
-      <configuration name="ItemsWithoutManufacturer30DaysTests" configurationId="JUnit" />
+    <history-entry file="PGTListPriceRequestsTests - 2019.03.14 at 11h 27m 53s.xml">
+      <configuration name="PGTListPriceRequestsTests" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ItemsWithoutManufacturer30DaysTests - 2019.03.07 at 19h 07m 59s.xml">
-      <configuration name="ItemsWithoutManufacturer30DaysTests" configurationId="JUnit" />
+    <history-entry file="PGTListPriceRequestsTests - 2019.03.14 at 11h 34m 29s.xml">
+      <configuration name="PGTListPriceRequestsTests" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FinanceSiteSettingsPageTests - 2019.03.07 at 19h 12m 14s.xml">
-      <configuration name="FinanceSiteSettingsPageTests" configurationId="JUnit" />
+    <history-entry file="PGTListPriceRequestsTests - 2019.03.14 at 11h 35m 16s.xml">
+      <configuration name="PGTListPriceRequestsTests" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Test_Suite_FinancePage_InvoicingPage_ItemsWithoutPage - 2019.03.07 at 19h 21m 53s.xml">
-      <configuration name="Test_Suite_FinancePage_InvoicingPage_ItemsWithoutPage" configurationId="JUnit" />
+    <history-entry file="PGTListPriceRequestsTests - 2019.03.14 at 11h 36m 30s.xml">
+      <configuration name="PGTListPriceRequestsTests" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Designer" order="0" />
       <window_info id="Capture Tool" order="1" />
       <window_info id="UI Designer" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Image Layers" order="4" />
-      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.25373134" />
+      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.25373134" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="0" weight="0.32936078" />
       <window_info anchor="bottom" id="Event Log" order="1" sideWeight="0.50053304" side_tool="true" weight="0.36078006" />
@@ -520,7 +492,7 @@
       <window_info anchor="bottom" id="Version Control" order="4" />
       <window_info anchor="bottom" id="Message" order="5" />
       <window_info anchor="bottom" id="Find" order="6" weight="0.30769232" />
-      <window_info anchor="bottom" id="Run" order="7" sideWeight="0.49946696" visible="true" weight="0.3066089" />
+      <window_info active="true" anchor="bottom" id="Run" order="7" sideWeight="0.49946696" visible="true" weight="0.3066089" />
       <window_info anchor="bottom" id="Debug" order="8" weight="0.3997833" />
       <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
@@ -536,61 +508,19 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="8" weight="0.25" />
     </layout>
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/SYNC/Tests/ItemsWithoutManufacturerLocators30DaysTests.java</url>
+          <line>73</line>
+          <properties />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/resources/logs/app-2019-01-30.log">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/logs/app-2019-01-31.log">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/SYNOVOSJUnitTests/Tests/Supplier_Create_Save_Reject_Emergancy/SupplierCreateAndSave.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="344">
-          <caret line="69" column="35" lean-forward="true" selection-start-line="69" selection-start-column="35" selection-end-line="69" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/SYNOVOSJUnitTests/Locators/PurchasingPage/ApprovalProcessSelectionPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="26" column="35" selection-start-line="26" selection-start-column="35" selection-end-line="26" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/Log4j2.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="12" lean-forward="true" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/WebHelpers/WebHelpers.java" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/SYNOVOSJUnitTests/Locators/PurchasingPage/CreateSupplierPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="603">
-          <caret line="69" column="16" selection-start-line="69" selection-start-column="16" selection-end-line="69" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/SYNOVOSJUnitTests/TestSuites/Test_Suite_Create_Approve_Reject_Save_Supplier.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/SYNOVOSJUnitTests/Tests/Supplier_Create_Save_Reject_Emergancy/SupplierCreateEmergancy.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1088">
@@ -792,18 +722,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/logs/app.log">
-      <provider selected="true" editor-type-id="LogFileEditorProvider">
-        <state relative-caret-position="272">
-          <caret line="16" column="68" selection-start-line="16" selection-start-column="68" selection-end-line="16" selection-end-column="68" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="96" selection-start-line="18" selection-start-column="91" selection-end-line="18" selection-end-column="96" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/SYNC/Locators/LoginPageLocators.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -848,10 +766,60 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/SYNOVOSJUnitTests/TestSuites/Test_Suite_Approved_Rejected_New_supplier.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="27" lean-forward="true" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Downloads/6-WorkingWithElementsList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="269">
+          <caret line="35" column="36" selection-start-line="35" selection-start-column="24" selection-end-line="35" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/SYNC/Locators/WorkPlaceLocators/EnterpriseApplicationLocators/InvoicStatusTransmitionLocators/InvoicingStatusTransmitionLocators.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="38" lean-forward="true" selection-start-line="4" selection-start-column="38" selection-end-line="4" selection-end-column="38" />
+        <state relative-caret-position="340">
+          <caret line="22" column="22" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/SYNC/TestSuites/Test_Suite_FinancePage_InvoicingPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="51" lean-forward="true" selection-start-line="11" selection-start-column="51" selection-end-line="11" selection-end-column="51" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/SYNC/Locators/WorkPlaceLocators/EnterpriseApplicationLocators/ItemsWithoutManufacturerCreatedIn30DaysLocators/ItemsWithoutManufacturerLocators.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="23" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/SYNC/TestSuites/Test_Suite_ItemsWithoutPage_MRLineDetailsWaiting.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -865,59 +833,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/SYNC/Locators/WorkPlaceLocators/EnterpriseApplicationLocators/EnterpriseApplicationLocators.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="22" column="52" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="65" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/SYNC/Locators/WorkPlaceLocators/EnterpriseApplicationLocators/ItemsWithoutManufacturerCreatedIn30DaysLocators/ItemsWithoutManufacturer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#318#319#0" expanded="true" />
-            <element signature="e#341#342#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/WebHelpers/WebHelpers.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="401">
-          <caret line="360" column="16" selection-start-line="360" selection-start-column="16" selection-end-line="360" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/SYNOVOSJUnitTests/TestSuites/Test_Suite_Approved_Rejected_New_supplier.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="27" lean-forward="true" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/SYNC/TestSuites/Test_Suite_FinancePage_InvoicingPage_ItemsWithoutPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/logs/app.log">
+      <provider selected="true" editor-type-id="LogFileEditorProvider" />
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="96" selection-start-line="18" selection-start-column="91" selection-end-line="18" selection-end-column="96" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/SYNC/Tests/FinanceSiteSettingsPageTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="76" column="81" selection-start-line="76" selection-start-column="58" selection-end-line="76" selection-end-column="81" />
+        <state relative-caret-position="167">
+          <caret line="60" column="57" lean-forward="true" selection-start-line="60" selection-start-column="57" selection-end-line="60" selection-end-column="77" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -926,21 +853,100 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/SYNC/Tests/InvoicingStatusTransmissionPageTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="337">
-          <caret line="85" column="89" selection-start-line="85" selection-start-column="89" selection-end-line="85" selection-end-column="89" />
+        <state relative-caret-position="303">
+          <caret line="81" column="5" lean-forward="true" selection-start-line="81" selection-start-column="5" selection-end-line="81" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/SYNC/Tests/ItemsWithoutManufacturer30DaysTests.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/SYNC/Locators/WorkPlaceLocators/EnterpriseApplicationLocators/MRLineSummaryWaitingForAQuoteClientPrice/MrLineSummaryLocators.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="102" column="101" selection-start-line="102" selection-start-column="101" selection-end-line="102" selection-end-column="101" />
+        <state relative-caret-position="238">
+          <caret line="14" selection-start-line="14" selection-end-line="19" selection-end-column="55" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/SYNC/Tests/MRLineSummaryTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-462">
+          <caret line="28" column="47" selection-start-line="28" selection-start-column="47" selection-end-line="28" selection-end-column="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/SYNC/Locators/WorkPlaceLocators/EnterpriseApplicationLocators/EnterpriseApplicationLocators.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="469">
+          <caret line="30" column="47" selection-start-line="30" selection-start-column="22" selection-end-line="30" selection-end-column="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/SYNC/Locators/WorkPlaceLocators/EnterpriseApplicationLocators/MRLineDetailsWaitingForAQuoteLocators/MRLineDetailsWaitingForAQuoteLocators.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="24" column="68" selection-start-line="24" selection-start-column="68" selection-end-line="24" selection-end-column="68" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/SYNC/Tests/MRLineDetailsWaitingForAQuoteTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="507">
+          <caret line="103" column="42" lean-forward="true" selection-start-line="103" selection-start-column="42" selection-end-line="103" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/SYNC/Tests/ItemsWithoutManufacturerLocators30DaysTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="394">
+          <caret line="85" column="8" lean-forward="true" selection-start-line="85" selection-start-column="8" selection-end-line="88" selection-end-column="73" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/SYNC/Locators/WorkPlaceLocators/EnterpriseApplicationLocators/PGTListPriceRequests/PGTListPriceRequestsLocators.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="61" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="61" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#283#284#0" expanded="true" />
+            <element signature="e#306#307#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/SYNC/Tests/PGTListPriceRequestsTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="112" column="44" selection-start-line="112" selection-start-column="44" selection-end-line="112" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/WebHelpers/WebHelpers.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="728">
+          <caret line="357" column="27" selection-start-line="357" selection-start-column="23" selection-end-line="357" selection-end-column="27" />
         </state>
       </provider>
     </entry>

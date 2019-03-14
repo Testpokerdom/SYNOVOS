@@ -2,7 +2,7 @@ package SYNC.Tests;
 
 import SYNC.Locators.WorkPlaceLocators.EnterpriseApplicationLocators.EnterpriseApplicationLocators;
 import SYNC.Locators.WorkPlaceLocators.EnterpriseApplicationLocators.FinanceSiteSettingsLocators.FinanceSiteSettingsLocators;
-import SYNC.Locators.WorkPlaceLocators.EnterpriseApplicationLocators.InvoicStatusTransmitionLocators.InvoicingStatusTransmitionLocators;
+import SYNC.Locators.WorkPlaceLocators.EnterpriseApplicationLocators.MRLineSummaryWaitingForAQuoteClientPrice.MrLineSummaryLocators;
 import SYNC.Locators.WorkPlaceLocators.WorkPlaceLocators;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -13,24 +13,22 @@ import org.junit.Test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
-import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.remote.DesiredCapabilities;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.util.HashMap;
 import java.util.concurrent.TimeUnit;
 
 import static WebHelpers.WebHelpers.*;
+import static WebHelpers.WebHelpers.selectWebElementFromDropDownList;
 
-public class InvoicingStatusTransmissionPageTests {
+public class MRLineSummaryTests {
     public WebDriver driver = null;
     public static WorkPlaceLocators workPlaceLocators = null;
     public static EnterpriseApplicationLocators enterpriseApplicationLocators = null;
     public static FinanceSiteSettingsLocators financeSiteSettings = null;
-    public static InvoicingStatusTransmitionLocators invoicingStatusTransmitionLocators = null;
+    public static MrLineSummaryLocators mrLineSummary = null;
 
-    public static final Logger logger = LogManager.getLogger(InvoicingStatusTransmissionPageTests.class);
+    public static final Logger logger = LogManager.getLogger(MRLineSummaryTests.class);
 
     @Before
     public void beforEeach() {
@@ -52,8 +50,7 @@ public class InvoicingStatusTransmissionPageTests {
         workPlaceLocators = new WorkPlaceLocators(driver);
         enterpriseApplicationLocators = new EnterpriseApplicationLocators(driver);
         financeSiteSettings = new FinanceSiteSettingsLocators(driver);
-        invoicingStatusTransmitionLocators = new InvoicingStatusTransmitionLocators(driver);
-
+        mrLineSummary = new MrLineSummaryLocators(driver);
 
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.manage().window().maximize();
@@ -71,52 +68,38 @@ public class InvoicingStatusTransmissionPageTests {
     }
 
     @Test
-    public void checkInvoicingStatusPageIsAvailable(){
+    public void checkMRLineDetailsPageIsAvailable(){
         clickButtonIfEnable(workPlaceLocators.buttonEnterpriseApplication);
         switchToIFrame(driver, enterpriseApplicationLocators.iFrameEnterpriseApplicationPage);
-        clickButtonIfEnable(enterpriseApplicationLocators.linkInvoicingStatusTransmission);
+        clickButtonIfEnable(enterpriseApplicationLocators.linkMRLineSummaryWaitingforAQuoteClientPrice);
         switchToNewWindow(driver);
 
-        Assert.assertEquals("Invoicing Status/Transmission", invoicingStatusTransmitionLocators.headerText.getText());
-
+        Assert.assertEquals("MR Line Summary (Waiting for a Quote/Client Price)", mrLineSummary.headerText.getText());
     }
 
     @Test
-    public void checkInvoicingStatus_DropDownListRecordsPerPageIsEnable_25(){
+    public void checkMRLineDetails_DropDownListRecordsPerPageIsEnable_25() throws InterruptedException {
         clickButtonIfEnable(workPlaceLocators.buttonEnterpriseApplication);
         switchToIFrame(driver, enterpriseApplicationLocators.iFrameEnterpriseApplicationPage);
-        clickButtonIfEnable(enterpriseApplicationLocators.linkInvoicingStatusTransmission);
+        clickButtonIfEnable(enterpriseApplicationLocators.linkMRLineSummaryWaitingforAQuoteClientPrice);
         switchToNewWindow(driver);
-        selectWebElementFromDropDownList(invoicingStatusTransmitionLocators.dropDownListRecordsPerPage, "25");
+        selectWebElementFromDropDownList(mrLineSummary.dropDownListRecordsPerPage, "25");
 
-        Assert.assertEquals("25", invoicingStatusTransmitionLocators.dropDownListRecordsPerPage.getAttribute("value"));
+        Assert.assertEquals("25", mrLineSummary.dropDownListRecordsPerPage.getAttribute("value"));
     }
 
     @Test
-    public void checkInvoicingStatus_ButtonExportToExcelIsEnable() throws InterruptedException {
+    public void checkMRLineDetails_ButtonExportToExcelIsEnable_FileIsDownloaded() throws InterruptedException {
         clickButtonIfEnable(workPlaceLocators.buttonEnterpriseApplication);
         switchToIFrame(driver, enterpriseApplicationLocators.iFrameEnterpriseApplicationPage);
-        clickButtonIfEnable(enterpriseApplicationLocators.linkInvoicingStatusTransmission);
+        clickButtonIfEnable(enterpriseApplicationLocators.linkMRLineSummaryWaitingforAQuoteClientPrice);
         switchToNewWindow(driver);
-        clickButtonIfEnable(invoicingStatusTransmitionLocators.buttonExportToExcel);
+        Thread.sleep(2000);
+        //waitElementToBeClickable(driver, 5, mrLineDetailsWaitingForAQuote.buttonExportToExcelMRLineDetails);
+        clickButtonIfEnable(mrLineSummary.buttonExportToExcelMRLineDetails);
         Thread.sleep(2000);
         isFileDownloaded("C:\\Users\\viktor.bibik\\Downloads\\Tests", "Invoicing Status.xlsx");
 
-        Assert.assertEquals(true, invoicingStatusTransmitionLocators.buttonExportToExcel.isEnabled());
+        Assert.assertEquals(true, mrLineSummary.buttonExportToExcelMRLineDetails.isEnabled());
     }
-
-    @Test
-    public void checkInvoicingStatus_DetailedItemPage(){
-        clickButtonIfEnable(workPlaceLocators.buttonEnterpriseApplication);
-        switchToIFrame(driver, enterpriseApplicationLocators.iFrameEnterpriseApplicationPage);
-        clickButtonIfEnable(enterpriseApplicationLocators.linkInvoicingStatusTransmission);
-        switchToNewWindow(driver);
-
-        clickButtonIfEnable(invoicingStatusTransmitionLocators.linkNameInLastRowInvoicingStatusTransmition);
-        switchToIFrame(driver, invoicingStatusTransmitionLocators.iFrameTransmitInvoice);
-
-        Assert.assertEquals("Transmit Invoices", invoicingStatusTransmitionLocators.textTransmitInvoices.getText());
-
-    }
-
 }

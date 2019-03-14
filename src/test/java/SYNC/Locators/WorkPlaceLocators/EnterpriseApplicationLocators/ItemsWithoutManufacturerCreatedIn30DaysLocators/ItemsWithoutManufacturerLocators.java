@@ -5,8 +5,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-public class ItemsWithoutManufacturer extends LoginPageLocators {
-    public ItemsWithoutManufacturer(WebDriver driver){
+public class ItemsWithoutManufacturerLocators extends LoginPageLocators {
+    public ItemsWithoutManufacturerLocators(WebDriver driver){
         super(driver);
     }
 

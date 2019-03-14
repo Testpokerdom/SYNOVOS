@@ -2,8 +2,7 @@ package SYNC.Tests;
 
 import SYNC.Locators.WorkPlaceLocators.EnterpriseApplicationLocators.EnterpriseApplicationLocators;
 import SYNC.Locators.WorkPlaceLocators.EnterpriseApplicationLocators.FinanceSiteSettingsLocators.FinanceSiteSettingsLocators;
-import SYNC.Locators.WorkPlaceLocators.EnterpriseApplicationLocators.InvoicStatusTransmitionLocators.InvoicingStatusTransmitionLocators;
-import SYNC.Locators.WorkPlaceLocators.EnterpriseApplicationLocators.ItemsWithoutManufacturerCreatedIn30DaysLocators.ItemsWithoutManufacturer;
+import SYNC.Locators.WorkPlaceLocators.EnterpriseApplicationLocators.MRLineDetailsWaitingForAQuoteLocators.MRLineDetailsWaitingForAQuoteLocators;
 import SYNC.Locators.WorkPlaceLocators.WorkPlaceLocators;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -21,14 +20,14 @@ import java.util.concurrent.TimeUnit;
 
 import static WebHelpers.WebHelpers.*;
 
-public class ItemsWithoutManufacturer30DaysTests {
+public class MRLineDetailsWaitingForAQuoteTests {
     public WebDriver driver = null;
     public static WorkPlaceLocators workPlaceLocators = null;
     public static EnterpriseApplicationLocators enterpriseApplicationLocators = null;
     public static FinanceSiteSettingsLocators financeSiteSettings = null;
-    public static ItemsWithoutManufacturer itemsWithoutManufacturer = null;
+    public static MRLineDetailsWaitingForAQuoteLocators mrLineDetailsWaitingForAQuote = null;
 
-    public static final Logger logger = LogManager.getLogger(InvoicingStatusTransmissionPageTests.class);
+    public static final Logger logger = LogManager.getLogger(MRLineDetailsWaitingForAQuoteTests.class);
 
     @Before
     public void beforEeach() {
@@ -50,7 +49,7 @@ public class ItemsWithoutManufacturer30DaysTests {
         workPlaceLocators = new WorkPlaceLocators(driver);
         enterpriseApplicationLocators = new EnterpriseApplicationLocators(driver);
         financeSiteSettings = new FinanceSiteSettingsLocators(driver);
-        itemsWithoutManufacturer = new ItemsWithoutManufacturer(driver);
+        mrLineDetailsWaitingForAQuote = new MRLineDetailsWaitingForAQuoteLocators(driver);
 
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.manage().window().maximize();
@@ -67,57 +66,65 @@ public class ItemsWithoutManufacturer30DaysTests {
 
     }
 
-
     @Test
-    public void checkItemsWithoutManufacturer_PageIsAvailable(){
+    public void checkMRLineDetailsPageIsAvailable(){
         clickButtonIfEnable(workPlaceLocators.buttonEnterpriseApplication);
         switchToIFrame(driver, enterpriseApplicationLocators.iFrameEnterpriseApplicationPage);
-        clickButtonIfEnable(enterpriseApplicationLocators.linkItemswithoutManufacturerCreatedin30days);
+        clickButtonIfEnable(enterpriseApplicationLocators.linkMRLineDetailsWaitingforAQuoteClientPrice);
         switchToNewWindow(driver);
 
-        Assert.assertEquals("Items Without Manufacturer (Created in 30 days)", itemsWithoutManufacturer.headerText.getText());
-
+        Assert.assertEquals("MR Line Details (Waiting for a Quote/Client Price)", mrLineDetailsWaitingForAQuote.headerText.getText());
     }
 
     @Test
-    public void checkItemsWithoutManufacturer_DetailedItemPage(){
+    public void checkMRLineDetails_DropDownListRecordsPerPageIsEnable_25() throws InterruptedException {
         clickButtonIfEnable(workPlaceLocators.buttonEnterpriseApplication);
         switchToIFrame(driver, enterpriseApplicationLocators.iFrameEnterpriseApplicationPage);
-        clickButtonIfEnable(enterpriseApplicationLocators.linkItemswithoutManufacturerCreatedin30days);
+        clickButtonIfEnable(enterpriseApplicationLocators.linkMRLineDetailsWaitingforAQuoteClientPrice);
         switchToNewWindow(driver);
-        clickWebElementIfEnable(itemsWithoutManufacturer.linkNameInLastRow);
-        switchToNewWindow(driver);
+        selectWebElementFromDropDownList(mrLineDetailsWaitingForAQuote.dropDownListRecordsPerPage, "25");
+        //List<WebElement> tableRows = driver.findElements(By.xpath("//div[@class='jsgrid-grid-body']//table[@class='jsgrid-table']/tbody/tr"));
+        //System.out.println("Table contains rows: " + tableRows.size());
 
-        //switchToIFrame(driver, itemsWithoutManufacturer.iFrameSynovosSync);
-        //System.out.println("Item ID is: " + itemsWithoutManufacturer.elementItemName.getText());
-        //System.out.println("Page title is " + driver.getTitle());
+        Assert.assertEquals("25", mrLineDetailsWaitingForAQuote.dropDownListRecordsPerPage.getAttribute("value"));
+    }
+
+    @Test
+    public void checkMRLineDetails_APagination(){
+        clickButtonIfEnable(workPlaceLocators.buttonEnterpriseApplication);
+        switchToIFrame(driver, enterpriseApplicationLocators.iFrameEnterpriseApplicationPage);
+        clickButtonIfEnable(enterpriseApplicationLocators.linkMRLineDetailsWaitingforAQuoteClientPrice);
+        switchToNewWindow(driver);
+        mrLineDetailsWaitingForAQuote.checkPaginationPanelButtons(driver);
+
+        Assert.assertEquals(false, mrLineDetailsWaitingForAQuote.buttonSecondPage.isSelected());
+    }
+
+    @Test
+    public void checkMRLineDetails_ButtonExportToExcelIsEnable_FileIsDownloaded() throws InterruptedException {
+        clickButtonIfEnable(workPlaceLocators.buttonEnterpriseApplication);
+        switchToIFrame(driver, enterpriseApplicationLocators.iFrameEnterpriseApplicationPage);
+        clickButtonIfEnable(enterpriseApplicationLocators.linkMRLineDetailsWaitingforAQuoteClientPrice);
+        switchToNewWindow(driver);
+        Thread.sleep(2000);
+        //waitElementToBeClickable(driver, 5, mrLineDetailsWaitingForAQuote.buttonExportToExcelMRLineDetails);
+        clickButtonIfEnable(mrLineDetailsWaitingForAQuote.buttonExportToExcelMRLineDetails);
+        Thread.sleep(2000);
+        isFileDownloaded("C:\\Users\\viktor.bibik\\Downloads\\Tests", "Invoicing Status.xlsx");
+
+        Assert.assertEquals(true, mrLineDetailsWaitingForAQuote.buttonExportToExcelMRLineDetails.isEnabled());
+    }
+
+    @Test
+    public void checkMRLineDetails_DetailedItemPage(){
+        clickButtonIfEnable(workPlaceLocators.buttonEnterpriseApplication);
+        switchToIFrame(driver, enterpriseApplicationLocators.iFrameEnterpriseApplicationPage);
+        clickButtonIfEnable(enterpriseApplicationLocators.linkMRLineDetailsWaitingforAQuoteClientPrice);
+        switchToNewWindow(driver);
+        clickButtonIfEnable(mrLineDetailsWaitingForAQuote.buttonWaitingForQuote);
+        switchToNewWindow(driver);
 
         Assert.assertEquals("Microsoft Dynamics CRM", driver.getTitle());
-
-    }
-
-    @Test
-    public void checkInvoicingStatus_DropDownListRecordsPerPageIsEnable_25(){
-        clickButtonIfEnable(workPlaceLocators.buttonEnterpriseApplication);
-        switchToIFrame(driver, enterpriseApplicationLocators.iFrameEnterpriseApplicationPage);
-        clickButtonIfEnable(enterpriseApplicationLocators.linkItemswithoutManufacturerCreatedin30days);
-        switchToNewWindow(driver);
-        selectWebElementFromDropDownList(itemsWithoutManufacturer.dropDownListRecordsPerPage, "25");
-
-        Assert.assertEquals("25", itemsWithoutManufacturer.dropDownListRecordsPerPage.getAttribute("value"));
-    }
-
-    @Test
-    public void checkInvoicingStatus_ButtonExportToExcelIsEnable() throws InterruptedException {
-        clickButtonIfEnable(workPlaceLocators.buttonEnterpriseApplication);
-        switchToIFrame(driver, enterpriseApplicationLocators.iFrameEnterpriseApplicationPage);
-        clickButtonIfEnable(enterpriseApplicationLocators.linkItemswithoutManufacturerCreatedin30days);
-        switchToNewWindow(driver);
-        clickButtonIfEnable(itemsWithoutManufacturer.buttonExportToExcelItemsWithoutManufacturePage);
-        Thread.sleep(2000);
-        isFileDownloaded("C:\\Users\\viktor.bibik\\Downloads\\Tests", "Items Without Manufacturer.xlsx");
-
-        Assert.assertEquals(true, itemsWithoutManufacturer.buttonExportToExcelItemsWithoutManufacturePage.isEnabled());
     }
 
 }

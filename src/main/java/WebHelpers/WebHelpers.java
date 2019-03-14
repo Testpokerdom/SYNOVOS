@@ -7,6 +7,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.pagefactory.ByAll;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -155,6 +156,12 @@ public class WebHelpers {
         logger.info("Wait web element presence: \"" + element.getText() + "\" for seconds - " + seconds);
     }
 
+    public static void waitElementToBeClickable(WebDriver driver, long seconds, WebElement element) {
+        WebDriverWait wait = new WebDriverWait(driver, seconds);
+        wait.until(ExpectedConditions.elementToBeClickable(element));
+        logger.info("Wait web element presence: \"" + element.getText() + "\" for seconds - " + seconds);
+    }
+
     public static void waitElementAttributeShouldHaveValue(WebDriver driver, long seconds, WebElement element, String attribute, String value){
         WebDriverWait wait = new WebDriverWait(driver, seconds);
         wait.until(ExpectedConditions.attributeContains(element, attribute, value));
@@ -168,7 +175,8 @@ public class WebHelpers {
     public static void selectWebElementFromDropDownList (WebElement element, String elementValue){
         Select sel = new Select(element);
         sel.selectByVisibleText(elementValue);
-
+        System.out.println("Was selected value " + elementValue);
+        /*
         List<WebElement> options = sel.getOptions();
         int size = options.size();
 
@@ -176,6 +184,7 @@ public class WebHelpers {
             String value = options.get(i).getText();
             System.out.println(value);
         }
+        */
     }
 
     public static String randomName(){
@@ -247,11 +256,10 @@ public class WebHelpers {
     public static void findLastRawInTableAndClick(WebDriver driver, String xPath){
 
         List<WebElement> columnOfLastRow= driver.findElements(By.xpath(xPath)); //  "//table[@id='approvalProcessData']/tbody/tr[last()]/td[last()]"
-        //List<WebElement> columnOfLastRow= driver.findElement(By.xpath(xpath));
         for( WebElement e:columnOfLastRow)
         {
             System.out.println(e.getText());
-            //e.click();
+            e.click();
         }
         System.out.println("========================================================================");
 
@@ -379,6 +387,28 @@ public class WebHelpers {
         }
 
         return false;
+
+    }
+
+    public static void checkWebElementsCount(WebDriver driver, String element){
+        List<WebElement> tableRows = driver.findElements(By.xpath(element));
+        //int rowsCount = tableRows.size();
+        System.out.println("Table contains rows: " + tableRows.size());
+        //return rowsCount;
+
+    }
+
+    public static void clickWebElementInPaginationToolbar(WebDriver driver, String xpath){
+        boolean isChecked = false;
+        List<WebElement> paginationToolbar = driver.findElements(By.xpath(xpath));
+
+        int size = paginationToolbar.size();
+        for(int i=0; i<=size; i++){
+            isChecked = paginationToolbar.get(i).isSelected();
+            if (!isChecked) {
+                paginationToolbar.get(i).click();
+            }
+        }
 
     }
 
