@@ -69,7 +69,7 @@ public class PGTListPriceRequestsTests {
     }
 
     @Test
-    public void checkPGTListPriceRequests_PageIsAvailable(){
+    public void checkPGTListPriceRequestsPageIsAvailable(){
         clickButtonIfEnable(workPlaceLocators.buttonEnterpriseApplication);
         switchToIFrame(driver, enterpriseApplicationLocators.iFrameEnterpriseApplicationPage);
         clickButtonIfEnable(enterpriseApplicationLocators.linkPGT_ListPriceRequests);
@@ -79,7 +79,7 @@ public class PGTListPriceRequestsTests {
     }
 
     @Test
-    public void checkItemsWithoutManufacturer_DropDownListRecordsPerPageIsEnable_25(){
+    public void checkPGTListPriceRequests_DropDownListRecordsPerPageIsEnable_25(){
         clickButtonIfEnable(workPlaceLocators.buttonEnterpriseApplication);
         switchToIFrame(driver, enterpriseApplicationLocators.iFrameEnterpriseApplicationPage);
         clickButtonIfEnable(enterpriseApplicationLocators.linkPGT_ListPriceRequests);
@@ -90,20 +90,20 @@ public class PGTListPriceRequestsTests {
     }
 
     @Test
-    public void checkItemsWithoutManufacturer_ButtonExportToExcelIsEnable_FileIsDownloaded() throws InterruptedException {
+    public void checkPGTListPriceRequests_ButtonExportToExcelIsEnable_FileIsDownloaded() throws InterruptedException {
         clickButtonIfEnable(workPlaceLocators.buttonEnterpriseApplication);
         switchToIFrame(driver, enterpriseApplicationLocators.iFrameEnterpriseApplicationPage);
         clickButtonIfEnable(enterpriseApplicationLocators.linkPGT_ListPriceRequests);
         switchToNewWindow(driver);
         clickButtonIfEnable(pgtListPriceRequestsLocators.buttonExportToExcelMRLineDetails);
         Thread.sleep(2000);
-        isFileDownloaded("C:\\Users\\viktor.bibik\\Downloads\\Tests", "Items Without Manufacturer.xlsx");
+        isFileDownloaded("C:\\Users\\viktor.bibik\\Downloads\\Tests", "PGT List Prices.xlsx");
 
         Assert.assertEquals(true, pgtListPriceRequestsLocators.buttonExportToExcelMRLineDetails.isEnabled());
     }
 
     @Test
-    public void checkItemsWithoutManufacturer_DetailedItemPage(){
+    public void checkPGTListPriceRequests_DetailedItemPage(){
         clickButtonIfEnable(workPlaceLocators.buttonEnterpriseApplication);
         switchToIFrame(driver, enterpriseApplicationLocators.iFrameEnterpriseApplicationPage);
         clickButtonIfEnable(enterpriseApplicationLocators.linkPGT_ListPriceRequests);
@@ -114,4 +114,17 @@ public class PGTListPriceRequestsTests {
         Assert.assertEquals("Microsoft Dynamics CRM", driver.getTitle());
     }
 
+    @Test
+    public void checkPGTListPriceRequests_checkboxIsClickable(){
+        clickButtonIfEnable(workPlaceLocators.buttonEnterpriseApplication);
+        switchToIFrame(driver, enterpriseApplicationLocators.iFrameEnterpriseApplicationPage);
+        clickButtonIfEnable(enterpriseApplicationLocators.linkPGT_ListPriceRequests);
+        switchToNewWindow(driver);
+        waitElementPresence(driver, 5, pgtListPriceRequestsLocators.checkboxSelectAll);
+        clickButton(pgtListPriceRequestsLocators.checkboxSelectAll);
+        Assert.assertEquals(true, checkboxIsSelectrd(pgtListPriceRequestsLocators.checkBoxFirstitem));
+        waitElementPresence(driver, 5, pgtListPriceRequestsLocators.checkBoxFirstitem);
+        clickButton(pgtListPriceRequestsLocators.checkBoxFirstitem);
+        Assert.assertEquals(false, checkboxIsSelectrd(pgtListPriceRequestsLocators.checkBoxFirstitem));
+    }
 }

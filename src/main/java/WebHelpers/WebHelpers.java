@@ -317,11 +317,10 @@ public class WebHelpers {
         logger.info("Switch to IFrame: " + iframe);
     }
 
-    public static void listOfWebElementsFindSpecificOne(WebDriver driver, WebElement element){
+    public static void listOfWebElementsFindSpecificOne(WebDriver driver, String locator){
 
+		List<WebElement> elementFormList = driver.findElements(By.xpath(locator));
         boolean isChecked = false;
-		List<WebElement> elementFormList = driver.findElements(
-				By.xpath("//div[@id='txtType_ComboBox_DropDown']//li[5]"));
 		int size = elementFormList.size();
 		System.out.println("Size of the list: " + size);
 		for (int i=0; i<size; i++) {
@@ -350,22 +349,26 @@ public class WebHelpers {
         File[] dirContents = dir.listFiles();
 
         for (int i = 0; i < dirContents.length; i++) {
+
+            String xlsFileName = dirContents[i].getName();
+
             if (dirContents[i].getName() == fileName) {
                 Assert.assertEquals(1, dirContents.length);
-                System.out.println("File was downloaded successfully. File name is " + fileName);
-                logger.info("File with name - " + fileName + " was downloaded successfully.");
+
+                System.out.println("File was downloaded successfully. File name is " + xlsFileName);
+                logger.info("File with name - " + xlsFileName + " was downloaded successfully.");
                 dirContents[i].delete();
                 return true;
             } else if(dir.exists()){
                 Assert.assertEquals(1, dirContents.length);
-                System.out.println("File exists. File name is " + fileName);
-                logger.info("File with name - " + fileName + " was downloaded successfully.");
+                System.out.println("File exists. File name is " + xlsFileName);
+                logger.info("File with name - " + xlsFileName + " was downloaded successfully.");
                 dirContents[i].delete();
                 return true;
             } else if (dirContents[i].getName() != fileName){
                 Assert.assertEquals(1, dirContents.length);
-                System.out.println("File was deleted. But file name was not equal to the downloaded file " + fileName);
-                logger.info("File with name - " + fileName + " was downloaded successfully.");
+                System.out.println("File was deleted. But file name was not equal to the downloaded file " + xlsFileName);
+                logger.info("File with name - " + xlsFileName + " was downloaded successfully.");
                 dirContents[i].delete();
                 return true;
             }
@@ -410,6 +413,13 @@ public class WebHelpers {
             }
         }
 
+    }
+
+    public static boolean checkboxIsSelectrd(WebElement element){
+        boolean isSelected = element.isSelected();
+        System.out.println("Is checkbox selected - " + isSelected);
+        logger.info("Check box was clicked - " + element.getAttribute("type"));
+        return  isSelected;
     }
 
 }

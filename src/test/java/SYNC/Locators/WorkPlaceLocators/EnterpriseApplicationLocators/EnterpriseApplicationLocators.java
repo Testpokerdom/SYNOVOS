@@ -29,7 +29,7 @@ public class EnterpriseApplicationLocators extends LoginPageLocators {
     public WebElement linkPGT_Dashboard;
     @FindBy(xpath = "//div[@id='div_result']//a[text()='PGT List Price Requests']")
     public WebElement linkPGT_ListPriceRequests;
-    @FindBy(xpath = "PGT Manufacture Focused Sourcing")
+    @FindBy(xpath = "//div[@id='div_result']//a[text()='PGT Manufacture Focused Sourcing']")
     public WebElement linkPGT_ManufactureFocusedSourcing;
     @FindBy(xpath = "//div[@id='div_result']//a[text()='Vendor Approval']")
     public WebElement linkVendorApproval;

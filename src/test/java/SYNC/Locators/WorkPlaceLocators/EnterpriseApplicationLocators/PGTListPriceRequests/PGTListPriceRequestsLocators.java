@@ -20,5 +20,7 @@ public class PGTListPriceRequestsLocators extends LoginPageLocators {
     public WebElement linkStatusInLastRowRGTListPriceRequests;
     @FindBy (id = "i_selectall")
     public WebElement checkboxSelectAll;
+    @FindBy (xpath = "//div[@class='jsgrid-grid-body']//table[@class='jsgrid-table']//tr[1]//td[1]//input[1]")
+    public  WebElement checkBoxFirstitem;
 
 }

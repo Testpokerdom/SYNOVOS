@@ -110,7 +110,7 @@ public class MRLineDetailsWaitingForAQuoteTests {
         //waitElementToBeClickable(driver, 5, mrLineDetailsWaitingForAQuote.buttonExportToExcelMRLineDetails);
         clickButtonIfEnable(mrLineDetailsWaitingForAQuote.buttonExportToExcelMRLineDetails);
         Thread.sleep(2000);
-        isFileDownloaded("C:\\Users\\viktor.bibik\\Downloads\\Tests", "Invoicing Status.xlsx");
+        isFileDownloaded("C:\\Users\\viktor.bibik\\Downloads\\Tests", "Mr Lines Detail.xlsx");
 
         Assert.assertEquals(true, mrLineDetailsWaitingForAQuote.buttonExportToExcelMRLineDetails.isEnabled());
     }
