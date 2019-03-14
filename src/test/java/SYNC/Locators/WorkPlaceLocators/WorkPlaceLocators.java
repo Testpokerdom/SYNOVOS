@@ -1,5 +1,6 @@
-package SYNC.Locators;
+package SYNC.Locators.WorkPlaceLocators;
 
+import SYNC.Locators.LoginPageLocators;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -43,7 +44,7 @@ public class WorkPlaceLocators extends LoginPageLocators {
     public WebElement buttonStandart;
     @FindBy (xpath = "//a[@id='eam_consolidated_reports']//nobr[text()='Consolidated']")
     public WebElement buttonConsolidate;
-    @FindBy (xpath = "")
+    @FindBy (xpath = "//a[@id='eam_reportsexport']//nobr[text()='Scheduled']")
     public WebElement buttonScheduled;
 
 }

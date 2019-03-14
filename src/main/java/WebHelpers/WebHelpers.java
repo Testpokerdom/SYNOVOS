@@ -1,18 +1,24 @@
 package WebHelpers;
 
+import junit.framework.Assert;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.pagefactory.ByAll;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.io.File;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.*;
+
+import static org.openqa.selenium.support.ui.ExpectedConditions.not;
+import static sun.nio.cs.Surrogate.is;
 
 
 public class WebHelpers {
@@ -25,10 +31,9 @@ public class WebHelpers {
         logger.info("Open URL: " + url);
     }
 
-    public void login(WebDriver driver, String uname, String pwd){
-        String TEST_ENVIRONMENT = "us01.dynamicseam.com";
-        String URL = "https://" + uname + ":" + pwd + "@" + TEST_ENVIRONMENT;
-        driver.get(URL);
+    public static void loginWithPopUp(WebDriver driver, String uname, String pwd, String url){
+        driver.get("https://" + uname + ":" + pwd + "@" + url);
+        logger.info("Open URL: " + url);
     }
 
     public static void clickButton(WebElement button){
@@ -151,6 +156,12 @@ public class WebHelpers {
         logger.info("Wait web element presence: \"" + element.getText() + "\" for seconds - " + seconds);
     }
 
+    public static void waitElementToBeClickable(WebDriver driver, long seconds, WebElement element) {
+        WebDriverWait wait = new WebDriverWait(driver, seconds);
+        wait.until(ExpectedConditions.elementToBeClickable(element));
+        logger.info("Wait web element presence: \"" + element.getText() + "\" for seconds - " + seconds);
+    }
+
     public static void waitElementAttributeShouldHaveValue(WebDriver driver, long seconds, WebElement element, String attribute, String value){
         WebDriverWait wait = new WebDriverWait(driver, seconds);
         wait.until(ExpectedConditions.attributeContains(element, attribute, value));
@@ -164,7 +175,8 @@ public class WebHelpers {
     public static void selectWebElementFromDropDownList (WebElement element, String elementValue){
         Select sel = new Select(element);
         sel.selectByVisibleText(elementValue);
-
+        System.out.println("Was selected value " + elementValue);
+        /*
         List<WebElement> options = sel.getOptions();
         int size = options.size();
 
@@ -172,6 +184,7 @@ public class WebHelpers {
             String value = options.get(i).getText();
             System.out.println(value);
         }
+        */
     }
 
     public static String randomName(){
@@ -240,14 +253,13 @@ public class WebHelpers {
         }
         return characters;
     }
-    public static void findLastRawInTableAndClick(WebDriver driver){
+    public static void findLastRawInTableAndClick(WebDriver driver, String xPath){
 
-        List<WebElement> columnOfLastRow= driver.findElements(By.xpath("//table[@id='approvalProcessData']/tbody/tr[last()]/td[last()]"));
-        //List<WebElement> columnOfLastRow= driver.findElement(By.xpath(xpath));
+        List<WebElement> columnOfLastRow= driver.findElements(By.xpath(xPath)); //  "//table[@id='approvalProcessData']/tbody/tr[last()]/td[last()]"
         for( WebElement e:columnOfLastRow)
         {
             System.out.println(e.getText());
-            //e.click();
+            e.click();
         }
         System.out.println("========================================================================");
 
@@ -285,6 +297,7 @@ public class WebHelpers {
     public static void switchToNewWindow(WebDriver driver){
 
         String parentWindow = driver.getWindowHandle();
+        System.out.println("Parent window handle is: " + parentWindow);
         Set<String> handles =  driver.getWindowHandles();
         for(String windowHandle  : handles)
         {
@@ -330,6 +343,73 @@ public class WebHelpers {
             }
         }
         */
+    }
+
+    public static boolean isFileDownloaded(String downloadPath, String fileName) {
+        File dir = new File(downloadPath);
+        File[] dirContents = dir.listFiles();
+
+        for (int i = 0; i < dirContents.length; i++) {
+            if (dirContents[i].getName() == fileName) {
+                Assert.assertEquals(1, dirContents.length);
+                System.out.println("File was downloaded successfully. File name is " + fileName);
+                logger.info("File with name - " + fileName + " was downloaded successfully.");
+                dirContents[i].delete();
+                return true;
+            } else if(dir.exists()){
+                Assert.assertEquals(1, dirContents.length);
+                System.out.println("File exists. File name is " + fileName);
+                logger.info("File with name - " + fileName + " was downloaded successfully.");
+                dirContents[i].delete();
+                return true;
+            } else if (dirContents[i].getName() != fileName){
+                Assert.assertEquals(1, dirContents.length);
+                System.out.println("File was deleted. But file name was not equal to the downloaded file " + fileName);
+                logger.info("File with name - " + fileName + " was downloaded successfully.");
+                dirContents[i].delete();
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public static boolean isFileDownloaded2(String downloadPath, String fileName){
+
+        File dir = new File(downloadPath);
+
+        if(dir != null){
+            if(dir.exists() == true){
+                System.out.println("File is exist: " + dir.getName());
+                dir.delete();
+            } else {
+                System.out.println("File does not exist");
+            }
+        }
+
+        return false;
+
+    }
+
+    public static void checkWebElementsCount(WebDriver driver, String element){
+        List<WebElement> tableRows = driver.findElements(By.xpath(element));
+        //int rowsCount = tableRows.size();
+        System.out.println("Table contains rows: " + tableRows.size());
+        //return rowsCount;
+
+    }
+
+    public static void clickWebElementInPaginationToolbar(WebDriver driver, String xpath){
+        boolean isChecked = false;
+        List<WebElement> paginationToolbar = driver.findElements(By.xpath(xpath));
+
+        int size = paginationToolbar.size();
+        for(int i=0; i<=size; i++){
+            isChecked = paginationToolbar.get(i).isSelected();
+            if (!isChecked) {
+                paginationToolbar.get(i).click();
+            }
+        }
+
     }
 
 }

@@ -38,7 +38,7 @@ public class Login {
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.manage().window().maximize();
 
-        goToUrl(driver,"https://www.webtma.net/login.aspx");
+        goToUrl(driver,"https://www.webtma.net/loginWithPopUp.aspx");
         logger.info("TMA web site was opened.");
         //sendTextToMultipleWebElements(loginPageLocators.fieldLogin, "VBIBIK18", loginPageLocators.fieldPassword, "deadman18");
         //clickButton(loginPageLocators.buttonLogin);

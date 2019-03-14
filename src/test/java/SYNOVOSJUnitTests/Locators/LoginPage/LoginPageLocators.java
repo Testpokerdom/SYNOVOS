@@ -12,12 +12,12 @@ public class LoginPageLocators {
 
     }
 
-    // Main page login/password web elements
+    // Main page loginWithPopUp/password web elements
     @FindBy (xpath = "//table[@class='logintable']//input[@name='userName']")
     public WebElement fieldLogin;
     @FindBy (name = "password")
     public WebElement fieldPassword;
-    @FindBy (name = "login")
+    @FindBy (name = "loginWithPopUp")
     public WebElement buttonLogin;
     @FindBy (xpath = "//table[@class='logintable']//a[@title='Click to reset your password.']")
     public WebElement linkForgotPassword;
