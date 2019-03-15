@@ -69,7 +69,7 @@ public class PGTManufactureFocusedSourcingTests {
     }
 
     @Test
-    public void checkPGTListPriceRequestsPageIsAvailable(){
+    public void checkPGTManufactureFocusedPageIsAvailable(){
         clickButtonIfEnable(workPlaceLocators.buttonEnterpriseApplication);
         switchToIFrame(driver, enterpriseApplicationLocators.iFrameEnterpriseApplicationPage);
         clickButtonIfEnable(enterpriseApplicationLocators.linkPGT_ManufactureFocusedSourcing);
@@ -79,7 +79,7 @@ public class PGTManufactureFocusedSourcingTests {
     }
 
     @Test
-    public void checkPGTListPriceRequests_DropDownListRecordsPerPageIsEnable_25(){
+    public void checkPGTManufactureFocused_DropDownListRecordsPerPageIsEnable_25(){
         clickButtonIfEnable(workPlaceLocators.buttonEnterpriseApplication);
         switchToIFrame(driver, enterpriseApplicationLocators.iFrameEnterpriseApplicationPage);
         clickButtonIfEnable(enterpriseApplicationLocators.linkPGT_ManufactureFocusedSourcing);
@@ -90,7 +90,7 @@ public class PGTManufactureFocusedSourcingTests {
     }
 
     @Test
-    public void checkPGTListPriceRequests_ButtonExportToExcelIsEnable_FileIsDownloaded() throws InterruptedException {
+    public void checkPGTManufactureFocused_ButtonExportToExcelIsEnable_FileIsDownloaded() throws InterruptedException {
         clickButtonIfEnable(workPlaceLocators.buttonEnterpriseApplication);
         switchToIFrame(driver, enterpriseApplicationLocators.iFrameEnterpriseApplicationPage);
         clickButtonIfEnable(enterpriseApplicationLocators.linkPGT_ManufactureFocusedSourcing);
