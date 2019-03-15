@@ -1,9 +1,8 @@
-package SYNC.Tests;
+package SYNC.Tests.System_Tests;
 
 import SYNC.Locators.WorkPlaceLocators.EnterpriseApplicationLocators.EnterpriseApplicationLocators;
 import SYNC.Locators.WorkPlaceLocators.EnterpriseApplicationLocators.FinanceSiteSettingsLocators.FinanceSiteSettingsLocators;
-import SYNC.Locators.WorkPlaceLocators.EnterpriseApplicationLocators.ItemsWithoutManufacturerCreatedIn30DaysLocators.ItemsWithoutManufacturerLocators;
-import SYNC.Locators.WorkPlaceLocators.EnterpriseApplicationLocators.PGTListPriceRequests.PGTListPriceRequestsLocators;
+import SYNC.Locators.WorkPlaceLocators.EnterpriseApplicationLocators.MRLineDetailsWaitingForAQuoteLocators.MRLineDetailsWaitingForAQuoteLocators;
 import SYNC.Locators.WorkPlaceLocators.WorkPlaceLocators;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -20,16 +19,15 @@ import java.util.HashMap;
 import java.util.concurrent.TimeUnit;
 
 import static WebHelpers.WebHelpers.*;
-import static WebHelpers.WebHelpers.switchToNewWindow;
 
-public class PGTListPriceRequestsTests {
+public class MRLineDetailsWaitingForAQuoteTests {
     public WebDriver driver = null;
     public static WorkPlaceLocators workPlaceLocators = null;
     public static EnterpriseApplicationLocators enterpriseApplicationLocators = null;
     public static FinanceSiteSettingsLocators financeSiteSettings = null;
-    public static PGTListPriceRequestsLocators pgtListPriceRequestsLocators = null;
+    public static MRLineDetailsWaitingForAQuoteLocators mrLineDetailsWaitingForAQuote = null;
 
-    public static final Logger logger = LogManager.getLogger(InvoicingStatusTransmissionPageTests.class);
+    public static final Logger logger = LogManager.getLogger(MRLineDetailsWaitingForAQuoteTests.class);
 
     @Before
     public void beforEeach() {
@@ -51,7 +49,7 @@ public class PGTListPriceRequestsTests {
         workPlaceLocators = new WorkPlaceLocators(driver);
         enterpriseApplicationLocators = new EnterpriseApplicationLocators(driver);
         financeSiteSettings = new FinanceSiteSettingsLocators(driver);
-        pgtListPriceRequestsLocators = new PGTListPriceRequestsLocators(driver);
+        mrLineDetailsWaitingForAQuote = new MRLineDetailsWaitingForAQuoteLocators(driver);
 
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.manage().window().maximize();
@@ -69,62 +67,64 @@ public class PGTListPriceRequestsTests {
     }
 
     @Test
-    public void checkPGTListPriceRequestsPageIsAvailable(){
+    public void checkMRLineDetailsPageIsAvailable(){
         clickButtonIfEnable(workPlaceLocators.buttonEnterpriseApplication);
         switchToIFrame(driver, enterpriseApplicationLocators.iFrameEnterpriseApplicationPage);
-        clickButtonIfEnable(enterpriseApplicationLocators.linkPGT_ListPriceRequests);
+        clickButtonIfEnable(enterpriseApplicationLocators.linkMRLineDetailsWaitingforAQuoteClientPrice);
         switchToNewWindow(driver);
 
-        Assert.assertEquals("PGT List Price Requests", pgtListPriceRequestsLocators.headerText.getText());
+        Assert.assertEquals("MR Line Details (Waiting for a Quote/Client Price)", mrLineDetailsWaitingForAQuote.headerText.getText());
     }
 
     @Test
-    public void checkPGTListPriceRequests_DropDownListRecordsPerPageIsEnable_25(){
+    public void checkMRLineDetails_DropDownListRecordsPerPageIsEnable_25() throws InterruptedException {
         clickButtonIfEnable(workPlaceLocators.buttonEnterpriseApplication);
         switchToIFrame(driver, enterpriseApplicationLocators.iFrameEnterpriseApplicationPage);
-        clickButtonIfEnable(enterpriseApplicationLocators.linkPGT_ListPriceRequests);
+        clickButtonIfEnable(enterpriseApplicationLocators.linkMRLineDetailsWaitingforAQuoteClientPrice);
         switchToNewWindow(driver);
-        selectWebElementFromDropDownList(pgtListPriceRequestsLocators.dropDownListRecordsPerPage, "25");
+        selectWebElementFromDropDownList(mrLineDetailsWaitingForAQuote.dropDownListRecordsPerPage, "25");
+        //List<WebElement> tableRows = driver.findElements(By.xpath("//div[@class='jsgrid-grid-body']//table[@class='jsgrid-table']/tbody/tr"));
+        //System.out.println("Table contains rows: " + tableRows.size());
 
-        Assert.assertEquals("25", pgtListPriceRequestsLocators.dropDownListRecordsPerPage.getAttribute("value"));
+        Assert.assertEquals("25", mrLineDetailsWaitingForAQuote.dropDownListRecordsPerPage.getAttribute("value"));
     }
 
     @Test
-    public void checkPGTListPriceRequests_ButtonExportToExcelIsEnable_FileIsDownloaded() throws InterruptedException {
+    public void checkMRLineDetails_APagination(){
         clickButtonIfEnable(workPlaceLocators.buttonEnterpriseApplication);
         switchToIFrame(driver, enterpriseApplicationLocators.iFrameEnterpriseApplicationPage);
-        clickButtonIfEnable(enterpriseApplicationLocators.linkPGT_ListPriceRequests);
+        clickButtonIfEnable(enterpriseApplicationLocators.linkMRLineDetailsWaitingforAQuoteClientPrice);
         switchToNewWindow(driver);
-        clickButtonIfEnable(pgtListPriceRequestsLocators.buttonExportToExcelMRLineDetails);
+        mrLineDetailsWaitingForAQuote.checkPaginationPanelButtons(driver);
+
+        Assert.assertEquals(false, mrLineDetailsWaitingForAQuote.buttonSecondPage.isSelected());
+    }
+
+    @Test
+    public void checkMRLineDetails_ButtonExportToExcelIsEnable_FileIsDownloaded() throws InterruptedException {
+        clickButtonIfEnable(workPlaceLocators.buttonEnterpriseApplication);
+        switchToIFrame(driver, enterpriseApplicationLocators.iFrameEnterpriseApplicationPage);
+        clickButtonIfEnable(enterpriseApplicationLocators.linkMRLineDetailsWaitingforAQuoteClientPrice);
+        switchToNewWindow(driver);
         Thread.sleep(2000);
-        isFileDownloaded("C:\\Users\\viktor.bibik\\Downloads\\Tests", "PGT List Prices.xlsx");
+        //waitElementToBeClickable(driver, 5, mrLineDetailsWaitingForAQuote.buttonExportToExcelMRLineDetails);
+        clickButtonIfEnable(mrLineDetailsWaitingForAQuote.buttonExportToExcelMRLineDetails);
+        Thread.sleep(2000);
+        isFileDownloaded("C:\\Users\\viktor.bibik\\Downloads\\Tests", "Mr Lines Detail.xlsx");
 
-        Assert.assertEquals(true, pgtListPriceRequestsLocators.buttonExportToExcelMRLineDetails.isEnabled());
+        Assert.assertEquals(true, mrLineDetailsWaitingForAQuote.buttonExportToExcelMRLineDetails.isEnabled());
     }
 
     @Test
-    public void checkPGTListPriceRequests_DetailedItemPage(){
+    public void checkMRLineDetails_DetailedItemPage(){
         clickButtonIfEnable(workPlaceLocators.buttonEnterpriseApplication);
         switchToIFrame(driver, enterpriseApplicationLocators.iFrameEnterpriseApplicationPage);
-        clickButtonIfEnable(enterpriseApplicationLocators.linkPGT_ListPriceRequests);
+        clickButtonIfEnable(enterpriseApplicationLocators.linkMRLineDetailsWaitingforAQuoteClientPrice);
         switchToNewWindow(driver);
-        clickWebElementIfEnable(pgtListPriceRequestsLocators.linkStatusInLastRowRGTListPriceRequests);
+        clickButtonIfEnable(mrLineDetailsWaitingForAQuote.buttonWaitingForQuote);
         switchToNewWindow(driver);
 
         Assert.assertEquals("Microsoft Dynamics CRM", driver.getTitle());
     }
 
-    @Test
-    public void checkPGTListPriceRequests_checkboxIsClickable(){
-        clickButtonIfEnable(workPlaceLocators.buttonEnterpriseApplication);
-        switchToIFrame(driver, enterpriseApplicationLocators.iFrameEnterpriseApplicationPage);
-        clickButtonIfEnable(enterpriseApplicationLocators.linkPGT_ListPriceRequests);
-        switchToNewWindow(driver);
-        waitElementPresence(driver, 5, pgtListPriceRequestsLocators.checkboxSelectAll);
-        clickButton(pgtListPriceRequestsLocators.checkboxSelectAll);
-        Assert.assertEquals(true, checkboxIsSelectrd(pgtListPriceRequestsLocators.checkBoxFirstitem));
-        waitElementPresence(driver, 5, pgtListPriceRequestsLocators.checkBoxFirstitem);
-        clickButton(pgtListPriceRequestsLocators.checkBoxFirstitem);
-        Assert.assertEquals(false, checkboxIsSelectrd(pgtListPriceRequestsLocators.checkBoxFirstitem));
-    }
 }

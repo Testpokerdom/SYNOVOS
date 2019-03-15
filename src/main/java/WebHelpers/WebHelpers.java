@@ -422,4 +422,12 @@ public class WebHelpers {
         return  isSelected;
     }
 
+    public static void compareURLs(WebDriver driver, String firstPageURL, String secondPageURL){
+        boolean compare = firstPageURL == secondPageURL;
+        System.out.println("First page url is: " + firstPageURL);
+        System.out.println("First page url is: " + secondPageURL);
+
+        Assert.assertNotSame(firstPageURL, secondPageURL);
+    }
+
 }

@@ -1,8 +1,8 @@
-package SYNC.Tests;
+package SYNC.Tests.System_Tests;
 
 import SYNC.Locators.WorkPlaceLocators.EnterpriseApplicationLocators.EnterpriseApplicationLocators;
 import SYNC.Locators.WorkPlaceLocators.EnterpriseApplicationLocators.FinanceSiteSettingsLocators.FinanceSiteSettingsLocators;
-import SYNC.Locators.WorkPlaceLocators.EnterpriseApplicationLocators.MRLineSummaryWaitingForAQuoteClientPrice.MrLineSummaryLocators;
+import SYNC.Locators.WorkPlaceLocators.EnterpriseApplicationLocators.ItemsWithoutManufacturerCreatedIn30DaysLocators.ItemsWithoutManufacturerLocators;
 import SYNC.Locators.WorkPlaceLocators.WorkPlaceLocators;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -19,16 +19,15 @@ import java.util.HashMap;
 import java.util.concurrent.TimeUnit;
 
 import static WebHelpers.WebHelpers.*;
-import static WebHelpers.WebHelpers.selectWebElementFromDropDownList;
 
-public class MRLineSummaryTests {
+public class ItemsWithoutManufacturerLocators30DaysTests {
     public WebDriver driver = null;
     public static WorkPlaceLocators workPlaceLocators = null;
     public static EnterpriseApplicationLocators enterpriseApplicationLocators = null;
     public static FinanceSiteSettingsLocators financeSiteSettings = null;
-    public static MrLineSummaryLocators mrLineSummary = null;
+    public static ItemsWithoutManufacturerLocators itemsWithoutManufacturer = null;
 
-    public static final Logger logger = LogManager.getLogger(MRLineSummaryTests.class);
+    public static final Logger logger = LogManager.getLogger(InvoicingStatusTransmissionPageTests.class);
 
     @Before
     public void beforEeach() {
@@ -50,7 +49,7 @@ public class MRLineSummaryTests {
         workPlaceLocators = new WorkPlaceLocators(driver);
         enterpriseApplicationLocators = new EnterpriseApplicationLocators(driver);
         financeSiteSettings = new FinanceSiteSettingsLocators(driver);
-        mrLineSummary = new MrLineSummaryLocators(driver);
+        itemsWithoutManufacturer = new ItemsWithoutManufacturerLocators(driver);
 
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.manage().window().maximize();
@@ -68,38 +67,50 @@ public class MRLineSummaryTests {
     }
 
     @Test
-    public void checkMRLineSummaryPageIsAvailable(){
+    public void checkItemsWithoutManufacturer_PageIsAvailable(){
         clickButtonIfEnable(workPlaceLocators.buttonEnterpriseApplication);
         switchToIFrame(driver, enterpriseApplicationLocators.iFrameEnterpriseApplicationPage);
-        clickButtonIfEnable(enterpriseApplicationLocators.linkMRLineSummaryWaitingforAQuoteClientPrice);
+        clickButtonIfEnable(enterpriseApplicationLocators.linkItemswithoutManufacturerCreatedin30days);
         switchToNewWindow(driver);
 
-        Assert.assertEquals("MR Line Summary (Waiting for a Quote/Client Price)", mrLineSummary.headerText.getText());
+        Assert.assertEquals("Items Without Manufacturer (Created in 30 days)", itemsWithoutManufacturer.headerText.getText());
+
     }
 
     @Test
-    public void checkMRLineSummary_DropDownListRecordsPerPageIsEnable_25() throws InterruptedException {
+    public void checkItemsWithoutManufacturer_DetailedItemPage(){
         clickButtonIfEnable(workPlaceLocators.buttonEnterpriseApplication);
         switchToIFrame(driver, enterpriseApplicationLocators.iFrameEnterpriseApplicationPage);
-        clickButtonIfEnable(enterpriseApplicationLocators.linkMRLineSummaryWaitingforAQuoteClientPrice);
+        clickButtonIfEnable(enterpriseApplicationLocators.linkItemswithoutManufacturerCreatedin30days);
         switchToNewWindow(driver);
-        selectWebElementFromDropDownList(mrLineSummary.dropDownListRecordsPerPage, "25");
+        clickWebElementIfEnable(itemsWithoutManufacturer.linkNameInLastRow);
+        switchToNewWindow(driver);
 
-        Assert.assertEquals("25", mrLineSummary.dropDownListRecordsPerPage.getAttribute("value"));
+        Assert.assertEquals("Microsoft Dynamics CRM", driver.getTitle());
+
     }
 
     @Test
-    public void checkMRLineSummary_ButtonExportToExcelIsEnable_FileIsDownloaded() throws InterruptedException {
+    public void checkItemsWithoutManufacturer_DropDownListRecordsPerPageIsEnable_25(){
         clickButtonIfEnable(workPlaceLocators.buttonEnterpriseApplication);
         switchToIFrame(driver, enterpriseApplicationLocators.iFrameEnterpriseApplicationPage);
-        clickButtonIfEnable(enterpriseApplicationLocators.linkMRLineSummaryWaitingforAQuoteClientPrice);
+        clickButtonIfEnable(enterpriseApplicationLocators.linkItemswithoutManufacturerCreatedin30days);
         switchToNewWindow(driver);
-        Thread.sleep(2000);
-        //waitElementToBeClickable(driver, 5, mrLineDetailsWaitingForAQuote.buttonExportToExcelMRLineDetails);
-        clickButtonIfEnable(mrLineSummary.buttonExportToExcelMRLineDetails);
-        Thread.sleep(2000);
-        isFileDownloaded("C:\\Users\\viktor.bibik\\Downloads\\Tests", "Mr Lines Summary.xlsx");
+        selectWebElementFromDropDownList(itemsWithoutManufacturer.dropDownListRecordsPerPage, "25");
 
-        Assert.assertEquals(true, mrLineSummary.buttonExportToExcelMRLineDetails.isEnabled());
+        Assert.assertEquals("25", itemsWithoutManufacturer.dropDownListRecordsPerPage.getAttribute("value"));
+    }
+
+    @Test
+    public void checkItemsWithoutManufacturer_ButtonExportToExcelIsEnable_FileIsDownloaded() throws InterruptedException {
+        clickButtonIfEnable(workPlaceLocators.buttonEnterpriseApplication);
+        switchToIFrame(driver, enterpriseApplicationLocators.iFrameEnterpriseApplicationPage);
+        clickButtonIfEnable(enterpriseApplicationLocators.linkItemswithoutManufacturerCreatedin30days);
+        switchToNewWindow(driver);
+        clickButtonIfEnable(itemsWithoutManufacturer.buttonExportToExcelItemsWithoutManufacturePage);
+        Thread.sleep(2000);
+        isFileDownloaded("C:\\Users\\viktor.bibik\\Downloads\\Tests", "Items Without Manufacturer.xlsx");
+
+        Assert.assertEquals(true, itemsWithoutManufacturer.buttonExportToExcelItemsWithoutManufacturePage.isEnabled());
     }
 }

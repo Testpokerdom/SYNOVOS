@@ -1,7 +1,8 @@
-package SYNC.Tests;
+package SYNC.Tests.System_Tests;
 
 import SYNC.Locators.WorkPlaceLocators.EnterpriseApplicationLocators.EnterpriseApplicationLocators;
 import SYNC.Locators.WorkPlaceLocators.EnterpriseApplicationLocators.FinanceSiteSettingsLocators.FinanceSiteSettingsLocators;
+import SYNC.Locators.WorkPlaceLocators.EnterpriseApplicationLocators.MRLineSummaryWaitingForAQuoteClientPrice.MrLineSummaryLocators;
 import SYNC.Locators.WorkPlaceLocators.WorkPlaceLocators;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -12,22 +13,22 @@ import org.junit.Test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
-import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
 import java.util.HashMap;
 import java.util.concurrent.TimeUnit;
 
 import static WebHelpers.WebHelpers.*;
+import static WebHelpers.WebHelpers.selectWebElementFromDropDownList;
 
-public class FinanceSiteSettingsPageTests {
+public class MRLineSummaryTests {
     public WebDriver driver = null;
-    public Actions action = null;
     public static WorkPlaceLocators workPlaceLocators = null;
     public static EnterpriseApplicationLocators enterpriseApplicationLocators = null;
     public static FinanceSiteSettingsLocators financeSiteSettings = null;
+    public static MrLineSummaryLocators mrLineSummary = null;
 
-    public static final Logger logger = LogManager.getLogger(FinanceSiteSettingsPageTests.class);
+    public static final Logger logger = LogManager.getLogger(MRLineSummaryTests.class);
 
     @Before
     public void beforEeach() {
@@ -37,14 +38,11 @@ public class FinanceSiteSettingsPageTests {
         String downloadFilepath = "C:\\Users\\viktor.bibik\\Downloads\\Tests";
         HashMap<String, Object> chromePrefs = new HashMap<String, Object>();
         chromePrefs.put("profile.default_content_settings.popups", 0);
-        //chromePrefs.put("download.default_directory", folder.getAbsolutePath());
         chromePrefs.put("download.default_directory", downloadFilepath);
 
         options.setExperimentalOption("prefs", chromePrefs);
         DesiredCapabilities cap = DesiredCapabilities.chrome();
-        //cap.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);
         cap.setCapability(ChromeOptions.CAPABILITY, options);
-        //driver = new ChromeDriver(cap);
 
         driver = new ChromeDriver(options);
 
@@ -52,7 +50,7 @@ public class FinanceSiteSettingsPageTests {
         workPlaceLocators = new WorkPlaceLocators(driver);
         enterpriseApplicationLocators = new EnterpriseApplicationLocators(driver);
         financeSiteSettings = new FinanceSiteSettingsLocators(driver);
-
+        mrLineSummary = new MrLineSummaryLocators(driver);
 
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.manage().window().maximize();
@@ -69,53 +67,39 @@ public class FinanceSiteSettingsPageTests {
 
     }
 
-
     @Test
-    public void checkFinanceSiteSettings_PageIsAvailable(){
+    public void checkMRLineSummaryPageIsAvailable(){
         clickButtonIfEnable(workPlaceLocators.buttonEnterpriseApplication);
         switchToIFrame(driver, enterpriseApplicationLocators.iFrameEnterpriseApplicationPage);
-        clickButtonIfEnable(enterpriseApplicationLocators.linkFinanceSiteSettings);
+        clickButtonIfEnable(enterpriseApplicationLocators.linkMRLineSummaryWaitingforAQuoteClientPrice);
         switchToNewWindow(driver);
 
-        Assert.assertEquals("Finance Site Settings", financeSiteSettings.headerText.getText());
+        Assert.assertEquals("MR Line Summary (Waiting for a Quote/Client Price)", mrLineSummary.headerText.getText());
     }
 
     @Test
-    public void checkFinanceSiteSettingsPage_DropDownListRecordsPerPageIsEnable_25(){
+    public void checkMRLineSummary_DropDownListRecordsPerPageIsEnable_25() throws InterruptedException {
         clickButtonIfEnable(workPlaceLocators.buttonEnterpriseApplication);
         switchToIFrame(driver, enterpriseApplicationLocators.iFrameEnterpriseApplicationPage);
-        clickButtonIfEnable(enterpriseApplicationLocators.linkFinanceSiteSettings);
+        clickButtonIfEnable(enterpriseApplicationLocators.linkMRLineSummaryWaitingforAQuoteClientPrice);
         switchToNewWindow(driver);
-        selectWebElementFromDropDownList(financeSiteSettings.dropDownListRecordsPerPage, "25");
+        selectWebElementFromDropDownList(mrLineSummary.dropDownListRecordsPerPage, "25");
 
-        Assert.assertEquals("25", financeSiteSettings.dropDownListRecordsPerPage.getAttribute("value"));
+        Assert.assertEquals("25", mrLineSummary.dropDownListRecordsPerPage.getAttribute("value"));
     }
 
     @Test
-    public void checkFinanceSiteSettingsPage_ButtonExportToExcelIsEnable() throws InterruptedException {
+    public void checkMRLineSummary_ButtonExportToExcelIsEnable_FileIsDownloaded() throws InterruptedException {
         clickButtonIfEnable(workPlaceLocators.buttonEnterpriseApplication);
         switchToIFrame(driver, enterpriseApplicationLocators.iFrameEnterpriseApplicationPage);
-        clickButtonIfEnable(enterpriseApplicationLocators.linkFinanceSiteSettings);
+        clickButtonIfEnable(enterpriseApplicationLocators.linkMRLineSummaryWaitingforAQuoteClientPrice);
         switchToNewWindow(driver);
-        clickButtonIfEnable(financeSiteSettings.buttonExportToExcel);
         Thread.sleep(2000);
-        isFileDownloaded("C:\\Users\\viktor.bibik\\Downloads\\Tests", "Finance Site Settings.xlsx");
-
-        Assert.assertEquals(true, financeSiteSettings.buttonExportToExcel.isEnabled());
-    }
-
-    @Test
-    public void checkFinanceSiteSettingsPage_ButtonTransmissionSummaryIsEnable() throws InterruptedException {
-        clickButtonIfEnable(workPlaceLocators.buttonEnterpriseApplication);
-        switchToIFrame(driver, enterpriseApplicationLocators.iFrameEnterpriseApplicationPage);
-        clickButtonIfEnable(enterpriseApplicationLocators.linkFinanceSiteSettings);
-        switchToNewWindow(driver);
-        clickButtonIfEnable(financeSiteSettings.buttonTransmissionSummary_last_3_months);
-        //
+        //waitElementToBeClickable(driver, 5, mrLineDetailsWaitingForAQuote.buttonExportToExcelMRLineDetails);
+        clickButtonIfEnable(mrLineSummary.buttonExportToExcelMRLineDetails);
         Thread.sleep(2000);
-        isFileDownloaded("C:\\Users\\viktor.bibik\\Downloads\\Tests", "Transmitted Invoices.xlsm");
+        isFileDownloaded("C:\\Users\\viktor.bibik\\Downloads\\Tests", "Mr Lines Summary.xlsx");
 
-        Assert.assertEquals(true, financeSiteSettings.buttonTransmissionSummary_last_3_months.isEnabled());
+        Assert.assertEquals(true, mrLineSummary.buttonExportToExcelMRLineDetails.isEnabled());
     }
-
 }

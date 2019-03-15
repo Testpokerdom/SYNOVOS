@@ -1,8 +1,8 @@
-package SYNC.Tests;
+package SYNC.Tests.System_Tests;
 
 import SYNC.Locators.WorkPlaceLocators.EnterpriseApplicationLocators.EnterpriseApplicationLocators;
 import SYNC.Locators.WorkPlaceLocators.EnterpriseApplicationLocators.FinanceSiteSettingsLocators.FinanceSiteSettingsLocators;
-import SYNC.Locators.WorkPlaceLocators.EnterpriseApplicationLocators.ItemsWithoutManufacturerCreatedIn30DaysLocators.ItemsWithoutManufacturerLocators;
+import SYNC.Locators.WorkPlaceLocators.EnterpriseApplicationLocators.PGTManufactureFocusedSourcingLocators.PGTManufactureFocusedSourcingLocators;
 import SYNC.Locators.WorkPlaceLocators.WorkPlaceLocators;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -19,13 +19,14 @@ import java.util.HashMap;
 import java.util.concurrent.TimeUnit;
 
 import static WebHelpers.WebHelpers.*;
+import static WebHelpers.WebHelpers.isFileDownloaded;
 
-public class ItemsWithoutManufacturerLocators30DaysTests {
+public class PGTManufactureFocusedSourcingTests {
     public WebDriver driver = null;
     public static WorkPlaceLocators workPlaceLocators = null;
     public static EnterpriseApplicationLocators enterpriseApplicationLocators = null;
     public static FinanceSiteSettingsLocators financeSiteSettings = null;
-    public static ItemsWithoutManufacturerLocators itemsWithoutManufacturer = null;
+    public static PGTManufactureFocusedSourcingLocators pgtManufactureFocusedSourcingLocators = null;
 
     public static final Logger logger = LogManager.getLogger(InvoicingStatusTransmissionPageTests.class);
 
@@ -49,7 +50,7 @@ public class ItemsWithoutManufacturerLocators30DaysTests {
         workPlaceLocators = new WorkPlaceLocators(driver);
         enterpriseApplicationLocators = new EnterpriseApplicationLocators(driver);
         financeSiteSettings = new FinanceSiteSettingsLocators(driver);
-        itemsWithoutManufacturer = new ItemsWithoutManufacturerLocators(driver);
+        pgtManufactureFocusedSourcingLocators = new PGTManufactureFocusedSourcingLocators(driver);
 
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.manage().window().maximize();
@@ -67,50 +68,36 @@ public class ItemsWithoutManufacturerLocators30DaysTests {
     }
 
     @Test
-    public void checkItemsWithoutManufacturer_PageIsAvailable(){
+    public void checkPGTManufactureFocusedPageIsAvailable(){
         clickButtonIfEnable(workPlaceLocators.buttonEnterpriseApplication);
         switchToIFrame(driver, enterpriseApplicationLocators.iFrameEnterpriseApplicationPage);
-        clickButtonIfEnable(enterpriseApplicationLocators.linkItemswithoutManufacturerCreatedin30days);
+        clickButtonIfEnable(enterpriseApplicationLocators.linkPGT_ManufactureFocusedSourcing);
         switchToNewWindow(driver);
 
-        Assert.assertEquals("Items Without Manufacturer (Created in 30 days)", itemsWithoutManufacturer.headerText.getText());
-
+        Assert.assertEquals("PGT Manufacture Focused Sourcing", pgtManufactureFocusedSourcingLocators.headerText.getText());
     }
 
     @Test
-    public void checkItemsWithoutManufacturer_DetailedItemPage(){
+    public void checkPGTManufactureFocused_DropDownListRecordsPerPageIsEnable_25(){
         clickButtonIfEnable(workPlaceLocators.buttonEnterpriseApplication);
         switchToIFrame(driver, enterpriseApplicationLocators.iFrameEnterpriseApplicationPage);
-        clickButtonIfEnable(enterpriseApplicationLocators.linkItemswithoutManufacturerCreatedin30days);
+        clickButtonIfEnable(enterpriseApplicationLocators.linkPGT_ManufactureFocusedSourcing);
         switchToNewWindow(driver);
-        clickWebElementIfEnable(itemsWithoutManufacturer.linkNameInLastRow);
-        switchToNewWindow(driver);
+        selectWebElementFromDropDownList(pgtManufactureFocusedSourcingLocators.dropDownListRecordsPerPage, "25");
 
-        Assert.assertEquals("Microsoft Dynamics CRM", driver.getTitle());
-
+        Assert.assertEquals("25", pgtManufactureFocusedSourcingLocators.dropDownListRecordsPerPage.getAttribute("value"));
     }
 
     @Test
-    public void checkItemsWithoutManufacturer_DropDownListRecordsPerPageIsEnable_25(){
+    public void checkPGTManufactureFocused_ButtonExportToExcelIsEnable_FileIsDownloaded() throws InterruptedException {
         clickButtonIfEnable(workPlaceLocators.buttonEnterpriseApplication);
         switchToIFrame(driver, enterpriseApplicationLocators.iFrameEnterpriseApplicationPage);
-        clickButtonIfEnable(enterpriseApplicationLocators.linkItemswithoutManufacturerCreatedin30days);
+        clickButtonIfEnable(enterpriseApplicationLocators.linkPGT_ManufactureFocusedSourcing);
         switchToNewWindow(driver);
-        selectWebElementFromDropDownList(itemsWithoutManufacturer.dropDownListRecordsPerPage, "25");
-
-        Assert.assertEquals("25", itemsWithoutManufacturer.dropDownListRecordsPerPage.getAttribute("value"));
-    }
-
-    @Test
-    public void checkItemsWithoutManufacturer_ButtonExportToExcelIsEnable_FileIsDownloaded() throws InterruptedException {
-        clickButtonIfEnable(workPlaceLocators.buttonEnterpriseApplication);
-        switchToIFrame(driver, enterpriseApplicationLocators.iFrameEnterpriseApplicationPage);
-        clickButtonIfEnable(enterpriseApplicationLocators.linkItemswithoutManufacturerCreatedin30days);
-        switchToNewWindow(driver);
-        clickButtonIfEnable(itemsWithoutManufacturer.buttonExportToExcelItemsWithoutManufacturePage);
+        clickButtonIfEnable(pgtManufactureFocusedSourcingLocators.buttonExportToExcelPGTManufactureFocused);
         Thread.sleep(2000);
-        isFileDownloaded("C:\\Users\\viktor.bibik\\Downloads\\Tests", "Items Without Manufacturer.xlsx");
+        isFileDownloaded("C:\\Users\\viktor.bibik\\Downloads\\Tests", "Mr Lines Manufacture Focused.xlsx");
 
-        Assert.assertEquals(true, itemsWithoutManufacturer.buttonExportToExcelItemsWithoutManufacturePage.isEnabled());
+        Assert.assertEquals(true, pgtManufactureFocusedSourcingLocators.buttonExportToExcelPGTManufactureFocused.isEnabled());
     }
 }

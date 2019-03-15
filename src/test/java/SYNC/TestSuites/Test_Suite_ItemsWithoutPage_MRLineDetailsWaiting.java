@@ -1,7 +1,7 @@
 package SYNC.TestSuites;
 
-import SYNC.Tests.ItemsWithoutManufacturerLocators30DaysTests;
-import SYNC.Tests.MRLineDetailsWaitingForAQuoteTests;
+import SYNC.Tests.System_Tests.ItemsWithoutManufacturerLocators30DaysTests;
+import SYNC.Tests.System_Tests.MRLineDetailsWaitingForAQuoteTests;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.junit.runner.RunWith;

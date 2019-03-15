@@ -1,8 +1,8 @@
-package SYNC.Tests;
+package SYNC.Tests.System_Tests;
 
 import SYNC.Locators.WorkPlaceLocators.EnterpriseApplicationLocators.EnterpriseApplicationLocators;
 import SYNC.Locators.WorkPlaceLocators.EnterpriseApplicationLocators.FinanceSiteSettingsLocators.FinanceSiteSettingsLocators;
-import SYNC.Locators.WorkPlaceLocators.EnterpriseApplicationLocators.InvoicStatusTransmitionLocators.InvoicingStatusTransmitionLocators;
+import SYNC.Locators.WorkPlaceLocators.EnterpriseApplicationLocators.PGTListPriceRequests.PGTListPriceRequestsLocators;
 import SYNC.Locators.WorkPlaceLocators.WorkPlaceLocators;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -13,22 +13,20 @@ import org.junit.Test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
-import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.remote.DesiredCapabilities;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.util.HashMap;
 import java.util.concurrent.TimeUnit;
 
 import static WebHelpers.WebHelpers.*;
+import static WebHelpers.WebHelpers.switchToNewWindow;
 
-public class InvoicingStatusTransmissionPageTests {
+public class PGTListPriceRequestsTests {
     public WebDriver driver = null;
     public static WorkPlaceLocators workPlaceLocators = null;
     public static EnterpriseApplicationLocators enterpriseApplicationLocators = null;
     public static FinanceSiteSettingsLocators financeSiteSettings = null;
-    public static InvoicingStatusTransmitionLocators invoicingStatusTransmitionLocators = null;
+    public static PGTListPriceRequestsLocators pgtListPriceRequestsLocators = null;
 
     public static final Logger logger = LogManager.getLogger(InvoicingStatusTransmissionPageTests.class);
 
@@ -52,8 +50,7 @@ public class InvoicingStatusTransmissionPageTests {
         workPlaceLocators = new WorkPlaceLocators(driver);
         enterpriseApplicationLocators = new EnterpriseApplicationLocators(driver);
         financeSiteSettings = new FinanceSiteSettingsLocators(driver);
-        invoicingStatusTransmitionLocators = new InvoicingStatusTransmitionLocators(driver);
-
+        pgtListPriceRequestsLocators = new PGTListPriceRequestsLocators(driver);
 
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.manage().window().maximize();
@@ -71,52 +68,62 @@ public class InvoicingStatusTransmissionPageTests {
     }
 
     @Test
-    public void checkInvoicingStatusPageIsAvailable(){
+    public void checkPGTListPriceRequestsPageIsAvailable(){
         clickButtonIfEnable(workPlaceLocators.buttonEnterpriseApplication);
         switchToIFrame(driver, enterpriseApplicationLocators.iFrameEnterpriseApplicationPage);
-        clickButtonIfEnable(enterpriseApplicationLocators.linkInvoicingStatusTransmission);
+        clickButtonIfEnable(enterpriseApplicationLocators.linkPGT_ListPriceRequests);
         switchToNewWindow(driver);
 
-        Assert.assertEquals("Invoicing Status/Transmission", invoicingStatusTransmitionLocators.headerText.getText());
-
+        Assert.assertEquals("PGT List Price Requests", pgtListPriceRequestsLocators.headerText.getText());
     }
 
     @Test
-    public void checkInvoicingStatus_DropDownListRecordsPerPageIsEnable_25(){
+    public void checkPGTListPriceRequests_DropDownListRecordsPerPageIsEnable_25(){
         clickButtonIfEnable(workPlaceLocators.buttonEnterpriseApplication);
         switchToIFrame(driver, enterpriseApplicationLocators.iFrameEnterpriseApplicationPage);
-        clickButtonIfEnable(enterpriseApplicationLocators.linkInvoicingStatusTransmission);
+        clickButtonIfEnable(enterpriseApplicationLocators.linkPGT_ListPriceRequests);
         switchToNewWindow(driver);
-        selectWebElementFromDropDownList(invoicingStatusTransmitionLocators.dropDownListRecordsPerPage, "25");
+        selectWebElementFromDropDownList(pgtListPriceRequestsLocators.dropDownListRecordsPerPage, "25");
 
-        Assert.assertEquals("25", invoicingStatusTransmitionLocators.dropDownListRecordsPerPage.getAttribute("value"));
+        Assert.assertEquals("25", pgtListPriceRequestsLocators.dropDownListRecordsPerPage.getAttribute("value"));
     }
 
     @Test
-    public void checkInvoicingStatus_ButtonExportToExcelIsEnable() throws InterruptedException {
+    public void checkPGTListPriceRequests_ButtonExportToExcelIsEnable_FileIsDownloaded() throws InterruptedException {
         clickButtonIfEnable(workPlaceLocators.buttonEnterpriseApplication);
         switchToIFrame(driver, enterpriseApplicationLocators.iFrameEnterpriseApplicationPage);
-        clickButtonIfEnable(enterpriseApplicationLocators.linkInvoicingStatusTransmission);
+        clickButtonIfEnable(enterpriseApplicationLocators.linkPGT_ListPriceRequests);
         switchToNewWindow(driver);
-        clickButtonIfEnable(invoicingStatusTransmitionLocators.buttonExportToExcel);
+        clickButtonIfEnable(pgtListPriceRequestsLocators.buttonExportToExcelMRLineDetails);
         Thread.sleep(2000);
-        isFileDownloaded("C:\\Users\\viktor.bibik\\Downloads\\Tests", "Invoicing Status.xlsx");
+        isFileDownloaded("C:\\Users\\viktor.bibik\\Downloads\\Tests", "PGT List Prices.xlsx");
 
-        Assert.assertEquals(true, invoicingStatusTransmitionLocators.buttonExportToExcel.isEnabled());
+        Assert.assertEquals(true, pgtListPriceRequestsLocators.buttonExportToExcelMRLineDetails.isEnabled());
     }
 
     @Test
-    public void checkInvoicingStatus_DetailedItemPage(){
+    public void checkPGTListPriceRequests_DetailedItemPage(){
         clickButtonIfEnable(workPlaceLocators.buttonEnterpriseApplication);
         switchToIFrame(driver, enterpriseApplicationLocators.iFrameEnterpriseApplicationPage);
-        clickButtonIfEnable(enterpriseApplicationLocators.linkInvoicingStatusTransmission);
+        clickButtonIfEnable(enterpriseApplicationLocators.linkPGT_ListPriceRequests);
+        switchToNewWindow(driver);
+        clickWebElementIfEnable(pgtListPriceRequestsLocators.linkStatusInLastRowRGTListPriceRequests);
         switchToNewWindow(driver);
 
-        clickButtonIfEnable(invoicingStatusTransmitionLocators.linkNameInLastRowInvoicingStatusTransmition);
-        switchToIFrame(driver, invoicingStatusTransmitionLocators.iFrameTransmitInvoice);
-
-        Assert.assertEquals("Transmit Invoices", invoicingStatusTransmitionLocators.textTransmitInvoices.getText());
-
+        Assert.assertEquals("Microsoft Dynamics CRM", driver.getTitle());
     }
 
+    @Test
+    public void checkPGTListPriceRequests_checkboxIsClickable(){
+        clickButtonIfEnable(workPlaceLocators.buttonEnterpriseApplication);
+        switchToIFrame(driver, enterpriseApplicationLocators.iFrameEnterpriseApplicationPage);
+        clickButtonIfEnable(enterpriseApplicationLocators.linkPGT_ListPriceRequests);
+        switchToNewWindow(driver);
+        waitElementPresence(driver, 5, pgtListPriceRequestsLocators.checkboxSelectAll);
+        clickButton(pgtListPriceRequestsLocators.checkboxSelectAll);
+        Assert.assertEquals(true, checkboxIsSelectrd(pgtListPriceRequestsLocators.checkBoxFirstitem));
+        waitElementPresence(driver, 5, pgtListPriceRequestsLocators.checkBoxFirstitem);
+        clickButton(pgtListPriceRequestsLocators.checkBoxFirstitem);
+        Assert.assertEquals(false, checkboxIsSelectrd(pgtListPriceRequestsLocators.checkBoxFirstitem));
+    }
 }

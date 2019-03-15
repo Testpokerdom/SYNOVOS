@@ -1,9 +1,7 @@
-package SYNC.Tests;
+package SYNC.Tests.System_Tests;
 
 import SYNC.Locators.WorkPlaceLocators.EnterpriseApplicationLocators.EnterpriseApplicationLocators;
 import SYNC.Locators.WorkPlaceLocators.EnterpriseApplicationLocators.FinanceSiteSettingsLocators.FinanceSiteSettingsLocators;
-import SYNC.Locators.WorkPlaceLocators.EnterpriseApplicationLocators.PGTManufactureFocusedSourcingLocators.PGTManufactureFocusedSourcingLocators;
-import SYNC.Locators.WorkPlaceLocators.EnterpriseApplicationLocators.VendorApprovalLocators.VendorApprovalLocators;
 import SYNC.Locators.WorkPlaceLocators.WorkPlaceLocators;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -14,22 +12,22 @@ import org.junit.Test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
 import java.util.HashMap;
 import java.util.concurrent.TimeUnit;
 
 import static WebHelpers.WebHelpers.*;
-import static WebHelpers.WebHelpers.isFileDownloaded;
 
-public class VendorApprovalTests{
+public class FinanceSiteSettingsPageTests {
     public WebDriver driver = null;
+    public Actions action = null;
     public static WorkPlaceLocators workPlaceLocators = null;
     public static EnterpriseApplicationLocators enterpriseApplicationLocators = null;
     public static FinanceSiteSettingsLocators financeSiteSettings = null;
-    public static VendorApprovalLocators vendorApprovalLocators = null;
 
-    public static final Logger logger = LogManager.getLogger(InvoicingStatusTransmissionPageTests.class);
+    public static final Logger logger = LogManager.getLogger(FinanceSiteSettingsPageTests.class);
 
     @Before
     public void beforEeach() {
@@ -39,11 +37,14 @@ public class VendorApprovalTests{
         String downloadFilepath = "C:\\Users\\viktor.bibik\\Downloads\\Tests";
         HashMap<String, Object> chromePrefs = new HashMap<String, Object>();
         chromePrefs.put("profile.default_content_settings.popups", 0);
+        //chromePrefs.put("download.default_directory", folder.getAbsolutePath());
         chromePrefs.put("download.default_directory", downloadFilepath);
 
         options.setExperimentalOption("prefs", chromePrefs);
         DesiredCapabilities cap = DesiredCapabilities.chrome();
+        //cap.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);
         cap.setCapability(ChromeOptions.CAPABILITY, options);
+        //driver = new ChromeDriver(cap);
 
         driver = new ChromeDriver(options);
 
@@ -51,7 +52,7 @@ public class VendorApprovalTests{
         workPlaceLocators = new WorkPlaceLocators(driver);
         enterpriseApplicationLocators = new EnterpriseApplicationLocators(driver);
         financeSiteSettings = new FinanceSiteSettingsLocators(driver);
-        vendorApprovalLocators = new VendorApprovalLocators(driver);
+
 
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.manage().window().maximize();
@@ -68,37 +69,53 @@ public class VendorApprovalTests{
 
     }
 
+
     @Test
-    public void checkPGTListPriceRequestsPageIsAvailable(){
+    public void checkFinanceSiteSettings_PageIsAvailable(){
         clickButtonIfEnable(workPlaceLocators.buttonEnterpriseApplication);
         switchToIFrame(driver, enterpriseApplicationLocators.iFrameEnterpriseApplicationPage);
-        clickButtonIfEnable(enterpriseApplicationLocators.linkVendorApproval);
+        clickButtonIfEnable(enterpriseApplicationLocators.linkFinanceSiteSettings);
         switchToNewWindow(driver);
 
-        Assert.assertEquals("Vendor Approval", vendorApprovalLocators.headerText.getText());
+        Assert.assertEquals("Finance Site Settings", financeSiteSettings.headerText.getText());
     }
 
     @Test
-    public void checkPGTListPriceRequests_DropDownListRecordsPerPageIsEnable_25(){
+    public void checkFinanceSiteSettingsPage_DropDownListRecordsPerPageIsEnable_25(){
         clickButtonIfEnable(workPlaceLocators.buttonEnterpriseApplication);
         switchToIFrame(driver, enterpriseApplicationLocators.iFrameEnterpriseApplicationPage);
-        clickButtonIfEnable(enterpriseApplicationLocators.linkVendorApproval);
+        clickButtonIfEnable(enterpriseApplicationLocators.linkFinanceSiteSettings);
         switchToNewWindow(driver);
-        selectWebElementFromDropDownList(vendorApprovalLocators.dropDownListRecordsPerPage, "25");
+        selectWebElementFromDropDownList(financeSiteSettings.dropDownListRecordsPerPage, "25");
 
-        Assert.assertEquals("25", vendorApprovalLocators.dropDownListRecordsPerPage.getAttribute("value"));
+        Assert.assertEquals("25", financeSiteSettings.dropDownListRecordsPerPage.getAttribute("value"));
     }
 
     @Test
-    public void checkPGTListPriceRequests_ButtonExportToExcelIsEnable_FileIsDownloaded() throws InterruptedException {
+    public void checkFinanceSiteSettingsPage_ButtonExportToExcelIsEnable() throws InterruptedException {
         clickButtonIfEnable(workPlaceLocators.buttonEnterpriseApplication);
         switchToIFrame(driver, enterpriseApplicationLocators.iFrameEnterpriseApplicationPage);
-        clickButtonIfEnable(enterpriseApplicationLocators.linkVendorApproval);
+        clickButtonIfEnable(enterpriseApplicationLocators.linkFinanceSiteSettings);
         switchToNewWindow(driver);
-        clickButtonIfEnable(vendorApprovalLocators.buttonExportToExcelPGTManufactureFocused);
+        clickButtonIfEnable(financeSiteSettings.buttonExportToExcel);
         Thread.sleep(2000);
-        isFileDownloaded("C:\\Users\\viktor.bibik\\Downloads\\Tests", "Vendor Approval_.xlsx");
+        isFileDownloaded("C:\\Users\\viktor.bibik\\Downloads\\Tests", "Finance Site Settings.xlsx");
 
-        Assert.assertEquals(true, vendorApprovalLocators.buttonExportToExcelPGTManufactureFocused.isEnabled());
+        Assert.assertEquals(true, financeSiteSettings.buttonExportToExcel.isEnabled());
     }
+
+    @Test
+    public void checkFinanceSiteSettingsPage_ButtonTransmissionSummaryIsEnable() throws InterruptedException {
+        clickButtonIfEnable(workPlaceLocators.buttonEnterpriseApplication);
+        switchToIFrame(driver, enterpriseApplicationLocators.iFrameEnterpriseApplicationPage);
+        clickButtonIfEnable(enterpriseApplicationLocators.linkFinanceSiteSettings);
+        switchToNewWindow(driver);
+        clickButtonIfEnable(financeSiteSettings.buttonTransmissionSummary_last_3_months);
+        //
+        Thread.sleep(2000);
+        isFileDownloaded("C:\\Users\\viktor.bibik\\Downloads\\Tests", "Transmitted Invoices.xlsm");
+
+        Assert.assertEquals(true, financeSiteSettings.buttonTransmissionSummary_last_3_months.isEnabled());
+    }
+
 }
