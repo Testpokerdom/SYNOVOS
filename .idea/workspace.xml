@@ -1,34 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d2c9d834-2c96-438e-87d1-c0a1f5a802dc" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/logs/app.log" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/resources/logs/app.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/SYNC/TestSuites/Test_Suit_All_tests.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/SYNC/TestSuites/Test_Suit_All_tests.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/SYNC/TestSuites/Test_Suite_FinancePage_InvoicingPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/SYNC/TestSuites/Test_Suite_FinancePage_InvoicingPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/SYNC/TestSuites/Test_Suite_ItemsWithoutPage_MRLineDetailsWaiting.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/SYNC/TestSuites/Test_Suite_ItemsWithoutPage_MRLineDetailsWaiting.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/SYNC/Tests/FinanceSiteSettingsPageTests.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/SYNC/Tests/InvoicingStatusTransmissionPageTests.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/SYNC/Tests/ItemsWithoutManufacturerLocators30DaysTests.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/SYNC/Tests/MRLineDetailsWaitingForAQuoteTests.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/SYNC/Tests/MRLineSummaryTests.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/SYNC/Tests/PGTListPriceRequestsTests.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/SYNC/Tests/PGTManufactureFocusedSourcingTests.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/SYNC/Tests/VendorApprovalTests.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/WebHelpers/WebHelpers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/WebHelpers/WebHelpers.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/logs/app.log" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/logs/app.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/SYNC/TestSuites/Test_Suit_All_tests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SYNC/TestSuites/Test_Suit_All_tests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/SYNC/TestSuites/Test_Suite_FinancePage_InvoicingPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SYNC/TestSuites/Test_Suite_FinancePage_InvoicingPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/SYNC/TestSuites/Test_Suite_ItemsWithoutPage_MRLineDetailsWaiting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SYNC/TestSuites/Test_Suite_ItemsWithoutPage_MRLineDetailsWaiting.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/SYNC/Tests/FinanceSiteSettingsPageTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SYNC/Tests/System_Tests/FinanceSiteSettingsPageTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/SYNC/Tests/InvoicingStatusTransmissionPageTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SYNC/Tests/System_Tests/InvoicingStatusTransmissionPageTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/SYNC/Tests/ItemsWithoutManufacturerLocators30DaysTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SYNC/Tests/System_Tests/ItemsWithoutManufacturerLocators30DaysTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/SYNC/Tests/MRLineDetailsWaitingForAQuoteTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SYNC/Tests/System_Tests/MRLineDetailsWaitingForAQuoteTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/SYNC/Tests/MRLineSummaryTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SYNC/Tests/System_Tests/MRLineSummaryTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/SYNC/Tests/PGTListPriceRequestsTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SYNC/Tests/System_Tests/PGTListPriceRequestsTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/SYNC/Tests/PGTManufactureFocusedSourcingTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SYNC/Tests/System_Tests/PGTManufactureFocusedSourcingTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/SYNC/Tests/VendorApprovalTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SYNC/Tests/System_Tests/VendorApprovalTests.java" afterDir="false" />
-    </list>
+    <list default="true" id="d2c9d834-2c96-438e-87d1-c0a1f5a802dc" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -57,8 +30,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/SYNC/Tests/Smoke_Tests/Smoke_tests_check_page_is_available.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="100" lean-forward="true" selection-start-line="100" selection-end-line="100" />
+            <state relative-caret-position="-238">
+              <caret line="99" column="41" lean-forward="true" selection-start-line="99" selection-start-column="41" selection-end-line="99" selection-end-column="41" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -256,7 +229,7 @@
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552647668013" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552651088277" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../SeleniumWebDriver/client-combined-3.141.59-sources.jar!/" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.0" />
@@ -898,8 +871,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/SYNC/Tests/Smoke_Tests/Smoke_tests_check_page_is_available.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="100" lean-forward="true" selection-start-line="100" selection-end-line="100" />
+        <state relative-caret-position="-238">
+          <caret line="99" column="41" lean-forward="true" selection-start-line="99" selection-start-column="41" selection-end-line="99" selection-end-column="41" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
