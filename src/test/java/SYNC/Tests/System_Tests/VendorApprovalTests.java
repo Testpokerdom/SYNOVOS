@@ -1,8 +1,7 @@
-package SYNC.Tests;
+package SYNC.Tests.System_Tests;
 
 import SYNC.Locators.WorkPlaceLocators.EnterpriseApplicationLocators.EnterpriseApplicationLocators;
 import SYNC.Locators.WorkPlaceLocators.EnterpriseApplicationLocators.FinanceSiteSettingsLocators.FinanceSiteSettingsLocators;
-import SYNC.Locators.WorkPlaceLocators.EnterpriseApplicationLocators.PGTManufactureFocusedSourcingLocators.PGTManufactureFocusedSourcingLocators;
 import SYNC.Locators.WorkPlaceLocators.EnterpriseApplicationLocators.VendorApprovalLocators.VendorApprovalLocators;
 import SYNC.Locators.WorkPlaceLocators.WorkPlaceLocators;
 import org.apache.logging.log4j.LogManager;
@@ -69,7 +68,7 @@ public class VendorApprovalTests{
     }
 
     @Test
-    public void checkPGTListPriceRequestsPageIsAvailable(){
+    public void checkVendorApprovalPageIsAvailable(){
         clickButtonIfEnable(workPlaceLocators.buttonEnterpriseApplication);
         switchToIFrame(driver, enterpriseApplicationLocators.iFrameEnterpriseApplicationPage);
         clickButtonIfEnable(enterpriseApplicationLocators.linkVendorApproval);
@@ -79,7 +78,7 @@ public class VendorApprovalTests{
     }
 
     @Test
-    public void checkPGTListPriceRequests_DropDownListRecordsPerPageIsEnable_25(){
+    public void checkVendorApproval_DropDownListRecordsPerPageIsEnable_25(){
         clickButtonIfEnable(workPlaceLocators.buttonEnterpriseApplication);
         switchToIFrame(driver, enterpriseApplicationLocators.iFrameEnterpriseApplicationPage);
         clickButtonIfEnable(enterpriseApplicationLocators.linkVendorApproval);
@@ -90,7 +89,7 @@ public class VendorApprovalTests{
     }
 
     @Test
-    public void checkPGTListPriceRequests_ButtonExportToExcelIsEnable_FileIsDownloaded() throws InterruptedException {
+    public void checkVendorApproval_ButtonExportToExcelIsEnable_FileIsDownloaded() throws InterruptedException {
         clickButtonIfEnable(workPlaceLocators.buttonEnterpriseApplication);
         switchToIFrame(driver, enterpriseApplicationLocators.iFrameEnterpriseApplicationPage);
         clickButtonIfEnable(enterpriseApplicationLocators.linkVendorApproval);

@@ -1,7 +1,7 @@
 package SYNC.TestSuites;
 
-import SYNC.Tests.FinanceSiteSettingsPageTests;
-import SYNC.Tests.InvoicingStatusTransmissionPageTests;
+import SYNC.Tests.System_Tests.FinanceSiteSettingsPageTests;
+import SYNC.Tests.System_Tests.InvoicingStatusTransmissionPageTests;
 import org.junit.runner.RunWith;
 import org.junit.runners.Suite;
 
