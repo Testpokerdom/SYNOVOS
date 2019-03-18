@@ -48,13 +48,3 @@ task smokeTest(type: Test) {
     testClassesDirs = sourceSets.smokeTest.output.classesDirs
     classpath = sourceSets.smokeTest.runtimeClasspath
 }
-
-/*
-task smokeTest(type: Test){
-    description = 'Run the smoke test.'
-    group = 'verification'
-    testClassesDir = sourceSets.smokeTest.output.classesDirs
-    classpath = sourceSets.smokeTest.runtimeClasspath
-    testResultsDir = file("$testResultsDir/smokeTests")
-}
-*/
