@@ -3,7 +3,7 @@ package TMA_SYNC.Tests;
 import TMA_SYNC.Locators.EditPurchaseRequisition;
 import TMA_SYNC.Locators.HomePageLocators;
 import TMA_SYNC.Locators.LoginPageLocators;
-import com.sun.org.glassfish.gmbal.Description;
+//import com.sun.org.glassfish.gmbal.Description;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -15,7 +15,6 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import java.util.concurrent.TimeUnit;
 
 import static WebHelpers.WebHelpers.*;
-import static WebHelpers.WebHelpers.waitElementAttributeShouldHaveValue;
 
 public class Login {
 
@@ -52,10 +51,10 @@ public class Login {
 */
 
     @Test
-    @Description("Login as Valid and Existing User")
+    //@Description("Login as Valid and Existing User")
     //@DisplayName("Login as Valid and Existing User")
     public void test_1_loginValidUser(){
-        sendTextToMultipleWebElements(loginPageLocators.fieldLogin, "sss999", loginPageLocators.filedPassword, "tma1", loginPageLocators.filedClient, "Jefferson Test");
+        sendTextToMultipleWebElements(loginPageLocators.fieldLogin, "sss999", loginPageLocators.filedPassword, "tma1");
         clickButton(loginPageLocators.buttonLogin);
 
         //Assert.assertEquals("Home  | User:VBIBIK18  | Logout", loginPageLocators.userNickName.getText());

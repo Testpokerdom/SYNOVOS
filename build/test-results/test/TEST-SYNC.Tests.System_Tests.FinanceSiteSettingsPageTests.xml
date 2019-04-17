@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="SYNC.Tests.System_Tests.FinanceSiteSettingsPageTests" tests="12" skipped="0" failures="0" errors="0" timestamp="2019-03-18T16:50:48" hostname="Win10Kiev17" time="1767.634">
+  <properties/>
+  <testcase name="checkFinanceSiteSettingsPage_DropDownListRecordsPerPageIsEnable_25" classname="SYNC.Tests.System_Tests.FinanceSiteSettingsPageTests" time="32.875"/>
+  <testcase name="checkFinanceSiteSettingsPage_ButtonExportToExcelIsEnable" classname="SYNC.Tests.System_Tests.FinanceSiteSettingsPageTests" time="35.67"/>
+  <testcase name="checkFinanceSiteSettingsPage_ButtonTransmissionSummaryIsEnable" classname="SYNC.Tests.System_Tests.FinanceSiteSettingsPageTests" time="34.876"/>
+  <testcase name="checkFinanceSiteSettings_PageIsAvailable" classname="SYNC.Tests.System_Tests.FinanceSiteSettingsPageTests" time="32.736"/>
+  <testcase name="checkFinanceSiteSettingsPage_DropDownListRecordsPerPageIsEnable_25" classname="SYNC.Tests.System_Tests.FinanceSiteSettingsPageTests" time="31.367"/>
+  <testcase name="checkFinanceSiteSettingsPage_ButtonExportToExcelIsEnable" classname="SYNC.Tests.System_Tests.FinanceSiteSettingsPageTests" time="34.064"/>
+  <testcase name="checkFinanceSiteSettingsPage_ButtonTransmissionSummaryIsEnable" classname="SYNC.Tests.System_Tests.FinanceSiteSettingsPageTests" time="33.37"/>
+  <testcase name="checkFinanceSiteSettings_PageIsAvailable" classname="SYNC.Tests.System_Tests.FinanceSiteSettingsPageTests" time="31.244"/>
+  <testcase name="checkFinanceSiteSettingsPage_DropDownListRecordsPerPageIsEnable_25" classname="SYNC.Tests.System_Tests.FinanceSiteSettingsPageTests" time="31.448"/>
+  <testcase name="checkFinanceSiteSettingsPage_ButtonExportToExcelIsEnable" classname="SYNC.Tests.System_Tests.FinanceSiteSettingsPageTests" time="33.749"/>
+  <testcase name="checkFinanceSiteSettingsPage_ButtonTransmissionSummaryIsEnable" classname="SYNC.Tests.System_Tests.FinanceSiteSettingsPageTests" time="33.87"/>
+  <testcase name="checkFinanceSiteSettings_PageIsAvailable" classname="SYNC.Tests.System_Tests.FinanceSiteSettingsPageTests" time="31.317"/>
+  <system-out><![CDATA[Iframe was found by locator with value - Proxy element for: DefaultElementLocator 'By.id: contentIFrame'
+Parent window handle is: CDwindow-85986D0FBE26A1264E9C9F46DFAC4989
+Was selected value 25
+Iframe was found by locator with value - Proxy element for: DefaultElementLocator 'By.id: contentIFrame'
+Parent window handle is: CDwindow-4E567C03E8C019D85C46C18CB736BC2C
+File exists. File name is Finance Site Settings.xlsx
+Iframe was found by locator with value - Proxy element for: DefaultElementLocator 'By.id: contentIFrame'
+Parent window handle is: CDwindow-3532793725ADD935B261BABD1C18CA73
+File exists. File name is Transmitted Invoices.xlsm
+Iframe was found by locator with value - Proxy element for: DefaultElementLocator 'By.id: contentIFrame'
+Parent window handle is: CDwindow-E2C98F8A8D3ED5655C96CB54A3B77308
+Iframe was found by locator with value - Proxy element for: DefaultElementLocator 'By.id: contentIFrame'
+Parent window handle is: CDwindow-F34AFBEC5D811C8A38DDE8ADB49704F5
+Was selected value 25
+Iframe was found by locator with value - Proxy element for: DefaultElementLocator 'By.id: contentIFrame'
+Parent window handle is: CDwindow-BCFBABC343A5AAFBFFD0B41B14F302E1
+File exists. File name is Finance Site Settings.xlsx
+Iframe was found by locator with value - Proxy element for: DefaultElementLocator 'By.id: contentIFrame'
+Parent window handle is: CDwindow-7D27BDF09B23F11DF16B1D742E9014C7
+File exists. File name is Transmitted Invoices.xlsm
+Iframe was found by locator with value - Proxy element for: DefaultElementLocator 'By.id: contentIFrame'
+Parent window handle is: CDwindow-B1E139236F3F116D63226BAE241BF0CA
+Iframe was found by locator with value - Proxy element for: DefaultElementLocator 'By.id: contentIFrame'
+Parent window handle is: CDwindow-E58ED35FFD324466C95EE48FE12E06A9
+Was selected value 25
+Iframe was found by locator with value - Proxy element for: DefaultElementLocator 'By.id: contentIFrame'
+Parent window handle is: CDwindow-3C4639DBA1E5BA431684B878D10FB776
+File exists. File name is Finance Site Settings.xlsx
+Iframe was found by locator with value - Proxy element for: DefaultElementLocator 'By.id: contentIFrame'
+Parent window handle is: CDwindow-73CAB91B0C6FCAD72DD3D14DF31C68EB
+File exists. File name is Transmitted Invoices.xlsm
+Iframe was found by locator with value - Proxy element for: DefaultElementLocator 'By.id: contentIFrame'
+Parent window handle is: CDwindow-6214B55B34820D8F8AA3E75E9CD9099F
+]]></system-out>
+  <system-err><![CDATA[бер. 18, 2019 6:50:48 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+Starting ChromeDriver 2.45.615291 (ec3682e3c9061c10f26ea9e5cdcf3c53f3f74387) on port 47341
+Only local connections are allowed.
+бер. 18, 2019 6:50:50 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+бер. 18, 2019 6:51:21 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+Starting ChromeDriver 2.45.615291 (ec3682e3c9061c10f26ea9e5cdcf3c53f3f74387) on port 11600
+Only local connections are allowed.
+бер. 18, 2019 6:51:23 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+бер. 18, 2019 6:51:57 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+Starting ChromeDriver 2.45.615291 (ec3682e3c9061c10f26ea9e5cdcf3c53f3f74387) on port 3319
+Only local connections are allowed.
+бер. 18, 2019 6:51:59 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+бер. 18, 2019 6:52:32 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+Starting ChromeDriver 2.45.615291 (ec3682e3c9061c10f26ea9e5cdcf3c53f3f74387) on port 15058
+Only local connections are allowed.
+бер. 18, 2019 6:52:34 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+бер. 18, 2019 7:08:27 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+Starting ChromeDriver 2.45.615291 (ec3682e3c9061c10f26ea9e5cdcf3c53f3f74387) on port 21433
+Only local connections are allowed.
+бер. 18, 2019 7:08:29 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+бер. 18, 2019 7:08:58 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+Starting ChromeDriver 2.45.615291 (ec3682e3c9061c10f26ea9e5cdcf3c53f3f74387) on port 47302
+Only local connections are allowed.
+бер. 18, 2019 7:09:00 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+бер. 18, 2019 7:09:32 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+Starting ChromeDriver 2.45.615291 (ec3682e3c9061c10f26ea9e5cdcf3c53f3f74387) on port 11326
+Only local connections are allowed.
+бер. 18, 2019 7:09:34 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+бер. 18, 2019 7:10:06 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+Starting ChromeDriver 2.45.615291 (ec3682e3c9061c10f26ea9e5cdcf3c53f3f74387) on port 47675
+Only local connections are allowed.
+бер. 18, 2019 7:10:08 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+бер. 18, 2019 7:18:05 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+Starting ChromeDriver 2.45.615291 (ec3682e3c9061c10f26ea9e5cdcf3c53f3f74387) on port 26753
+Only local connections are allowed.
+бер. 18, 2019 7:18:08 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+бер. 18, 2019 7:18:37 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+Starting ChromeDriver 2.45.615291 (ec3682e3c9061c10f26ea9e5cdcf3c53f3f74387) on port 28334
+Only local connections are allowed.
+бер. 18, 2019 7:18:39 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+бер. 18, 2019 7:19:11 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+Starting ChromeDriver 2.45.615291 (ec3682e3c9061c10f26ea9e5cdcf3c53f3f74387) on port 34422
+Only local connections are allowed.
+бер. 18, 2019 7:19:13 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+бер. 18, 2019 7:19:44 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+Starting ChromeDriver 2.45.615291 (ec3682e3c9061c10f26ea9e5cdcf3c53f3f74387) on port 28065
+Only local connections are allowed.
+бер. 18, 2019 7:19:47 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+]]></system-err>
+</testsuite>

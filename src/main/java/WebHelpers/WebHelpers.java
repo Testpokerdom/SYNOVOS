@@ -4,10 +4,8 @@ import junit.framework.Assert;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.pagefactory.ByAll;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -16,9 +14,6 @@ import java.io.File;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.*;
-
-import static org.openqa.selenium.support.ui.ExpectedConditions.not;
-import static sun.nio.cs.Surrogate.is;
 
 
 public class WebHelpers {
@@ -95,16 +90,16 @@ public class WebHelpers {
         logger.info("Send text to WebElement: \""  + field +  "\". Text: " + "\" " + text + "\"");
     }
 
-    public static void sendTextToMultipleWebElements(WebElement firstField, String login, WebElement secondField, String password, WebElement thirdField, String client){
+    public static void sendTextToMultipleWebElements(WebElement firstField, String login, WebElement secondField, String password){ //, WebElement thirdField, String client){
         firstField.clear();
         firstField.sendKeys(login);
         logger.info("Send text to WebElement Login: " + "\"" + login + "\"");
         secondField.clear();
         secondField.sendKeys(password);
         logger.info("Send text to WebElement Password: " + "\"" + password + "\"");
-        thirdField.clear();
-        thirdField.sendKeys(client);
-        logger.info("Send text to WebElement Client: " + "\"" + client + "\"");
+        //thirdField.clear();
+        //thirdField.sendKeys(client);
+        //logger.info("Send text to WebElement Client: " + "\"" + client + "\"");
     }
     public static void sendTextToWebElementFromDropDownList(WebElement field, WebElement requiredString){
         field.click();
@@ -174,8 +169,9 @@ public class WebHelpers {
 
     public static void selectWebElementFromDropDownList (WebElement element, String elementValue){
         Select sel = new Select(element);
-        sel.selectByVisibleText(elementValue);
-        System.out.println("Was selected value " + elementValue);
+        //sel.selectByVisibleText(elementValue);
+        sel.selectByValue(elementValue);
+        //System.out.println("Was selected value " + elementValue);
         /*
         List<WebElement> options = sel.getOptions();
         int size = options.size();

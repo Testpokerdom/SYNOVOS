@@ -1,0 +1,81 @@
+17:39:53.453 INFO  WebHelpers -Send text to WebElement Login: "VBIBIKSU"
+17:39:53.687 INFO  WebHelpers -Send text to WebElement Password: "deadman11"
+17:39:54.401 INFO  WebHelpers -Click Button  with value - "" -  - 
+17:39:54.582 INFO  WebHelpers -Click Button  with value - "null" - Purchasing - 
+18:31:51.307 INFO  WebHelpers -Send text to WebElement Login: "VBIBIKSU"
+18:31:51.474 INFO  WebHelpers -Send text to WebElement Password: "deadman11"
+18:31:52.296 INFO  WebHelpers -Click Button  with value - "" -  - 
+18:31:52.495 INFO  WebHelpers -Click Button  with value - "null" - Purchasing - 
+18:31:52.953 INFO  WebHelpers -Click Button  with value - "null" - Supplier - 
+18:31:54.460 INFO  WebHelpers -Click Button "Create"
+18:31:54.901 INFO  CreateSupplierPage -Field Remit To was field by value
+18:35:02.255 INFO  WebHelpers -Send text to WebElement Login: "VBIBIKSU"
+18:35:02.438 INFO  WebHelpers -Send text to WebElement Password: "deadman11"
+18:35:03.329 INFO  WebHelpers -Click Button  with value - "" -  - 
+18:35:03.581 INFO  WebHelpers -Click Button  with value - "null" - Purchasing - 
+18:35:04.142 INFO  WebHelpers -Click Button  with value - "null" - Supplier - 
+18:35:05.057 INFO  WebHelpers -Click Button "Create"
+18:35:05.338 INFO  CreateSupplierPage -Field Remit To was field by value
+18:39:34.206 INFO  WebHelpers -Send text to WebElement Login: "VBIBIKSU"
+18:39:34.375 INFO  WebHelpers -Send text to WebElement Password: "deadman11"
+18:39:34.922 INFO  WebHelpers -Click Button  with value - "" -  - 
+18:39:35.112 INFO  WebHelpers -Click Button  with value - "null" - Purchasing - 
+18:39:35.494 INFO  WebHelpers -Click Button  with value - "null" - Supplier - 
+18:39:36.532 INFO  WebHelpers -Click Button "Create"
+18:39:36.811 INFO  CreateSupplierPage -Field Remit To was field by value
+18:45:45.329 INFO  WebHelpers -Send text to WebElement Login: "VBIBIKSU"
+18:45:45.505 INFO  WebHelpers -Send text to WebElement Password: "deadman11"
+18:45:46.017 INFO  WebHelpers -Click Button  with value - "" -  - 
+18:45:46.218 INFO  WebHelpers -Click Button  with value - "null" - Purchasing - 
+18:45:46.629 INFO  WebHelpers -Click Button  with value - "null" - Supplier - 
+18:45:47.549 INFO  WebHelpers -Click Button "Create"
+18:45:47.798 INFO  CreateSupplierPage -Field Remit To was field by value
+18:49:42.534 INFO  WebHelpers -Send text to WebElement Login: "VBIBIKSU"
+18:49:42.709 INFO  WebHelpers -Send text to WebElement Password: "deadman11"
+18:49:43.463 INFO  WebHelpers -Click Button  with value - "" -  - 
+18:49:43.708 INFO  WebHelpers -Click Button  with value - "null" - Purchasing - 
+18:49:44.191 INFO  WebHelpers -Click Button  with value - "null" - Supplier - 
+18:49:45.194 INFO  WebHelpers -Click Button "Create"
+18:49:45.533 INFO  CreateSupplierPage -Field Remit To was field by value
+18:50:44.452 INFO  WebHelpers -Send text to WebElement Login: "VBIBIKSU"
+18:50:44.598 INFO  WebHelpers -Send text to WebElement Password: "deadman11"
+18:50:45.145 INFO  WebHelpers -Click Button  with value - "" -  - 
+18:50:45.329 INFO  WebHelpers -Click Button  with value - "null" - Purchasing - 
+18:50:45.764 INFO  WebHelpers -Click Button  with value - "null" - Supplier - 
+18:50:46.663 INFO  WebHelpers -Click Button "Create"
+18:50:46.918 INFO  CreateSupplierPage -Field Remit To was field by value
+18:57:27.000 INFO  WebHelpers -Send text to WebElement Login: "VBIBIKSU"
+18:57:27.189 INFO  WebHelpers -Send text to WebElement Password: "deadman11"
+18:57:27.806 INFO  WebHelpers -Click Button  with value - "" -  - 
+18:57:28.125 INFO  WebHelpers -Click Button  with value - "null" - Purchasing - 
+18:57:28.776 INFO  WebHelpers -Click Button  with value - "null" - Supplier - 
+18:57:29.978 INFO  WebHelpers -Click Button "Create"
+18:57:30.271 INFO  CreateSupplierPage -Field Remit To was field by value
+18:58:23.680 INFO  WebHelpers -Send text to WebElement Login: "VBIBIKSU"
+18:58:23.910 INFO  WebHelpers -Send text to WebElement Password: "deadman11"
+18:58:24.597 INFO  WebHelpers -Click Button  with value - "" -  - 
+18:58:24.790 INFO  WebHelpers -Click Button  with value - "null" - Purchasing - 
+18:58:25.211 INFO  WebHelpers -Click Button  with value - "null" - Supplier - 
+18:58:26.726 INFO  WebHelpers -Click Button "Create"
+18:58:27.040 INFO  CreateSupplierPage -Field Remit To was field by value
+18:59:36.902 INFO  WebHelpers -Send text to WebElement Login: "VBIBIKSU"
+18:59:37.077 INFO  WebHelpers -Send text to WebElement Password: "deadman11"
+18:59:37.789 INFO  WebHelpers -Click Button  with value - "" -  - 
+18:59:38.086 INFO  WebHelpers -Click Button  with value - "null" - Purchasing - 
+18:59:38.636 INFO  WebHelpers -Click Button  with value - "null" - Supplier - 
+18:59:39.764 INFO  WebHelpers -Click Button "Create"
+18:59:40.011 INFO  CreateSupplierPage -Field Remit To was field by value
+19:00:48.348 INFO  WebHelpers -Send text to WebElement Login: "VBIBIKSU"
+19:00:48.543 INFO  WebHelpers -Send text to WebElement Password: "deadman11"
+19:00:49.254 INFO  WebHelpers -Click Button  with value - "" -  - 
+19:00:49.432 INFO  WebHelpers -Click Button  with value - "null" - Purchasing - 
+19:00:49.836 INFO  WebHelpers -Click Button  with value - "null" - Supplier - 
+19:00:50.855 INFO  WebHelpers -Click Button "Create"
+19:00:51.180 INFO  CreateSupplierPage -Field Remit To was field by value
+19:02:39.427 INFO  WebHelpers -Send text to WebElement Login: "VBIBIKSU"
+19:02:39.653 INFO  WebHelpers -Send text to WebElement Password: "deadman11"
+19:02:40.171 INFO  WebHelpers -Click Button  with value - "" -  - 
+19:02:40.357 INFO  WebHelpers -Click Button  with value - "null" - Purchasing - 
+19:02:40.763 INFO  WebHelpers -Click Button  with value - "null" - Supplier - 
+19:02:41.701 INFO  WebHelpers -Click Button "Create"
+19:02:42.004 INFO  CreateSupplierPage -Field Remit To was field by value

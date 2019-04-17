@@ -3,7 +3,7 @@ package TMA_SYNC.Tests;
 import TMA_SYNC.Locators.EditPurchaseRequisition;
 import TMA_SYNC.Locators.HomePageLocators;
 import TMA_SYNC.Locators.LoginPageLocators;
-import com.sun.org.glassfish.gmbal.Description;
+//import com.sun.org.glassfish.gmbal.Description;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.junit.After;
@@ -42,7 +42,7 @@ public class CreatePurchaseRequisition {
         logger.info("----------------------------------------------------------------------------------------------------------------------");
         goToUrl(driver,"https://www.webtma.net/loginWithPopUp.aspx");
         //logger.info("TMA web site was opened.");
-        sendTextToMultipleWebElements(loginPageLocators.fieldLogin, "sss999", loginPageLocators.filedPassword, "tma1", loginPageLocators.filedClient, "Jefferson Test");
+        sendTextToMultipleWebElements(loginPageLocators.fieldLogin, "sss999", loginPageLocators.filedPassword, "tma1");
         clickButton(loginPageLocators.buttonLogin);
         switchToNewWindow(driver);
 
@@ -57,7 +57,7 @@ public class CreatePurchaseRequisition {
 
     
     @Test
-    @Description("Create PR with valid items parameters")
+    //@Description("Create PR with valid items parameters")
     //@DisplayName("Login as Valid and Existing User")
     public void test_1_Click() throws InterruptedException {
 

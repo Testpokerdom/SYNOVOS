@@ -4,14 +4,15 @@ import SYNOVOSJUnitTests.Locators.LoginPage.LoginPageLocators;
 import SYNOVOSJUnitTests.Locators.MainPage.MainPageLocators;
 import SYNOVOSJUnitTests.Locators.PurchasingPage.*;
 import SYNOVOSJUnitTests.Tests.LoginPage.LoginPageTests;
-import com.sun.org.glassfish.gmbal.Description;
+//import com.sun.org.glassfish.gmbal.Description;
+//import com.sun.org.glassfish.gmbal.Description;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
-import org.junit.jupiter.api.DisplayName;
+//import org.junit.jupiter.api.DisplayName;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
@@ -62,14 +63,14 @@ public class SupplierCreateAndApprove {
         }
 
     @Test
-    @Description ("Create Supplier")
-    @DisplayName("Create Supplier")
+    //@Description("Create Supplier")
+    //@DisplayName("Create Supplier")
     public void test_1(){
 
         clickButton(mainPageLocators.linkSupplier);
         selectWebElementFromDropDownList(supplierSearchCreatePage.dropdownListSiteCode, "SALES"); // 130 - AGRO_FARMA  SALES - DEMO
         clickButton(supplierSearchCreatePage.buttonCreate);
-        createSupplierPage.fillUserDataTableAndSendForApproval("Supplier_status_APPROVED_DEMO_SALES_", "","999-999-9999", "@ukr.net", "Send_for_approval_test_creation");
+        createSupplierPage.fillUserDataTableAndSendForApproval("rejected@ukr.net","Supplier_status_APPROVED_DEMO_SALES_", "","999-999-9999", "@ukr.net", "Send_for_approval_test_creation");
         clickButton(createSupplierPage.buttonOKpopup);
         logger.info("Supplier was created, his Number is: " + getTextFronWebElement(supplierDetailPage.fieldSupplierNumber));
         logger.info("------------------------------------------------------");
@@ -78,8 +79,8 @@ public class SupplierCreateAndApprove {
     }
 
     @Test
-    @Description("Find last Created Supplier (from \"test_1\") and approve them - first stage")
-    @DisplayName("Find last Created Supplier (from \"test_1\") and approve them - first stage")
+    //@Description("Find last Created Supplier (from \"test_1\") and approve them - first stage")
+    //@DisplayName("Find last Created Supplier (from \"test_1\") and approve them - first stage")
     public void test_2(){
         clickButton(mainPageLocators.linkApproveSupplier);
         selectWebElementFromDropDownList(approveSupplierListPage.dropdownlistSiteName, "DEMO SOS SITE"); // AGRO FARMA / DEMO SOS SITE
@@ -98,8 +99,8 @@ public class SupplierCreateAndApprove {
     }
 
     @Test
-    @Description ("Find last Created Supplier (from \"test_2\") and approve them - second stage (Final Supplier approve)")
-    @DisplayName("Final Supplier approve - second stage")
+    //@Description ("Find last Created Supplier (from \"test_2\") and approve them - second stage (Final Supplier approve)")
+    //@DisplayName("Final Supplier approve - second stage")
     public void test_3(){
         clickButton(mainPageLocators.linkApproveSupplier);
         selectWebElementFromDropDownList(approveSupplierListPage.dropdownlistSiteName, "DEMO SOS SITE");
@@ -117,7 +118,7 @@ public class SupplierCreateAndApprove {
 
 /*
     @Test
-    @Description("Create Supplier with Max Length Comment")
+    //@Description("Create Supplier with Max Length Comment")
     public void test_4(){
         clickElement(homePageLocators.linkSupplier);
         selectWebElementFromDropDownList(supplierSearchCreatePage.dropdownListSiteCode, "130");
@@ -126,7 +127,7 @@ public class SupplierCreateAndApprove {
         sendTextToWebElement(createSupplierPage.fieldContactName, randomName2());
         sendTextToWebElement(createSupplierPage.fieldContactPhone, "999-999-9999");
         sendTextToWebElement(createSupplierPage.fieldContactEmail, randomName2() + "@ukr.net");
-        clickButton(createSupplierPage.buttonSandForApproval);
+        clickButton(createSupplierPage.buttonSendForApproval);
         sendTextToWebElement(createSupplierPage.fieldComments, addMaxLengthComment2());
         clickButton(createSupplierPage.buttonOKpopup);
 

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="SYNC.Tests.System_Tests.ItemsWithoutManufacturerLocators30DaysTests" tests="12" skipped="0" failures="0" errors="0" timestamp="2019-03-18T16:55:39" hostname="Win10Kiev17" time="1759.693">
+  <properties/>
+  <testcase name="checkItemsWithoutManufacturer_PageIsAvailable" classname="SYNC.Tests.System_Tests.ItemsWithoutManufacturerLocators30DaysTests" time="32.347"/>
+  <testcase name="checkItemsWithoutManufacturer_DetailedItemPage" classname="SYNC.Tests.System_Tests.ItemsWithoutManufacturerLocators30DaysTests" time="33.394"/>
+  <testcase name="checkItemsWithoutManufacturer_DropDownListRecordsPerPageIsEnable_25" classname="SYNC.Tests.System_Tests.ItemsWithoutManufacturerLocators30DaysTests" time="32.414"/>
+  <testcase name="checkItemsWithoutManufacturer_ButtonExportToExcelIsEnable_FileIsDownloaded" classname="SYNC.Tests.System_Tests.ItemsWithoutManufacturerLocators30DaysTests" time="34.117"/>
+  <testcase name="checkItemsWithoutManufacturer_PageIsAvailable" classname="SYNC.Tests.System_Tests.ItemsWithoutManufacturerLocators30DaysTests" time="31.599"/>
+  <testcase name="checkItemsWithoutManufacturer_DetailedItemPage" classname="SYNC.Tests.System_Tests.ItemsWithoutManufacturerLocators30DaysTests" time="34.806"/>
+  <testcase name="checkItemsWithoutManufacturer_DropDownListRecordsPerPageIsEnable_25" classname="SYNC.Tests.System_Tests.ItemsWithoutManufacturerLocators30DaysTests" time="31.317"/>
+  <testcase name="checkItemsWithoutManufacturer_ButtonExportToExcelIsEnable_FileIsDownloaded" classname="SYNC.Tests.System_Tests.ItemsWithoutManufacturerLocators30DaysTests" time="33.627"/>
+  <testcase name="checkItemsWithoutManufacturer_PageIsAvailable" classname="SYNC.Tests.System_Tests.ItemsWithoutManufacturerLocators30DaysTests" time="31.349"/>
+  <testcase name="checkItemsWithoutManufacturer_DetailedItemPage" classname="SYNC.Tests.System_Tests.ItemsWithoutManufacturerLocators30DaysTests" time="32.619"/>
+  <testcase name="checkItemsWithoutManufacturer_DropDownListRecordsPerPageIsEnable_25" classname="SYNC.Tests.System_Tests.ItemsWithoutManufacturerLocators30DaysTests" time="31.413"/>
+  <testcase name="checkItemsWithoutManufacturer_ButtonExportToExcelIsEnable_FileIsDownloaded" classname="SYNC.Tests.System_Tests.ItemsWithoutManufacturerLocators30DaysTests" time="33.5"/>
+  <system-out><![CDATA[Iframe was found by locator with value - Proxy element for: DefaultElementLocator 'By.id: contentIFrame'
+Parent window handle is: CDwindow-B755BCBC7730F060C3426975B64CDB58
+Iframe was found by locator with value - Proxy element for: DefaultElementLocator 'By.id: contentIFrame'
+Parent window handle is: CDwindow-90FD84A73E79F5922F251847AA28AB8D
+Parent window handle is: CDwindow-FBF20FD0187D40A753FD30391EAE7C62
+Iframe was found by locator with value - Proxy element for: DefaultElementLocator 'By.id: contentIFrame'
+Parent window handle is: CDwindow-DC0AA5D1A75DDFBB2BA78BDA1AD7B33E
+Was selected value 25
+Iframe was found by locator with value - Proxy element for: DefaultElementLocator 'By.id: contentIFrame'
+Parent window handle is: CDwindow-22B75A1074FDB7259700764286E43E2C
+File exists. File name is Items Without Manufacturer.xlsx
+Iframe was found by locator with value - Proxy element for: DefaultElementLocator 'By.id: contentIFrame'
+Parent window handle is: CDwindow-606E377AE2EB0A8C459370C88AC46724
+Iframe was found by locator with value - Proxy element for: DefaultElementLocator 'By.id: contentIFrame'
+Parent window handle is: CDwindow-7315DB71960A943D0E8AB8570C090AB0
+Parent window handle is: CDwindow-CDE372AEE375AE5D1B391BE090600A0A
+Iframe was found by locator with value - Proxy element for: DefaultElementLocator 'By.id: contentIFrame'
+Parent window handle is: CDwindow-EFA17F7336E0C7231EEC554952AE85F4
+Was selected value 25
+Iframe was found by locator with value - Proxy element for: DefaultElementLocator 'By.id: contentIFrame'
+Parent window handle is: CDwindow-3BC29DBD00FAE13375AC16BEA4F68F91
+File exists. File name is Items Without Manufacturer.xlsx
+Iframe was found by locator with value - Proxy element for: DefaultElementLocator 'By.id: contentIFrame'
+Parent window handle is: CDwindow-4D7509C70CDCE45DF9616CAE1ABD0E80
+Iframe was found by locator with value - Proxy element for: DefaultElementLocator 'By.id: contentIFrame'
+Parent window handle is: CDwindow-A4BB9E69EFBBBAA868AB00B2CD7E58D2
+Parent window handle is: CDwindow-9FF6BDF33F9FAD4493710A26C52E3E15
+Iframe was found by locator with value - Proxy element for: DefaultElementLocator 'By.id: contentIFrame'
+Parent window handle is: CDwindow-D79AA88307A9EDB259984B37641D5B1E
+Was selected value 25
+Iframe was found by locator with value - Proxy element for: DefaultElementLocator 'By.id: contentIFrame'
+Parent window handle is: CDwindow-54BA82DFEA92B601A7118CEECBDE0477
+File exists. File name is Items Without Manufacturer.xlsx
+]]></system-out>
+  <system-err><![CDATA[бер. 18, 2019 6:55:39 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+Starting ChromeDriver 2.45.615291 (ec3682e3c9061c10f26ea9e5cdcf3c53f3f74387) on port 26563
+Only local connections are allowed.
+бер. 18, 2019 6:55:41 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+бер. 18, 2019 6:56:11 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+Starting ChromeDriver 2.45.615291 (ec3682e3c9061c10f26ea9e5cdcf3c53f3f74387) on port 1959
+Only local connections are allowed.
+бер. 18, 2019 6:56:13 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+бер. 18, 2019 6:56:44 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+Starting ChromeDriver 2.45.615291 (ec3682e3c9061c10f26ea9e5cdcf3c53f3f74387) on port 38773
+Only local connections are allowed.
+бер. 18, 2019 6:56:46 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+бер. 18, 2019 6:57:17 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+Starting ChromeDriver 2.45.615291 (ec3682e3c9061c10f26ea9e5cdcf3c53f3f74387) on port 6206
+Only local connections are allowed.
+бер. 18, 2019 6:57:19 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+бер. 18, 2019 7:13:06 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+Starting ChromeDriver 2.45.615291 (ec3682e3c9061c10f26ea9e5cdcf3c53f3f74387) on port 25988
+Only local connections are allowed.
+бер. 18, 2019 7:13:08 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+бер. 18, 2019 7:13:37 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+Starting ChromeDriver 2.45.615291 (ec3682e3c9061c10f26ea9e5cdcf3c53f3f74387) on port 21760
+Only local connections are allowed.
+бер. 18, 2019 7:13:39 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+бер. 18, 2019 7:14:12 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+Starting ChromeDriver 2.45.615291 (ec3682e3c9061c10f26ea9e5cdcf3c53f3f74387) on port 22741
+Only local connections are allowed.
+бер. 18, 2019 7:14:14 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+бер. 18, 2019 7:14:43 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+Starting ChromeDriver 2.45.615291 (ec3682e3c9061c10f26ea9e5cdcf3c53f3f74387) on port 4204
+Only local connections are allowed.
+бер. 18, 2019 7:14:46 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+бер. 18, 2019 7:22:49 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+Starting ChromeDriver 2.45.615291 (ec3682e3c9061c10f26ea9e5cdcf3c53f3f74387) on port 5711
+Only local connections are allowed.
+бер. 18, 2019 7:22:52 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+бер. 18, 2019 7:23:21 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+Starting ChromeDriver 2.45.615291 (ec3682e3c9061c10f26ea9e5cdcf3c53f3f74387) on port 2449
+Only local connections are allowed.
+бер. 18, 2019 7:23:23 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+бер. 18, 2019 7:23:53 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+Starting ChromeDriver 2.45.615291 (ec3682e3c9061c10f26ea9e5cdcf3c53f3f74387) on port 11316
+Only local connections are allowed.
+бер. 18, 2019 7:23:55 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+бер. 18, 2019 7:24:25 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+Starting ChromeDriver 2.45.615291 (ec3682e3c9061c10f26ea9e5cdcf3c53f3f74387) on port 16934
+Only local connections are allowed.
+бер. 18, 2019 7:24:27 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+]]></system-err>
+</testsuite>

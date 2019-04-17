@@ -17,7 +17,7 @@ public class LoginPageLocators {
     public WebElement fieldLogin;
     @FindBy (name = "password")
     public WebElement fieldPassword;
-    @FindBy (name = "loginWithPopUp")
+    @FindBy (name = "login")
     public WebElement buttonLogin;
     @FindBy (xpath = "//table[@class='logintable']//a[@title='Click to reset your password.']")
     public WebElement linkForgotPassword;

@@ -1,0 +1,643 @@
+18:46:20.562 INFO  FinanceSiteSettingsPageTests -----------------------------------------------------------------------------------------------------------------------
+18:46:33.328 INFO  WebHelpers -Open URL: us01.dynamicseam.com
+18:46:34.467 INFO  WebHelpers -Click Button  with value - "null" - Enterprise Applications - 
+18:46:54.628 INFO  WebHelpers -Switch to IFrame: Proxy element for: DefaultElementLocator 'By.id: contentIFrame'
+18:46:54.810 INFO  WebHelpers -Click Button  with value - "null" - Vendor Approval - 
+18:46:55.864 INFO  WebHelpers -Switch to the new window: Vendor Approval
+18:46:59.945 INFO  FinanceSiteSettingsPageTests -----------------------------------------------------------------------------------------------------------------------
+18:47:05.497 INFO  WebHelpers -Open URL: us01.dynamicseam.com
+18:47:06.588 INFO  WebHelpers -Click Button  with value - "null" - Enterprise Applications - 
+18:47:26.701 INFO  WebHelpers -Switch to IFrame: Proxy element for: DefaultElementLocator 'By.id: contentIFrame'
+18:47:26.885 INFO  WebHelpers -Click Button  with value - "null" - MR Line Summary (Waiting for a Quote/Client Price) - 
+18:47:27.927 INFO  WebHelpers -Switch to the new window: MR Line Summary (Waiting for a Quote/Client Price)
+18:47:31.935 INFO  FinanceSiteSettingsPageTests -----------------------------------------------------------------------------------------------------------------------
+18:47:37.692 INFO  WebHelpers -Open URL: us01.dynamicseam.com
+18:47:38.884 INFO  WebHelpers -Click Button  with value - "null" - Enterprise Applications - 
+18:47:58.992 INFO  WebHelpers -Switch to IFrame: Proxy element for: DefaultElementLocator 'By.id: contentIFrame'
+18:47:59.183 INFO  WebHelpers -Click Button  with value - "null" - Items without Manufacturer (Created in 30 days) - 
+18:48:00.228 INFO  WebHelpers -Switch to the new window: Items without Manufacturer (Created in 30 days)
+18:48:04.195 INFO  FinanceSiteSettingsPageTests -----------------------------------------------------------------------------------------------------------------------
+18:48:09.584 INFO  WebHelpers -Open URL: us01.dynamicseam.com
+18:48:10.683 INFO  WebHelpers -Click Button  with value - "null" - Enterprise Applications - 
+18:48:30.826 INFO  WebHelpers -Switch to IFrame: Proxy element for: DefaultElementLocator 'By.id: contentIFrame'
+18:48:31.007 INFO  WebHelpers -Click Button  with value - "null" - PGT Manufacture Focused Sourcing - 
+18:48:32.053 INFO  WebHelpers -Switch to the new window: PGT Manufacture Focused Sourcing
+18:48:36.099 INFO  FinanceSiteSettingsPageTests -----------------------------------------------------------------------------------------------------------------------
+18:48:41.824 INFO  WebHelpers -Open URL: us01.dynamicseam.com
+18:48:43.092 INFO  WebHelpers -Click Button  with value - "null" - Enterprise Applications - 
+18:49:03.329 INFO  WebHelpers -Switch to IFrame: Proxy element for: DefaultElementLocator 'By.id: contentIFrame'
+18:49:03.511 INFO  WebHelpers -Click Button  with value - "null" - Invoicing Status/Transmission - 
+18:49:04.549 INFO  WebHelpers -Switch to the new window: Invoicing Status/Transmission
+18:49:08.448 INFO  FinanceSiteSettingsPageTests -----------------------------------------------------------------------------------------------------------------------
+18:49:14.143 INFO  WebHelpers -Open URL: us01.dynamicseam.com
+18:49:15.388 INFO  WebHelpers -Click Button  with value - "null" - Enterprise Applications - 
+18:49:35.467 INFO  WebHelpers -Switch to IFrame: Proxy element for: DefaultElementLocator 'By.id: contentIFrame'
+18:49:35.663 INFO  WebHelpers -Click Button  with value - "null" - MR Line Details (Waiting for a Quote/Client Price) - 
+18:49:36.707 INFO  WebHelpers -Switch to the new window: MR Line Details (Waiting for a Quote/Client Price)
+18:49:41.376 INFO  FinanceSiteSettingsPageTests -----------------------------------------------------------------------------------------------------------------------
+18:49:47.219 INFO  WebHelpers -Open URL: us01.dynamicseam.com
+18:49:48.543 INFO  WebHelpers -Click Button  with value - "null" - Enterprise Applications - 
+18:50:08.634 INFO  WebHelpers -Switch to IFrame: Proxy element for: DefaultElementLocator 'By.id: contentIFrame'
+18:50:13.880 INFO  WebHelpers -Click Button  with value - "null" - PGT List Price Requests - 
+18:50:14.997 INFO  WebHelpers -Switch to the new window: PGT List Price Requests
+18:50:19.078 INFO  FinanceSiteSettingsPageTests -----------------------------------------------------------------------------------------------------------------------
+18:50:25.406 INFO  WebHelpers -Open URL: us01.dynamicseam.com
+18:50:26.635 INFO  WebHelpers -Click Button  with value - "null" - Enterprise Applications - 
+18:50:46.741 INFO  WebHelpers -Switch to IFrame: Proxy element for: DefaultElementLocator 'By.id: contentIFrame'
+18:50:46.930 INFO  WebHelpers -Click Button  with value - "null" - Finance Site Settings - 
+18:50:47.992 INFO  WebHelpers -Switch to the new window: Finance Site Settings
+18:50:51.947 INFO  FinanceSiteSettingsPageTests -----------------------------------------------------------------------------------------------------------------------
+18:50:58.085 INFO  WebHelpers -Open URL: us01.dynamicseam.com
+18:50:59.397 INFO  WebHelpers -Click Button  with value - "null" - Enterprise Applications - 
+18:51:19.550 INFO  WebHelpers -Switch to IFrame: Proxy element for: DefaultElementLocator 'By.id: contentIFrame'
+18:51:19.729 INFO  WebHelpers -Click Button  with value - "null" - Finance Site Settings - 
+18:51:20.761 INFO  WebHelpers -Switch to the new window: Finance Site Settings
+18:51:24.820 INFO  FinanceSiteSettingsPageTests -----------------------------------------------------------------------------------------------------------------------
+18:51:31.483 INFO  WebHelpers -Open URL: us01.dynamicseam.com
+18:51:32.806 INFO  WebHelpers -Click Button  with value - "null" - Enterprise Applications - 
+18:51:52.890 INFO  WebHelpers -Switch to IFrame: Proxy element for: DefaultElementLocator 'By.id: contentIFrame'
+18:51:53.102 INFO  WebHelpers -Click Button  with value - "null" - Finance Site Settings - 
+18:51:54.145 INFO  WebHelpers -Switch to the new window: Finance Site Settings
+18:51:54.530 INFO  WebHelpers -Click Button  with value - "null" - Export to Excel - a_export
+18:51:56.535 INFO  WebHelpers -File with name - Finance Site Settings.xlsx was downloaded successfully.
+18:52:00.564 INFO  FinanceSiteSettingsPageTests -----------------------------------------------------------------------------------------------------------------------
+18:52:06.235 INFO  WebHelpers -Open URL: us01.dynamicseam.com
+18:52:07.620 INFO  WebHelpers -Click Button  with value - "null" - Enterprise Applications - 
+18:52:27.726 INFO  WebHelpers -Switch to IFrame: Proxy element for: DefaultElementLocator 'By.id: contentIFrame'
+18:52:27.962 INFO  WebHelpers -Click Button  with value - "null" - Finance Site Settings - 
+18:52:29.057 INFO  WebHelpers -Switch to the new window: Finance Site Settings
+18:52:29.407 INFO  WebHelpers -Click Button  with value - "null" - Transmission Summary (last 3 months) - a_export1
+18:52:31.407 INFO  WebHelpers -File with name - Transmitted Invoices.xlsm was downloaded successfully.
+18:52:35.472 INFO  FinanceSiteSettingsPageTests -----------------------------------------------------------------------------------------------------------------------
+18:52:41.478 INFO  WebHelpers -Open URL: us01.dynamicseam.com
+18:52:42.778 INFO  WebHelpers -Click Button  with value - "null" - Enterprise Applications - 
+18:53:02.914 INFO  WebHelpers -Switch to IFrame: Proxy element for: DefaultElementLocator 'By.id: contentIFrame'
+18:53:03.104 INFO  WebHelpers -Click Button  with value - "null" - Finance Site Settings - 
+18:53:04.142 INFO  WebHelpers -Switch to the new window: Finance Site Settings
+18:53:08.160 INFO  InvoicingStatusTransmissionPageTests -----------------------------------------------------------------------------------------------------------------------
+18:53:13.610 INFO  WebHelpers -Open URL: us01.dynamicseam.com
+18:53:14.925 INFO  WebHelpers -Click Button  with value - "null" - Enterprise Applications - 
+18:53:35.040 INFO  WebHelpers -Switch to IFrame: Proxy element for: DefaultElementLocator 'By.id: contentIFrame'
+18:53:35.227 INFO  WebHelpers -Click Button  with value - "null" - Invoicing Status/Transmission - 
+18:53:36.260 INFO  WebHelpers -Switch to the new window: Invoicing Status/Transmission
+18:53:40.225 INFO  InvoicingStatusTransmissionPageTests -----------------------------------------------------------------------------------------------------------------------
+18:53:45.652 INFO  WebHelpers -Open URL: us01.dynamicseam.com
+18:53:46.725 INFO  WebHelpers -Click Button  with value - "null" - Enterprise Applications - 
+18:54:06.864 INFO  WebHelpers -Switch to IFrame: Proxy element for: DefaultElementLocator 'By.id: contentIFrame'
+18:54:07.053 INFO  WebHelpers -Click Button  with value - "null" - Invoicing Status/Transmission - 
+18:54:08.560 INFO  WebHelpers -Switch to the new window: Invoicing Status/Transmission
+18:54:12.681 INFO  InvoicingStatusTransmissionPageTests -----------------------------------------------------------------------------------------------------------------------
+18:54:18.885 INFO  WebHelpers -Open URL: us01.dynamicseam.com
+18:54:20.967 INFO  WebHelpers -Click Button  with value - "null" - Enterprise Applications - 
+18:54:41.094 INFO  WebHelpers -Switch to IFrame: Proxy element for: DefaultElementLocator 'By.id: contentIFrame'
+18:54:41.267 INFO  WebHelpers -Click Button  with value - "null" - Invoicing Status/Transmission - 
+18:54:42.299 INFO  WebHelpers -Switch to the new window: Invoicing Status/Transmission
+18:54:46.187 INFO  WebHelpers -Click Button  with value - "null" - Water-Sea - 
+18:55:06.324 INFO  WebHelpers -Switch to IFrame: Proxy element for: DefaultElementLocator 'By.id: EAM_DIALOG_1_IFRAME'
+18:55:10.309 INFO  InvoicingStatusTransmissionPageTests -----------------------------------------------------------------------------------------------------------------------
+18:55:16.001 INFO  WebHelpers -Open URL: us01.dynamicseam.com
+18:55:17.026 INFO  WebHelpers -Click Button  with value - "null" - Enterprise Applications - 
+18:55:37.147 INFO  WebHelpers -Switch to IFrame: Proxy element for: DefaultElementLocator 'By.id: contentIFrame'
+18:55:37.314 INFO  WebHelpers -Click Button  with value - "null" - Invoicing Status/Transmission - 
+18:55:38.340 INFO  WebHelpers -Switch to the new window: Invoicing Status/Transmission
+18:55:42.336 INFO  InvoicingStatusTransmissionPageTests -----------------------------------------------------------------------------------------------------------------------
+18:55:48.372 INFO  WebHelpers -Open URL: us01.dynamicseam.com
+18:55:49.504 INFO  WebHelpers -Click Button  with value - "null" - Enterprise Applications - 
+18:56:09.599 INFO  WebHelpers -Switch to IFrame: Proxy element for: DefaultElementLocator 'By.id: contentIFrame'
+18:56:09.772 INFO  WebHelpers -Click Button  with value - "null" - Items without Manufacturer (Created in 30 days) - 
+18:56:10.803 INFO  WebHelpers -Switch to the new window: Items without Manufacturer (Created in 30 days)
+18:56:14.688 INFO  InvoicingStatusTransmissionPageTests -----------------------------------------------------------------------------------------------------------------------
+18:56:20.399 INFO  WebHelpers -Open URL: us01.dynamicseam.com
+18:56:21.520 INFO  WebHelpers -Click Button  with value - "null" - Enterprise Applications - 
+18:56:41.637 INFO  WebHelpers -Switch to IFrame: Proxy element for: DefaultElementLocator 'By.id: contentIFrame'
+18:56:41.805 INFO  WebHelpers -Click Button  with value - "null" - Items without Manufacturer (Created in 30 days) - 
+18:56:42.838 INFO  WebHelpers -Switch to the new window: Items without Manufacturer (Created in 30 days)
+18:56:43.150 INFO  WebHelpers -Click WebElement: "1143596 "
+18:56:43.189 INFO  WebHelpers -Switch to the new window: Workplace: Enterprise Applications - Microsoft Dynamics CRM
+18:56:44.214 INFO  WebHelpers -Switch to the new window: Microsoft Dynamics CRM
+18:56:48.084 INFO  InvoicingStatusTransmissionPageTests -----------------------------------------------------------------------------------------------------------------------
+18:56:53.895 INFO  WebHelpers -Open URL: us01.dynamicseam.com
+18:56:55.208 INFO  WebHelpers -Click Button  with value - "null" - Enterprise Applications - 
+18:57:15.327 INFO  WebHelpers -Switch to IFrame: Proxy element for: DefaultElementLocator 'By.id: contentIFrame'
+18:57:15.495 INFO  WebHelpers -Click Button  with value - "null" - Items without Manufacturer (Created in 30 days) - 
+18:57:16.527 INFO  WebHelpers -Switch to the new window: Items without Manufacturer (Created in 30 days)
+18:57:20.502 INFO  InvoicingStatusTransmissionPageTests -----------------------------------------------------------------------------------------------------------------------
+18:57:26.059 INFO  WebHelpers -Open URL: us01.dynamicseam.com
+18:57:27.149 INFO  WebHelpers -Click Button  with value - "null" - Enterprise Applications - 
+18:57:47.251 INFO  WebHelpers -Switch to IFrame: Proxy element for: DefaultElementLocator 'By.id: contentIFrame'
+18:57:47.418 INFO  WebHelpers -Click Button  with value - "null" - Items without Manufacturer (Created in 30 days) - 
+18:57:48.454 INFO  WebHelpers -Switch to the new window: Items without Manufacturer (Created in 30 days)
+18:57:48.729 INFO  WebHelpers -Click Button  with value - "null" - Export to Excel - a_export
+18:57:50.730 INFO  WebHelpers -File with name - Items Without Manufacturer.xlsx was downloaded successfully.
+18:57:54.626 INFO  MRLineDetailsWaitingForAQuoteTests -----------------------------------------------------------------------------------------------------------------------
+18:58:00.267 INFO  WebHelpers -Open URL: us01.dynamicseam.com
+18:58:02.238 INFO  WebHelpers -Click Button  with value - "null" - Enterprise Applications - 
+18:58:22.336 INFO  WebHelpers -Switch to IFrame: Proxy element for: DefaultElementLocator 'By.id: contentIFrame'
+18:58:22.503 INFO  WebHelpers -Click Button  with value - "null" - MR Line Details (Waiting for a Quote/Client Price) - 
+18:58:23.530 INFO  WebHelpers -Switch to the new window: MR Line Details (Waiting for a Quote/Client Price)
+18:58:24.871 INFO  WebHelpers -Wait web element presence: "Next" for seconds - 10
+18:58:24.980 INFO  WebHelpers -Click Button  with value - "null" - Next - 
+18:58:25.039 INFO  WebHelpers -Wait web element presence: "Last" for seconds - 10
+18:58:25.151 INFO  WebHelpers -Click Button  with value - "null" - Last - 
+18:58:25.718 INFO  WebHelpers -Wait web element presence: "Prev" for seconds - 10
+18:58:26.198 INFO  WebHelpers -Click Button  with value - "null" - Prev - 
+18:58:26.246 INFO  WebHelpers -Wait web element presence: "First" for seconds - 10
+18:58:26.368 INFO  WebHelpers -Click Button  with value - "null" - First - 
+18:58:26.415 INFO  WebHelpers -Wait web element presence: "2" for seconds - 10
+18:58:26.533 INFO  WebHelpers -Click Button  with value - "null" - 2 - 
+18:58:30.333 INFO  MRLineDetailsWaitingForAQuoteTests -----------------------------------------------------------------------------------------------------------------------
+18:58:35.863 INFO  WebHelpers -Open URL: us01.dynamicseam.com
+18:58:37.083 INFO  WebHelpers -Click Button  with value - "null" - Enterprise Applications - 
+18:58:57.196 INFO  WebHelpers -Switch to IFrame: Proxy element for: DefaultElementLocator 'By.id: contentIFrame'
+18:58:57.362 INFO  WebHelpers -Click Button  with value - "null" - MR Line Details (Waiting for a Quote/Client Price) - 
+18:59:00.187 INFO  WebHelpers -Switch to the new window: MR Line Details (Waiting for a Quote/Client Price)
+18:59:04.073 INFO  MRLineDetailsWaitingForAQuoteTests -----------------------------------------------------------------------------------------------------------------------
+18:59:09.905 INFO  WebHelpers -Open URL: us01.dynamicseam.com
+18:59:10.992 INFO  WebHelpers -Click Button  with value - "null" - Enterprise Applications - 
+18:59:31.065 INFO  WebHelpers -Switch to IFrame: Proxy element for: DefaultElementLocator 'By.id: contentIFrame'
+18:59:31.226 INFO  WebHelpers -Click Button  with value - "null" - MR Line Details (Waiting for a Quote/Client Price) - 
+18:59:32.258 INFO  WebHelpers -Switch to the new window: MR Line Details (Waiting for a Quote/Client Price)
+18:59:36.071 INFO  MRLineDetailsWaitingForAQuoteTests -----------------------------------------------------------------------------------------------------------------------
+18:59:42.976 INFO  WebHelpers -Open URL: us01.dynamicseam.com
+18:59:44.217 INFO  WebHelpers -Click Button  with value - "null" - Enterprise Applications - 
+19:00:04.322 INFO  WebHelpers -Switch to IFrame: Proxy element for: DefaultElementLocator 'By.id: contentIFrame'
+19:00:04.490 INFO  WebHelpers -Click Button  with value - "null" - MR Line Details (Waiting for a Quote/Client Price) - 
+19:00:05.662 INFO  WebHelpers -Switch to the new window: MR Line Details (Waiting for a Quote/Client Price)
+19:00:07.061 INFO  WebHelpers -Click Button  with value - "null" - Waiting for Quote - 
+19:00:07.130 INFO  WebHelpers -Switch to the new window: Workplace: Enterprise Applications - Microsoft Dynamics CRM
+19:00:08.164 INFO  WebHelpers -Switch to the new window: Microsoft Dynamics CRM
+19:00:12.095 INFO  MRLineDetailsWaitingForAQuoteTests -----------------------------------------------------------------------------------------------------------------------
+19:00:18.384 INFO  WebHelpers -Open URL: us01.dynamicseam.com
+19:00:19.573 INFO  WebHelpers -Click Button  with value - "null" - Enterprise Applications - 
+19:00:39.718 INFO  WebHelpers -Switch to IFrame: Proxy element for: DefaultElementLocator 'By.id: contentIFrame'
+19:00:39.891 INFO  WebHelpers -Click Button  with value - "null" - MR Line Details (Waiting for a Quote/Client Price) - 
+19:00:40.926 INFO  WebHelpers -Switch to the new window: MR Line Details (Waiting for a Quote/Client Price)
+19:00:43.415 INFO  WebHelpers -Click Button  with value - "null" - Export to Excel - a_export
+19:00:45.416 INFO  WebHelpers -File with name - Mr Lines Detail.xlsx was downloaded successfully.
+19:00:49.408 INFO  MRLineSummaryTests -----------------------------------------------------------------------------------------------------------------------
+19:00:55.470 INFO  WebHelpers -Open URL: us01.dynamicseam.com
+19:00:56.789 INFO  WebHelpers -Click Button  with value - "null" - Enterprise Applications - 
+19:01:16.893 INFO  WebHelpers -Switch to IFrame: Proxy element for: DefaultElementLocator 'By.id: contentIFrame'
+19:01:17.069 INFO  WebHelpers -Click Button  with value - "null" - MR Line Summary (Waiting for a Quote/Client Price) - 
+19:01:18.097 INFO  WebHelpers -Switch to the new window: MR Line Summary (Waiting for a Quote/Client Price)
+19:01:22.010 INFO  MRLineSummaryTests -----------------------------------------------------------------------------------------------------------------------
+19:01:28.291 INFO  WebHelpers -Open URL: us01.dynamicseam.com
+19:01:29.383 INFO  WebHelpers -Click Button  with value - "null" - Enterprise Applications - 
+19:01:49.473 INFO  WebHelpers -Switch to IFrame: Proxy element for: DefaultElementLocator 'By.id: contentIFrame'
+19:01:49.652 INFO  WebHelpers -Click Button  with value - "null" - MR Line Summary (Waiting for a Quote/Client Price) - 
+19:01:50.677 INFO  WebHelpers -Switch to the new window: MR Line Summary (Waiting for a Quote/Client Price)
+19:01:54.725 INFO  MRLineSummaryTests -----------------------------------------------------------------------------------------------------------------------
+19:02:00.222 INFO  WebHelpers -Open URL: us01.dynamicseam.com
+19:02:01.473 INFO  WebHelpers -Click Button  with value - "null" - Enterprise Applications - 
+19:02:21.579 INFO  WebHelpers -Switch to IFrame: Proxy element for: DefaultElementLocator 'By.id: contentIFrame'
+19:02:21.745 INFO  WebHelpers -Click Button  with value - "null" - MR Line Summary (Waiting for a Quote/Client Price) - 
+19:02:22.789 INFO  WebHelpers -Switch to the new window: MR Line Summary (Waiting for a Quote/Client Price)
+19:02:25.136 INFO  WebHelpers -Click Button  with value - "null" - Export to Excel - a_export
+19:02:27.136 INFO  WebHelpers -File with name - Mr Lines Summary.xlsx was downloaded successfully.
+19:02:31.064 INFO  InvoicingStatusTransmissionPageTests -----------------------------------------------------------------------------------------------------------------------
+19:02:36.801 INFO  WebHelpers -Open URL: us01.dynamicseam.com
+19:02:38.130 INFO  WebHelpers -Click Button  with value - "null" - Enterprise Applications - 
+19:02:58.244 INFO  WebHelpers -Switch to IFrame: Proxy element for: DefaultElementLocator 'By.id: contentIFrame'
+19:02:58.419 INFO  WebHelpers -Click Button  with value - "null" - PGT List Price Requests - 
+19:02:59.465 INFO  WebHelpers -Switch to the new window: PGT List Price Requests
+19:03:03.424 INFO  InvoicingStatusTransmissionPageTests -----------------------------------------------------------------------------------------------------------------------
+19:03:08.486 INFO  WebHelpers -Open URL: us01.dynamicseam.com
+19:03:09.643 INFO  WebHelpers -Click Button  with value - "null" - Enterprise Applications - 
+19:03:29.703 INFO  WebHelpers -Switch to IFrame: Proxy element for: DefaultElementLocator 'By.id: contentIFrame'
+19:03:29.874 INFO  WebHelpers -Click Button  with value - "null" - PGT List Price Requests - 
+19:03:30.918 INFO  WebHelpers -Switch to the new window: PGT List Price Requests
+19:03:31.243 INFO  WebHelpers -Click WebElement: "Waiting for Approval "
+19:03:31.311 INFO  WebHelpers -Switch to the new window: Workplace: Enterprise Applications - Microsoft Dynamics CRM
+19:03:32.347 INFO  WebHelpers -Switch to the new window: Microsoft Dynamics CRM
+19:03:36.323 INFO  InvoicingStatusTransmissionPageTests -----------------------------------------------------------------------------------------------------------------------
+19:03:41.477 INFO  WebHelpers -Open URL: us01.dynamicseam.com
+19:03:42.636 INFO  WebHelpers -Click Button  with value - "null" - Enterprise Applications - 
+19:04:02.748 INFO  WebHelpers -Switch to IFrame: Proxy element for: DefaultElementLocator 'By.id: contentIFrame'
+19:04:02.922 INFO  WebHelpers -Click Button  with value - "null" - PGT List Price Requests - 
+19:04:03.956 INFO  WebHelpers -Switch to the new window: PGT List Price Requests
+19:04:04.006 INFO  WebHelpers -Wait web element presence: "" for seconds - 5
+19:04:04.074 INFO  WebHelpers -Click Button "on"
+19:04:04.116 INFO  WebHelpers -Check box was clicked - checkbox
+19:04:04.152 INFO  WebHelpers -Wait web element presence: "" for seconds - 5
+19:04:04.208 INFO  WebHelpers -Click Button "on"
+19:04:04.236 INFO  WebHelpers -Check box was clicked - checkbox
+19:04:08.162 INFO  InvoicingStatusTransmissionPageTests -----------------------------------------------------------------------------------------------------------------------
+19:04:13.220 INFO  WebHelpers -Open URL: us01.dynamicseam.com
+19:04:14.429 INFO  WebHelpers -Click Button  with value - "null" - Enterprise Applications - 
+19:04:34.518 INFO  WebHelpers -Switch to IFrame: Proxy element for: DefaultElementLocator 'By.id: contentIFrame'
+19:04:34.690 INFO  WebHelpers -Click Button  with value - "null" - PGT List Price Requests - 
+19:04:35.727 INFO  WebHelpers -Switch to the new window: PGT List Price Requests
+19:04:36.041 INFO  WebHelpers -Click Button  with value - "null" - Export to Excel - a_export
+19:04:38.042 INFO  WebHelpers -File with name - PGT List Prices.xlsx was downloaded successfully.
+19:04:41.975 INFO  InvoicingStatusTransmissionPageTests -----------------------------------------------------------------------------------------------------------------------
+19:04:47.421 INFO  WebHelpers -Open URL: us01.dynamicseam.com
+19:04:48.545 INFO  WebHelpers -Click Button  with value - "null" - Enterprise Applications - 
+19:05:08.646 INFO  WebHelpers -Switch to IFrame: Proxy element for: DefaultElementLocator 'By.id: contentIFrame'
+19:05:08.823 INFO  WebHelpers -Click Button  with value - "null" - PGT List Price Requests - 
+19:05:09.862 INFO  WebHelpers -Switch to the new window: PGT List Price Requests
+19:05:13.928 INFO  InvoicingStatusTransmissionPageTests -----------------------------------------------------------------------------------------------------------------------
+19:05:18.925 INFO  WebHelpers -Open URL: us01.dynamicseam.com
+19:05:20.076 INFO  WebHelpers -Click Button  with value - "null" - Enterprise Applications - 
+19:05:40.219 INFO  WebHelpers -Switch to IFrame: Proxy element for: DefaultElementLocator 'By.id: contentIFrame'
+19:05:40.397 INFO  WebHelpers -Click Button  with value - "null" - PGT Manufacture Focused Sourcing - 
+19:05:41.428 INFO  WebHelpers -Switch to the new window: PGT Manufacture Focused Sourcing
+19:05:45.402 INFO  InvoicingStatusTransmissionPageTests -----------------------------------------------------------------------------------------------------------------------
+19:05:50.769 INFO  WebHelpers -Open URL: us01.dynamicseam.com
+19:05:51.938 INFO  WebHelpers -Click Button  with value - "null" - Enterprise Applications - 
+19:06:12.051 INFO  WebHelpers -Switch to IFrame: Proxy element for: DefaultElementLocator 'By.id: contentIFrame'
+19:06:12.222 INFO  WebHelpers -Click Button  with value - "null" - PGT Manufacture Focused Sourcing - 
+19:06:13.255 INFO  WebHelpers -Switch to the new window: PGT Manufacture Focused Sourcing
+19:06:13.725 INFO  WebHelpers -Click Button  with value - "null" - Export to Excel - a_export
+19:06:15.725 INFO  WebHelpers -File with name - Mr Lines Manufacture Focused.xlsx was downloaded successfully.
+19:06:19.672 INFO  InvoicingStatusTransmissionPageTests -----------------------------------------------------------------------------------------------------------------------
+19:06:24.646 INFO  WebHelpers -Open URL: us01.dynamicseam.com
+19:06:25.763 INFO  WebHelpers -Click Button  with value - "null" - Enterprise Applications - 
+19:06:45.885 INFO  WebHelpers -Switch to IFrame: Proxy element for: DefaultElementLocator 'By.id: contentIFrame'
+19:06:46.059 INFO  WebHelpers -Click Button  with value - "null" - PGT Manufacture Focused Sourcing - 
+19:06:48.035 INFO  WebHelpers -Switch to the new window: PGT Manufacture Focused Sourcing
+19:06:52.105 INFO  InvoicingStatusTransmissionPageTests -----------------------------------------------------------------------------------------------------------------------
+19:06:57.823 INFO  WebHelpers -Open URL: us01.dynamicseam.com
+19:06:58.961 INFO  WebHelpers -Click Button  with value - "null" - Enterprise Applications - 
+19:07:19.050 INFO  WebHelpers -Switch to IFrame: Proxy element for: DefaultElementLocator 'By.id: contentIFrame'
+19:07:19.225 INFO  WebHelpers -Click Button  with value - "null" - Vendor Approval - 
+19:07:20.656 INFO  WebHelpers -Switch to the new window: Vendor Approval
+19:07:24.562 INFO  InvoicingStatusTransmissionPageTests -----------------------------------------------------------------------------------------------------------------------
+19:07:29.790 INFO  WebHelpers -Open URL: us01.dynamicseam.com
+19:07:31.389 INFO  WebHelpers -Click Button  with value - "null" - Enterprise Applications - 
+19:07:51.533 INFO  WebHelpers -Switch to IFrame: Proxy element for: DefaultElementLocator 'By.id: contentIFrame'
+19:07:51.700 INFO  WebHelpers -Click Button  with value - "null" - Vendor Approval - 
+19:07:52.784 INFO  WebHelpers -Switch to the new window: Vendor Approval
+19:07:53.105 INFO  WebHelpers -Click Button  with value - "null" - Export to Excel - a_export
+19:07:55.105 INFO  WebHelpers -File with name - Vendor Approval.xlsx was downloaded successfully.
+19:07:59.029 INFO  InvoicingStatusTransmissionPageTests -----------------------------------------------------------------------------------------------------------------------
+19:08:04.256 INFO  WebHelpers -Open URL: us01.dynamicseam.com
+19:08:05.266 INFO  WebHelpers -Click Button  with value - "null" - Enterprise Applications - 
+19:08:25.364 INFO  WebHelpers -Switch to IFrame: Proxy element for: DefaultElementLocator 'By.id: contentIFrame'
+19:08:25.530 INFO  WebHelpers -Click Button  with value - "null" - Vendor Approval - 
+19:08:26.563 INFO  WebHelpers -Switch to the new window: Vendor Approval
+19:08:30.574 INFO  FinanceSiteSettingsPageTests -----------------------------------------------------------------------------------------------------------------------
+19:08:35.450 INFO  WebHelpers -Open URL: us01.dynamicseam.com
+19:08:36.618 INFO  WebHelpers -Click Button  with value - "null" - Enterprise Applications - 
+19:08:56.730 INFO  WebHelpers -Switch to IFrame: Proxy element for: DefaultElementLocator 'By.id: contentIFrame'
+19:08:56.903 INFO  WebHelpers -Click Button  with value - "null" - Finance Site Settings - 
+19:08:57.936 INFO  WebHelpers -Switch to the new window: Finance Site Settings
+19:09:01.978 INFO  FinanceSiteSettingsPageTests -----------------------------------------------------------------------------------------------------------------------
+19:09:07.465 INFO  WebHelpers -Open URL: us01.dynamicseam.com
+19:09:08.486 INFO  WebHelpers -Click Button  with value - "null" - Enterprise Applications - 
+19:09:28.622 INFO  WebHelpers -Switch to IFrame: Proxy element for: DefaultElementLocator 'By.id: contentIFrame'
+19:09:28.791 INFO  WebHelpers -Click Button  with value - "null" - Finance Site Settings - 
+19:09:29.830 INFO  WebHelpers -Switch to the new window: Finance Site Settings
+19:09:30.090 INFO  WebHelpers -Click Button  with value - "null" - Export to Excel - a_export
+19:09:32.092 INFO  WebHelpers -File with name - Finance Site Settings.xlsx was downloaded successfully.
+19:09:36.062 INFO  FinanceSiteSettingsPageTests -----------------------------------------------------------------------------------------------------------------------
+19:09:40.819 INFO  WebHelpers -Open URL: us01.dynamicseam.com
+19:09:41.854 INFO  WebHelpers -Click Button  with value - "null" - Enterprise Applications - 
+19:10:01.989 INFO  WebHelpers -Switch to IFrame: Proxy element for: DefaultElementLocator 'By.id: contentIFrame'
+19:10:02.176 INFO  WebHelpers -Click Button  with value - "null" - Finance Site Settings - 
+19:10:03.217 INFO  WebHelpers -Switch to the new window: Finance Site Settings
+19:10:03.487 INFO  WebHelpers -Click Button  with value - "null" - Transmission Summary (last 3 months) - a_export1
+19:10:05.488 INFO  WebHelpers -File with name - Transmitted Invoices.xlsm was downloaded successfully.
+19:10:09.424 INFO  FinanceSiteSettingsPageTests -----------------------------------------------------------------------------------------------------------------------
+19:10:14.292 INFO  WebHelpers -Open URL: us01.dynamicseam.com
+19:10:15.417 INFO  WebHelpers -Click Button  with value - "null" - Enterprise Applications - 
+19:10:35.513 INFO  WebHelpers -Switch to IFrame: Proxy element for: DefaultElementLocator 'By.id: contentIFrame'
+19:10:35.678 INFO  WebHelpers -Click Button  with value - "null" - Finance Site Settings - 
+19:10:36.711 INFO  WebHelpers -Switch to the new window: Finance Site Settings
+19:10:40.648 INFO  InvoicingStatusTransmissionPageTests -----------------------------------------------------------------------------------------------------------------------
+19:10:46.457 INFO  WebHelpers -Open URL: us01.dynamicseam.com
+19:10:47.577 INFO  WebHelpers -Click Button  with value - "null" - Enterprise Applications - 
+19:11:07.691 INFO  WebHelpers -Switch to IFrame: Proxy element for: DefaultElementLocator 'By.id: contentIFrame'
+19:11:07.868 INFO  WebHelpers -Click Button  with value - "null" - Invoicing Status/Transmission - 
+19:11:08.902 INFO  WebHelpers -Switch to the new window: Invoicing Status/Transmission
+19:11:12.970 INFO  InvoicingStatusTransmissionPageTests -----------------------------------------------------------------------------------------------------------------------
+19:11:17.975 INFO  WebHelpers -Open URL: us01.dynamicseam.com
+19:11:19.023 INFO  WebHelpers -Click Button  with value - "null" - Enterprise Applications - 
+19:11:39.159 INFO  WebHelpers -Switch to IFrame: Proxy element for: DefaultElementLocator 'By.id: contentIFrame'
+19:11:39.337 INFO  WebHelpers -Click Button  with value - "null" - Invoicing Status/Transmission - 
+19:11:40.370 INFO  WebHelpers -Switch to the new window: Invoicing Status/Transmission
+19:11:44.427 INFO  InvoicingStatusTransmissionPageTests -----------------------------------------------------------------------------------------------------------------------
+19:11:49.483 INFO  WebHelpers -Open URL: us01.dynamicseam.com
+19:11:50.465 INFO  WebHelpers -Click Button  with value - "null" - Enterprise Applications - 
+19:12:10.555 INFO  WebHelpers -Switch to IFrame: Proxy element for: DefaultElementLocator 'By.id: contentIFrame'
+19:12:10.723 INFO  WebHelpers -Click Button  with value - "null" - Invoicing Status/Transmission - 
+19:12:11.756 INFO  WebHelpers -Switch to the new window: Invoicing Status/Transmission
+19:12:13.645 INFO  WebHelpers -Click Button  with value - "null" - Water-Sea - 
+19:12:33.760 INFO  WebHelpers -Switch to IFrame: Proxy element for: DefaultElementLocator 'By.id: EAM_DIALOG_1_IFRAME'
+19:12:37.695 INFO  InvoicingStatusTransmissionPageTests -----------------------------------------------------------------------------------------------------------------------
+19:12:42.902 INFO  WebHelpers -Open URL: us01.dynamicseam.com
+19:12:44.027 INFO  WebHelpers -Click Button  with value - "null" - Enterprise Applications - 
+19:13:04.134 INFO  WebHelpers -Switch to IFrame: Proxy element for: DefaultElementLocator 'By.id: contentIFrame'
+19:13:04.319 INFO  WebHelpers -Click Button  with value - "null" - Invoicing Status/Transmission - 
+19:13:05.360 INFO  WebHelpers -Switch to the new window: Invoicing Status/Transmission
+19:13:09.422 INFO  InvoicingStatusTransmissionPageTests -----------------------------------------------------------------------------------------------------------------------
+19:13:14.546 INFO  WebHelpers -Open URL: us01.dynamicseam.com
+19:13:15.680 INFO  WebHelpers -Click Button  with value - "null" - Enterprise Applications - 
+19:13:35.819 INFO  WebHelpers -Switch to IFrame: Proxy element for: DefaultElementLocator 'By.id: contentIFrame'
+19:13:35.993 INFO  WebHelpers -Click Button  with value - "null" - Items without Manufacturer (Created in 30 days) - 
+19:13:37.024 INFO  WebHelpers -Switch to the new window: Items without Manufacturer (Created in 30 days)
+19:13:41.026 INFO  InvoicingStatusTransmissionPageTests -----------------------------------------------------------------------------------------------------------------------
+19:13:46.387 INFO  WebHelpers -Open URL: us01.dynamicseam.com
+19:13:47.572 INFO  WebHelpers -Click Button  with value - "null" - Enterprise Applications - 
+19:14:07.717 INFO  WebHelpers -Switch to IFrame: Proxy element for: DefaultElementLocator 'By.id: contentIFrame'
+19:14:07.901 INFO  WebHelpers -Click Button  with value - "null" - Items without Manufacturer (Created in 30 days) - 
+19:14:10.331 INFO  WebHelpers -Switch to the new window: Items without Manufacturer (Created in 30 days)
+19:14:10.770 INFO  WebHelpers -Click WebElement: "1143596 "
+19:14:10.841 INFO  WebHelpers -Switch to the new window: Workplace: Enterprise Applications - Microsoft Dynamics CRM
+19:14:11.879 INFO  WebHelpers -Switch to the new window: Microsoft Dynamics CRM
+19:14:15.820 INFO  InvoicingStatusTransmissionPageTests -----------------------------------------------------------------------------------------------------------------------
+19:14:20.769 INFO  WebHelpers -Open URL: us01.dynamicseam.com
+19:14:21.790 INFO  WebHelpers -Click Button  with value - "null" - Enterprise Applications - 
+19:14:41.891 INFO  WebHelpers -Switch to IFrame: Proxy element for: DefaultElementLocator 'By.id: contentIFrame'
+19:14:42.074 INFO  WebHelpers -Click Button  with value - "null" - Items without Manufacturer (Created in 30 days) - 
+19:14:43.105 INFO  WebHelpers -Switch to the new window: Items without Manufacturer (Created in 30 days)
+19:14:47.141 INFO  InvoicingStatusTransmissionPageTests -----------------------------------------------------------------------------------------------------------------------
+19:14:52.129 INFO  WebHelpers -Open URL: us01.dynamicseam.com
+19:14:53.257 INFO  WebHelpers -Click Button  with value - "null" - Enterprise Applications - 
+19:15:13.353 INFO  WebHelpers -Switch to IFrame: Proxy element for: DefaultElementLocator 'By.id: contentIFrame'
+19:15:13.521 INFO  WebHelpers -Click Button  with value - "null" - Items without Manufacturer (Created in 30 days) - 
+19:15:14.556 INFO  WebHelpers -Switch to the new window: Items without Manufacturer (Created in 30 days)
+19:15:14.817 INFO  WebHelpers -Click Button  with value - "null" - Export to Excel - a_export
+19:15:16.818 INFO  WebHelpers -File with name - Items Without Manufacturer.xlsx was downloaded successfully.
+19:15:20.757 INFO  MRLineDetailsWaitingForAQuoteTests -----------------------------------------------------------------------------------------------------------------------
+19:15:25.902 INFO  WebHelpers -Open URL: us01.dynamicseam.com
+19:15:26.922 INFO  WebHelpers -Click Button  with value - "null" - Enterprise Applications - 
+19:15:47.058 INFO  WebHelpers -Switch to IFrame: Proxy element for: DefaultElementLocator 'By.id: contentIFrame'
+19:15:47.243 INFO  WebHelpers -Click Button  with value - "null" - MR Line Details (Waiting for a Quote/Client Price) - 
+19:15:48.276 INFO  WebHelpers -Switch to the new window: MR Line Details (Waiting for a Quote/Client Price)
+19:15:49.012 INFO  WebHelpers -Wait web element presence: "Next" for seconds - 10
+19:15:49.125 INFO  WebHelpers -Click Button  with value - "null" - Next - 
+19:15:49.181 INFO  WebHelpers -Wait web element presence: "Last" for seconds - 10
+19:15:49.305 INFO  WebHelpers -Click Button  with value - "null" - Last - 
+19:15:50.241 INFO  WebHelpers -Wait web element presence: "Prev" for seconds - 10
+19:15:50.351 INFO  WebHelpers -Click Button  with value - "null" - Prev - 
+19:15:50.405 INFO  WebHelpers -Wait web element presence: "First" for seconds - 10
+19:15:50.520 INFO  WebHelpers -Click Button  with value - "null" - First - 
+19:15:50.568 INFO  WebHelpers -Wait web element presence: "2" for seconds - 10
+19:15:55.447 INFO  MRLineDetailsWaitingForAQuoteTests -----------------------------------------------------------------------------------------------------------------------
+19:16:01.138 INFO  WebHelpers -Open URL: us01.dynamicseam.com
+19:16:02.184 INFO  WebHelpers -Click Button  with value - "null" - Enterprise Applications - 
+19:16:22.330 INFO  WebHelpers -Switch to IFrame: Proxy element for: DefaultElementLocator 'By.id: contentIFrame'
+19:16:22.511 INFO  WebHelpers -Click Button  with value - "null" - MR Line Details (Waiting for a Quote/Client Price) - 
+19:16:23.541 INFO  WebHelpers -Switch to the new window: MR Line Details (Waiting for a Quote/Client Price)
+19:16:27.556 INFO  MRLineDetailsWaitingForAQuoteTests -----------------------------------------------------------------------------------------------------------------------
+19:16:32.684 INFO  WebHelpers -Open URL: us01.dynamicseam.com
+19:16:33.691 INFO  WebHelpers -Click Button  with value - "null" - Enterprise Applications - 
+19:16:53.834 INFO  WebHelpers -Switch to IFrame: Proxy element for: DefaultElementLocator 'By.id: contentIFrame'
+19:16:54.007 INFO  WebHelpers -Click Button  with value - "null" - MR Line Details (Waiting for a Quote/Client Price) - 
+19:16:55.040 INFO  WebHelpers -Switch to the new window: MR Line Details (Waiting for a Quote/Client Price)
+19:16:58.973 INFO  MRLineDetailsWaitingForAQuoteTests -----------------------------------------------------------------------------------------------------------------------
+19:17:03.942 INFO  WebHelpers -Open URL: us01.dynamicseam.com
+19:17:04.938 INFO  WebHelpers -Click Button  with value - "null" - Enterprise Applications - 
+19:17:25.087 INFO  WebHelpers -Switch to IFrame: Proxy element for: DefaultElementLocator 'By.id: contentIFrame'
+19:17:25.264 INFO  WebHelpers -Click Button  with value - "null" - MR Line Details (Waiting for a Quote/Client Price) - 
+19:17:26.291 INFO  WebHelpers -Switch to the new window: MR Line Details (Waiting for a Quote/Client Price)
+19:17:27.520 INFO  WebHelpers -Click Button  with value - "null" - Waiting for Quote - 
+19:17:27.609 INFO  WebHelpers -Switch to the new window: Workplace: Enterprise Applications - Microsoft Dynamics CRM
+19:17:28.662 INFO  WebHelpers -Switch to the new window: Microsoft Dynamics CRM
+19:17:32.591 INFO  MRLineDetailsWaitingForAQuoteTests -----------------------------------------------------------------------------------------------------------------------
+19:17:37.681 INFO  WebHelpers -Open URL: us01.dynamicseam.com
+19:17:38.720 INFO  WebHelpers -Click Button  with value - "null" - Enterprise Applications - 
+19:17:58.814 INFO  WebHelpers -Switch to IFrame: Proxy element for: DefaultElementLocator 'By.id: contentIFrame'
+19:17:58.986 INFO  WebHelpers -Click Button  with value - "null" - MR Line Details (Waiting for a Quote/Client Price) - 
+19:18:00.790 INFO  WebHelpers -Switch to the new window: MR Line Details (Waiting for a Quote/Client Price)
+19:18:03.236 INFO  WebHelpers -Click Button  with value - "null" - Export to Excel - a_export
+19:18:05.236 INFO  WebHelpers -File with name - Mr Lines Detail.xlsx was downloaded successfully.
+19:18:09.174 INFO  FinanceSiteSettingsPageTests -----------------------------------------------------------------------------------------------------------------------
+19:18:14.102 INFO  WebHelpers -Open URL: us01.dynamicseam.com
+19:18:15.243 INFO  WebHelpers -Click Button  with value - "null" - Enterprise Applications - 
+19:18:35.378 INFO  WebHelpers -Switch to IFrame: Proxy element for: DefaultElementLocator 'By.id: contentIFrame'
+19:18:35.541 INFO  WebHelpers -Click Button  with value - "null" - Finance Site Settings - 
+19:18:36.592 INFO  WebHelpers -Switch to the new window: Finance Site Settings
+19:18:40.570 INFO  FinanceSiteSettingsPageTests -----------------------------------------------------------------------------------------------------------------------
+19:18:45.707 INFO  WebHelpers -Open URL: us01.dynamicseam.com
+19:18:46.837 INFO  WebHelpers -Click Button  with value - "null" - Enterprise Applications - 
+19:19:06.971 INFO  WebHelpers -Switch to IFrame: Proxy element for: DefaultElementLocator 'By.id: contentIFrame'
+19:19:07.149 INFO  WebHelpers -Click Button  with value - "null" - Finance Site Settings - 
+19:19:08.177 INFO  WebHelpers -Switch to the new window: Finance Site Settings
+19:19:08.446 INFO  WebHelpers -Click Button  with value - "null" - Export to Excel - a_export
+19:19:10.447 INFO  WebHelpers -File with name - Finance Site Settings.xlsx was downloaded successfully.
+19:19:14.359 INFO  FinanceSiteSettingsPageTests -----------------------------------------------------------------------------------------------------------------------
+19:19:19.664 INFO  WebHelpers -Open URL: us01.dynamicseam.com
+19:19:20.672 INFO  WebHelpers -Click Button  with value - "null" - Enterprise Applications - 
+19:19:40.816 INFO  WebHelpers -Switch to IFrame: Proxy element for: DefaultElementLocator 'By.id: contentIFrame'
+19:19:40.987 INFO  WebHelpers -Click Button  with value - "null" - Finance Site Settings - 
+19:19:42.021 INFO  WebHelpers -Switch to the new window: Finance Site Settings
+19:19:42.303 INFO  WebHelpers -Click Button  with value - "null" - Transmission Summary (last 3 months) - a_export1
+19:19:44.304 INFO  WebHelpers -File with name - Transmitted Invoices.xlsm was downloaded successfully.
+19:19:48.260 INFO  FinanceSiteSettingsPageTests -----------------------------------------------------------------------------------------------------------------------
+19:19:53.187 INFO  WebHelpers -Open URL: us01.dynamicseam.com
+19:19:54.317 INFO  WebHelpers -Click Button  with value - "null" - Enterprise Applications - 
+19:20:14.417 INFO  WebHelpers -Switch to IFrame: Proxy element for: DefaultElementLocator 'By.id: contentIFrame'
+19:20:14.589 INFO  WebHelpers -Click Button  with value - "null" - Finance Site Settings - 
+19:20:15.624 INFO  WebHelpers -Switch to the new window: Finance Site Settings
+19:20:19.557 INFO  InvoicingStatusTransmissionPageTests -----------------------------------------------------------------------------------------------------------------------
+19:20:24.848 INFO  WebHelpers -Open URL: us01.dynamicseam.com
+19:20:25.918 INFO  WebHelpers -Click Button  with value - "null" - Enterprise Applications - 
+19:20:46.018 INFO  WebHelpers -Switch to IFrame: Proxy element for: DefaultElementLocator 'By.id: contentIFrame'
+19:20:46.205 INFO  WebHelpers -Click Button  with value - "null" - Invoicing Status/Transmission - 
+19:20:47.242 INFO  WebHelpers -Switch to the new window: Invoicing Status/Transmission
+19:20:51.175 INFO  InvoicingStatusTransmissionPageTests -----------------------------------------------------------------------------------------------------------------------
+19:20:58.876 INFO  WebHelpers -Open URL: us01.dynamicseam.com
+19:21:00.355 INFO  WebHelpers -Click Button  with value - "null" - Enterprise Applications - 
+19:21:20.466 INFO  WebHelpers -Switch to IFrame: Proxy element for: DefaultElementLocator 'By.id: contentIFrame'
+19:21:20.637 INFO  WebHelpers -Click Button  with value - "null" - Invoicing Status/Transmission - 
+19:21:21.742 INFO  WebHelpers -Switch to the new window: Invoicing Status/Transmission
+19:21:22.092 INFO  WebHelpers -Click Button  with value - "null" - Export to Excel - a_export
+19:21:24.092 INFO  WebHelpers -File with name - Invoicing Status.xlsx was downloaded successfully.
+19:21:28.042 INFO  InvoicingStatusTransmissionPageTests -----------------------------------------------------------------------------------------------------------------------
+19:21:33.471 INFO  WebHelpers -Open URL: us01.dynamicseam.com
+19:21:34.505 INFO  WebHelpers -Click Button  with value - "null" - Enterprise Applications - 
+19:21:54.601 INFO  WebHelpers -Switch to IFrame: Proxy element for: DefaultElementLocator 'By.id: contentIFrame'
+19:21:54.787 INFO  WebHelpers -Click Button  with value - "null" - Invoicing Status/Transmission - 
+19:21:55.818 INFO  WebHelpers -Switch to the new window: Invoicing Status/Transmission
+19:21:57.385 INFO  WebHelpers -Click Button  with value - "null" - Water-Sea - 
+19:22:17.514 INFO  WebHelpers -Switch to IFrame: Proxy element for: DefaultElementLocator 'By.id: EAM_DIALOG_1_IFRAME'
+19:22:21.437 INFO  InvoicingStatusTransmissionPageTests -----------------------------------------------------------------------------------------------------------------------
+19:22:26.703 INFO  WebHelpers -Open URL: us01.dynamicseam.com
+19:22:27.808 INFO  WebHelpers -Click Button  with value - "null" - Enterprise Applications - 
+19:22:47.924 INFO  WebHelpers -Switch to IFrame: Proxy element for: DefaultElementLocator 'By.id: contentIFrame'
+19:22:48.089 INFO  WebHelpers -Click Button  with value - "null" - Invoicing Status/Transmission - 
+19:22:49.120 INFO  WebHelpers -Switch to the new window: Invoicing Status/Transmission
+19:22:53.152 INFO  InvoicingStatusTransmissionPageTests -----------------------------------------------------------------------------------------------------------------------
+19:22:58.302 INFO  WebHelpers -Open URL: us01.dynamicseam.com
+19:22:59.291 INFO  WebHelpers -Click Button  with value - "null" - Enterprise Applications - 
+19:23:19.360 INFO  WebHelpers -Switch to IFrame: Proxy element for: DefaultElementLocator 'By.id: contentIFrame'
+19:23:19.535 INFO  WebHelpers -Click Button  with value - "null" - Items without Manufacturer (Created in 30 days) - 
+19:23:20.580 INFO  WebHelpers -Switch to the new window: Items without Manufacturer (Created in 30 days)
+19:23:24.504 INFO  InvoicingStatusTransmissionPageTests -----------------------------------------------------------------------------------------------------------------------
+19:23:29.404 INFO  WebHelpers -Open URL: us01.dynamicseam.com
+19:23:30.435 INFO  WebHelpers -Click Button  with value - "null" - Enterprise Applications - 
+19:23:50.522 INFO  WebHelpers -Switch to IFrame: Proxy element for: DefaultElementLocator 'By.id: contentIFrame'
+19:23:50.700 INFO  WebHelpers -Click Button  with value - "null" - Items without Manufacturer (Created in 30 days) - 
+19:23:51.738 INFO  WebHelpers -Switch to the new window: Items without Manufacturer (Created in 30 days)
+19:23:52.069 INFO  WebHelpers -Click WebElement: "1143596 "
+19:23:52.144 INFO  WebHelpers -Switch to the new window: Workplace: Enterprise Applications - Microsoft Dynamics CRM
+19:23:53.188 INFO  WebHelpers -Switch to the new window: Microsoft Dynamics CRM
+19:23:57.109 INFO  InvoicingStatusTransmissionPageTests -----------------------------------------------------------------------------------------------------------------------
+19:24:02.016 INFO  WebHelpers -Open URL: us01.dynamicseam.com
+19:24:03.182 INFO  WebHelpers -Click Button  with value - "null" - Enterprise Applications - 
+19:24:23.320 INFO  WebHelpers -Switch to IFrame: Proxy element for: DefaultElementLocator 'By.id: contentIFrame'
+19:24:23.491 INFO  WebHelpers -Click Button  with value - "null" - Items without Manufacturer (Created in 30 days) - 
+19:24:24.524 INFO  WebHelpers -Switch to the new window: Items without Manufacturer (Created in 30 days)
+19:24:28.551 INFO  InvoicingStatusTransmissionPageTests -----------------------------------------------------------------------------------------------------------------------
+19:24:33.492 INFO  WebHelpers -Open URL: us01.dynamicseam.com
+19:24:34.507 INFO  WebHelpers -Click Button  with value - "null" - Enterprise Applications - 
+19:24:54.629 INFO  WebHelpers -Switch to IFrame: Proxy element for: DefaultElementLocator 'By.id: contentIFrame'
+19:24:54.801 INFO  WebHelpers -Click Button  with value - "null" - Items without Manufacturer (Created in 30 days) - 
+19:24:55.836 INFO  WebHelpers -Switch to the new window: Items without Manufacturer (Created in 30 days)
+19:24:56.111 INFO  WebHelpers -Click Button  with value - "null" - Export to Excel - a_export
+19:24:58.112 INFO  WebHelpers -File with name - Items Without Manufacturer.xlsx was downloaded successfully.
+19:25:02.177 INFO  MRLineDetailsWaitingForAQuoteTests -----------------------------------------------------------------------------------------------------------------------
+19:25:07.386 INFO  WebHelpers -Open URL: us01.dynamicseam.com
+19:25:08.381 INFO  WebHelpers -Click Button  with value - "null" - Enterprise Applications - 
+19:25:28.475 INFO  WebHelpers -Switch to IFrame: Proxy element for: DefaultElementLocator 'By.id: contentIFrame'
+19:25:28.653 INFO  WebHelpers -Click Button  with value - "null" - MR Line Details (Waiting for a Quote/Client Price) - 
+19:25:29.685 INFO  WebHelpers -Switch to the new window: MR Line Details (Waiting for a Quote/Client Price)
+19:25:30.615 INFO  WebHelpers -Wait web element presence: "Next" for seconds - 10
+19:25:30.735 INFO  WebHelpers -Click Button  with value - "null" - Next - 
+19:25:30.790 INFO  WebHelpers -Wait web element presence: "Last" for seconds - 10
+19:25:30.918 INFO  WebHelpers -Click Button  with value - "null" - Last - 
+19:25:35.607 INFO  MRLineDetailsWaitingForAQuoteTests -----------------------------------------------------------------------------------------------------------------------
+19:25:40.712 INFO  WebHelpers -Open URL: us01.dynamicseam.com
+19:25:41.738 INFO  WebHelpers -Click Button  with value - "null" - Enterprise Applications - 
+19:26:01.851 INFO  WebHelpers -Switch to IFrame: Proxy element for: DefaultElementLocator 'By.id: contentIFrame'
+19:26:02.032 INFO  WebHelpers -Click Button  with value - "null" - MR Line Details (Waiting for a Quote/Client Price) - 
+19:26:03.058 INFO  WebHelpers -Switch to the new window: MR Line Details (Waiting for a Quote/Client Price)
+19:26:07.075 INFO  MRLineDetailsWaitingForAQuoteTests -----------------------------------------------------------------------------------------------------------------------
+19:26:12.330 INFO  WebHelpers -Open URL: us01.dynamicseam.com
+19:26:13.479 INFO  WebHelpers -Click Button  with value - "null" - Enterprise Applications - 
+19:26:33.592 INFO  WebHelpers -Switch to IFrame: Proxy element for: DefaultElementLocator 'By.id: contentIFrame'
+19:26:33.763 INFO  WebHelpers -Click Button  with value - "null" - MR Line Details (Waiting for a Quote/Client Price) - 
+19:26:34.803 INFO  WebHelpers -Switch to the new window: MR Line Details (Waiting for a Quote/Client Price)
+19:26:38.751 INFO  MRLineDetailsWaitingForAQuoteTests -----------------------------------------------------------------------------------------------------------------------
+19:26:43.814 INFO  WebHelpers -Open URL: us01.dynamicseam.com
+19:26:44.963 INFO  WebHelpers -Click Button  with value - "null" - Enterprise Applications - 
+19:27:05.008 INFO  WebHelpers -Switch to IFrame: Proxy element for: DefaultElementLocator 'By.id: contentIFrame'
+19:27:05.180 INFO  WebHelpers -Click Button  with value - "null" - MR Line Details (Waiting for a Quote/Client Price) - 
+19:27:06.208 INFO  WebHelpers -Switch to the new window: MR Line Details (Waiting for a Quote/Client Price)
+19:27:07.275 INFO  WebHelpers -Click Button  with value - "null" - Waiting for Quote - 
+19:27:07.354 INFO  WebHelpers -Switch to the new window: Workplace: Enterprise Applications - Microsoft Dynamics CRM
+19:27:08.401 INFO  WebHelpers -Switch to the new window: Microsoft Dynamics CRM
+19:27:12.328 INFO  MRLineDetailsWaitingForAQuoteTests -----------------------------------------------------------------------------------------------------------------------
+19:27:17.605 INFO  WebHelpers -Open URL: us01.dynamicseam.com
+19:27:18.713 INFO  WebHelpers -Click Button  with value - "null" - Enterprise Applications - 
+19:27:38.824 INFO  WebHelpers -Switch to IFrame: Proxy element for: DefaultElementLocator 'By.id: contentIFrame'
+19:27:38.992 INFO  WebHelpers -Click Button  with value - "null" - MR Line Details (Waiting for a Quote/Client Price) - 
+19:27:40.038 INFO  WebHelpers -Switch to the new window: MR Line Details (Waiting for a Quote/Client Price)
+19:27:42.497 INFO  WebHelpers -Click Button  with value - "null" - Export to Excel - a_export
+19:27:44.499 INFO  WebHelpers -File with name - Mr Lines Detail.xlsx was downloaded successfully.
+19:27:48.453 INFO  MRLineSummaryTests -----------------------------------------------------------------------------------------------------------------------
+19:27:53.407 INFO  WebHelpers -Open URL: us01.dynamicseam.com
+19:27:54.852 INFO  WebHelpers -Click Button  with value - "null" - Enterprise Applications - 
+19:28:15.002 INFO  WebHelpers -Switch to IFrame: Proxy element for: DefaultElementLocator 'By.id: contentIFrame'
+19:28:15.172 INFO  WebHelpers -Click Button  with value - "null" - MR Line Summary (Waiting for a Quote/Client Price) - 
+19:28:16.205 INFO  WebHelpers -Switch to the new window: MR Line Summary (Waiting for a Quote/Client Price)
+19:28:20.153 INFO  MRLineSummaryTests -----------------------------------------------------------------------------------------------------------------------
+19:28:25.315 INFO  WebHelpers -Open URL: us01.dynamicseam.com
+19:28:26.541 INFO  WebHelpers -Click Button  with value - "null" - Enterprise Applications - 
+19:28:46.666 INFO  WebHelpers -Switch to IFrame: Proxy element for: DefaultElementLocator 'By.id: contentIFrame'
+19:28:46.835 INFO  WebHelpers -Click Button  with value - "null" - MR Line Summary (Waiting for a Quote/Client Price) - 
+19:28:47.873 INFO  WebHelpers -Switch to the new window: MR Line Summary (Waiting for a Quote/Client Price)
+19:28:51.907 INFO  MRLineSummaryTests -----------------------------------------------------------------------------------------------------------------------
+19:28:57.008 INFO  WebHelpers -Open URL: us01.dynamicseam.com
+19:28:58.001 INFO  WebHelpers -Click Button  with value - "null" - Enterprise Applications - 
+19:29:18.128 INFO  WebHelpers -Switch to IFrame: Proxy element for: DefaultElementLocator 'By.id: contentIFrame'
+19:29:18.311 INFO  WebHelpers -Click Button  with value - "null" - MR Line Summary (Waiting for a Quote/Client Price) - 
+19:29:19.350 INFO  WebHelpers -Switch to the new window: MR Line Summary (Waiting for a Quote/Client Price)
+19:29:21.639 INFO  WebHelpers -Click Button  with value - "null" - Export to Excel - a_export
+19:29:23.640 INFO  WebHelpers -File with name - Mr Lines Summary.xlsx was downloaded successfully.
+19:29:27.577 INFO  InvoicingStatusTransmissionPageTests -----------------------------------------------------------------------------------------------------------------------
+19:29:32.468 INFO  WebHelpers -Open URL: us01.dynamicseam.com
+19:29:33.491 INFO  WebHelpers -Click Button  with value - "null" - Enterprise Applications - 
+19:29:53.613 INFO  WebHelpers -Switch to IFrame: Proxy element for: DefaultElementLocator 'By.id: contentIFrame'
+19:29:53.780 INFO  WebHelpers -Click Button  with value - "null" - PGT List Price Requests - 
+19:29:54.824 INFO  WebHelpers -Switch to the new window: PGT List Price Requests
+19:29:58.773 INFO  InvoicingStatusTransmissionPageTests -----------------------------------------------------------------------------------------------------------------------
+19:30:03.928 INFO  WebHelpers -Open URL: us01.dynamicseam.com
+19:30:04.943 INFO  WebHelpers -Click Button  with value - "null" - Enterprise Applications - 
+19:30:25.085 INFO  WebHelpers -Switch to IFrame: Proxy element for: DefaultElementLocator 'By.id: contentIFrame'
+19:30:25.263 INFO  WebHelpers -Click Button  with value - "null" - PGT List Price Requests - 
+19:30:26.309 INFO  WebHelpers -Switch to the new window: PGT List Price Requests
+19:30:26.639 INFO  WebHelpers -Click WebElement: "Waiting for Approval "
+19:30:26.720 INFO  WebHelpers -Switch to the new window: Workplace: Enterprise Applications - Microsoft Dynamics CRM
+19:30:27.758 INFO  WebHelpers -Switch to the new window: Microsoft Dynamics CRM
+19:30:31.671 INFO  InvoicingStatusTransmissionPageTests -----------------------------------------------------------------------------------------------------------------------
+19:30:36.721 INFO  WebHelpers -Open URL: us01.dynamicseam.com
+19:30:37.854 INFO  WebHelpers -Click Button  with value - "null" - Enterprise Applications - 
+19:30:57.951 INFO  WebHelpers -Switch to IFrame: Proxy element for: DefaultElementLocator 'By.id: contentIFrame'
+19:30:58.123 INFO  WebHelpers -Click Button  with value - "null" - PGT List Price Requests - 
+19:30:59.156 INFO  WebHelpers -Switch to the new window: PGT List Price Requests
+19:30:59.210 INFO  WebHelpers -Wait web element presence: "" for seconds - 5
+19:30:59.275 INFO  WebHelpers -Click Button "on"
+19:30:59.317 INFO  WebHelpers -Check box was clicked - checkbox
+19:30:59.354 INFO  WebHelpers -Wait web element presence: "" for seconds - 5
+19:30:59.409 INFO  WebHelpers -Click Button "on"
+19:30:59.434 INFO  WebHelpers -Check box was clicked - checkbox
+19:31:03.322 INFO  InvoicingStatusTransmissionPageTests -----------------------------------------------------------------------------------------------------------------------
+19:31:08.824 INFO  WebHelpers -Open URL: us01.dynamicseam.com
+19:31:09.730 INFO  WebHelpers -Click Button  with value - "null" - Enterprise Applications - 
+19:31:29.839 INFO  WebHelpers -Switch to IFrame: Proxy element for: DefaultElementLocator 'By.id: contentIFrame'
+19:31:30.010 INFO  WebHelpers -Click Button  with value - "null" - PGT List Price Requests - 
+19:31:31.037 INFO  WebHelpers -Switch to the new window: PGT List Price Requests
+19:31:31.323 INFO  WebHelpers -Click Button  with value - "null" - Export to Excel - a_export
+19:31:33.324 INFO  WebHelpers -File with name - PGT List Prices.xlsx was downloaded successfully.
+19:31:37.242 INFO  InvoicingStatusTransmissionPageTests -----------------------------------------------------------------------------------------------------------------------
+19:31:42.340 INFO  WebHelpers -Open URL: us01.dynamicseam.com
+19:31:43.376 INFO  WebHelpers -Click Button  with value - "null" - Enterprise Applications - 
+19:32:03.480 INFO  WebHelpers -Switch to IFrame: Proxy element for: DefaultElementLocator 'By.id: contentIFrame'
+19:32:03.668 INFO  WebHelpers -Click Button  with value - "null" - PGT List Price Requests - 
+19:32:04.721 INFO  WebHelpers -Switch to the new window: PGT List Price Requests
+19:32:08.753 INFO  InvoicingStatusTransmissionPageTests -----------------------------------------------------------------------------------------------------------------------
+19:32:14.100 INFO  WebHelpers -Open URL: us01.dynamicseam.com
+19:32:15.214 INFO  WebHelpers -Click Button  with value - "null" - Enterprise Applications - 
+19:32:35.267 INFO  WebHelpers -Switch to IFrame: Proxy element for: DefaultElementLocator 'By.id: contentIFrame'
+19:32:35.435 INFO  WebHelpers -Click Button  with value - "null" - PGT Manufacture Focused Sourcing - 
+19:32:36.478 INFO  WebHelpers -Switch to the new window: PGT Manufacture Focused Sourcing
+19:32:40.454 INFO  InvoicingStatusTransmissionPageTests -----------------------------------------------------------------------------------------------------------------------
+19:32:45.512 INFO  WebHelpers -Open URL: us01.dynamicseam.com
+19:32:46.534 INFO  WebHelpers -Click Button  with value - "null" - Enterprise Applications - 
+19:33:06.627 INFO  WebHelpers -Switch to IFrame: Proxy element for: DefaultElementLocator 'By.id: contentIFrame'
+19:33:06.790 INFO  WebHelpers -Click Button  with value - "null" - PGT Manufacture Focused Sourcing - 
+19:33:07.827 INFO  WebHelpers -Switch to the new window: PGT Manufacture Focused Sourcing
+19:33:08.268 INFO  WebHelpers -Click Button  with value - "null" - Export to Excel - a_export
+19:33:10.269 INFO  WebHelpers -File with name - Mr Lines Manufacture Focused.xlsx was downloaded successfully.
+19:33:14.195 INFO  InvoicingStatusTransmissionPageTests -----------------------------------------------------------------------------------------------------------------------
+19:33:19.370 INFO  WebHelpers -Open URL: us01.dynamicseam.com
+19:33:20.392 INFO  WebHelpers -Click Button  with value - "null" - Enterprise Applications - 
+19:33:40.488 INFO  WebHelpers -Switch to IFrame: Proxy element for: DefaultElementLocator 'By.id: contentIFrame'
+19:33:40.666 INFO  WebHelpers -Click Button  with value - "null" - PGT Manufacture Focused Sourcing - 
+19:33:41.707 INFO  WebHelpers -Switch to the new window: PGT Manufacture Focused Sourcing
+19:33:45.712 INFO  InvoicingStatusTransmissionPageTests -----------------------------------------------------------------------------------------------------------------------
+19:33:50.940 INFO  WebHelpers -Open URL: us01.dynamicseam.com
+19:33:52.087 INFO  WebHelpers -Click Button  with value - "null" - Enterprise Applications - 
+19:34:12.220 INFO  WebHelpers -Switch to IFrame: Proxy element for: DefaultElementLocator 'By.id: contentIFrame'
+19:34:12.388 INFO  WebHelpers -Click Button  with value - "null" - Vendor Approval - 
+19:34:13.423 INFO  WebHelpers -Switch to the new window: Vendor Approval
+19:34:17.369 INFO  InvoicingStatusTransmissionPageTests -----------------------------------------------------------------------------------------------------------------------
+19:34:22.466 INFO  WebHelpers -Open URL: us01.dynamicseam.com
+19:34:23.458 INFO  WebHelpers -Click Button  with value - "null" - Enterprise Applications - 
+19:34:43.587 INFO  WebHelpers -Switch to IFrame: Proxy element for: DefaultElementLocator 'By.id: contentIFrame'
+19:34:43.755 INFO  WebHelpers -Click Button  with value - "null" - Vendor Approval - 
+19:34:44.804 INFO  WebHelpers -Switch to the new window: Vendor Approval
+19:34:45.081 INFO  WebHelpers -Click Button  with value - "null" - Export to Excel - a_export
+19:34:47.081 INFO  WebHelpers -File with name - Vendor Approval.xlsx was downloaded successfully.
+19:34:51.020 INFO  InvoicingStatusTransmissionPageTests -----------------------------------------------------------------------------------------------------------------------
+19:34:56.226 INFO  WebHelpers -Open URL: us01.dynamicseam.com
+19:34:57.384 INFO  WebHelpers -Click Button  with value - "null" - Enterprise Applications - 
+19:35:17.527 INFO  WebHelpers -Switch to IFrame: Proxy element for: DefaultElementLocator 'By.id: contentIFrame'
+19:35:17.697 INFO  WebHelpers -Click Button  with value - "null" - Vendor Approval - 
+19:35:18.742 INFO  WebHelpers -Switch to the new window: Vendor Approval
+19:35:23.397 INFO  LoginPageTests -SYNOVOS web site was opened.
+19:35:37.716 INFO  LoginPageTests -SYNOVOS web site was opened.
+19:40:38.124 INFO  CreatePurchaseRequisition -----------------------------------------------------------------------------------------------------------------------
+19:40:39.347 INFO  WebHelpers -Open URL: https://www.webtma.net/loginWithPopUp.aspx
+19:40:53.250 INFO  CreatePurchaseRequisition -----------------------------------------------------------------------------------------------------------------------
+19:40:54.385 INFO  WebHelpers -Open URL: https://www.webtma.net/loginWithPopUp.aspx
+19:41:08.330 INFO  CreatePurchaseRequisition -----------------------------------------------------------------------------------------------------------------------
+19:41:09.464 INFO  WebHelpers -Open URL: https://www.webtma.net/loginWithPopUp.aspx
+19:41:23.415 INFO  CreatePurchaseRequisition -----------------------------------------------------------------------------------------------------------------------
+19:41:24.540 INFO  WebHelpers -Open URL: https://www.webtma.net/loginWithPopUp.aspx
+19:41:38.527 INFO  CreatePurchaseRequisition -----------------------------------------------------------------------------------------------------------------------
+19:41:39.658 INFO  WebHelpers -Open URL: https://www.webtma.net/loginWithPopUp.aspx
+19:41:54.778 INFO  WebHelpers -Open URL: https://www.webtma.net/loginWithPopUp.aspx
+19:41:54.778 INFO  Login -TMA web site was opened.

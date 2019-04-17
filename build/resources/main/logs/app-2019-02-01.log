@@ -1,0 +1,48 @@
+12:10:53.897 INFO  LoginPageTests -Supplier was created, his Number is: S0040
+12:10:53.905 INFO  LoginPageTests -------------------------------------------------------
+12:11:00.113 INFO  LoginPageTests -Approved Supplier number is: S0040
+12:11:00.882 INFO  LoginPageTests -Supplier successfully passed first approval stage.
+12:11:00.882 INFO  LoginPageTests -------------------------------------------------------
+12:11:08.811 INFO  LoginPageTests -Supplier was approved, his number is: S0040
+12:11:10.389 INFO  LoginPageTests -Supplier successfully passed second approval stage.
+12:11:10.389 INFO  LoginPageTests -------------------------------------------------------
+12:11:20.499 INFO  SupplierCreateAndReject -Created Supplier number is: S0041
+12:11:20.509 INFO  SupplierCreateAndReject -------------------------------------------------------
+12:11:26.424 INFO  SupplierCreateAndReject -Supplier was chosen for Rejecting, his number is: S0041
+12:11:27.047 INFO  SupplierCreateAndReject -Supplier was Rejected
+12:11:27.048 INFO  SupplierCreateAndReject -------------------------------------------------------
+12:11:35.320 INFO  SupplierCreateAndSave -Supplier was saved, his number is: S0042 Supplier status is New.
+12:11:35.320 INFO  SupplierCreateAndSave -------------------------------------------------------
+12:11:44.038 INFO  SupplierCreateEmergancy -Emergency Supplier was created, his number is: S0043
+12:11:44.038 INFO  SupplierCreateEmergancy -------------------------------------------------------
+18:05:25.300 INFO  LoginPageTests -Supplier was created, his Number is: S0044
+18:05:25.305 INFO  LoginPageTests -------------------------------------------------------
+18:05:31.202 INFO  LoginPageTests -Approved Supplier number is: S0044
+18:05:31.859 INFO  LoginPageTests -Supplier successfully passed first approval stage.
+18:05:31.859 INFO  LoginPageTests -------------------------------------------------------
+18:05:54.789 INFO  SupplierCreateAndReject -Created Supplier number is: S0045
+18:05:54.789 INFO  SupplierCreateAndReject -------------------------------------------------------
+18:06:00.557 INFO  SupplierCreateAndReject -Supplier was chosen for Rejecting, his number is: S0045
+18:06:01.131 INFO  SupplierCreateAndReject -Supplier was Rejected
+18:06:01.132 INFO  SupplierCreateAndReject -------------------------------------------------------
+18:06:24.426 INFO  SupplierCreateEmergancy -Emergency Supplier was created, his number is: S0046
+18:06:24.427 INFO  SupplierCreateEmergancy -------------------------------------------------------
+18:12:12.263 INFO  LoginPageTests -Supplier was created, his Number is: S0047
+18:12:12.267 INFO  LoginPageTests -------------------------------------------------------
+18:12:18.409 INFO  LoginPageTests -Approved Supplier number is: S0047
+18:12:19.065 INFO  LoginPageTests -Supplier successfully passed first approval stage.
+18:12:19.065 INFO  LoginPageTests -------------------------------------------------------
+18:12:26.464 INFO  LoginPageTests -Supplier was approved, his number is: S0047
+18:12:28.141 INFO  LoginPageTests -Supplier successfully passed second approval stage.
+18:12:28.141 INFO  LoginPageTests -------------------------------------------------------
+18:12:36.801 INFO  SupplierCreateAndReject -Created Supplier number is: S0048
+18:12:36.801 INFO  SupplierCreateAndReject -------------------------------------------------------
+18:12:42.811 INFO  SupplierCreateAndReject -Supplier was chosen for Rejecting, his number is: S0048
+18:12:43.443 INFO  SupplierCreateAndReject -Supplier was Rejected
+18:12:43.443 INFO  SupplierCreateAndReject -------------------------------------------------------
+18:12:56.867 INFO  SupplierCreateAndSave -Supplier was saved, his number is: S0049 Supplier status is New.
+18:12:56.867 INFO  SupplierCreateAndSave -------------------------------------------------------
+18:13:05.423 INFO  SupplierCreateEmergancy -Emergency Supplier was created, his number is: S0050
+18:13:05.423 INFO  SupplierCreateEmergancy -------------------------------------------------------
+18:17:01.584 INFO  SupplierCreateAndSave -Supplier was saved, his number is: S0051 Supplier status is New.
+18:17:01.588 INFO  SupplierCreateAndSave -------------------------------------------------------

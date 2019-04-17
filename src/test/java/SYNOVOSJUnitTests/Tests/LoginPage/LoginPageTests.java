@@ -2,7 +2,7 @@ package SYNOVOSJUnitTests.Tests.LoginPage;
 
 import SYNOVOSJUnitTests.Locators.LoginPage.LoginPageLocators;
 import SYNOVOSJUnitTests.Locators.MainPage.MainPageLocators;
-import com.sun.org.glassfish.gmbal.Description;
+//import com.sun.org.glassfish.gmbal.Description;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -61,7 +61,7 @@ public class LoginPageTests {
 
 
     @Test
-    @Description("Login as InValid and UnExisting User")
+    //@Description("Login as InValid and UnExisting User")
     //@DisplayName("Login as InValid and UnExisting User")
     public void test_2_loginInValidUser(){
         sendTextToMultipleWebElements(loginPageLocators.fieldLogin, "InValidUser", loginPageLocators.fieldPassword, "unExistPass");

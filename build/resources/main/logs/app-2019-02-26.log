@@ -1,0 +1,45 @@
+13:44:23.251 INFO  CreatePurchaseRequisition -----------------------------------------------------------------------------------------------------------------------
+13:44:25.034 INFO  WebHelpers -Open URL: https://www.webtma.net/login.aspx
+13:44:25.236 INFO  WebHelpers -Send text to WebElement Login: "sss999"
+13:44:25.424 INFO  WebHelpers -Send text to WebElement Password: "tma1"
+13:44:25.610 INFO  WebHelpers -Send text to WebElement Client: "Jefferson Test"
+13:44:27.519 INFO  WebHelpers -Click Button "Log In"
+13:44:38.687 INFO  WebHelpers -Switch to the new window: WebTMA 5.1.0 - Thomas Jefferson University and Hospital - Synovos Sync (sss999)
+13:44:38.935 INFO  WebHelpers -Click WebElement: "Material "
+13:44:39.548 INFO  WebHelpers -Wait web element presence: "Purchase Requisitions" for seconds - 5
+13:44:42.907 INFO  WebHelpers -Click Button  with value - "null" - Purchase Requisitions - 
+13:45:03.087 INFO  WebHelpers -Switch to IFrame: Proxy element for: DefaultElementLocator 'By.id: mainFrame'
+13:45:03.476 INFO  WebHelpers -Click Button  with value - "null" - Add - 
+13:45:23.606 INFO  WebHelpers -Switch to IFrame: Proxy element for: DefaultElementLocator 'By.id: frameidentity'
+13:45:27.100 INFO  WebHelpers -Wait web element presence: "PO" for seconds - 5
+13:45:27.255 INFO  WebHelpers -Send text: PO - to the WebElement - [[ChromeDriver: chrome on XP (c8bfabc48261d86814dd3f667ba820de)] -> id: txtType_ComboBox_Input]
+13:45:29.004 INFO  WebHelpers -Wait web element presence: "FS" for seconds - 5
+13:45:29.131 INFO  WebHelpers -Send text: FS - to the WebElement - [[ChromeDriver: chrome on XP (c8bfabc48261d86814dd3f667ba820de)] -> id: txtRepairCenter_ComboBox_Input]
+13:45:31.333 INFO  WebHelpers -Click WebElement: "Add Item "
+13:45:51.478 INFO  WebHelpers -Switch to IFrame: Proxy element for: DefaultElementLocator 'By.name: PurchReqDialog'
+13:45:52.555 INFO  CreatePurchaseRequisition -Send text to WebElement - Account: "030-89000-6902"
+13:45:54.278 INFO  CreatePurchaseRequisition -Send text to WebElement - Part Code: "180017"
+13:45:54.340 INFO  WebHelpers -Wait web element presence: "" for seconds - 10
+13:45:54.456 INFO  WebHelpers -Send text to WebElement: "[[ChromeDriver: chrome on XP (c8bfabc48261d86814dd3f667ba820de)] -> id: txtQuantity]". Text: " 100"
+13:45:54.457 INFO  WebHelpers -Just wait for some web element.
+13:45:55.290 INFO  WebHelpers -Click Button  with value - "Save & Close" -  - btnSave
+13:45:56.384 INFO  WebHelpers -Click Button  with value - " " -  - grdPR_ctl00_ctl04_GECBtnExpandColumn
+13:45:59.358 INFO  WebHelpers -Click Button  with value - "null" - Add Distribution - grdPR_ctl00_ctl05_Detail10_ctl02_ctl00_lblAddDistribution
+13:46:19.524 INFO  WebHelpers -Switch to IFrame: Proxy element for: DefaultElementLocator 'By.name: PurchaseOrderDistributionDialog'
+13:46:22.938 INFO  WebHelpers -Send text to WebElement: "[[ChromeDriver: chrome on XP (c8bfabc48261d86814dd3f667ba820de)] -> id: txtRequiredQty]". Text: " 100"
+13:46:23.168 INFO  WebHelpers -Click Button  with value - "Save & Close" -  - btnSave
+13:46:43.291 INFO  WebHelpers -Switch to IFrame: Proxy element for: DefaultElementLocator 'By.id: mainFrame'
+13:46:44.704 INFO  WebHelpers -Click WebElement: " "
+13:47:04.837 INFO  WebHelpers -Switch to IFrame: Proxy element for: DefaultElementLocator 'By.id: frameidentity'
+13:47:04.862 INFO  WebHelpers -WebElement text "PR-202" was received: 
+13:47:04.880 INFO  CreatePurchaseRequisition -++++++++++++++ Purchase requisition numder is: PR-202++++++++++++++
+13:47:06.850 INFO  WebHelpers -Click Button  with value - "null" - Authorize - 
+13:47:26.979 INFO  WebHelpers -Switch to IFrame: Proxy element for: DefaultElementLocator 'By.id: mainFrame'
+13:47:47.128 INFO  WebHelpers -Switch to IFrame: Proxy element for: DefaultElementLocator 'By.name: RoutingWindow'
+13:47:47.366 INFO  WebHelpers -Click Button  with value - "Authorize" -  - btnAuthorize
+13:47:50.939 INFO  WebHelpers -Click Button  with value - "" -  - btnFastFind
+13:47:51.178 INFO  WebHelpers -Click Button  with value - "null" - Export - 
+13:48:11.307 INFO  WebHelpers -Switch to IFrame: Proxy element for: DefaultElementLocator 'By.id: mainFrame'
+13:48:12.582 INFO  WebHelpers -Click Button  with value - "null" - OK - 
+13:48:12.582 INFO  CreatePurchaseRequisition -The Requisition was successfully created and scheduled to be exported.
+13:48:12.582 INFO  CreatePurchaseRequisition -----------------------------------------------------------------------------------------------------------------------

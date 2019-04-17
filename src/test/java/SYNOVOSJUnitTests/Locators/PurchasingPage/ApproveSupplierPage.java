@@ -18,14 +18,14 @@ public class ApproveSupplierPage extends SearchSuppliersPage {
     public WebElement buttonSave;
     @FindBy (xpath = "//form[@id='command']//div[1]//input[2]")
     public WebElement buttonCreate;
-    @FindBy (xpath = "//form[@id='command']//div[1]//input[3]")
+    @FindBy (xpath = "//form[@id='supplierCRUDForm']//div[1]//input[3]")
     public WebElement buttonRejected;
     @FindBy (xpath = "//form[@id='command']//div[1]//input[4]")
     public WebElement buttonCancel;
 
 
     //Supplier detailes form
-    @FindBy (xpath = "//table[@class='datagrid gradientFirstElement']/tbody[1]/tr[1]/td[2]")
+    @FindBy (xpath = "//table[@class='datagrid gradientElement2']/tbody[1]/tr[1]/td[2]")
     public WebElement fieldSupplierNo;
     @FindBy (id = "supplierName")
     public WebElement fieldSupplierName;
