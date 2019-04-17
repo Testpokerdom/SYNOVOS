@@ -17,6 +17,7 @@ import java.util.concurrent.TimeUnit;
 
 import static SYNOVOSJUnitTests.Locators.PurchasingPage.CreateSupplierPage.chooseJDEVendor;
 import static SYNOVOSJUnitTests.WebHelpers.WebHelpers.getTextFronWebElement;
+import static SYNOVOSJUnitTests.WebHelpers.WebHelpers.sendTextToWebElement;
 import static WebHelpers.WebHelpers.*;
 
 //import static SYNOVOSJUnitTests.WebHelpers.WebHelpers.*;
@@ -57,20 +58,19 @@ public class Create_Supplier_Status_New {
         clickButton(loginPageLocators.buttonLogin);
         clickElement(mainPageLocators.tablePurchasing);
     }
-
+/*
     @After
     public void afterEach() {
 
         driver.quit();
     }
-
+*/
     @Test
     public void createSupplierWithStatusNew(){
         clickButtonIfEnable(mainPageLocators.linkSupplier);
         selectWebElementFromDropDownList(supplierSearchCreatePage.dropdownListSiteCode, "SALES"); // 130 - AGRO_FARMA;  SALES - DEMO;
         clickButton(supplierSearchCreatePage.buttonCreate);
-        createSupplierPage.fillUserDataTableAndSave2("asd@ukr.net", "Supplier_status_APPROVED_DEMO_SALES_", "","999-999-9999", "@ukr.net", "Send_for_approval_test_creation");
-        chooseJDEVendor(createSupplierPage.dropdown_listJDE_Vendor, "1045000", createSupplierPage.jdeVendor2);
+        createSupplierPage.fillUserDataTableAndSave2("asd@ukr.net", "Supplier_status_APPROVED_DEMO_SALES_", "","999-999-9999", "@ukr.net");
         clickButtonIfEnable(createSupplierPage.buttonSave);
         System.out.println("Supplier was created, his Number is: " + getTextFronWebElement(supplierDetailPage.fieldSupplierNumber));
         logger.info("Supplier was created, his Number is: " + getTextFronWebElement(supplierDetailPage.fieldSupplierNumber));

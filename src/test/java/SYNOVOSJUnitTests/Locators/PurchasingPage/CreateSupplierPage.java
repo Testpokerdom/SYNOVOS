@@ -81,7 +81,7 @@ public class CreateSupplierPage extends SearchSuppliersPage {
         //fieldComments.sendKeys(filedComment);
 
     }
-    public void fillUserDataTableAndSave2(String remitTo, String fieldSupplierName, String fieldContactName, String fieldContactPhone, String fieldContactEmail, String filedComment){
+    public void fillUserDataTableAndSave2(String remitTo, String fieldSupplierName, String fieldContactName, String fieldContactPhone, String fieldContactEmail){
         fieldRemitTo.sendKeys(remitTo);
         logger.info("Field Remit To was field by value" + getTextFronWebElement(fieldRemitTo));
         checkBoxProvidedW9.click();
@@ -91,8 +91,8 @@ public class CreateSupplierPage extends SearchSuppliersPage {
         this.fieldContactEmail.sendKeys(randomName2() + fieldContactEmail);
         dropdown_listJDE_Vendor.sendKeys("1045000");
         jdeVendor2.click();
-        clickButton(buttonSendForApproval);
-        fieldComments.sendKeys(filedComment);
+        //clickButton(buttonSendForApproval);
+        //fieldComments.sendKeys(filedComment);
         //buttonSave.click();
     }
 

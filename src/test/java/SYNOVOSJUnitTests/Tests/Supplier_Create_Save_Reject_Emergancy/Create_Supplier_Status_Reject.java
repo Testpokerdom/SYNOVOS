@@ -22,6 +22,7 @@ import static WebHelpers.WebHelpers.clickButtonIfEnable;
 import static WebHelpers.WebHelpers.clickElement;
 import static WebHelpers.WebHelpers.selectWebElementFromDropDownList;
 import static WebHelpers.WebHelpers.sendTextToMultipleWebElements;
+import static WebHelpers.WebHelpers.sendTextToWebElement;
 
 public class Create_Supplier_Status_Reject {
     public static WebDriver driver = null;
@@ -66,11 +67,13 @@ public class Create_Supplier_Status_Reject {
     @Test
     //@Description("Create Supplier")
     //@DisplayName("Create Supplier")
-    public void createSupplierWithStatusNewPendingApproval(){
+    public void createSupplierWithStatusNewPendingApproval1(){
         clickButtonIfEnable(mainPageLocators.linkSupplier);
         selectWebElementFromDropDownList(supplierSearchCreatePage.dropdownListSiteCode, "SALES"); // 130 - AGRO_FARMA;  SALES - DEMO;
         clickButton(supplierSearchCreatePage.buttonCreate);
-        createSupplierPage.fillUserDataTableAndSave2("asd@ukr.net", "Supplier_status_APPROVED_DEMO_SALES_", "","999-999-9999", "@ukr.net", "Send_for_approval_test_creation");
+        createSupplierPage.fillUserDataTableAndSave2("asd@ukr.net", "Supplier_status_APPROVED_DEMO_SALES_", "","999-999-9999", "@ukr.net");
+        clickButtonIfEnable(createSupplierPage.buttonSendForApproval);
+        sendTextToWebElement(createSupplierPage.fieldComments, "Supplier was created and sent for approval with status New Supplier - Pending Approval");
         clickButtonIfEnable(createSupplierPage.buttonOKpopup);
         System.out.println("Supplier was created, his Number is: " + getTextFronWebElement(supplierDetailPage.fieldSupplierNumber));
         logger.info("Supplier was created, his Number is: " + getTextFronWebElement(supplierDetailPage.fieldSupplierNumber));
@@ -82,7 +85,7 @@ public class Create_Supplier_Status_Reject {
     @Test
     //@Description ("Find last Created Supplier (from \"test_1\") and Reject them")
     //@DisplayName("Find last Created Supplier (from \"test_1\") and Reject them")
-    public void rejectSupplierWithStatusNewPendingApproval(){
+    public void rejectSupplierWithStatusNewPendingApproval2(){
         clickButton(mainPageLocators.linkApproveSupplier);
         selectWebElementFromDropDownList(approvalProcessSelection.dropdownlistSiteName, "DEMO SOS SITE"); // DEMO SOS SITE -- AGRO FARMA
         findLastRawInTableAndClick2(driver, "//table[@id='approvalProcessData']/tbody/tr[last()]/td[last()]");

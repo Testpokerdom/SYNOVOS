@@ -66,7 +66,7 @@ public class WebHelpers {
         wait.until(ExpectedConditions.visibilityOf(element));
     }
 
-    public static void selectWebElementFromDropDownList (WebElement element, String elementValue){
+    public static void selectWebElementFromDropDownList(WebElement element, String elementValue){
         Select sel = new Select(element);
         sel.selectByValue(elementValue);
     }

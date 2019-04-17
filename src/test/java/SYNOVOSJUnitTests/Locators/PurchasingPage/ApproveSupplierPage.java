@@ -16,8 +16,8 @@ public class ApproveSupplierPage extends SearchSuppliersPage {
 
     @FindBy (xpath = "//form[@id='command']//div[1]//input[1]")
     public WebElement buttonSave;
-    @FindBy (xpath = "//form[@id='command']//div[1]//input[2]")
-    public WebElement buttonCreate;
+    @FindBy (xpath = "//form[@id='supplierCRUDForm']//div[1]//input[2]")
+    public WebElement buttonApprove;
     @FindBy (xpath = "//form[@id='supplierCRUDForm']//div[1]//input[3]")
     public WebElement buttonRejected;
     @FindBy (xpath = "//form[@id='command']//div[1]//input[4]")
@@ -56,7 +56,7 @@ public class ApproveSupplierPage extends SearchSuppliersPage {
 
 
     // Second Approval stage
-    @FindBy (xpath = "//form[@id='command']//div[1]//input[2]")
+    @FindBy (xpath = "//form[@id='supplierCRUDForm']//div[1]//input[2]")
     public WebElement buttonCREATE_Second_Stage;
     @FindBy (xpath = "//span[contains(text(),'OK')]")
     public WebElement getButtonOkAfterButtonCREATE_second_stage;
@@ -64,5 +64,11 @@ public class ApproveSupplierPage extends SearchSuppliersPage {
     // Text for Assert/assertEquels
     @FindBy (xpath = "//div[@class='pageHeader']")
     public WebElement textInHeaderOnApproveSupplierPage;
+
+    // Requested Payment Terms and check-box - Approved
+    @FindBy (id = "paymentTerms")
+    public WebElement dropdownListpaymentTerms;
+    @FindBy (id = "paymentTermsApproved")
+    public WebElement checkBoxApproved;
 
 }

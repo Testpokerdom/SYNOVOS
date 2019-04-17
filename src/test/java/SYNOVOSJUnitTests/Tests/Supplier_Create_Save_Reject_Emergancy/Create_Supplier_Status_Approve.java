@@ -19,8 +19,13 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import java.util.concurrent.TimeUnit;
 
 import static SYNOVOSJUnitTests.WebHelpers.WebHelpers.*;
+import static WebHelpers.WebHelpers.clickButton;
+import static WebHelpers.WebHelpers.clickButtonIfEnable;
+import static WebHelpers.WebHelpers.clickElement;
+import static WebHelpers.WebHelpers.selectWebElementFromDropDownList;
+import static WebHelpers.WebHelpers.sendTextToMultipleWebElements;
 
-public class SupplierCreateAndApprove {
+public class Create_Supplier_Status_Approve {
         public static WebDriver driver = null;
         public static LoginPageLocators loginPageLocators = null;
         public static MainPageLocators mainPageLocators = null;
@@ -50,7 +55,7 @@ public class SupplierCreateAndApprove {
             driver.manage().window().maximize();
 
             goToUrl(driver, "http://localhost:8080/sos/splashScreen.sos");
-            sendTextToMultipleWebElements(loginPageLocators.fieldLogin, "VBIBIK18", loginPageLocators.fieldPassword, "deadman18");
+            sendTextToMultipleWebElements(loginPageLocators.fieldLogin, "VBIBIKSU", loginPageLocators.fieldPassword, "deadman11");
             clickButton(loginPageLocators.buttonLogin);
             clickElement(mainPageLocators.tablePurchasing);
 
@@ -65,13 +70,17 @@ public class SupplierCreateAndApprove {
     @Test
     //@Description("Create Supplier")
     //@DisplayName("Create Supplier")
-    public void test_1(){
-
-        clickButton(mainPageLocators.linkSupplier);
-        selectWebElementFromDropDownList(supplierSearchCreatePage.dropdownListSiteCode, "SALES"); // 130 - AGRO_FARMA  SALES - DEMO
+    public void createSupplierWithStatusNewPendingApproval1(){
+        clickButtonIfEnable(mainPageLocators.linkSupplier);
+        selectWebElementFromDropDownList(supplierSearchCreatePage.dropdownListSiteCode, "SALES"); // 130 - AGRO_FARMA;  SALES - DEMO;
         clickButton(supplierSearchCreatePage.buttonCreate);
-        createSupplierPage.fillUserDataTableAndSendForApproval("rejected@ukr.net","Supplier_status_APPROVED_DEMO_SALES_", "","999-999-9999", "@ukr.net", "Send_for_approval_test_creation");
-        clickButton(createSupplierPage.buttonOKpopup);
+        createSupplierPage.fillUserDataTableAndSave2("asd@ukr.net", "Supplier_status_APPROVED_DEMO_SALES_", "","999-999-9999", "@ukr.net");
+
+        clickButton(createSupplierPage.buttonSendForApproval);
+        sendTextToWebElement(createSupplierPage.fieldComments, "Send_for_approval_test_creation");
+        clickButtonIfEnable(createSupplierPage.buttonOKpopup);
+
+        System.out.println("Supplier was created, his Number is: " + getTextFronWebElement(supplierDetailPage.fieldSupplierNumber));
         logger.info("Supplier was created, his Number is: " + getTextFronWebElement(supplierDetailPage.fieldSupplierNumber));
         logger.info("------------------------------------------------------");
 
@@ -81,14 +90,17 @@ public class SupplierCreateAndApprove {
     @Test
     //@Description("Find last Created Supplier (from \"test_1\") and approve them - first stage")
     //@DisplayName("Find last Created Supplier (from \"test_1\") and approve them - first stage")
-    public void test_2(){
+    public void stage_1_ApproveSupplierWithStatusNewPendingApproval2(){
         clickButton(mainPageLocators.linkApproveSupplier);
         selectWebElementFromDropDownList(approveSupplierListPage.dropdownlistSiteName, "DEMO SOS SITE"); // AGRO FARMA / DEMO SOS SITE
         findLastRawInTableAndClick2(driver, "//table[@id='approvalProcessData']/tbody/tr[last()]/td[last()]");
 
+        System.out.println("Approved Supplier number is: " + getTextFronWebElement(approveSupplierPage.fieldSupplierNo));
         logger.info("Approved Supplier number is: " + getTextFronWebElement(approveSupplierPage.fieldSupplierNo));
 
-        clickButton(approveSupplierPage.buttonCreate);
+        selectWebElementFromDropDownList(approveSupplierPage.dropdownListpaymentTerms, "10"); //value 10 = "NET 25"
+        clickElement(approveSupplierPage.checkBoxApproved);
+        clickButton(approveSupplierPage.buttonApprove);
         sendTextToWebElement(approveSupplierPage.fieldCommentsAfterButtonCREATE, "Approved_Supplier_First_Stage");
         clickButton(approveSupplierPage.buttonOkAfterButtonCREATE_first_stage);
 
@@ -101,12 +113,18 @@ public class SupplierCreateAndApprove {
     @Test
     //@Description ("Find last Created Supplier (from \"test_2\") and approve them - second stage (Final Supplier approve)")
     //@DisplayName("Final Supplier approve - second stage")
-    public void test_3(){
+    public void stage_2_ApproveSupplierWithStatusNewPendingApproval3(){
         clickButton(mainPageLocators.linkApproveSupplier);
         selectWebElementFromDropDownList(approveSupplierListPage.dropdownlistSiteName, "DEMO SOS SITE");
         findLastRawInTableAndClick2(driver, "//table[@id='approvalProcessData']/tbody/tr[last()]/td[last()]");
+
+        System.out.println("Supplier was approved, his number is: " + getTextFronWebElement(approveSupplierPage.fieldSupplierNo));
         logger.info("Supplier was approved, his number is: " + getTextFronWebElement(approveSupplierPage.fieldSupplierNo));
-        selectWebElementFromDropDownList(createSupplierPage.dropdown_listJDE_Vendor, "6040");
+
+        //selectWebElementFromDropDownList(createSupplierPage.dropdown_listJDE_Vendor, "6040");
+        sendTextToWebElement(createSupplierPage.dropdown_listJDE_Vendor, "1045000");
+        clickElement(createSupplierPage.jdeVendor2);
+
         clickButton(approveSupplierPage.buttonCREATE_Second_Stage);
         sendTextToWebElement(approveSupplierPage.fieldCommentsAfterButtonCREATE, "Approved_Supplier_Second_Stage");
         clickButton(approveSupplierPage.getButtonOkAfterButtonCREATE_second_stage);
@@ -116,23 +134,5 @@ public class SupplierCreateAndApprove {
         Assert.assertEquals("Approval Process Selection", approveSupplierListPage.textInHeader.getText());
     }
 
-/*
-    @Test
-    //@Description("Create Supplier with Max Length Comment")
-    public void test_4(){
-        clickElement(homePageLocators.linkSupplier);
-        selectWebElementFromDropDownList(supplierSearchCreatePage.dropdownListSiteCode, "130");
-        clickButton(supplierSearchCreatePage.buttonCreate);
-        sendTextToWebElement(createSupplierPage.fieldSupplierName, "TEST_Supplier_01/17/2019_02_" + randomName2());
-        sendTextToWebElement(createSupplierPage.fieldContactName, randomName2());
-        sendTextToWebElement(createSupplierPage.fieldContactPhone, "999-999-9999");
-        sendTextToWebElement(createSupplierPage.fieldContactEmail, randomName2() + "@ukr.net");
-        clickButton(createSupplierPage.buttonSendForApproval);
-        sendTextToWebElement(createSupplierPage.fieldComments, addMaxLengthComment2());
-        clickButton(createSupplierPage.buttonOKpopup);
-
-        Assert.assertEquals("Supplier Detail", createSupplierPage.textSupplierDetails.getText());
-    }
-*/
 }
 

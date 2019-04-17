@@ -2,48 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="716afc67-f2cc-4709-a4b2-4e7a7f8a3a53" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/SYNOVOSJUnitTests/Tests/Supplier_Create_Save_Reject_Emergancy/Create_Supplier_Status_New.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/SYNOVOSJUnitTests/Tests/Supplier_Create_Save_Reject_Emergancy/Create_Supplier_Status_New_Pending_Approval.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.1/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.1/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.1/javaCompile/javaCompile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/SYNOVOSJUnitTests/TestSuites/Test_Suite_Create_Supplier_New_NewPendingApproval_Emergency_Rejected_Approved.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/WebHelpers/WebHelpers.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/WebHelpers/WebHelpers.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/resources/logs/app.log" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/resources/logs/app.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/SYNOVOSJUnitTests/Locators/LoginPage/LoginPageLocators.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/SYNOVOSJUnitTests/Locators/LoginPage/LoginPageLocators.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/test/classes/SYNOVOSJUnitTests/Locators/PurchasingPage/ApproveSupplierPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/SYNOVOSJUnitTests/Locators/PurchasingPage/ApproveSupplierPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/SYNOVOSJUnitTests/Locators/PurchasingPage/CreateSupplierPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/SYNOVOSJUnitTests/Locators/PurchasingPage/CreateSupplierPage.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/test/classes/SYNOVOSJUnitTests/TestSuites/Test_Suite_Approved_Rejected_New_supplier.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/SYNOVOSJUnitTests/TestSuites/Test_Suite_Approved_Rejected_New_supplier.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/test/classes/SYNOVOSJUnitTests/TestSuites/Test_Suite_Create_Approve_Reject_Save_Supplier.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/SYNOVOSJUnitTests/TestSuites/Test_Suite_Create_Approve_Reject_Save_Supplier.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/SYNOVOSJUnitTests/Tests/LoginPage/LoginPageTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/SYNOVOSJUnitTests/Tests/LoginPage/LoginPageTests.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/SYNOVOSJUnitTests/Tests/Supplier_Create_Save_Reject_Emergancy/SupplierCreateAndApprove.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/SYNOVOSJUnitTests/Tests/Supplier_Create_Save_Reject_Emergancy/SupplierCreateAndApprove.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/SYNOVOSJUnitTests/Tests/Supplier_Create_Save_Reject_Emergancy/SupplierCreateAndReject.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/SYNOVOSJUnitTests/Tests/Supplier_Create_Save_Reject_Emergancy/SupplierCreateAndSave.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/SYNOVOSJUnitTests/Tests/Supplier_Create_Save_Reject_Emergancy/SupplierCreateEmergancy.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/TMA_SYNC/Tests/CreatePR.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/TMA_SYNC/Tests/CreatePR.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/TMA_SYNC/Tests/CreatePurchaseRequisition.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/TMA_SYNC/Tests/CreatePurchaseRequisition.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/TMA_SYNC/Tests/Login.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/TMA_SYNC/Tests/Login.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/WebHelpers/WebHelpers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/WebHelpers/WebHelpers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/SYNOVOSJUnitTests/Tests/Supplier_Create_Save_Reject_Emergancy/Create_Supplier_Status_New.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/SYNOVOSJUnitTests/Tests/Supplier_Create_Save_Reject_Emergancy/SupplierCreateAndApprove.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/logs/app.log" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/logs/app.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/SYNOVOSJUnitTests/Locators/LoginPage/LoginPageLocators.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SYNOVOSJUnitTests/Locators/LoginPage/LoginPageLocators.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/SYNOVOSJUnitTests/Locators/PurchasingPage/ApproveSupplierPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SYNOVOSJUnitTests/Locators/PurchasingPage/ApproveSupplierPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/SYNOVOSJUnitTests/Locators/PurchasingPage/CreateSupplierPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SYNOVOSJUnitTests/Locators/PurchasingPage/CreateSupplierPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/SYNOVOSJUnitTests/TestSuites/Test_Suite_Approved_Rejected_New_supplier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SYNOVOSJUnitTests/TestSuites/Test_Suite_Approved_Rejected_New_supplier.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/SYNOVOSJUnitTests/TestSuites/Test_Suite_Create_Approve_Reject_Save_Supplier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SYNOVOSJUnitTests/TestSuites/Test_Suite_Create_Approve_Reject_Save_Supplier.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/SYNOVOSJUnitTests/Tests/LoginPage/LoginPageTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SYNOVOSJUnitTests/Tests/LoginPage/LoginPageTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/SYNOVOSJUnitTests/Tests/Supplier_Create_Save_Reject_Emergancy/SupplierCreateAndApprove.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SYNOVOSJUnitTests/Tests/Supplier_Create_Save_Reject_Emergancy/SupplierCreateAndApprove.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/SYNOVOSJUnitTests/Tests/Supplier_Create_Save_Reject_Emergancy/SupplierCreateAndReject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SYNOVOSJUnitTests/Tests/Supplier_Create_Save_Reject_Emergancy/Create_Supplier_Status_Reject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/SYNOVOSJUnitTests/Tests/Supplier_Create_Save_Reject_Emergancy/SupplierCreateAndSave.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/SYNOVOSJUnitTests/Tests/Supplier_Create_Save_Reject_Emergancy/SupplierCreateEmergancy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SYNOVOSJUnitTests/Tests/Supplier_Create_Save_Reject_Emergancy/Create_Supplier_Status_Emergancy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/TMA_SYNC/Tests/CreatePR.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TMA_SYNC/Tests/CreatePR.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/TMA_SYNC/Tests/CreatePurchaseRequisition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TMA_SYNC/Tests/CreatePurchaseRequisition.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/TMA_SYNC/Tests/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TMA_SYNC/Tests/Login.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/SYNOVOSJUnitTests/Tests/Supplier_Create_Save_Reject_Emergancy/Create_Supplier_Status_New.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SYNOVOSJUnitTests/Tests/Supplier_Create_Save_Reject_Emergancy/Create_Supplier_Status_New.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/SYNOVOSJUnitTests/Tests/Supplier_Create_Save_Reject_Emergancy/Create_Supplier_Status_New_Pending_Approval.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SYNOVOSJUnitTests/Tests/Supplier_Create_Save_Reject_Emergancy/Create_Supplier_Status_New_Pending_Approval.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/SYNOVOSJUnitTests/Tests/Supplier_Create_Save_Reject_Emergancy/Create_Supplier_Status_Reject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SYNOVOSJUnitTests/Tests/Supplier_Create_Save_Reject_Emergancy/Create_Supplier_Status_Reject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/SYNOVOSJUnitTests/Tests/Supplier_Create_Save_Reject_Emergancy/SupplierCreateAndApprove.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SYNOVOSJUnitTests/Tests/Supplier_Create_Save_Reject_Emergancy/Create_Supplier_Status_Approve.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/SYNOVOSJUnitTests/WebHelpers/WebHelpers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SYNOVOSJUnitTests/WebHelpers/WebHelpers.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -71,43 +47,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/SYNOVOSJUnitTests/Tests/Supplier_Create_Save_Reject_Emergancy/Create_Supplier_Status_Emergancy.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="316">
-              <caret line="71" column="50" lean-forward="true" selection-start-line="71" selection-start-column="50" selection-end-line="71" selection-end-column="50" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/SYNOVOSJUnitTests/Tests/Supplier_Create_Save_Reject_Emergancy/Create_Supplier_Status_Reject.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="26" selection-start-line="26" selection-end-line="79" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/SYNOVOSJUnitTests/Locators/PurchasingPage/ApproveSupplierPage.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="173">
-              <caret line="27" column="86" selection-start-line="27" selection-start-column="86" selection-end-line="27" selection-end-column="86" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/SYNOVOSJUnitTests/WebHelpers/WebHelpers.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="32" selection-start-line="32" selection-end-line="32" />
+        <entry file="file://$PROJECT_DIR$/src/main/resources/logs/app.log">
+          <provider selected="true" editor-type-id="LogFileEditorProvider">
+            <state relative-caret-position="444">
+              <caret line="162" column="77" lean-forward="true" selection-start-line="162" selection-start-column="35" selection-end-line="162" selection-end-column="77" />
             </state>
           </provider>
         </entry>
@@ -115,8 +58,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/SYNOVOSJUnitTests/Locators/PurchasingPage/CreateSupplierPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-303">
-              <caret line="48" column="41" lean-forward="true" selection-start-line="48" selection-start-column="41" selection-end-line="48" selection-end-column="41" />
+            <state relative-caret-position="190">
+              <caret line="83" column="16" selection-start-line="83" selection-start-column="16" selection-end-line="83" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/SYNOVOSJUnitTests/Tests/Supplier_Create_Save_Reject_Emergancy/Create_Supplier_Status_Approve.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="351">
+              <caret line="82" column="8" selection-start-line="82" selection-start-column="8" selection-end-line="82" selection-end-column="8" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -154,17 +109,20 @@
         <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/src/test/java/SYNOVOSJUnitTests/Locators/LoginPage/LoginPageLocators.java" />
         <option value="$PROJECT_DIR$/src/main/java/WebHelpers/WebHelpers.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/logs/app.log" />
-        <option value="$PROJECT_DIR$/src/test/java/SYNOVOSJUnitTests/Tests/Supplier_Create_Save_Reject_Emergancy/Create_Supplier_Status_New.java" />
         <option value="$PROJECT_DIR$/src/test/java/SYNOVOSJUnitTests/Tests/Supplier_Create_Save_Reject_Emergancy/Create_Supplier_Status_Emergancy.java" />
         <option value="$PROJECT_DIR$/src/test/java/SYNOVOSJUnitTests/TestSuites/Test_Suite_Approved_Rejected_New_supplier.java" />
         <option value="$PROJECT_DIR$/src/test/java/SYNOVOSJUnitTests/TestSuites/Test_Suite_Create_Approve_Reject_Save_Supplier.java" />
-        <option value="$PROJECT_DIR$/src/test/java/SYNOVOSJUnitTests/Tests/Supplier_Create_Save_Reject_Emergancy/SupplierCreateAndApprove.java" />
-        <option value="$PROJECT_DIR$/src/test/java/SYNOVOSJUnitTests/Locators/PurchasingPage/CreateSupplierPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/SYNOVOSJUnitTests/Tests/Supplier_Create_Save_Reject_Emergancy/SupplierCreateAndReject.java" />
+        <option value="$PROJECT_DIR$/src/test/java/SYNOVOSJUnitTests/WebHelpers/WebHelpers.java" />
         <option value="$PROJECT_DIR$/src/test/java/SYNOVOSJUnitTests/Locators/PurchasingPage/ApproveSupplierPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/SYNOVOSJUnitTests/Tests/Supplier_Create_Save_Reject_Emergancy/Create_Supplier_Status_Reject.java" />
+        <option value="$PROJECT_DIR$/src/test/java/SYNOVOSJUnitTests/Tests/Supplier_Create_Save_Reject_Emergancy/SupplierCreateAndApprove.java" />
+        <option value="$PROJECT_DIR$/src/test/java/SYNOVOSJUnitTests/TestSuites/Test_Suite_Create_Supplier_New_NewPendingApproval_Emergency_Rejected_Approved.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/logs/app.log" />
+        <option value="$PROJECT_DIR$/src/test/java/SYNOVOSJUnitTests/Locators/PurchasingPage/CreateSupplierPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/SYNOVOSJUnitTests/Tests/Supplier_Create_Save_Reject_Emergancy/Create_Supplier_Status_New_Pending_Approval.java" />
+        <option value="$PROJECT_DIR$/src/test/java/SYNOVOSJUnitTests/Tests/Supplier_Create_Save_Reject_Emergancy/Create_Supplier_Status_Reject.java" />
+        <option value="$PROJECT_DIR$/src/test/java/SYNOVOSJUnitTests/Tests/Supplier_Create_Save_Reject_Emergancy/Create_Supplier_Status_New.java" />
+        <option value="$PROJECT_DIR$/src/test/java/SYNOVOSJUnitTests/Tests/Supplier_Create_Save_Reject_Emergancy/Create_Supplier_Status_Approve.java" />
       </list>
     </option>
   </component>
@@ -259,6 +217,15 @@
               <item name="Tests" type="462c0819:PsiDirectoryNode" />
               <item name="Supplier_Create_Save_Reject_Emergancy" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Synovo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Synovo" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="SYNOVOSJUnitTests" type="462c0819:PsiDirectoryNode" />
+              <item name="TestSuites" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -272,7 +239,7 @@
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555505258993" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555516297821" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -286,8 +253,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.Create_Supplier_Status_New_Pending_Approval">
-    <configuration name="Create_Supplier_Status_Emergancy" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.Test_Suite_Create_Supplier_New_NewPendingApproval_Emergency_Rejected_Approved">
+    <configuration name="Create_Supplier_Status_Approve" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Synovo.test" />
       <extension name="coverage">
         <pattern>
@@ -296,7 +263,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="SYNOVOSJUnitTests.Tests.Supplier_Create_Save_Reject_Emergancy" />
-      <option name="MAIN_CLASS_NAME" value="SYNOVOSJUnitTests.Tests.Supplier_Create_Save_Reject_Emergancy.Create_Supplier_Status_Emergancy" />
+      <option name="MAIN_CLASS_NAME" value="SYNOVOSJUnitTests.Tests.Supplier_Create_Save_Reject_Emergancy.Create_Supplier_Status_Approve" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -343,27 +310,27 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SupplierCreateAndApprove" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Test_Suite_Create_Supplier_New_NewPendingApproval_Emergency_Rejected_Approved" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Synovo.test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="SYNOVOSJUnitTests.Tests.Supplier_Create_Save_Reject_Emergancy.*" />
+          <option name="PATTERN" value="SYNOVOSJUnitTests.TestSuites.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="SYNOVOSJUnitTests.Tests.Supplier_Create_Save_Reject_Emergancy" />
-      <option name="MAIN_CLASS_NAME" value="SYNOVOSJUnitTests.Tests.Supplier_Create_Save_Reject_Emergancy.SupplierCreateAndApprove" />
+      <option name="PACKAGE_NAME" value="SYNOVOSJUnitTests.TestSuites" />
+      <option name="MAIN_CLASS_NAME" value="SYNOVOSJUnitTests.TestSuites.Test_Suite_Create_Supplier_New_NewPendingApproval_Emergency_Rejected_Approved" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.Create_Supplier_Status_New_Pending_Approval" />
-        <item itemvalue="JUnit.Create_Supplier_Status_Reject" />
-        <item itemvalue="JUnit.Create_Supplier_Status_Emergancy" />
+        <item itemvalue="JUnit.Test_Suite_Create_Supplier_New_NewPendingApproval_Emergency_Rejected_Approved" />
+        <item itemvalue="JUnit.Create_Supplier_Status_Approve" />
         <item itemvalue="JUnit.Create_Supplier_Status_New" />
-        <item itemvalue="JUnit.SupplierCreateAndApprove" />
+        <item itemvalue="JUnit.Create_Supplier_Status_Reject" />
+        <item itemvalue="JUnit.Create_Supplier_Status_New_Pending_Approval" />
       </list>
     </recent_temporary>
   </component>
@@ -381,40 +348,39 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="SupplierCreateAndReject - 2019.04.17 at 13h 52m 01s.xml">
-      <configuration name="SupplierCreateAndReject" configurationId="JUnit" />
+    <history-entry file="Test_Suite_Create_Supplier_New_NewPendingApproval_Emergency_Rejected_Approved - 2019.04.17 at 18h 08m 16s.xml">
+      <configuration name="Test_Suite_Create_Supplier_New_NewPendingApproval_Emergency_Rejected_Approved" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Create_Supplier_Status_Reject - 2019.04.17 at 14h 24m 00s.xml">
-      <configuration name="Create_Supplier_Status_Reject" configurationId="JUnit" />
+    <history-entry file="Create_Supplier_Status_New - 2019.04.17 at 18h 09m 12s.xml">
+      <configuration name="Create_Supplier_Status_New" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Create_Supplier_Status_Reject - 2019.04.17 at 14h 25m 26s.xml">
-      <configuration name="Create_Supplier_Status_Reject" configurationId="JUnit" />
+    <history-entry file="Create_Supplier_Status_New - 2019.04.17 at 18h 11m 18s.xml">
+      <configuration name="Create_Supplier_Status_New" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Create_Supplier_Status_Reject - 2019.04.17 at 14h 43m 02s.xml">
-      <configuration name="Create_Supplier_Status_Reject" configurationId="JUnit" />
+    <history-entry file="Create_Supplier_Status_New - 2019.04.17 at 18h 21m 35s.xml">
+      <configuration name="Create_Supplier_Status_New" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Create_Supplier_Status_Reject - 2019.04.17 at 14h 54m 30s.xml">
-      <configuration name="Create_Supplier_Status_Reject" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Create_Supplier_Status_Reject - 2019.04.17 at 14h 56m 07s.xml">
-      <configuration name="Create_Supplier_Status_Reject" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Create_Supplier_Status_Reject - 2019.04.17 at 14h 57m 18s.xml">
-      <configuration name="Create_Supplier_Status_Reject" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Create_Supplier_Status_Reject - 2019.04.17 at 14h 58m 39s.xml">
-      <configuration name="Create_Supplier_Status_Reject" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Create_Supplier_Status_Reject - 2019.04.17 at 15h 01m 53s.xml">
-      <configuration name="Create_Supplier_Status_Reject" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Create_Supplier_Status_New_Pending_Approval - 2019.04.17 at 15h 47m 29s.xml">
+    <history-entry file="Create_Supplier_Status_New_Pending_Approval - 2019.04.17 at 18h 34m 43s.xml">
       <configuration name="Create_Supplier_Status_New_Pending_Approval" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Create_Supplier_Status_Reject - 2019.04.17 at 18h 35m 38s.xml">
+      <configuration name="Create_Supplier_Status_Reject" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Create_Supplier_Status_Reject - 2019.04.17 at 18h 36m 18s.xml">
+      <configuration name="Create_Supplier_Status_Reject" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Create_Supplier_Status_New - 2019.04.17 at 18h 36m 53s.xml">
+      <configuration name="Create_Supplier_Status_New" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Create_Supplier_Status_Approve - 2019.04.17 at 18h 39m 18s.xml">
+      <configuration name="Create_Supplier_Status_Approve" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Create_Supplier_Status_Approve - 2019.04.17 at 18h 40m 43s.xml">
+      <configuration name="Create_Supplier_Status_Approve" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Designer" order="0" />
       <window_info id="Capture Tool" order="1" />
@@ -560,13 +526,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/SYNOVOSJUnitTests/TestSuites/Test_Suite_Approved_Rejected_New_supplier.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="8" column="82" selection-start-line="8" selection-start-column="82" selection-end-line="8" selection-end-column="82" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/SYNOVOSJUnitTests/TestSuites/Test_Suite_Create_Approve_Reject_Save_Supplier.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -581,17 +540,61 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/logs/app.log">
-      <provider selected="true" editor-type-id="LogFileEditorProvider">
-        <state relative-caret-position="762">
-          <caret line="92" column="105" selection-start-line="92" selection-start-column="100" selection-end-line="92" selection-end-column="105" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/SYNOVOSJUnitTests/Locators/PurchasingPage/ApproveSupplierPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="58" column="70" selection-start-line="58" selection-start-column="70" selection-end-line="58" selection-end-column="70" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/SYNOVOSJUnitTests/Tests/Supplier_Create_Save_Reject_Emergancy/SupplierCreateAndApprove.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/SYNOVOSJUnitTests/TestSuites/Test_Suite_Approved_Rejected_New_supplier.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="215">
-          <caret line="73" column="54" lean-forward="true" selection-start-line="73" selection-start-column="54" selection-end-line="73" selection-end-column="54" />
+        <state relative-caret-position="68">
+          <caret line="7" selection-start-line="7" selection-end-line="8" selection-end-column="96" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/SYNOVOSJUnitTests/WebHelpers/WebHelpers.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="26" column="30" lean-forward="true" selection-start-line="26" selection-start-column="30" selection-end-line="26" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/SYNOVOSJUnitTests/TestSuites/Test_Suite_Create_Supplier_New_NewPendingApproval_Emergency_Rejected_Approved.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/SYNOVOSJUnitTests/Tests/Supplier_Create_Save_Reject_Emergancy/Create_Supplier_Status_Emergancy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="339">
+          <caret line="71" column="50" lean-forward="true" selection-start-line="71" selection-start-column="50" selection-end-line="71" selection-end-column="50" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/SYNOVOSJUnitTests/Tests/Supplier_Create_Save_Reject_Emergancy/Create_Supplier_Status_New_Pending_Approval.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="68" column="47" selection-start-line="68" selection-start-column="47" selection-end-line="68" selection-end-column="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/SYNOVOSJUnitTests/Tests/Supplier_Create_Save_Reject_Emergancy/Create_Supplier_Status_Reject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="436">
+          <caret line="87" column="59" selection-start-line="87" selection-start-column="59" selection-end-line="87" selection-end-column="59" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -600,39 +603,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/SYNOVOSJUnitTests/Locators/PurchasingPage/CreateSupplierPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-303">
-          <caret line="48" column="41" lean-forward="true" selection-start-line="48" selection-start-column="41" selection-end-line="48" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/SYNOVOSJUnitTests/WebHelpers/WebHelpers.java">
-      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
-          <caret line="32" selection-start-line="32" selection-end-line="32" />
+          <caret line="83" column="16" selection-start-line="83" selection-start-column="16" selection-end-line="83" selection-end-column="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/SYNOVOSJUnitTests/Locators/PurchasingPage/ApproveSupplierPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="27" column="86" selection-start-line="27" selection-start-column="86" selection-end-line="27" selection-end-column="86" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/SYNOVOSJUnitTests/Tests/Supplier_Create_Save_Reject_Emergancy/Create_Supplier_Status_Emergancy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="316">
-          <caret line="71" column="50" lean-forward="true" selection-start-line="71" selection-start-column="50" selection-end-line="71" selection-end-column="50" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/logs/app.log">
+      <provider selected="true" editor-type-id="LogFileEditorProvider">
+        <state relative-caret-position="444">
+          <caret line="162" column="77" lean-forward="true" selection-start-line="162" selection-start-column="35" selection-end-line="162" selection-end-column="77" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/SYNOVOSJUnitTests/Tests/Supplier_Create_Save_Reject_Emergancy/Create_Supplier_Status_New.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="367">
-          <caret line="76" column="35" lean-forward="true" selection-start-line="76" selection-start-column="35" selection-end-line="76" selection-end-column="35" />
+        <state relative-caret-position="285">
+          <caret line="72" column="139" selection-start-line="72" selection-start-column="139" selection-end-line="72" selection-end-column="139" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -646,20 +632,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/SYNOVOSJUnitTests/Tests/Supplier_Create_Save_Reject_Emergancy/Create_Supplier_Status_New_Pending_Approval.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/SYNOVOSJUnitTests/Tests/Supplier_Create_Save_Reject_Emergancy/Create_Supplier_Status_Approve.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="69" column="43" selection-start-line="69" selection-start-column="43" selection-end-line="69" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/SYNOVOSJUnitTests/Tests/Supplier_Create_Save_Reject_Emergancy/Create_Supplier_Status_Reject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" selection-start-line="26" selection-end-line="79" selection-end-column="5" />
+        <state relative-caret-position="351">
+          <caret line="82" column="8" selection-start-line="82" selection-start-column="8" selection-end-line="82" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
