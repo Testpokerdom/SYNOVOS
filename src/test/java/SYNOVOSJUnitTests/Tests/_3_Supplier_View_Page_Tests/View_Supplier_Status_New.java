@@ -1,28 +1,25 @@
-package SYNOVOSJUnitTests.Tests.Supplier_Create_Save_Reject_Emergancy;
+package SYNOVOSJUnitTests.Tests._3_Supplier_View_Page_Tests;
 
 import SYNOVOSJUnitTests.Locators.LoginPage.LoginPageLocators;
 import SYNOVOSJUnitTests.Locators.MainPage.MainPageLocators;
 import SYNOVOSJUnitTests.Locators.PurchasingPage.*;
-//import com.sun.org.glassfish.gmbal.Description;
+import SYNOVOSJUnitTests.Tests.LoginPage.LoginPageTests;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
-//import org.junit.jupiter.api.DisplayName;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.util.concurrent.TimeUnit;
 
-import static SYNOVOSJUnitTests.WebHelpers.WebHelpers.*;
-import static WebHelpers.WebHelpers.clickButton;
+import static SYNOVOSJUnitTests.WebHelpers.WebHelpers.getTextFronWebElement;
+import static WebHelpers.WebHelpers.*;
 import static WebHelpers.WebHelpers.clickButtonIfEnable;
-import static WebHelpers.WebHelpers.selectWebElementFromDropDownList;
-import static WebHelpers.WebHelpers.sendTextToMultipleWebElements;
 
-public class Create_Supplier_Status_Emergancy {
+public class View_Supplier_Status_New {
     public static WebDriver driver = null;
     public static LoginPageLocators loginPageLocators = null;
     public static MainPageLocators mainPageLocators = null;
@@ -31,7 +28,7 @@ public class Create_Supplier_Status_Emergancy {
     public static ApprovalProcessSelectionPage approveSupplierListPage = null;
     public static ApproveSupplierPage approveSupplierPage = null;
     public static SupplierDetailPage supplierDetailPage = null;
-    public static Logger logger = LogManager.getLogger(Create_Supplier_Status_Emergancy.class);
+    public static final Logger logger = LogManager.getLogger(LoginPageTests.class);
 
     @Before
     public void beforEeach() {
@@ -51,11 +48,11 @@ public class Create_Supplier_Status_Emergancy {
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.manage().window().maximize();
 
+        logger.info("------------------------------------------------------");
         goToUrl(driver, "http://localhost:8080/sos/splashScreen.sos");
         sendTextToMultipleWebElements(loginPageLocators.fieldLogin, "VBIBIKSU", loginPageLocators.fieldPassword, "deadman11");
-        clickButtonIfEnable(loginPageLocators.buttonLogin);
-        clickButtonIfEnable(mainPageLocators.tablePurchasing);
-
+        clickButton(loginPageLocators.buttonLogin);
+        clickElement(mainPageLocators.tablePurchasing);
     }
 
     @After
@@ -65,16 +62,25 @@ public class Create_Supplier_Status_Emergancy {
     }
 
     @Test
-    public void createSupplierEmergency(){
+    public void createSupplierWithStatusNew(){
         clickButtonIfEnable(mainPageLocators.linkSupplier);
         selectWebElementFromDropDownList(supplierSearchCreatePage.dropdownListSiteCode, "SALES"); // 130 - AGRO_FARMA;  SALES - DEMO;
         clickButton(supplierSearchCreatePage.buttonCreate);
-        createSupplierPage.fillUserDataEmergencySupplier("asd@ukr.net","Supplier_Emergency_DEMO_SALES_", "123-123-1234", "@ukr.net", "Emergency supplier was created");
-        clickButtonIfEnable(createSupplierPage.buttonOKpopup);
-        System.out.println("Emergency Supplier was created, his number is: " + getTextFronWebElement(supplierDetailPage.fieldSupplierNumber));
-        logger.info("Emergency Supplier was created, his number is: " + getTextFronWebElement(supplierDetailPage.fieldSupplierNumber));
+        createSupplierPage.fillUserDataTableAndSave2("asd@ukr.net", "Supplier_status_APPROVED_DEMO_SALES_", "","999-999-9999", "@ukr.net");
+        clickButtonIfEnable(createSupplierPage.buttonSave);
+        System.out.println("Supplier was created, his Number is: " + getTextFronWebElement(supplierDetailPage.fieldSupplierNumber));
+        logger.info("Supplier was created, his Number is: " + getTextFronWebElement(supplierDetailPage.fieldSupplierNumber));
         logger.info("------------------------------------------------------");
 
-        Assert.assertEquals("Supplier Detail", createSupplierPage.textSupplierDetails.getText());
+        Assert.assertEquals("New", supplierDetailPage.fieldApprovalStatus.getText());
+        Assert.assertEquals("ASD@UKR.NET", supplierDetailPage.fieldRemitTo.getText());
+        Assert.assertEquals("Yes", supplierDetailPage.fieldProvidedW9.getText());
+
+        clickButtonIfEnable(supplierDetailPage.buttonSendForApproval);
+        sendTextToWebElement(supplierDetailPage.fieldCommnets, "Supplier with status New was send for approve from Supplier Detail page");
+        clickButtonIfEnable(supplierDetailPage.buttonOk);
+
+        Assert.assertEquals("New Supplier - Pending Approval", supplierDetailPage.fieldApprovalStatus.getText());
+        Assert.assertTrue(getTextFronWebElement(supplierDetailPage.fieldApprovalNotes).contains("04/19/2019 VBIBIKSU: Supplier with status New was send for approve from Supplier Detail page"));
     }
 }

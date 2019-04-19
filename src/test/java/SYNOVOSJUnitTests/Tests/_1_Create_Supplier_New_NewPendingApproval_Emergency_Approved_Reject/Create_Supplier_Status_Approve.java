@@ -1,4 +1,4 @@
-package SYNOVOSJUnitTests.Tests.Supplier_Create_Save_Reject_Emergancy;
+package SYNOVOSJUnitTests.Tests._1_Create_Supplier_New_NewPendingApproval_Emergency_Approved_Reject;
 
 import SYNOVOSJUnitTests.Locators.LoginPage.LoginPageLocators;
 import SYNOVOSJUnitTests.Locators.MainPage.MainPageLocators;
@@ -68,9 +68,9 @@ public class Create_Supplier_Status_Approve {
         }
 
     @Test
-    //@Description("Create Supplier")
-    //@DisplayName("Create Supplier")
-    public void createSupplierWithStatusNewPendingApproval1(){
+    //@Description("createSupplierWithStatusNewPendingApproval")
+    //@DisplayName("createSupplierWithStatusNewPendingApproval")
+    public void test_1(){
         clickButtonIfEnable(mainPageLocators.linkSupplier);
         selectWebElementFromDropDownList(supplierSearchCreatePage.dropdownListSiteCode, "SALES"); // 130 - AGRO_FARMA;  SALES - DEMO;
         clickButton(supplierSearchCreatePage.buttonCreate);
@@ -88,9 +88,9 @@ public class Create_Supplier_Status_Approve {
     }
 
     @Test
-    //@Description("Find last Created Supplier (from \"test_1\") and approve them - first stage")
-    //@DisplayName("Find last Created Supplier (from \"test_1\") and approve them - first stage")
-    public void stage_1_ApproveSupplierWithStatusNewPendingApproval2(){
+    //@Description("stage_1_ApproveSupplierWithStatusNewPendingApproval")
+    //@DisplayName("stage_1_ApproveSupplierWithStatusNewPendingApproval")
+    public void test_2(){
         clickButton(mainPageLocators.linkApproveSupplier);
         selectWebElementFromDropDownList(approveSupplierListPage.dropdownlistSiteName, "DEMO SOS SITE"); // AGRO FARMA / DEMO SOS SITE
         findLastRawInTableAndClick2(driver, "//table[@id='approvalProcessData']/tbody/tr[last()]/td[last()]");
@@ -111,9 +111,9 @@ public class Create_Supplier_Status_Approve {
     }
 
     @Test
-    //@Description ("Find last Created Supplier (from \"test_2\") and approve them - second stage (Final Supplier approve)")
-    //@DisplayName("Final Supplier approve - second stage")
-    public void stage_2_ApproveSupplierWithStatusNewPendingApproval3(){
+    //@Description ("stage_2_ApproveSupplierWithStatusNewPendingApproval")
+    //@DisplayName("stage_2_ApproveSupplierWithStatusNewPendingApproval")
+    public void test_3(){
         clickButton(mainPageLocators.linkApproveSupplier);
         selectWebElementFromDropDownList(approveSupplierListPage.dropdownlistSiteName, "DEMO SOS SITE");
         findLastRawInTableAndClick2(driver, "//table[@id='approvalProcessData']/tbody/tr[last()]/td[last()]");

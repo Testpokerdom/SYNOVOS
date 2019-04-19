@@ -1,4 +1,4 @@
-package SYNOVOSJUnitTests.Tests.Supplier_Create_Save_Reject_Emergancy;
+package SYNOVOSJUnitTests.Tests._2_Supplier_Editing_Page_Tests;
 
 import SYNOVOSJUnitTests.Locators.LoginPage.LoginPageLocators;
 import SYNOVOSJUnitTests.Locators.MainPage.MainPageLocators;
@@ -15,15 +15,11 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.util.concurrent.TimeUnit;
 
-import static SYNOVOSJUnitTests.Locators.PurchasingPage.CreateSupplierPage.chooseJDEVendor;
 import static SYNOVOSJUnitTests.WebHelpers.WebHelpers.getTextFronWebElement;
-import static SYNOVOSJUnitTests.WebHelpers.WebHelpers.sendTextToWebElement;
 import static WebHelpers.WebHelpers.*;
+import static WebHelpers.WebHelpers.clickElement;
 
-//import static SYNOVOSJUnitTests.WebHelpers.WebHelpers.*;
-//import static SYNOVOSJUnitTests.WebHelpers.WebHelpers.getTextFronWebElement;
-
-public class Create_Supplier_Status_New {
+public class Editing_Supplier_Status_New_Pending_Approval {
     public static WebDriver driver = null;
     public static LoginPageLocators loginPageLocators = null;
     public static MainPageLocators mainPageLocators = null;
@@ -32,7 +28,9 @@ public class Create_Supplier_Status_New {
     public static ApprovalProcessSelectionPage approveSupplierListPage = null;
     public static ApproveSupplierPage approveSupplierPage = null;
     public static SupplierDetailPage supplierDetailPage = null;
+    public static EditSupplierPage editSupplierPage= null;
     public static final Logger logger = LogManager.getLogger(LoginPageTests.class);
+    public static String supplierNumber;
 
     @Before
     public void beforEeach() {
@@ -48,6 +46,7 @@ public class Create_Supplier_Status_New {
         approveSupplierListPage = new ApprovalProcessSelectionPage(driver);
         approveSupplierPage = new ApproveSupplierPage(driver);
         supplierDetailPage = new SupplierDetailPage(driver);
+        editSupplierPage = new EditSupplierPage(driver);
 
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.manage().window().maximize();
@@ -58,25 +57,38 @@ public class Create_Supplier_Status_New {
         clickButton(loginPageLocators.buttonLogin);
         clickElement(mainPageLocators.tablePurchasing);
     }
-/*
+
     @After
     public void afterEach() {
 
         driver.quit();
     }
-*/
+
     @Test
-    public void createSupplierWithStatusNew(){
+    //@Description("Create Supplier")
+    //@DisplayName("Create Supplier")
+    public void createSupplierWithStatusNewSupplierPendingApproval(){
         clickButtonIfEnable(mainPageLocators.linkSupplier);
         selectWebElementFromDropDownList(supplierSearchCreatePage.dropdownListSiteCode, "SALES"); // 130 - AGRO_FARMA;  SALES - DEMO;
         clickButton(supplierSearchCreatePage.buttonCreate);
         createSupplierPage.fillUserDataTableAndSave2("asd@ukr.net", "Supplier_status_APPROVED_DEMO_SALES_", "","999-999-9999", "@ukr.net");
-        clickButtonIfEnable(createSupplierPage.buttonSave);
+        clickButtonIfEnable(createSupplierPage.buttonSendForApproval);
+        sendTextToWebElement(createSupplierPage.fieldComments, "Supplier was created and sent for approval with status New Supplier - Pending Approval");
+        clickButtonIfEnable(createSupplierPage.buttonOKpopup);
         System.out.println("Supplier was created, his Number is: " + getTextFronWebElement(supplierDetailPage.fieldSupplierNumber));
         logger.info("Supplier was created, his Number is: " + getTextFronWebElement(supplierDetailPage.fieldSupplierNumber));
         logger.info("------------------------------------------------------");
 
         Assert.assertEquals("Supplier Detail", createSupplierPage.textSupplierDetails.getText());
+
+        clickButtonIfEnable(supplierDetailPage.buttonEdit);
+        sendTextToWebElement(editSupplierPage.dropdown_listJDE_Vendor, "8205171");
+        clickButtonIfEnable(editSupplierPage.jdeVendor2);
+        clickButtonIfEnable(editSupplierPage.buttonSave);
+        //clickButtonIfEnable(editSupplierPage.buttonOkPopUpWindow);
+
+        Assert.assertEquals("New Supplier - Pending Approval", getTextFronWebElement(supplierDetailPage.fieldApprovalStatus)); // Approval status should be New Supplier - Pending Approval
+        Assert.assertTrue(getTextFronWebElement(supplierDetailPage.fieldApprovalNotes).contains("04/18/2019 VBIBIKSU: JdeVendor has been changed from '1045000 " +
+                "--- Accu-Systems SALT LAKE CITY UT 84123' to '8205171 --- STEINER MANUFACTURING., INC.''."));
     }
 }
-
