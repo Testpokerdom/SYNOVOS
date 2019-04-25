@@ -10,6 +10,12 @@ public class EditSupplierPage  extends SearchSuppliersPage {
         super(driver);
     }
 
+    //Main table
+    @FindBy (xpath = "//form[@id='supplierCRUDForm']//table[@class='datagrid gradientElement2']//tr[17]//td[2]")
+    //@FindBy (id = "supplier.tbdSupplier")
+    public WebElement fieldTBDSupplier;
+
+    //JDE Vendor elements
     @FindBy(id = "jdeVendor")
     public WebElement dropdown_listJDE_Vendor;
     @FindBy (xpath = "//ul[@class='ui-autocomplete ui-menu ui-widget ui-widget-content ui-corner-all']//li[1]")

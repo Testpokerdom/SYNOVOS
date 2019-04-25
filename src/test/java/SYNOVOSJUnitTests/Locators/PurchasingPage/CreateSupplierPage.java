@@ -2,6 +2,7 @@ package SYNOVOSJUnitTests.Locators.PurchasingPage;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -31,6 +32,8 @@ public class CreateSupplierPage extends SearchSuppliersPage {
     // Main info user Table
     @FindBy (id = "supplierName")
     public WebElement fieldSupplierName;
+    @FindBy (id = "tbdSupplier")
+    public WebElement checkBoxTBD;
     @FindBy (id = "primaryContact.name")
     public WebElement fieldContactName;
     @FindBy (id = "primaryContact.phone")
@@ -86,6 +89,24 @@ public class CreateSupplierPage extends SearchSuppliersPage {
         logger.info("Field Remit To was field by value" + getTextFronWebElement(fieldRemitTo));
         checkBoxProvidedW9.click();
         this.fieldSupplierName.sendKeys(fieldSupplierName + getCurrentTimeUsingCalendar2() + "_"  + randomName2());
+        this.fieldContactName.sendKeys(randomName2());
+        this.fieldContactPhone.sendKeys(fieldContactPhone);
+        this.fieldContactEmail.sendKeys(randomName2() + fieldContactEmail);
+        dropdown_listJDE_Vendor.sendKeys("1045000");
+        jdeVendor2.click();
+        //clickButton(buttonSendForApproval);
+        //fieldComments.sendKeys(filedComment);
+        //buttonSave.click();
+    }
+
+    public void fillUserDataTableAndSave3_TBD_Supplier(String remitTo, String fieldSupplierName, String fieldContactName, String fieldContactPhone, String fieldContactEmail){
+        fieldRemitTo.sendKeys(remitTo);
+        logger.info("Field Remit To was field by value" + getTextFronWebElement(fieldRemitTo));
+        checkBoxProvidedW9.click();
+        this.fieldSupplierName.sendKeys(fieldSupplierName + getCurrentTimeUsingCalendar2() + "_"  + randomName2());
+        checkBoxTBD.click();
+        System.out.println("Is button send for approval is enable on the Create Supplier page: " + buttonSendForApproval.isEnabled());
+        Assert.assertTrue(buttonSendForApproval.isEnabled() == false);
         this.fieldContactName.sendKeys(randomName2());
         this.fieldContactPhone.sendKeys(fieldContactPhone);
         this.fieldContactEmail.sendKeys(randomName2() + fieldContactEmail);

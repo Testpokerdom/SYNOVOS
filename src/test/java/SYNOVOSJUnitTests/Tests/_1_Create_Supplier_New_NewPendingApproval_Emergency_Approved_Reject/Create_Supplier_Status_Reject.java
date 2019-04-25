@@ -6,10 +6,9 @@ import SYNOVOSJUnitTests.Locators.PurchasingPage.*;
 //import com.sun.org.glassfish.gmbal.Description;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.junit.Assert;
-import org.junit.Before;
-import org.junit.Test;
+import org.junit.*;
 //import org.junit.jupiter.api.DisplayName;
+import org.junit.runners.MethodSorters;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
@@ -23,6 +22,7 @@ import static WebHelpers.WebHelpers.selectWebElementFromDropDownList;
 import static WebHelpers.WebHelpers.sendTextToMultipleWebElements;
 import static WebHelpers.WebHelpers.sendTextToWebElement;
 
+@FixMethodOrder(MethodSorters.NAME_ASCENDING)
 public class Create_Supplier_Status_Reject {
     public static WebDriver driver = null;
     public static LoginPageLocators loginPageLocators = null;
@@ -56,17 +56,17 @@ public class Create_Supplier_Status_Reject {
         clickElement(mainPageLocators.tablePurchasing);
 
     }
-/*
+
     @After
     public void afterEach() {
 
         driver.quit();
     }
-*/
+
     @Test
     //@Description("Create Supplier")
     //@DisplayName("Create Supplier")
-    public void createSupplierWithStatusNewPendingApproval1(){
+    public void test_1_createSupplierWithStatusNewPendingApproval(){
         clickButtonIfEnable(mainPageLocators.linkSupplier);
         selectWebElementFromDropDownList(supplierSearchCreatePage.dropdownListSiteCode, "SALES"); // 130 - AGRO_FARMA;  SALES - DEMO;
         clickButton(supplierSearchCreatePage.buttonCreate);
@@ -84,7 +84,7 @@ public class Create_Supplier_Status_Reject {
     @Test
     //@Description ("Find last Created Supplier (from \"test_1\") and Reject them")
     //@DisplayName("Find last Created Supplier (from \"test_1\") and Reject them")
-    public void rejectSupplierWithStatusNewPendingApproval2(){
+    public void test_2_rejectSupplierWithStatusNewPendingApproval(){
         clickButton(mainPageLocators.linkApproveSupplier);
         selectWebElementFromDropDownList(approvalProcessSelection.dropdownlistSiteName, "DEMO SOS SITE"); // DEMO SOS SITE -- AGRO FARMA
         findLastRawInTableAndClick2(driver, "//table[@id='approvalProcessData']/tbody/tr[last()]/td[last()]");

@@ -57,13 +57,13 @@ public class View_Supplier_Status_Emergency {
         clickButtonIfEnable(mainPageLocators.tablePurchasing);
 
     }
-/*
+
     @After
     public void afterEach() {
 
         driver.quit();
     }
-*/
+
     @Test
     public void createSupplierEmergency(){
         clickButtonIfEnable(mainPageLocators.linkSupplier);

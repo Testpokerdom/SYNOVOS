@@ -25,6 +25,14 @@ public class SupplierDetailPage extends CreateSupplierPage {
     //Saved User details from the Table
     @FindBy (xpath = "//table[@class='datagrid']/tbody[1]//td[contains(text(),'Supplier No:')]/following-sibling::td[1]")
     public WebElement fieldSupplierNumber;
+    @FindBy (xpath = "//form[@id='command']//table//tbody//tr[21]/td[2]")
+    public WebElement fieldTDBSupplier;
+    @FindBy (name = "editActiveStatus")
+    public WebElement buttonActivate;
+    @FindBy (xpath = "//input[@value='Deactivate']")
+    public WebElement buttonDeactivate;
+    @FindBy (xpath = "//form[@id='command']//table//tbody//tr[22]//tr[1]//span[1]")
+    public WebElement fieldStatus;
     @FindBy (xpath = "//form[@id='command']//table//tbody//tr[24]/td[2]")
     public WebElement fieldApprovalStatus;
     @FindBy (xpath = "//form[@id='command']//table//tbody//tr[27]/td[2]")
@@ -39,9 +47,19 @@ public class SupplierDetailPage extends CreateSupplierPage {
     //Pop-up window details
     @FindBy (id = "approvalCommentsHolder")
     public WebElement fieldCommnets;
+    @FindBy (id = "emergencyHolder")
+    public WebElement checkBoxEmergencyOrederSupplier;
     @FindBy (xpath = "//div[@class='ui-dialog-buttonset']//span[text()='OK']")
     public WebElement buttonOk;
     @FindBy (xpath = "//div[@class='ui-dialog-buttonset']//span[text()='Cancel']")
     public WebElement buttonCancel;
+
+    //Error message text
+    @FindBy (xpath = "//div[@id='errors']//tbody//tr[1]/td")
+    public WebElement errorMessage;
+
+    //Warning message
+    @FindBy (xpath = "//form[@id='command']//span[@class='warning']")
+    public WebElement messageSupplierHadBeenDeactivated;
 
 }

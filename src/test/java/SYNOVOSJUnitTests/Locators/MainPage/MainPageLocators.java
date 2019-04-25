@@ -38,6 +38,8 @@ public class MainPageLocators extends LoginPageLocators {
     // Purchase table elements
     @FindBy (xpath = "//li[@id='topmenu']//a[@href='/sos/supplier.htm']")
     public WebElement linkSupplier;
+    @FindBy (xpath = "//li[@id='topmenu']//a[@href='/sos/purchasing/searchPO.sos?mode=edit']")
+    public WebElement linkSavedPOs;
     @FindBy (xpath = "//div[@class='pageHeader']")
     public WebElement textShouldBeInHeader;
     @FindBy (xpath = "//div[@id='header']//a[@href='/sos/approval/approveSupplierListForm.htm']")

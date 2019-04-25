@@ -81,6 +81,6 @@ public class View_Supplier_Status_New {
         clickButtonIfEnable(supplierDetailPage.buttonOk);
 
         Assert.assertEquals("New Supplier - Pending Approval", supplierDetailPage.fieldApprovalStatus.getText());
-        Assert.assertTrue(getTextFronWebElement(supplierDetailPage.fieldApprovalNotes).contains("04/19/2019 VBIBIKSU: Supplier with status New was send for approve from Supplier Detail page"));
+        Assert.assertTrue(getTextFronWebElement(supplierDetailPage.fieldApprovalNotes).contains("04/22/2019 VBIBIKSU: Supplier with status New was send for approve from Supplier Detail page"));
     }
 }

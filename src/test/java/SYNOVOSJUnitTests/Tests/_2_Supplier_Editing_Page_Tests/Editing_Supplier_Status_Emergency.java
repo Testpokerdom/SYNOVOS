@@ -81,7 +81,7 @@ public class Editing_Supplier_Status_Emergency {
         clickButtonIfEnable(editSupplierPage.jdeVendor2);
         clickButtonIfEnable(editSupplierPage.buttonSave);
 
-        Assert.assertEquals("Emergency", getTextFronWebElement(supplierDetailPage.fieldApprovalStatus)); // Approval status should be New Supplier - Pending Approval
+        Assert.assertEquals("Emergency", getTextFronWebElement(supplierDetailPage.fieldApprovalStatus)); // Approval status should be Emergency
         Assert.assertTrue(getTextFronWebElement(supplierDetailPage.fieldApprovalNotes).contains("04/19/2019 VBIBIKSU: JdeVendor has been changed from '1045000 --- Accu-Systems SALT LAKE CITY UT 84123'" +
                 " to '8205171 --- STEINER MANUFACTURING., INC.''."));
     }

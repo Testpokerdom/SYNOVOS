@@ -12,4 +12,6 @@ public class MatchingSupplierListPage extends SearchSuppliersPage {
     //Table header elements
     @FindBy (xpath = "//table[@id='supplier']//tr[1]/th[1]")
     public WebElement buttonSupplier;
+    @FindBy (xpath = "//div[@class='pageHeader']")
+    public WebElement headerTextMatching; // Matching Supplier List
 }

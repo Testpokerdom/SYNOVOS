@@ -6,6 +6,7 @@ import SYNOVOSJUnitTests.Locators.PurchasingPage.*;
 import SYNOVOSJUnitTests.Tests._1_Create_Supplier_New_NewPendingApproval_Emergency_Approved_Reject.Create_Supplier_Status_Reject;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
@@ -56,13 +57,13 @@ public class View_Supplier_Status_Rejected {
         clickElement(mainPageLocators.tablePurchasing);
 
     }
-    /*
+
         @After
         public void afterEach() {
 
             driver.quit();
         }
-    */
+
 
     @Test
     //@Description("_createSupplierWithStatusNewPendingApprova")
@@ -121,12 +122,12 @@ public class View_Supplier_Status_Rejected {
         Assert.assertEquals("Yes", supplierDetailPage.fieldProvidedW9.getText());
 
         clickButtonIfEnable(supplierDetailPage.buttonSendForApproval);
-        sendTextToWebElement(supplierDetailPage.fieldCommnets, "Supplier with status New was send for approve from Supplier Detail page");
+        sendTextToWebElement(supplierDetailPage.fieldCommnets, "Supplier with status New Supplier - pending Approval was send for approve from Supplier Detail page");
         clickButtonIfEnable(supplierDetailPage.buttonOk);
 
 
         Assert.assertEquals("New Supplier - Pending Approval", supplierDetailPage.fieldApprovalStatus.getText());
-        Assert.assertTrue(getTextFronWebElement(supplierDetailPage.fieldApprovalNotes).contains("04/19/2019 VBIBIKSU: Supplier with status New was send for approve from Supplier Detail page"));
+        Assert.assertTrue(getTextFronWebElement(supplierDetailPage.fieldApprovalNotes).contains("04/22/2019 VBIBIKSU: Supplier with status New Supplier - pending Approval was send for approve from Supplier Detail page"));
 
     }
 }

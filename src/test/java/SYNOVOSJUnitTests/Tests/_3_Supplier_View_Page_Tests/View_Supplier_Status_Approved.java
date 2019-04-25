@@ -61,7 +61,7 @@ public class View_Supplier_Status_Approved {
         clickElement(mainPageLocators.tablePurchasing);
 
     }
-/*
+
     @After
     public void afterEach() {
 
@@ -134,7 +134,7 @@ public class View_Supplier_Status_Approved {
 
         Assert.assertEquals("Approval Process Selection", approveSupplierListPage.textInHeader.getText());
     }
-*/
+
     @Test
     //@Description ("Change JDE Vendor field value to supplier with status Approved")
     //@DisplayName("Change JDE Vendor field value to supplier with status Approved")
@@ -151,7 +151,7 @@ public class View_Supplier_Status_Approved {
         Assert.assertEquals("Supplier Detail", createSupplierPage.textSupplierDetails.getText());
         Assert.assertEquals("ASD@UKR.NET", supplierDetailPage.fieldRemitTo.getText());
         Assert.assertEquals("Yes", supplierDetailPage.fieldProvidedW9.getText());
-        Assert.assertEquals("Approved", getTextFronWebElement(supplierDetailPage.fieldApprovalStatus)); // Approval status should be Emergency
+        Assert.assertEquals("Approved", getTextFronWebElement(supplierDetailPage.fieldApprovalStatus)); // Approval status should be Approved
         Assert.assertFalse(supplierDetailPage.buttonSendForApproval.isEnabled() == true); // Button Send For Approval should be inActive!!!!!
     }
 }

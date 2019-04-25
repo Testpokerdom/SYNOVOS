@@ -88,7 +88,7 @@ public class Editing_Supplier_Status_New_Pending_Approval {
         //clickButtonIfEnable(editSupplierPage.buttonOkPopUpWindow);
 
         Assert.assertEquals("New Supplier - Pending Approval", getTextFronWebElement(supplierDetailPage.fieldApprovalStatus)); // Approval status should be New Supplier - Pending Approval
-        Assert.assertTrue(getTextFronWebElement(supplierDetailPage.fieldApprovalNotes).contains("04/18/2019 VBIBIKSU: JdeVendor has been changed from '1045000 " +
+        Assert.assertTrue(getTextFronWebElement(supplierDetailPage.fieldApprovalNotes).contains("04/19/2019 VBIBIKSU: JdeVendor has been changed from '1045000 " +
                 "--- Accu-Systems SALT LAKE CITY UT 84123' to '8205171 --- STEINER MANUFACTURING., INC.''."));
     }
 }
