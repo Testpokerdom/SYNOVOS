@@ -29,7 +29,7 @@ public class WebHelpers {
         element.click();
     }
 
-    public static String getTextFronWebElement(WebElement element){
+    public static String getTextFromWebElement(WebElement element){
         String getText = element.getText();
         return getText;
     }

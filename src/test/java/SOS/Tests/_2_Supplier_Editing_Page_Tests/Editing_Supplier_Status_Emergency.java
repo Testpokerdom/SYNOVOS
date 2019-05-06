@@ -4,9 +4,9 @@ import SOS.Locators.LoginPage.LoginPageLocators;
 import SOS.Locators.MainPage.MainPageLocators;
 import SOS.Locators.PurchasingPage.*;
 import SOS.Tests._1_Create_Supplier_New_NewPendingApproval_Emergency_Approved_Reject.Create_Supplier_Status_Emergancy;
+import SOS.WebHelpers.WebHelpers;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
@@ -15,7 +15,6 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.util.concurrent.TimeUnit;
 
-import static SOS.WebHelpers.WebHelpers.getTextFronWebElement;
 import static SOS.WebHelpers.WebHelpers.goToUrl;
 import static WebHelpers.WebHelpers.*;
 
@@ -70,8 +69,8 @@ public class Editing_Supplier_Status_Emergency {
         clickButton(supplierSearchCreatePage.buttonCreate);
         createSupplierPage.fillUserDataEmergencySupplier("asd@ukr.net","Supplier_Emergency_DEMO_SALES_", "123-123-1234", "@ukr.net", "Emergency supplier was created");
         clickButtonIfEnable(createSupplierPage.buttonOKpopup);
-        System.out.println("Emergency Supplier was created, his number is: " + getTextFronWebElement(supplierDetailPage.fieldSupplierNumber));
-        logger.info("Emergency Supplier was created, his number is: " + getTextFronWebElement(supplierDetailPage.fieldSupplierNumber));
+        System.out.println("Emergency Supplier was created, his number is: " + WebHelpers.getTextFromWebElement(supplierDetailPage.fieldSupplierNumber));
+        logger.info("Emergency Supplier was created, his number is: " + WebHelpers.getTextFromWebElement(supplierDetailPage.fieldSupplierNumber));
         logger.info("------------------------------------------------------");
 
         Assert.assertEquals("Supplier Detail", createSupplierPage.textSupplierDetails.getText());
@@ -81,8 +80,8 @@ public class Editing_Supplier_Status_Emergency {
         clickButtonIfEnable(editSupplierPage.jdeVendor2);
         clickButtonIfEnable(editSupplierPage.buttonSave);
 
-        Assert.assertEquals("Emergency", getTextFronWebElement(supplierDetailPage.fieldApprovalStatus)); // Approval status should be Emergency
-        Assert.assertTrue(getTextFronWebElement(supplierDetailPage.fieldApprovalNotes).contains("/2019 VBIBIKSU: JdeVendor has been changed from '1045000 --- Accu-Systems SALT LAKE CITY UT 84123'" +
+        Assert.assertEquals("Emergency", WebHelpers.getTextFromWebElement(supplierDetailPage.fieldApprovalStatus)); // Approval status should be Emergency
+        Assert.assertTrue(WebHelpers.getTextFromWebElement(supplierDetailPage.fieldApprovalNotes).contains("/2019 VBIBIKSU: JdeVendor has been changed from '1045000 --- Accu-Systems SALT LAKE CITY UT 84123'" +
                 " to '8205171 --- STEINER MANUFACTURING., INC.''."));
     }
 }

@@ -14,12 +14,15 @@ public class ApprovalProcessSelectionPage extends SearchSuppliersPage {
     public WebElement tableSuppliersForApprove;
 
 
-
-
+    // Approval Process Selection table
     @FindBy (xpath = "//th[@id='filterFor_siteName']//select[@class='filter']")
     public WebElement dropdownlistSiteName;
     @FindBy (xpath = "//table[@id='approvalProcessData']/tbody/tr[last()]/td")
     public WebElement getTextFromLastRowInTable;
+    @FindBy (xpath = "//table[@id='approvalProcessData']/tbody/tr[last()]/td[4]")
+    public WebElement fieldApprovalTypeLastString;
+    @FindBy (xpath = "//table[@id='approvalProcessData']/tbody/tr[last()]/td[10]")
+    public WebElement fielsComments;
 
 
     // Text for Asser/assetEqual

@@ -4,9 +4,9 @@ import SOS.Locators.LoginPage.LoginPageLocators;
 import SOS.Locators.MainPage.MainPageLocators;
 import SOS.Locators.PurchasingPage.*;
 import SOS.Tests.LoginPage.LoginPageTests;
+import SOS.WebHelpers.WebHelpers;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
@@ -15,7 +15,6 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.util.concurrent.TimeUnit;
 
-import static SOS.WebHelpers.WebHelpers.getTextFronWebElement;
 import static WebHelpers.WebHelpers.*;
 import static WebHelpers.WebHelpers.clickButtonIfEnable;
 
@@ -75,8 +74,8 @@ public class Test_6_ActivateSupplierWithStatusNewSupplierPendingApplier {
         clickButtonIfEnable(createSupplierPage.buttonSendForApproval);
         sendTextToWebElement(createSupplierPage.fieldComments, "Supplier was created and sent for approval with status New Supplier - Pending Approval");
         clickButtonIfEnable(createSupplierPage.buttonOKpopup);
-        System.out.println("Supplier was created, his Number is: " + getTextFronWebElement(supplierDetailPage.fieldSupplierNumber));
-        logger.info("Supplier was created, his Number is: " + getTextFronWebElement(supplierDetailPage.fieldSupplierNumber));
+        System.out.println("Supplier was created, his Number is: " + WebHelpers.getTextFromWebElement(supplierDetailPage.fieldSupplierNumber));
+        logger.info("Supplier was created, his Number is: " + WebHelpers.getTextFromWebElement(supplierDetailPage.fieldSupplierNumber));
         logger.info("------------------------------------------------------");
 
         Assert.assertEquals("Supplier Detail", createSupplierPage.textSupplierDetails.getText());
@@ -88,7 +87,7 @@ public class Test_6_ActivateSupplierWithStatusNewSupplierPendingApplier {
         Assert.assertEquals("Inactive", supplierDetailPage.fieldStatus.getText()); // Supplier with status New was Deactivated
         Assert.assertEquals("New Supplier - Pending Approval", supplierDetailPage.fieldApprovalStatus.getText()); // Supplier with status New was Deactivated
         Assert.assertTrue(supplierDetailPage.buttonActivate.isEnabled() == true);
-        Assert.assertTrue(getTextFronWebElement(supplierDetailPage.fieldApprovalNotes).contains("deactivated supplier. 'Reject' action recommended."));
+        Assert.assertTrue(WebHelpers.getTextFromWebElement(supplierDetailPage.fieldApprovalNotes).contains("deactivated supplier. 'Reject' action recommended."));
 
         clickButtonIfEnable(supplierDetailPage.buttonActivate);
         Assert.assertEquals("Active", supplierDetailPage.fieldStatus.getText()); // Supplier with status New was Deactivated

@@ -4,6 +4,7 @@ import SOS.Locators.LoginPage.LoginPageLocators;
 import SOS.Locators.MainPage.MainPageLocators;
 import SOS.Locators.PurchasingPage.*;
 import SOS.Tests.LoginPage.LoginPageTests;
+import SOS.WebHelpers.WebHelpers;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.junit.*;
@@ -13,7 +14,6 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.util.concurrent.TimeUnit;
 
-import static SOS.WebHelpers.WebHelpers.getTextFronWebElement;
 import static WebHelpers.WebHelpers.*;
 import static WebHelpers.WebHelpers.clickButtonIfEnable;
 
@@ -70,7 +70,7 @@ public class Editing_Supplier_Status_New {
         clickButton(supplierSearchCreatePage.buttonCreate);
         createSupplierPage.fillUserDataTableAndSave2("asd@ukr.net", "Supplier_status_New_DEMO_SALES_", "","999-999-9999", "@ukr.net");
         clickButtonIfEnable(createSupplierPage.buttonSave);
-        supplierNumber = getTextFronWebElement(supplierDetailPage.fieldSupplierNumber);
+        supplierNumber = WebHelpers.getTextFromWebElement(supplierDetailPage.fieldSupplierNumber);
         System.out.println(supplierNumber);
         logger.info(supplierNumber);
         logger.info("----");
@@ -82,7 +82,7 @@ public class Editing_Supplier_Status_New {
         clickButtonIfEnable(editSupplierPage.buttonSave);
         clickButtonIfEnable(editSupplierPage.buttonOkPopUpWindow);
 
-        Assert.assertEquals("New Supplier - Pending Approval", getTextFronWebElement(supplierDetailPage.fieldApprovalStatus)); // Approval status should be changed from New to New Supplier - Pending Approval
-        Assert.assertEquals("04/19/2019 VBIBIKSU: JdeVendor has been changed from '1045000 --- Accu-Systems SALT LAKE CITY UT 84123' to '8205171 --- STEINER MANUFACTURING., INC.''.", getTextFronWebElement(supplierDetailPage.fieldApprovalNotes));
+        Assert.assertEquals("New Supplier - Pending Approval", WebHelpers.getTextFromWebElement(supplierDetailPage.fieldApprovalStatus)); // Approval status should be changed from New to New Supplier - Pending Approval
+        Assert.assertEquals("04/19/2019 VBIBIKSU: JdeVendor has been changed from '1045000 --- Accu-Systems SALT LAKE CITY UT 84123' to '8205171 --- STEINER MANUFACTURING., INC.''.", WebHelpers.getTextFromWebElement(supplierDetailPage.fieldApprovalNotes));
     }
 }

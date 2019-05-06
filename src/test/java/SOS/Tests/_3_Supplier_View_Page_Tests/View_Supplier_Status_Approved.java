@@ -4,6 +4,7 @@ import SOS.Locators.LoginPage.LoginPageLocators;
 import SOS.Locators.MainPage.MainPageLocators;
 import SOS.Locators.PurchasingPage.*;
 import SOS.Tests._1_Create_Supplier_New_NewPendingApproval_Emergency_Approved_Reject.Create_Supplier_Status_Reject;
+import SOS.WebHelpers.WebHelpers;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.junit.*;
@@ -15,7 +16,6 @@ import java.util.concurrent.TimeUnit;
 
 import static SOS.WebHelpers.WebHelpers.findLastRawInTableAndClick2;
 import static SOS.WebHelpers.WebHelpers.getCurrentTimeUsingCalendar2;
-import static SOS.WebHelpers.WebHelpers.getTextFronWebElement;
 import static SOS.WebHelpers.WebHelpers.sendTextToWebElement;
 import static WebHelpers.WebHelpers.*;
 import static WebHelpers.WebHelpers.clickButtonIfEnable;
@@ -80,8 +80,8 @@ public class View_Supplier_Status_Approved {
         sendTextToWebElement(createSupplierPage.fieldComments, "Send_for_approval_test_creation");
         clickButtonIfEnable(createSupplierPage.buttonOKpopup);
 
-        System.out.println("Supplier was created, his Number is: " + getTextFronWebElement(supplierDetailPage.fieldSupplierNumber));
-        logger.info("Supplier was created, his Number is: " + getTextFronWebElement(supplierDetailPage.fieldSupplierNumber));
+        System.out.println("Supplier was created, his Number is: " + WebHelpers.getTextFromWebElement(supplierDetailPage.fieldSupplierNumber));
+        logger.info("Supplier was created, his Number is: " + WebHelpers.getTextFromWebElement(supplierDetailPage.fieldSupplierNumber));
         logger.info("------------------------------------------------------");
 
         Assert.assertEquals("Supplier Detail", createSupplierPage.textSupplierDetails.getText());
@@ -95,8 +95,8 @@ public class View_Supplier_Status_Approved {
         selectWebElementFromDropDownList(approveSupplierListPage.dropdownlistSiteName, "DEMO SOS SITE"); // AGRO FARMA / DEMO SOS SITE
         findLastRawInTableAndClick2(driver, "//table[@id='approvalProcessData']/tbody/tr[last()]/td[last()]");
 
-        System.out.println("Approved Supplier number is: " + getTextFronWebElement(approveSupplierPage.fieldSupplierNo));
-        logger.info("Approved Supplier number is: " + getTextFronWebElement(approveSupplierPage.fieldSupplierNo));
+        System.out.println("Approved Supplier number is: " + WebHelpers.getTextFromWebElement(approveSupplierPage.fieldSupplierNo));
+        logger.info("Approved Supplier number is: " + WebHelpers.getTextFromWebElement(approveSupplierPage.fieldSupplierNo));
 
         selectWebElementFromDropDownList(approveSupplierPage.dropdownListpaymentTerms, "10"); //value 10 = "NET 25"
         clickElement(approveSupplierPage.checkBoxApproved);
@@ -118,8 +118,8 @@ public class View_Supplier_Status_Approved {
         selectWebElementFromDropDownList(approveSupplierListPage.dropdownlistSiteName, "DEMO SOS SITE");
         findLastRawInTableAndClick2(driver, "//table[@id='approvalProcessData']/tbody/tr[last()]/td[last()]");
 
-        System.out.println("Supplier was approved, his number is: " + getTextFronWebElement(approveSupplierPage.fieldSupplierNo));
-        logger.info("Supplier was approved, his number is: " + getTextFronWebElement(approveSupplierPage.fieldSupplierNo));
+        System.out.println("Supplier was approved, his number is: " + WebHelpers.getTextFromWebElement(approveSupplierPage.fieldSupplierNo));
+        logger.info("Supplier was approved, his number is: " + WebHelpers.getTextFromWebElement(approveSupplierPage.fieldSupplierNo));
 
         //selectWebElementFromDropDownList(createSupplierPage.dropdown_listJDE_Vendor, "6040");
         sendTextToWebElement(createSupplierPage.dropdown_listJDE_Vendor, "1045000");
@@ -144,13 +144,13 @@ public class View_Supplier_Status_Approved {
         clickWebElementIfEnable(matchingSupplierListPage.buttonSupplier);
 
         findLastRawInTableAndClick2(driver, "//table[@id='supplier']/tbody/tr[last()]/td[last()]");
-        System.out.println("Suppliers number is: " + getTextFronWebElement(supplierDetailPage.fieldSupplierNumber));
-        logger.info("Supplier was chosen for Approve, his number is: " + getTextFronWebElement(supplierDetailPage.fieldSupplierNumber));
+        System.out.println("Suppliers number is: " + WebHelpers.getTextFromWebElement(supplierDetailPage.fieldSupplierNumber));
+        logger.info("Supplier was chosen for Approve, his number is: " + WebHelpers.getTextFromWebElement(supplierDetailPage.fieldSupplierNumber));
 
         Assert.assertEquals("Supplier Detail", createSupplierPage.textSupplierDetails.getText());
         Assert.assertEquals("ASD@UKR.NET", supplierDetailPage.fieldRemitTo.getText());
         Assert.assertEquals("Yes", supplierDetailPage.fieldProvidedW9.getText());
-        Assert.assertEquals("Approved", getTextFronWebElement(supplierDetailPage.fieldApprovalStatus)); // Approval status should be Approved
+        Assert.assertEquals("Approved", WebHelpers.getTextFromWebElement(supplierDetailPage.fieldApprovalStatus)); // Approval status should be Approved
         Assert.assertFalse(supplierDetailPage.buttonSendForApproval.isEnabled() == true); // Button Send For Approval should be inActive!!!!!
     }
 }

@@ -11,6 +11,8 @@ public class EditSupplierPage  extends SearchSuppliersPage {
     }
 
     //Main table
+    @FindBy (id = "sendPaymentTermsForApproval")
+    public WebElement buttonSendForApprovalPaymentTerms;
     @FindBy (xpath = "//form[@id='supplierCRUDForm']//table[@class='datagrid gradientElement2']//tr[17]//td[2]")
     //@FindBy (id = "supplier.tbdSupplier")
     public WebElement fieldTBDSupplier;
@@ -26,4 +28,6 @@ public class EditSupplierPage  extends SearchSuppliersPage {
     //Pop-up window
     @FindBy (xpath = "//span[text()='OK']")
     public WebElement buttonOkPopUpWindow;
+    @FindBy (id = "approvalCommentsHolder")
+    public WebElement fieldCommentsInPopUpWindow;
 }

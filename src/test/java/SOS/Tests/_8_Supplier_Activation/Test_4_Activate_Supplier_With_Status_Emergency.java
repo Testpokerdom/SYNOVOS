@@ -4,6 +4,7 @@ import SOS.Locators.LoginPage.LoginPageLocators;
 import SOS.Locators.MainPage.MainPageLocators;
 import SOS.Locators.PurchasingPage.*;
 import SOS.Tests._1_Create_Supplier_New_NewPendingApproval_Emergency_Approved_Reject.Create_Supplier_Status_Emergancy;
+import SOS.WebHelpers.WebHelpers;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.junit.*;
@@ -13,7 +14,6 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.util.concurrent.TimeUnit;
 
-import static SOS.WebHelpers.WebHelpers.getTextFronWebElement;
 import static SOS.WebHelpers.WebHelpers.goToUrl;
 import static WebHelpers.WebHelpers.*;
 import static WebHelpers.WebHelpers.clickButtonIfEnable;
@@ -56,13 +56,13 @@ public class Test_4_Activate_Supplier_With_Status_Emergency {
         clickButtonIfEnable(mainPageLocators.tablePurchasing);
 
     }
-/*
+
     @After
     public void afterEach() {
 
         driver.quit();
     }
-*/
+
     @Test
     public void test_1_deleteSupplierEmergency(){
         clickButtonIfEnable(mainPageLocators.linkSupplier);
@@ -70,11 +70,11 @@ public class Test_4_Activate_Supplier_With_Status_Emergency {
         clickButton(supplierSearchCreatePage.buttonCreate);
         createSupplierPage.fillUserDataEmergencySupplier("asd@ukr.net","Supplier_Emergency_DEMO_SALES_", "123-123-1234", "@ukr.net", "Emergency supplier was created");
         clickButtonIfEnable(createSupplierPage.buttonOKpopup);
-        System.out.println("Emergency Supplier was created, his number is: " + getTextFronWebElement(supplierDetailPage.fieldSupplierNumber));
-        logger.info("Emergency Supplier was created, his number is: " + getTextFronWebElement(supplierDetailPage.fieldSupplierNumber));
+        System.out.println("Emergency Supplier was created, his number is: " + WebHelpers.getTextFromWebElement(supplierDetailPage.fieldSupplierNumber));
+        logger.info("Emergency Supplier was created, his number is: " + WebHelpers.getTextFromWebElement(supplierDetailPage.fieldSupplierNumber));
         logger.info("------------------------------------------------------");
 
-        Assert.assertEquals("Emergency", getTextFronWebElement(supplierDetailPage.fieldApprovalStatus)); // Approval status should be Emergency
+        Assert.assertEquals("Emergency", WebHelpers.getTextFromWebElement(supplierDetailPage.fieldApprovalStatus)); // Approval status should be Emergency
         Assert.assertTrue(supplierDetailPage.buttonSendForApproval.isEnabled() == false);  // Button Send For Approval should be inActive!!!!!
 
         clickButtonIfEnable(supplierDetailPage.buttonDelete);
@@ -84,11 +84,11 @@ public class Test_4_Activate_Supplier_With_Status_Emergency {
         Assert.assertEquals("Inactive", supplierDetailPage.fieldStatus.getText()); // Supplier with status New was Deactivated
         Assert.assertEquals("Emergency", supplierDetailPage.fieldApprovalStatus.getText()); // Supplier with status New was Deactivated
         Assert.assertTrue(supplierDetailPage.buttonActivate.isEnabled() == true);
-        Assert.assertTrue(getTextFronWebElement(supplierDetailPage.fieldApprovalNotes).contains("deactivated supplier. 'Reject' action recommended."));
+        Assert.assertTrue(WebHelpers.getTextFromWebElement(supplierDetailPage.fieldApprovalNotes).contains("deactivated supplier. 'Reject' action recommended."));
 
         clickButtonIfEnable(supplierDetailPage.buttonActivate);
         Assert.assertEquals("Active", supplierDetailPage.fieldStatus.getText()); // Supplier with status New was Deactivated
         Assert.assertEquals("Emergency", supplierDetailPage.fieldApprovalStatus.getText()); // Supplier with status New was Deactivated
-        Assert.assertTrue(supplierDetailPage.buttonActivate.isEnabled() == false);
+        Assert.assertTrue(supplierDetailPage.buttonDeactivate.isEnabled() == true);
     }
 }

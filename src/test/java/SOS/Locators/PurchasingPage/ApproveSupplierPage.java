@@ -4,6 +4,11 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
+import static SOS.WebHelpers.WebHelpers.findLastRawInTableAndClick2;
+import static SOS.WebHelpers.WebHelpers.sendTextToWebElement;
+import static WebHelpers.WebHelpers.*;
+import static WebHelpers.WebHelpers.clickButton;
+
 public class ApproveSupplierPage extends SearchSuppliersPage {
 
     public ApproveSupplierPage (WebDriver driver){
@@ -73,5 +78,30 @@ public class ApproveSupplierPage extends SearchSuppliersPage {
 
     @FindBy ()
     public WebElement filedApprovalStatus;
+
+    public void choosePaymentTermsForSupplier(String paymentTermsValue, String textCommentField){
+        selectWebElementFromDropDownList(dropdownListpaymentTerms, paymentTermsValue); //value 10 = "NET 25"
+        clickElement(checkBoxApproved);
+        clickButton(buttonApprove);
+        sendTextToWebElement(fieldCommentsAfterButtonCREATE, textCommentField); // Approved_Supplier_First_Stage
+        clickButton(buttonOkAfterButtonCREATE_first_stage);
+    }
+
+    public void approveRequestedPaymentTerm(WebDriver driver){
+        findLastRawInTableAndClick2(driver, "//table[@id='approvalProcessData']/tbody/tr[last()]/td[last()]");
+        clickButtonIfEnable(buttonApprove);
+        sendTextToWebElement(fieldCommentsAfterButtonCREATE, "Payment term was approved");
+        clickButtonIfEnable(buttonOkAfterButtonCREATE_first_stage);
+    }
+
+    public void approveRequestedPaymentTermForSupplierWithStatusNEW(WebDriver driver){
+        findLastRawInTableAndClick2(driver, "//table[@id='approvalProcessData']/tbody/tr[last()]/td[last()]");
+        selectWebElementFromDropDownList(dropdownListpaymentTerms, "10"); //value 10 = "NET 25"
+        clickElement(checkBoxApproved);
+        clickButtonIfEnable(buttonApprove);
+        sendTextToWebElement(fieldCommentsAfterButtonCREATE, "Payment term was approved");
+        clickButtonIfEnable(buttonOkAfterButtonCREATE_first_stage);
+    }
+
 
 }

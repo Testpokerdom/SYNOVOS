@@ -1,0 +1,13 @@
+package SOS.TestSuites;
+
+
+import SOS.Tests._5_Emergency_Supplier.Test_1_Create_Emergency_Supplier;
+import SOS.Tests._5_Emergency_Supplier.Test_2_Sent_Rejected_Supplier_For_Approval_In_Emergency_Role;
+import SOS.Tests._5_Emergency_Supplier.Test_3_Sent_Rejected_Supplier_ACTIVATE_In_Emergency_Role;
+import org.junit.runner.RunWith;
+import org.junit.runners.Suite;
+
+@RunWith(Suite.class)
+@Suite.SuiteClasses({Test_1_Create_Emergency_Supplier.class, Test_2_Sent_Rejected_Supplier_For_Approval_In_Emergency_Role.class, Test_3_Sent_Rejected_Supplier_ACTIVATE_In_Emergency_Role.class})
+public class _5_Test_Suite_Emergency_Supplier {
+}

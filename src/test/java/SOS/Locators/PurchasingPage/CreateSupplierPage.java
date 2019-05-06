@@ -74,7 +74,7 @@ public class CreateSupplierPage extends SearchSuppliersPage {
 
     public void fillUserDataTableAndSendForApproval(String remitTo, String fieldSupplierName, String fieldContactName, String fieldContactPhone, String fieldContactEmail, String filedComment){
         fieldRemitTo.sendKeys(remitTo);
-        logger.info("Field Remit To was field by value" + getTextFronWebElement(fieldRemitTo));
+        logger.info("Field Remit To was field by value" + getTextFromWebElement(fieldRemitTo));
         checkBoxProvidedW9.click();
         this.fieldSupplierName.sendKeys(fieldSupplierName + getCurrentTimeUsingCalendar2() + "_"  + randomName2());
         this.fieldContactName.sendKeys(randomName2());
@@ -86,7 +86,7 @@ public class CreateSupplierPage extends SearchSuppliersPage {
     }
     public void fillUserDataTableAndSave2(String remitTo, String fieldSupplierName, String fieldContactName, String fieldContactPhone, String fieldContactEmail){
         fieldRemitTo.sendKeys(remitTo);
-        logger.info("Field Remit To was field by value" + getTextFronWebElement(fieldRemitTo));
+        logger.info("Field Remit To was field by value" + getTextFromWebElement(fieldRemitTo));
         checkBoxProvidedW9.click();
         this.fieldSupplierName.sendKeys(fieldSupplierName + getCurrentTimeUsingCalendar2() + "_"  + randomName2());
         this.fieldContactName.sendKeys(randomName2());
@@ -101,7 +101,7 @@ public class CreateSupplierPage extends SearchSuppliersPage {
 
     public void fillUserDataTableAndSave3_TBD_Supplier(String remitTo, String fieldSupplierName, String fieldContactName, String fieldContactPhone, String fieldContactEmail){
         fieldRemitTo.sendKeys(remitTo);
-        logger.info("Field Remit To was field by value" + getTextFronWebElement(fieldRemitTo));
+        logger.info("Field Remit To was field by value" + getTextFromWebElement(fieldRemitTo));
         checkBoxProvidedW9.click();
         this.fieldSupplierName.sendKeys(fieldSupplierName + getCurrentTimeUsingCalendar2() + "_"  + randomName2());
         checkBoxTBD.click();
@@ -128,7 +128,7 @@ public class CreateSupplierPage extends SearchSuppliersPage {
 
     public void fillUserDataEmergencySupplier(String remitTo, String fieldSupplierName, String fieldContactPhone, String fieldContactEmail, String filedComment){
         fieldRemitTo.sendKeys(remitTo);
-        logger.info("Field Remit To was field by value" + getTextFronWebElement(fieldRemitTo));
+        logger.info("Field Remit To was field by value" + getTextFromWebElement(fieldRemitTo));
         checkBoxProvidedW9.click();
         this.fieldSupplierName.sendKeys(fieldSupplierName + getCurrentTimeUsingCalendar2() + "_"  + randomName2());
         this.fieldContactName.sendKeys(randomName2());

@@ -1,4 +1,4 @@
-package SOS.TestSuites;
+package SOS.TestSuites.BasicSuites;
 
 import SOS.Tests._1_Create_Supplier_New_NewPendingApproval_Emergency_Approved_Reject.*;
 import org.junit.runner.RunWith;

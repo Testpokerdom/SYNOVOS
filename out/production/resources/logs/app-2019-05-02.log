@@ -1,0 +1,33 @@
+17:43:25.147 INFO  WebHelpers -Send text to WebElement Login: "VBIBIKSU"
+17:43:25.344 INFO  WebHelpers -Send text to WebElement Password: "deadman11"
+17:43:25.940 INFO  WebHelpers -Click Button ""
+17:43:26.154 INFO  WebHelpers -Click WebElement "Purchasing "
+17:43:26.594 INFO  WebHelpers -Click Button  with value - "null" - Supplier - 
+17:43:27.862 INFO  WebHelpers -Click Button "Create"
+17:43:28.234 INFO  CreateSupplierPage -Field Remit To was field by value
+17:43:31.327 INFO  WebHelpers -Click Button "Send For Approval"
+17:43:33.168 INFO  WebHelpers -Click Button  with value - "null" - OK - 
+17:43:33.310 INFO  LoginPageTests -Supplier was created, his Number is: S0409
+17:43:33.310 INFO  LoginPageTests -------------------------------------------------------
+17:43:39.702 INFO  WebHelpers -Send text to WebElement Login: "VBIBIKSU"
+17:43:39.873 INFO  WebHelpers -Send text to WebElement Password: "deadman11"
+17:43:40.476 INFO  WebHelpers -Click Button ""
+17:43:40.643 INFO  WebHelpers -Click WebElement "Purchasing "
+17:43:42.188 INFO  WebHelpers -Click Button "null"
+17:43:44.291 INFO  LoginPageTests -Approved Supplier number is: S0409
+17:43:44.624 INFO  WebHelpers -Click WebElement " "
+17:43:44.861 INFO  WebHelpers -Click Button "Approve"
+17:43:46.292 INFO  WebHelpers -Click Button "null"
+17:43:46.293 INFO  LoginPageTests -Supplier successfully passed first approval stage..
+17:43:46.293 INFO  LoginPageTests -------------------------------------------------------
+17:43:52.192 INFO  WebHelpers -Send text to WebElement Login: "VBIBIKSU"
+17:43:52.389 INFO  WebHelpers -Send text to WebElement Password: "deadman11"
+17:43:52.746 INFO  WebHelpers -Click Button ""
+17:43:52.882 INFO  WebHelpers -Click WebElement "Purchasing "
+17:43:53.778 INFO  WebHelpers -Click Button "null"
+17:43:55.810 INFO  LoginPageTests -Supplier was approved, his number is: S0409
+17:43:56.692 INFO  WebHelpers -Click WebElement " "
+17:43:56.850 INFO  WebHelpers -Click Button "Approve"
+17:43:58.910 INFO  WebHelpers -Click Button "null"
+17:43:58.910 INFO  LoginPageTests -Supplier successfully passed second approval stage.
+17:43:58.910 INFO  LoginPageTests -------------------------------------------------------

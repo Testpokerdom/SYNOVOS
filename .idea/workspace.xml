@@ -2,139 +2,112 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="716afc67-f2cc-4709-a4b2-4e7a7f8a3a53" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/out/production/resources/logs/app-2019-04-25.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/test/classes/SOS/Locators/MainPage/MainClass.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/test/classes/SOS/TestSuites/Test_Suite_Approved_Rejected_New_supplier.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/test/classes/SOS/TestSuites/Test_Suite_Create_Approve_Reject_Save_Supplier.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/test/classes/SOS/TestSuites/Test_Suite_Create_Supplier_New_NewPendingApproval_Emergency_Rejected_Approved.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/test/classes/SOS/TestSuites/Test_Suite_Create_Suppliers.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/test/classes/SOS/TestSuites/Test_Suite_Edit_Suppliers.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/test/classes/SOS/TestSuites/Test_Suites_View_Suppliers.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/test/classes/SOS/Tests/_1_Create_Supplier_New_NewPendingApproval_Emergency_Approved_Reject/Create_Supplier_Status_New.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/test/classes/SOS/Tests/_2_Supplier_Editing_Page_Tests/Editing_Supplier_Status_Approved.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/test/classes/SOS/Tests/_2_Supplier_Editing_Page_Tests/Editing_Supplier_Status_Emergency.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/test/classes/SOS/Tests/_2_Supplier_Editing_Page_Tests/Editing_Supplier_Status_Rejected.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/test/classes/SOS/Tests/_3_Supplier_View_Page_Tests/View_Supplier_Status_Approved.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/test/classes/SOS/Tests/_3_Supplier_View_Page_Tests/View_Supplier_Status_New_Pending_Approval.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/test/classes/SOS/Tests/_4_Supplier_Activity_Status/Approved_Supplier_Status_Should_Be_Active.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/test/classes/SOS/Tests/_5_Emergency_Supplier/Test_1_Create_Emergency_Supplier.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/test/classes/SOS/Tests/_7_Supplier_Deletion_Deactivation/Test_1_Delete_Supplier_Status_New_No_PO.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/test/classes/SOS/Tests/_7_Supplier_Deletion_Deactivation/Test_2_Deactivate_Supplier_Status_New_No_PO.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/test/classes/SOS/Tests/_7_Supplier_Deletion_Deactivation/Test_5_Delete_Supplier_Status_Approved_No_PO.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/test/classes/SOS/Tests/_7_Supplier_Deletion_Deactivation/Test_6_Deactivate_Supplier_Status_Approved_No_PO.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/test/classes/SOS/Tests/_7_Supplier_Deletion_Deactivation/Test_7_Delete_Supplier_Status_Emergency_No_PO.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/test/classes/SOS/Tests/_7_Supplier_Deletion_Deactivation/Test_8_Deactivate_Supplier_Status_Emergency_No_PO.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/test/classes/SOS/Tests/_8_Supplier_Activation/Test_1_Activate_Supplier_With_Status_New.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/test/classes/SOS/Tests/_8_Supplier_Activation/Test_2_Activate_Supplier_With_Status_Approved.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/test/classes/SOS/Tests/_8_Supplier_Activation/Test_3_Activate_Supplier_With_Status_Rejected.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/test/classes/SOS/Tests/_8_Supplier_Activation/Test_4_Activate_Supplier_With_Status_Emergency.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/test/classes/SOS/Tests/_8_Supplier_Activation/Test_5_ActivateSupplierWithStatusRejectedAsEmergency.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/test/classes/SOS/Tests/_8_Supplier_Activation/Test_6_ActivateSupplierWithStatusNewSupplierPendingApplier.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/logs/app-2019-04-25.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/SOS/TestSuites/Test_Suite_Approved_Rejected_New_supplier.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/SOS/TestSuites/Test_Suite_Create_Approve_Reject_Save_Supplier.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/SOS/Tests/_7_Supplier_Deletion_Deactivation/Test_7_Delete_Supplier_Status_Emergency_No_PO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/SOS/Tests/_7_Supplier_Deletion_Deactivation/Test_8_Deactivate_Supplier_Status_Emergency_No_PO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/SOS/Tests/_8_Supplier_Activation/Test_1_Activate_Supplier_With_Status_New.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/SOS/Tests/_8_Supplier_Activation/Test_2_Activate_Supplier_With_Status_Approved.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/SOS/Tests/_8_Supplier_Activation/Test_3_Activate_Supplier_With_Status_Rejected.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/SOS/Tests/_8_Supplier_Activation/Test_4_Activate_Supplier_With_Status_Emergency.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/SOS/Tests/_8_Supplier_Activation/Test_5_ActivateSupplierWithStatusRejectedAsEmergency.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/SOS/Tests/_8_Supplier_Activation/Test_6_ActivateSupplierWithStatusNewSupplierPendingApplier.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/SOS/TestSuites/_12_Test_Suite_RequestedPaymentTermsCreationAndSubmission.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/SOS/TestSuites/_4_TestSuiteSupplierActivityStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/SOS/TestSuites/_5_Test_Suite_Emergency_Supplier.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/SOS/TestSuites/_6_Test_Suite_TBD_Supplier.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/SOS/TestSuites/_7_Test_Suite_Supplier_Deletion_Deactivation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/SOS/TestSuites/_8_Test_Suite_Supplier_Activation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/SOS/Tests/_12_PaymentTermsApprovalinitiation/Test_1_ApprovePaymentTermForSupplierStatusNew.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/SOS/Tests/_12_PaymentTermsApprovalinitiation/Test_2_ApprovePaymentTermForSupplierStatusApproved.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/SOS/Tests/_12_PaymentTermsApprovalinitiation/Test_3_ApprovepaymentTermForSupplierStatusRejected.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/SOS/Tests/_12_PaymentTermsApprovalinitiation/Test_4_ApprovePaymentTermForSupplierStatusEmergency.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/SOS/Tests/_12_PaymentTermsApprovalinitiation/Test_5_ApprovePaymentTermsForSupplierStatusNewSupplierPendingApproval.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/resources/logs/app.log" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/resources/logs/app.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/SYNOVOSJUnitTests/Locators/LoginPage/LoginPageLocators.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/SOS/Locators/LoginPage/LoginPageLocators.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/SYNOVOSJUnitTests/Locators/MainPage/MainClass.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/SYNOVOSJUnitTests/Locators/MainPage/MainPageLocators.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/SOS/Locators/MainPage/MainPageLocators.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/SYNOVOSJUnitTests/Locators/PurchasingPage/ApprovalProcessSelectionPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/SOS/Locators/PurchasingPage/ApprovalProcessSelectionPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/SYNOVOSJUnitTests/Locators/PurchasingPage/ApproveSupplierPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/SOS/Locators/PurchasingPage/ApproveSupplierPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/SYNOVOSJUnitTests/Locators/PurchasingPage/CreateSupplierPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/SOS/Locators/PurchasingPage/CreateSupplierPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/SYNOVOSJUnitTests/Locators/PurchasingPage/EditSupplierPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/SOS/Locators/PurchasingPage/EditSupplierPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/SYNOVOSJUnitTests/Locators/PurchasingPage/MatchingSupplierListPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/SOS/Locators/PurchasingPage/MatchingSupplierListPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/SYNOVOSJUnitTests/Locators/PurchasingPage/SearchSuppliersPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/SOS/Locators/PurchasingPage/SearchSuppliersPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/SYNOVOSJUnitTests/Locators/PurchasingPage/SupplierDetailPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/SOS/Locators/PurchasingPage/SupplierDetailPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/SYNOVOSJUnitTests/TestSuites/Test_Suite_Approved_Rejected_New_supplier.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/SYNOVOSJUnitTests/TestSuites/Test_Suite_Create_Approve_Reject_Save_Supplier.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/SYNOVOSJUnitTests/TestSuites/Test_Suite_Create_Supplier_New_NewPendingApproval_Emergency_Rejected_Approved.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/SYNOVOSJUnitTests/TestSuites/Test_Suite_Create_Suppliers.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/SYNOVOSJUnitTests/TestSuites/Test_Suite_Edit_Suppliers.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/SYNOVOSJUnitTests/TestSuites/Test_Suites_View_Suppliers.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/SYNOVOSJUnitTests/Tests/LoginPage/LoginPageTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/SOS/Tests/LoginPage/LoginPageTests.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/SYNOVOSJUnitTests/Tests/_1_Create_Supplier_New_NewPendingApproval_Emergency_Approved_Reject/Create_Supplier_Status_Approve.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/SOS/Tests/_1_Create_Supplier_New_NewPendingApproval_Emergency_Approved_Reject/Create_Supplier_Status_Approve.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/SYNOVOSJUnitTests/Tests/_1_Create_Supplier_New_NewPendingApproval_Emergency_Approved_Reject/Create_Supplier_Status_Emergancy.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/SOS/Tests/_1_Create_Supplier_New_NewPendingApproval_Emergency_Approved_Reject/Create_Supplier_Status_Emergancy.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/SYNOVOSJUnitTests/Tests/_1_Create_Supplier_New_NewPendingApproval_Emergency_Approved_Reject/Create_Supplier_Status_New.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/SYNOVOSJUnitTests/Tests/_1_Create_Supplier_New_NewPendingApproval_Emergency_Approved_Reject/Create_Supplier_Status_New_Pending_Approval.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/SOS/Tests/_1_Create_Supplier_New_NewPendingApproval_Emergency_Approved_Reject/Create_Supplier_Status_New_Pending_Approval.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/SYNOVOSJUnitTests/Tests/_1_Create_Supplier_New_NewPendingApproval_Emergency_Approved_Reject/Create_Supplier_Status_Reject.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/SOS/Tests/_1_Create_Supplier_New_NewPendingApproval_Emergency_Approved_Reject/Create_Supplier_Status_Reject.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/SYNOVOSJUnitTests/Tests/_2_Supplier_Editing_Page_Tests/Editing_Supplier_Status_Approved.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/SYNOVOSJUnitTests/Tests/_2_Supplier_Editing_Page_Tests/Editing_Supplier_Status_Emergency.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/SYNOVOSJUnitTests/Tests/_2_Supplier_Editing_Page_Tests/Editing_Supplier_Status_New.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/SOS/Tests/_2_Supplier_Editing_Page_Tests/Editing_Supplier_Status_New.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/SYNOVOSJUnitTests/Tests/_2_Supplier_Editing_Page_Tests/Editing_Supplier_Status_New_Pending_Approval.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/SOS/Tests/_2_Supplier_Editing_Page_Tests/Editing_Supplier_Status_New_Pending_Approval.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/SYNOVOSJUnitTests/Tests/_2_Supplier_Editing_Page_Tests/Editing_Supplier_Status_Rejected.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/SYNOVOSJUnitTests/Tests/_3_Supplier_View_Page_Tests/View_Supplier_Status_Approved.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/SYNOVOSJUnitTests/Tests/_3_Supplier_View_Page_Tests/View_Supplier_Status_Emergency.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/SOS/Tests/_3_Supplier_View_Page_Tests/View_Supplier_Status_Emergency.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/SYNOVOSJUnitTests/Tests/_3_Supplier_View_Page_Tests/View_Supplier_Status_New.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/SOS/Tests/_3_Supplier_View_Page_Tests/View_Supplier_Status_New.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/SYNOVOSJUnitTests/Tests/_3_Supplier_View_Page_Tests/View_Supplier_Status_New_Pending_Approval.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/SYNOVOSJUnitTests/Tests/_3_Supplier_View_Page_Tests/View_Supplier_Status_Rejected.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/SOS/Tests/_3_Supplier_View_Page_Tests/View_Supplier_Status_Rejected.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/SYNOVOSJUnitTests/Tests/_4_Supplier_Activity_Status/Approved_Supplier_Status_Should_Be_Active.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/SYNOVOSJUnitTests/Tests/_4_Supplier_Activity_Status/Rejected_Supplier_Status_Should_Be_InActive.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/SOS/Tests/_4_Supplier_Activity_Status/Rejected_Supplier_Status_Should_Be_InActive.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/SYNOVOSJUnitTests/Tests/_5_Emergency_Supplier/test_1_Create_Emergency_Supplier.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/SYNOVOSJUnitTests/Tests/_5_Emergency_Supplier/test_2_Sent_Rejected_Supplier_For_Approval_In_Emergency_Role.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/SOS/Tests/_5_Emergency_Supplier/Test_2_Sent_Rejected_Supplier_For_Approval_In_Emergency_Role.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/SYNOVOSJUnitTests/Tests/_5_Emergency_Supplier/test_3_Sent_Rejected_Supplier_ACTIVATE_In_Emergency_Role.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/SOS/Tests/_5_Emergency_Supplier/Test_3_Sent_Rejected_Supplier_ACTIVATE_In_Emergency_Role.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/SYNOVOSJUnitTests/Tests/_6_TBD_Supplier/Create_TBD_Supplier.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/SOS/Tests/_6_TBD_Supplier/Create_TBD_Supplier.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/SYNOVOSJUnitTests/Tests/_7_Supplier_Deletion_Deactivation/test_1_Delete_Supplier_Status_New_No_PO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/SYNOVOSJUnitTests/Tests/_7_Supplier_Deletion_Deactivation/test_2_Deactivate_Supplier_Status_New_No_PO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/SYNOVOSJUnitTests/Tests/_7_Supplier_Deletion_Deactivation/test_3_Delete_Supplier_Status_New_Pending_Approval_No_PO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/SOS/Tests/_7_Supplier_Deletion_Deactivation/Test_3_Delete_Supplier_Status_New_Pending_Approval_No_PO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/SYNOVOSJUnitTests/Tests/_7_Supplier_Deletion_Deactivation/test_4_Deactivate_Supplier_Status_New_Pending_Approval_No_PO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/SOS/Tests/_7_Supplier_Deletion_Deactivation/Test_4_Deactivate_Supplier_Status_New_Pending_Approval_No_PO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/SYNOVOSJUnitTests/Tests/_7_Supplier_Deletion_Deactivation/test_5_Delete_Supplier_Status_Approved_No_PO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/SYNOVOSJUnitTests/Tests/_7_Supplier_Deletion_Deactivation/test_6_Deactivate_Supplier_Status_Approved_No_PO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/SYNOVOSJUnitTests/WebHelpers/WebHelpers.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/SOS/WebHelpers/WebHelpers.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/SOS/Locators/PurchasingPage/ApprovalProcessSelectionPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/SOS/Locators/PurchasingPage/ApprovalProcessSelectionPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/SOS/Locators/PurchasingPage/ApproveSupplierPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/SOS/Locators/PurchasingPage/ApproveSupplierPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/SOS/Locators/PurchasingPage/CreateSupplierPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/SOS/Locators/PurchasingPage/CreateSupplierPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/SOS/Locators/PurchasingPage/EditSupplierPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/SOS/Locators/PurchasingPage/EditSupplierPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/SOS/TestSuites/Test_Suite_Approved_Rejected_New_supplier.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/SOS/TestSuites/Test_Suite_Create_Approve_Reject_Save_Supplier.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/SOS/TestSuites/Test_Suite_Create_Supplier_New_NewPendingApproval_Emergency_Rejected_Approved.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/SOS/TestSuites/Test_Suite_Create_Suppliers.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/SOS/TestSuites/Test_Suite_Edit_Suppliers.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/SOS/TestSuites/Test_Suites_View_Suppliers.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/SOS/Tests/_1_Create_Supplier_New_NewPendingApproval_Emergency_Approved_Reject/Create_Supplier_Status_Approve.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/SOS/Tests/_1_Create_Supplier_New_NewPendingApproval_Emergency_Approved_Reject/Create_Supplier_Status_Approve.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/SOS/Tests/_1_Create_Supplier_New_NewPendingApproval_Emergency_Approved_Reject/Create_Supplier_Status_Emergancy.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/SOS/Tests/_1_Create_Supplier_New_NewPendingApproval_Emergency_Approved_Reject/Create_Supplier_Status_Emergancy.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/SOS/Tests/_1_Create_Supplier_New_NewPendingApproval_Emergency_Approved_Reject/Create_Supplier_Status_New.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/SOS/Tests/_1_Create_Supplier_New_NewPendingApproval_Emergency_Approved_Reject/Create_Supplier_Status_New.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/SOS/Tests/_1_Create_Supplier_New_NewPendingApproval_Emergency_Approved_Reject/Create_Supplier_Status_New_Pending_Approval.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/SOS/Tests/_1_Create_Supplier_New_NewPendingApproval_Emergency_Approved_Reject/Create_Supplier_Status_New_Pending_Approval.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/SOS/Tests/_1_Create_Supplier_New_NewPendingApproval_Emergency_Approved_Reject/Create_Supplier_Status_Reject.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/SOS/Tests/_1_Create_Supplier_New_NewPendingApproval_Emergency_Approved_Reject/Create_Supplier_Status_Reject.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/SOS/Tests/_2_Supplier_Editing_Page_Tests/Editing_Supplier_Status_Approved.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/SOS/Tests/_2_Supplier_Editing_Page_Tests/Editing_Supplier_Status_Approved.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/SOS/Tests/_2_Supplier_Editing_Page_Tests/Editing_Supplier_Status_Emergency.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/SOS/Tests/_2_Supplier_Editing_Page_Tests/Editing_Supplier_Status_Emergency.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/SOS/Tests/_2_Supplier_Editing_Page_Tests/Editing_Supplier_Status_New.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/SOS/Tests/_2_Supplier_Editing_Page_Tests/Editing_Supplier_Status_New.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/SOS/Tests/_2_Supplier_Editing_Page_Tests/Editing_Supplier_Status_New_Pending_Approval.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/SOS/Tests/_2_Supplier_Editing_Page_Tests/Editing_Supplier_Status_New_Pending_Approval.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/SOS/Tests/_2_Supplier_Editing_Page_Tests/Editing_Supplier_Status_Rejected.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/SOS/Tests/_2_Supplier_Editing_Page_Tests/Editing_Supplier_Status_Rejected.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/SOS/Tests/_3_Supplier_View_Page_Tests/View_Supplier_Status_Approved.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/SOS/Tests/_3_Supplier_View_Page_Tests/View_Supplier_Status_Approved.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/SOS/Tests/_3_Supplier_View_Page_Tests/View_Supplier_Status_Emergency.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/SOS/Tests/_3_Supplier_View_Page_Tests/View_Supplier_Status_Emergency.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/SOS/Tests/_3_Supplier_View_Page_Tests/View_Supplier_Status_New.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/SOS/Tests/_3_Supplier_View_Page_Tests/View_Supplier_Status_New.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/SOS/Tests/_3_Supplier_View_Page_Tests/View_Supplier_Status_New_Pending_Approval.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/SOS/Tests/_3_Supplier_View_Page_Tests/View_Supplier_Status_New_Pending_Approval.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/SOS/Tests/_3_Supplier_View_Page_Tests/View_Supplier_Status_Rejected.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/SOS/Tests/_3_Supplier_View_Page_Tests/View_Supplier_Status_Rejected.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/SOS/Tests/_4_Supplier_Activity_Status/Approved_Supplier_Status_Should_Be_Active.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/SOS/Tests/_4_Supplier_Activity_Status/Rejected_Supplier_Status_Should_Be_InActive.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/SOS/Tests/_5_Emergency_Supplier/Test_1_Create_Emergency_Supplier.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/SOS/Tests/_5_Emergency_Supplier/Test_1_Create_Emergency_Supplier.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/SOS/Tests/_5_Emergency_Supplier/Test_2_Sent_Rejected_Supplier_For_Approval_In_Emergency_Role.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/SOS/Tests/_5_Emergency_Supplier/Test_2_Sent_Rejected_Supplier_For_Approval_In_Emergency_Role.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/SOS/Tests/_5_Emergency_Supplier/Test_3_Sent_Rejected_Supplier_ACTIVATE_In_Emergency_Role.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/SOS/Tests/_5_Emergency_Supplier/Test_3_Sent_Rejected_Supplier_ACTIVATE_In_Emergency_Role.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/SOS/Tests/_6_TBD_Supplier/Create_TBD_Supplier.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/SOS/Tests/_6_TBD_Supplier/Create_TBD_Supplier.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/SOS/Tests/_7_Supplier_Deletion_Deactivation/Test_1_Delete_Supplier_Status_New_No_PO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/SOS/Tests/_7_Supplier_Deletion_Deactivation/Test_1_Delete_Supplier_Status_New_No_PO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/SOS/Tests/_7_Supplier_Deletion_Deactivation/Test_2_Deactivate_Supplier_Status_New_No_PO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/SOS/Tests/_7_Supplier_Deletion_Deactivation/Test_2_Deactivate_Supplier_Status_New_No_PO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/SOS/Tests/_7_Supplier_Deletion_Deactivation/Test_3_Delete_Supplier_Status_New_Pending_Approval_No_PO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/SOS/Tests/_7_Supplier_Deletion_Deactivation/Test_3_Delete_Supplier_Status_New_Pending_Approval_No_PO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/SOS/Tests/_7_Supplier_Deletion_Deactivation/Test_4_Deactivate_Supplier_Status_New_Pending_Approval_No_PO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/SOS/Tests/_7_Supplier_Deletion_Deactivation/Test_4_Deactivate_Supplier_Status_New_Pending_Approval_No_PO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/SOS/Tests/_7_Supplier_Deletion_Deactivation/Test_5_Delete_Supplier_Status_Approved_No_PO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/SOS/Tests/_7_Supplier_Deletion_Deactivation/Test_5_Delete_Supplier_Status_Approved_No_PO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/SOS/Tests/_7_Supplier_Deletion_Deactivation/Test_6_Deactivate_Supplier_Status_Approved_No_PO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/SOS/Tests/_7_Supplier_Deletion_Deactivation/Test_6_Deactivate_Supplier_Status_Approved_No_PO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/SOS/Tests/_7_Supplier_Deletion_Deactivation/Test_7_Delete_Supplier_Status_Emergency_No_PO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/SOS/Tests/_7_Supplier_Deletion_Deactivation/Test_7_Delete_Supplier_Status_Emergency_No_PO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/SOS/Tests/_7_Supplier_Deletion_Deactivation/Test_8_Deactivate_Supplier_Status_Emergency_No_PO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/SOS/Tests/_7_Supplier_Deletion_Deactivation/Test_8_Deactivate_Supplier_Status_Emergency_No_PO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/SOS/Tests/_8_Supplier_Activation/Test_1_Activate_Supplier_With_Status_New.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/SOS/Tests/_8_Supplier_Activation/Test_1_Activate_Supplier_With_Status_New.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/SOS/Tests/_8_Supplier_Activation/Test_2_Activate_Supplier_With_Status_Approved.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/SOS/Tests/_8_Supplier_Activation/Test_2_Activate_Supplier_With_Status_Approved.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/SOS/Tests/_8_Supplier_Activation/Test_3_Activate_Supplier_With_Status_Rejected.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/SOS/Tests/_8_Supplier_Activation/Test_3_Activate_Supplier_With_Status_Rejected.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/SOS/Tests/_8_Supplier_Activation/Test_4_Activate_Supplier_With_Status_Emergency.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/SOS/Tests/_8_Supplier_Activation/Test_4_Activate_Supplier_With_Status_Emergency.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/SOS/Tests/_8_Supplier_Activation/Test_5_ActivateSupplierWithStatusRejectedAsEmergency.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/SOS/Tests/_8_Supplier_Activation/Test_5_ActivateSupplierWithStatusRejectedAsEmergency.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/SOS/Tests/_8_Supplier_Activation/Test_6_ActivateSupplierWithStatusNewSupplierPendingApplier.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/SOS/Tests/_8_Supplier_Activation/Test_6_ActivateSupplierWithStatusNewSupplierPendingApplier.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/SOS/WebHelpers/WebHelpers.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/SOS/WebHelpers/WebHelpers.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/logs/app.log" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/logs/app.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/SYNOVOSJUnitTests/Locators/LoginPage/LoginPageLocators.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SOS/Locators/LoginPage/LoginPageLocators.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/SYNOVOSJUnitTests/Locators/MainPage/MainClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SOS/Locators/MainPage/MainClass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/SYNOVOSJUnitTests/Locators/MainPage/MainPageLocators.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SOS/Locators/MainPage/MainPageLocators.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/SYNOVOSJUnitTests/Locators/PurchasingPage/ApprovalProcessSelectionPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SOS/Locators/PurchasingPage/ApprovalProcessSelectionPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/SYNOVOSJUnitTests/Locators/PurchasingPage/ApproveSupplierPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SOS/Locators/PurchasingPage/ApproveSupplierPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/SYNOVOSJUnitTests/Locators/PurchasingPage/CreateSupplierPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SOS/Locators/PurchasingPage/CreateSupplierPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/SYNOVOSJUnitTests/Locators/PurchasingPage/EditSupplierPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SOS/Locators/PurchasingPage/EditSupplierPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/SYNOVOSJUnitTests/Locators/PurchasingPage/MatchingSupplierListPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SOS/Locators/PurchasingPage/MatchingSupplierListPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/SYNOVOSJUnitTests/Locators/PurchasingPage/SearchSuppliersPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SOS/Locators/PurchasingPage/SearchSuppliersPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/SYNOVOSJUnitTests/Locators/PurchasingPage/SupplierDetailPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SOS/Locators/PurchasingPage/SupplierDetailPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/SYNOVOSJUnitTests/TestSuites/Test_Suite_Approved_Rejected_New_supplier.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/SYNOVOSJUnitTests/TestSuites/Test_Suite_Create_Approve_Reject_Save_Supplier.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/SYNOVOSJUnitTests/TestSuites/Test_Suite_Create_Supplier_New_NewPendingApproval_Emergency_Rejected_Approved.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SOS/TestSuites/Test_Suite_Create_Supplier_New_NewPendingApproval_Emergency_Rejected_Approved.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/SYNOVOSJUnitTests/TestSuites/Test_Suite_Create_Suppliers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SOS/TestSuites/Test_Suite_Create_Suppliers.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/SYNOVOSJUnitTests/TestSuites/Test_Suite_Edit_Suppliers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SOS/TestSuites/Test_Suite_Edit_Suppliers.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/SYNOVOSJUnitTests/TestSuites/Test_Suites_View_Suppliers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SOS/TestSuites/Test_Suites_View_Suppliers.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/SYNOVOSJUnitTests/Tests/LoginPage/LoginPageTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SOS/Tests/LoginPage/LoginPageTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/SYNOVOSJUnitTests/Tests/_1_Create_Supplier_New_NewPendingApproval_Emergency_Approved_Reject/Create_Supplier_Status_Approve.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SOS/Tests/_1_Create_Supplier_New_NewPendingApproval_Emergency_Approved_Reject/Create_Supplier_Status_Approve.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/SYNOVOSJUnitTests/Tests/_1_Create_Supplier_New_NewPendingApproval_Emergency_Approved_Reject/Create_Supplier_Status_Emergancy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SOS/Tests/_1_Create_Supplier_New_NewPendingApproval_Emergency_Approved_Reject/Create_Supplier_Status_Emergancy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/SYNOVOSJUnitTests/Tests/_1_Create_Supplier_New_NewPendingApproval_Emergency_Approved_Reject/Create_Supplier_Status_New.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SOS/Tests/_1_Create_Supplier_New_NewPendingApproval_Emergency_Approved_Reject/Create_Supplier_Status_New.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/SYNOVOSJUnitTests/Tests/_1_Create_Supplier_New_NewPendingApproval_Emergency_Approved_Reject/Create_Supplier_Status_New_Pending_Approval.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SOS/Tests/_1_Create_Supplier_New_NewPendingApproval_Emergency_Approved_Reject/Create_Supplier_Status_New_Pending_Approval.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/SYNOVOSJUnitTests/Tests/_1_Create_Supplier_New_NewPendingApproval_Emergency_Approved_Reject/Create_Supplier_Status_Reject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SOS/Tests/_1_Create_Supplier_New_NewPendingApproval_Emergency_Approved_Reject/Create_Supplier_Status_Reject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/SYNOVOSJUnitTests/Tests/_2_Supplier_Editing_Page_Tests/Editing_Supplier_Status_Approved.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SOS/Tests/_2_Supplier_Editing_Page_Tests/Editing_Supplier_Status_Approved.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/SYNOVOSJUnitTests/Tests/_2_Supplier_Editing_Page_Tests/Editing_Supplier_Status_Emergency.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SOS/Tests/_2_Supplier_Editing_Page_Tests/Editing_Supplier_Status_Emergency.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/SYNOVOSJUnitTests/Tests/_2_Supplier_Editing_Page_Tests/Editing_Supplier_Status_New.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SOS/Tests/_2_Supplier_Editing_Page_Tests/Editing_Supplier_Status_New.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/SYNOVOSJUnitTests/Tests/_2_Supplier_Editing_Page_Tests/Editing_Supplier_Status_New_Pending_Approval.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SOS/Tests/_2_Supplier_Editing_Page_Tests/Editing_Supplier_Status_New_Pending_Approval.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/SYNOVOSJUnitTests/Tests/_2_Supplier_Editing_Page_Tests/Editing_Supplier_Status_Rejected.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SOS/Tests/_2_Supplier_Editing_Page_Tests/Editing_Supplier_Status_Rejected.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/SYNOVOSJUnitTests/Tests/_3_Supplier_View_Page_Tests/View_Supplier_Status_Approved.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SOS/Tests/_3_Supplier_View_Page_Tests/View_Supplier_Status_Approved.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/SYNOVOSJUnitTests/Tests/_3_Supplier_View_Page_Tests/View_Supplier_Status_Emergency.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SOS/Tests/_3_Supplier_View_Page_Tests/View_Supplier_Status_Emergency.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/SYNOVOSJUnitTests/Tests/_3_Supplier_View_Page_Tests/View_Supplier_Status_New.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SOS/Tests/_3_Supplier_View_Page_Tests/View_Supplier_Status_New.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/SYNOVOSJUnitTests/Tests/_3_Supplier_View_Page_Tests/View_Supplier_Status_New_Pending_Approval.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SOS/Tests/_3_Supplier_View_Page_Tests/View_Supplier_Status_New_Pending_Approval.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/SYNOVOSJUnitTests/Tests/_3_Supplier_View_Page_Tests/View_Supplier_Status_Rejected.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SOS/Tests/_3_Supplier_View_Page_Tests/View_Supplier_Status_Rejected.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/SYNOVOSJUnitTests/Tests/_4_Supplier_Activity_Status/Approved_Supplier_Status_Should_Be_Active.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SOS/Tests/_4_Supplier_Activity_Status/Approved_Supplier_Status_Should_Be_Active.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/SYNOVOSJUnitTests/Tests/_4_Supplier_Activity_Status/Rejected_Supplier_Status_Should_Be_InActive.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SOS/Tests/_4_Supplier_Activity_Status/Rejected_Supplier_Status_Should_Be_InActive.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/SYNOVOSJUnitTests/Tests/_5_Emergency_Supplier/test_1_Create_Emergency_Supplier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SOS/Tests/_5_Emergency_Supplier/Test_1_Create_Emergency_Supplier.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/SYNOVOSJUnitTests/Tests/_5_Emergency_Supplier/test_2_Sent_Rejected_Supplier_For_Approval_In_Emergency_Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SOS/Tests/_5_Emergency_Supplier/Test_2_Sent_Rejected_Supplier_For_Approval_In_Emergency_Role.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/SYNOVOSJUnitTests/Tests/_5_Emergency_Supplier/test_3_Sent_Rejected_Supplier_ACTIVATE_In_Emergency_Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SOS/Tests/_5_Emergency_Supplier/Test_3_Sent_Rejected_Supplier_ACTIVATE_In_Emergency_Role.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/SYNOVOSJUnitTests/Tests/_6_TBD_Supplier/Create_TBD_Supplier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SOS/Tests/_6_TBD_Supplier/Create_TBD_Supplier.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/SYNOVOSJUnitTests/Tests/_7_Supplier_Deletion_Deactivation/test_1_Delete_Supplier_Status_New_No_PO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SOS/Tests/_7_Supplier_Deletion_Deactivation/Test_1_Delete_Supplier_Status_New_No_PO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/SYNOVOSJUnitTests/Tests/_7_Supplier_Deletion_Deactivation/test_2_Deactivate_Supplier_Status_New_No_PO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SOS/Tests/_7_Supplier_Deletion_Deactivation/Test_2_Deactivate_Supplier_Status_New_No_PO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/SYNOVOSJUnitTests/Tests/_7_Supplier_Deletion_Deactivation/test_3_Delete_Supplier_Status_New_Pending_Approval_No_PO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SOS/Tests/_7_Supplier_Deletion_Deactivation/Test_3_Delete_Supplier_Status_New_Pending_Approval_No_PO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/SYNOVOSJUnitTests/Tests/_7_Supplier_Deletion_Deactivation/test_4_Deactivate_Supplier_Status_New_Pending_Approval_No_PO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SOS/Tests/_7_Supplier_Deletion_Deactivation/Test_4_Deactivate_Supplier_Status_New_Pending_Approval_No_PO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/SYNOVOSJUnitTests/Tests/_7_Supplier_Deletion_Deactivation/test_5_Delete_Supplier_Status_Approved_No_PO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SOS/Tests/_7_Supplier_Deletion_Deactivation/Test_5_Delete_Supplier_Status_Approved_No_PO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/SYNOVOSJUnitTests/Tests/_7_Supplier_Deletion_Deactivation/test_6_Deactivate_Supplier_Status_Approved_No_PO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SOS/Tests/_7_Supplier_Deletion_Deactivation/Test_6_Deactivate_Supplier_Status_Approved_No_PO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/SYNOVOSJUnitTests/Tests/_7_Supplier_Deletion_Deactivation/test_7_Delete_Supplier_Status_Emergency.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/SYNOVOSJUnitTests/WebHelpers/WebHelpers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SOS/WebHelpers/WebHelpers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/SOS/Locators/PurchasingPage/ApprovalProcessSelectionPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SOS/Locators/PurchasingPage/ApprovalProcessSelectionPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/SOS/Locators/PurchasingPage/ApproveSupplierPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SOS/Locators/PurchasingPage/ApproveSupplierPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/SOS/Locators/PurchasingPage/CreateSupplierPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SOS/Locators/PurchasingPage/CreateSupplierPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/SOS/Locators/PurchasingPage/EditSupplierPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SOS/Locators/PurchasingPage/EditSupplierPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/SOS/TestSuites/Test_Suite_Approved_Rejected_New_supplier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SOS/TestSuites/BasicSuites/Test_Suite_Approved_Rejected_New_supplier.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/SOS/TestSuites/Test_Suite_Create_Approve_Reject_Save_Supplier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SOS/TestSuites/BasicSuites/Test_Suite_Create_Approve_Reject_Save_Supplier.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/SOS/TestSuites/Test_Suite_Create_Supplier_New_NewPendingApproval_Emergency_Rejected_Approved.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SOS/TestSuites/BasicSuites/Test_Suite_Create_Supplier_New_NewPendingApproval_Emergency_Rejected_Approved.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/SOS/TestSuites/Test_Suite_Create_Suppliers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SOS/TestSuites/_1_TestSuiteCreateSuppliers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/SOS/TestSuites/Test_Suite_Edit_Suppliers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SOS/TestSuites/_2_TestSuiteEditSuppliers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/SOS/TestSuites/Test_Suites_View_Suppliers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SOS/TestSuites/_3_TestSuitesViewSuppliers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/SOS/Tests/_1_Create_Supplier_New_NewPendingApproval_Emergency_Approved_Reject/Create_Supplier_Status_Approve.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SOS/Tests/_1_Create_Supplier_New_NewPendingApproval_Emergency_Approved_Reject/Create_Supplier_Status_Approve.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/SOS/Tests/_1_Create_Supplier_New_NewPendingApproval_Emergency_Approved_Reject/Create_Supplier_Status_Emergancy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SOS/Tests/_1_Create_Supplier_New_NewPendingApproval_Emergency_Approved_Reject/Create_Supplier_Status_Emergancy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/SOS/Tests/_1_Create_Supplier_New_NewPendingApproval_Emergency_Approved_Reject/Create_Supplier_Status_New.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SOS/Tests/_1_Create_Supplier_New_NewPendingApproval_Emergency_Approved_Reject/Create_Supplier_Status_New.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/SOS/Tests/_1_Create_Supplier_New_NewPendingApproval_Emergency_Approved_Reject/Create_Supplier_Status_New_Pending_Approval.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SOS/Tests/_1_Create_Supplier_New_NewPendingApproval_Emergency_Approved_Reject/Create_Supplier_Status_New_Pending_Approval.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/SOS/Tests/_1_Create_Supplier_New_NewPendingApproval_Emergency_Approved_Reject/Create_Supplier_Status_Reject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SOS/Tests/_1_Create_Supplier_New_NewPendingApproval_Emergency_Approved_Reject/Create_Supplier_Status_Reject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/SOS/Tests/_2_Supplier_Editing_Page_Tests/Editing_Supplier_Status_Approved.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SOS/Tests/_2_Supplier_Editing_Page_Tests/Editing_Supplier_Status_Approved.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/SOS/Tests/_2_Supplier_Editing_Page_Tests/Editing_Supplier_Status_Emergency.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SOS/Tests/_2_Supplier_Editing_Page_Tests/Editing_Supplier_Status_Emergency.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/SOS/Tests/_2_Supplier_Editing_Page_Tests/Editing_Supplier_Status_New.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SOS/Tests/_2_Supplier_Editing_Page_Tests/Editing_Supplier_Status_New.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/SOS/Tests/_2_Supplier_Editing_Page_Tests/Editing_Supplier_Status_New_Pending_Approval.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SOS/Tests/_2_Supplier_Editing_Page_Tests/Editing_Supplier_Status_New_Pending_Approval.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/SOS/Tests/_2_Supplier_Editing_Page_Tests/Editing_Supplier_Status_Rejected.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SOS/Tests/_2_Supplier_Editing_Page_Tests/Editing_Supplier_Status_Rejected.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/SOS/Tests/_3_Supplier_View_Page_Tests/View_Supplier_Status_Approved.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SOS/Tests/_3_Supplier_View_Page_Tests/View_Supplier_Status_Approved.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/SOS/Tests/_3_Supplier_View_Page_Tests/View_Supplier_Status_Emergency.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SOS/Tests/_3_Supplier_View_Page_Tests/View_Supplier_Status_Emergency.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/SOS/Tests/_3_Supplier_View_Page_Tests/View_Supplier_Status_New.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SOS/Tests/_3_Supplier_View_Page_Tests/View_Supplier_Status_New.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/SOS/Tests/_3_Supplier_View_Page_Tests/View_Supplier_Status_New_Pending_Approval.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SOS/Tests/_3_Supplier_View_Page_Tests/View_Supplier_Status_New_Pending_Approval.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/SOS/Tests/_3_Supplier_View_Page_Tests/View_Supplier_Status_Rejected.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SOS/Tests/_3_Supplier_View_Page_Tests/View_Supplier_Status_Rejected.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/SOS/Tests/_4_Supplier_Activity_Status/Approved_Supplier_Status_Should_Be_Active.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SOS/Tests/_4_Supplier_Activity_Status/ApprovedSupplierStatusShouldBeActive.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/SOS/Tests/_4_Supplier_Activity_Status/Rejected_Supplier_Status_Should_Be_InActive.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SOS/Tests/_4_Supplier_Activity_Status/RejectedSupplierStatusShouldBeInActive.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/SOS/Tests/_5_Emergency_Supplier/Test_1_Create_Emergency_Supplier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SOS/Tests/_5_Emergency_Supplier/Test_1_Create_Emergency_Supplier.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/SOS/Tests/_5_Emergency_Supplier/Test_2_Sent_Rejected_Supplier_For_Approval_In_Emergency_Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SOS/Tests/_5_Emergency_Supplier/Test_2_Sent_Rejected_Supplier_For_Approval_In_Emergency_Role.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/SOS/Tests/_5_Emergency_Supplier/Test_3_Sent_Rejected_Supplier_ACTIVATE_In_Emergency_Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SOS/Tests/_5_Emergency_Supplier/Test_3_Sent_Rejected_Supplier_ACTIVATE_In_Emergency_Role.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/SOS/Tests/_6_TBD_Supplier/Create_TBD_Supplier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SOS/Tests/_6_TBD_Supplier/Create_TBD_Supplier.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/SOS/Tests/_7_Supplier_Deletion_Deactivation/Test_1_Delete_Supplier_Status_New_No_PO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SOS/Tests/_7_Supplier_Deletion_Deactivation/Test_1_Delete_Supplier_Status_New_No_PO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/SOS/Tests/_7_Supplier_Deletion_Deactivation/Test_2_Deactivate_Supplier_Status_New_No_PO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SOS/Tests/_7_Supplier_Deletion_Deactivation/Test_2_Deactivate_Supplier_Status_New_No_PO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/SOS/Tests/_7_Supplier_Deletion_Deactivation/Test_3_Delete_Supplier_Status_New_Pending_Approval_No_PO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SOS/Tests/_7_Supplier_Deletion_Deactivation/Test_3_Delete_Supplier_Status_New_Pending_Approval_No_PO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/SOS/Tests/_7_Supplier_Deletion_Deactivation/Test_4_Deactivate_Supplier_Status_New_Pending_Approval_No_PO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SOS/Tests/_7_Supplier_Deletion_Deactivation/Test_4_Deactivate_Supplier_Status_New_Pending_Approval_No_PO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/SOS/Tests/_7_Supplier_Deletion_Deactivation/Test_5_Delete_Supplier_Status_Approved_No_PO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SOS/Tests/_7_Supplier_Deletion_Deactivation/Test_5_Delete_Supplier_Status_Approved_No_PO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/SOS/Tests/_7_Supplier_Deletion_Deactivation/Test_6_Deactivate_Supplier_Status_Approved_No_PO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SOS/Tests/_7_Supplier_Deletion_Deactivation/Test_6_Deactivate_Supplier_Status_Approved_No_PO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/SOS/Tests/_7_Supplier_Deletion_Deactivation/Test_7_Delete_Supplier_Status_Emergency_No_PO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SOS/Tests/_7_Supplier_Deletion_Deactivation/Test_7_Delete_Supplier_Status_Emergency_No_PO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/SOS/Tests/_7_Supplier_Deletion_Deactivation/Test_8_Deactivate_Supplier_Status_Emergency_No_PO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SOS/Tests/_7_Supplier_Deletion_Deactivation/Test_8_Deactivate_Supplier_Status_Emergency_No_PO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/SOS/Tests/_8_Supplier_Activation/Test_1_Activate_Supplier_With_Status_New.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SOS/Tests/_8_Supplier_Activation/Test_1_Activate_Supplier_With_Status_New.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/SOS/Tests/_8_Supplier_Activation/Test_2_Activate_Supplier_With_Status_Approved.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SOS/Tests/_8_Supplier_Activation/Test_2_Activate_Supplier_With_Status_Approved.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/SOS/Tests/_8_Supplier_Activation/Test_3_Activate_Supplier_With_Status_Rejected.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SOS/Tests/_8_Supplier_Activation/Test_3_Activate_Supplier_With_Status_Rejected.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/SOS/Tests/_8_Supplier_Activation/Test_4_Activate_Supplier_With_Status_Emergency.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SOS/Tests/_8_Supplier_Activation/Test_4_Activate_Supplier_With_Status_Emergency.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/SOS/Tests/_8_Supplier_Activation/Test_5_ActivateSupplierWithStatusRejectedAsEmergency.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SOS/Tests/_8_Supplier_Activation/Test_5_ActivateSupplierWithStatusRejectedAsEmergency.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/SOS/Tests/_8_Supplier_Activation/Test_6_ActivateSupplierWithStatusNewSupplierPendingApplier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SOS/Tests/_8_Supplier_Activation/Test_6_ActivateSupplierWithStatusNewSupplierPendingApplier.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/SOS/WebHelpers/WebHelpers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SOS/WebHelpers/WebHelpers.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -152,44 +125,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/build.gradle">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="40" selection-start-line="11" selection-start-column="40" selection-end-line="11" selection-end-column="40" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/SOS/Tests/_8_Supplier_Activation/Test_4_Activate_Supplier_With_Status_Emergency.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="761">
-              <caret line="88" column="63" lean-forward="true" selection-start-line="88" selection-start-column="63" selection-end-line="88" selection-end-column="63" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/SOS/Tests/_8_Supplier_Activation/Test_5_ActivateSupplierWithStatusRejectedAsEmergency.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="265">
-              <caret line="95" selection-start-line="95" selection-end-line="95" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/SOS/Tests/_8_Supplier_Activation/Test_6_ActivateSupplierWithStatusNewSupplierPendingApplier.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/SOS/Locators/PurchasingPage/ApproveSupplierPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
-              <caret line="79" column="55" selection-start-line="79" selection-start-column="55" selection-end-line="79" selection-end-column="55" />
+            <state relative-caret-position="421">
+              <caret line="96" column="42" selection-start-line="96" selection-start-column="42" selection-end-line="96" selection-end-column="42" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/SOS/Tests/_12_PaymentTermsApprovalinitiation/Test_3_ApprovepaymentTermForSupplierStatusRejected.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="312">
+              <caret line="94" column="8" lean-forward="true" selection-start-line="94" selection-start-column="8" selection-end-line="95" selection-end-column="59" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -222,27 +171,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/test/java/SYNOVOSJUnitTests/Tests/Supplier_Editing_Page_Tests/Editing_Supplier_Status_Rejected.java" />
-        <option value="$PROJECT_DIR$/src/test/java/SYNOVOSJUnitTests/Tests/Create_Supplier_New_NewPendingApproval_Emergency_Approved_Reject/Create_Supplier_Status_Emergancy.java" />
-        <option value="$PROJECT_DIR$/src/test/java/SYNOVOSJUnitTests/Tests/Supplier_Editing_Page_Tests/Editing_Supplier_Status_Emergency.java" />
-        <option value="$PROJECT_DIR$/src/test/java/SYNOVOSJUnitTests/Tests/_2_Supplier_Editing_Page_Tests/Editing_Supplier_Status_Rejected.java" />
-        <option value="$PROJECT_DIR$/src/test/java/SYNOVOSJUnitTests/Tests/_3_Supplier_View_Page_Tests/View_Supplier_Status_New_Pending_Approval.java" />
-        <option value="$PROJECT_DIR$/src/test/java/SYNOVOSJUnitTests/Tests/_3_Supplier_View_Page_Tests/View_Supplier_Status_Emergency.java" />
-        <option value="$PROJECT_DIR$/src/test/java/SYNOVOSJUnitTests/TestSuites/Test_Suite_Create_Suppliers.java" />
-        <option value="$PROJECT_DIR$/src/test/java/SYNOVOSJUnitTests/TestSuites/Test_Suite_Edit_Suppliers.java" />
-        <option value="$PROJECT_DIR$/src/test/java/SYNOVOSJUnitTests/Tests/_2_Supplier_Editing_Page_Tests/Editing_Supplier_Status_New_Pending_Approval.java" />
-        <option value="$PROJECT_DIR$/src/test/java/SYNOVOSJUnitTests/TestSuites/Test_Suites_View_Suppliers.java" />
-        <option value="$PROJECT_DIR$/src/test/java/SYNOVOSJUnitTests/Tests/_2_Supplier_Editing_Page_Tests/Editing_Supplier_Status_Emergency.java" />
-        <option value="$PROJECT_DIR$/src/test/java/SYNOVOSJUnitTests/Tests/_3_Supplier_View_Page_Tests/View_Supplier_Status_New.java" />
-        <option value="$PROJECT_DIR$/src/test/java/SYNOVOSJUnitTests/Tests/_3_Supplier_View_Page_Tests/View_Supplier_Status_Approved.java" />
-        <option value="$PROJECT_DIR$/src/test/java/SYNOVOSJUnitTests/Tests/_3_Supplier_View_Page_Tests/View_Supplier_Status_Rejected.java" />
-        <option value="$PROJECT_DIR$/src/test/java/SYNOVOSJUnitTests/Tests/_4_Supplier_Activity_Status/Approved_Supplier_Status_Should_Be_Active.java" />
-        <option value="$PROJECT_DIR$/src/test/java/SYNOVOSJUnitTests/Tests/_4_Supplier_Activity_Status/Rejected_Supplier_Status_Should_Be_InActive.java" />
-        <option value="$PROJECT_DIR$/src/test/java/SYNOVOSJUnitTests/Tests/_5_Emergency_Supplier/test_1_Create_Emergency_Supplier.java" />
-        <option value="$PROJECT_DIR$/src/test/java/SYNOVOSJUnitTests/Tests/_5_Emergency_Supplier/test_2_Sent_Rejected_Supplier_For_Approval_In_Emergency_Role.java" />
-        <option value="$PROJECT_DIR$/src/test/java/SYNOVOSJUnitTests/Tests/_5_Emergency_Supplier/test_3_Sent_Rejected_Supplier_ACTIVATE_In_Emergency_Role.java" />
-        <option value="$PROJECT_DIR$/src/test/java/SYNOVOSJUnitTests/Tests/_1_Create_Supplier_New_NewPendingApproval_Emergency_Approved_Reject/Create_Supplier_Status_Reject.java" />
-        <option value="$PROJECT_DIR$/src/test/java/SYNOVOSJUnitTests/Tests/TBD_Supplier/Create_TBD_Supplier.java" />
         <option value="$PROJECT_DIR$/src/test/java/SYNOVOSJUnitTests/Locators/PurchasingPage/CreateSupplierPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/SYNOVOSJUnitTests/Locators/PurchasingPage/EditSupplierPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/SYNOVOSJUnitTests/Tests/_6_TBD_Supplier/Create_TBD_Supplier.java" />
@@ -268,25 +196,47 @@
         <option value="$PROJECT_DIR$/src/test/java/SOS/Tests/_8_Supplier_Activation/Test_1_Activate_Supplier_With_Status_New.java" />
         <option value="$PROJECT_DIR$/src/test/java/SOS/Tests/_8_Supplier_Activation/Test_2_Activate_Supplier_With_Status_Approved.java" />
         <option value="$PROJECT_DIR$/src/test/java/SOS/Tests/_2_Supplier_Editing_Page_Tests/Editing_Supplier_Status_Rejected.java" />
-        <option value="$PROJECT_DIR$/src/test/java/SOS/Tests/_8_Supplier_Activation/Test_4_Activate_Supplier_With_Status_Emergency.java" />
         <option value="$PROJECT_DIR$/src/test/java/SOS/Tests/_8_Supplier_Activation/Test_3_Activate_Supplier_With_Status_Rejected.java" />
         <option value="$PROJECT_DIR$/src/test/java/SOS/Locators/PurchasingPage/SupplierDetailPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/SOS/Tests/_8_Supplier_Activation/Test_5_ActivateSupplierWithStatusRejectedAsEmergency.java" />
         <option value="$PROJECT_DIR$/src/test/java/SOS/Tests/_8_Supplier_Activation/Test_6_ActivateSupplierWithStatusNewSupplierPendingApplier.java" />
+        <option value="$PROJECT_DIR$/src/test/java/SOS/TestSuites/TestSuitesViewSuppliers.java" />
+        <option value="$PROJECT_DIR$/src/test/java/SOS/TestSuites/TestSuiteSupplierActivityStatus.java" />
+        <option value="$PROJECT_DIR$/src/test/java/SOS/Tests/_4_Supplier_Activity_Status/RejectedSupplierStatusShouldBeInActive.java" />
+        <option value="$PROJECT_DIR$/src/test/java/SOS/TestSuites/Test_Suite_Emergency_Supplier.java" />
+        <option value="$PROJECT_DIR$/src/test/java/SOS/TestSuites/_6_Test_Suite_TBD_Supplier.java" />
+        <option value="$PROJECT_DIR$/src/test/java/SOS/TestSuites/_7_Test_Suite_Supplier_Deletion_Deactivation.java" />
+        <option value="$PROJECT_DIR$/src/test/java/SOS/Tests/_7_Supplier_Deletion_Deactivation/Test_6_Deactivate_Supplier_Status_Approved_No_PO.java" />
+        <option value="$PROJECT_DIR$/src/test/java/SOS/TestSuites/_8_Test_Suite_Supplier_Activation.java" />
+        <option value="$PROJECT_DIR$/src/test/java/SOS/Tests/_8_Supplier_Activation/Test_4_Activate_Supplier_With_Status_Emergency.java" />
+        <option value="$PROJECT_DIR$/src/test/java/SOS/Locators/PurchasingPage/EditSupplierPage.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/logs/app.log" />
+        <option value="$PROJECT_DIR$/src/test/java/SOS/Tests/_2_Supplier_Editing_Page_Tests/Editing_Supplier_Status_New.java" />
+        <option value="$PROJECT_DIR$/src/test/java/SOS/Locators/PurchasingPage/ApprovalProcessSelectionPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/SOS/Tests/_12_PaymentTermsApprovalinitiation/Test_2_ApprovePaymentTermForSupplierStatusApproved.java" />
+        <option value="$PROJECT_DIR$/src/test/java/SOS/Tests/_2_Supplier_Editing_Page_Tests/Editing_Supplier_Status_Approved.java" />
+        <option value="$PROJECT_DIR$/src/test/java/SOS/Tests/_12_PaymentTermsApprovalinitiation/Test_4_ApprovePaymentTermForSupplierStatusEmergency.java" />
+        <option value="$PROJECT_DIR$/src/test/java/SOS/WebHelpers/WebHelpers.java" />
+        <option value="$PROJECT_DIR$/src/test/java/SOS/Tests/_12_PaymentTermsApprovalinitiation/Test_3_ApprovepaymentTermForSupplierStatusRejected.java" />
+        <option value="$PROJECT_DIR$/src/test/java/SOS/Tests/_12_PaymentTermsApprovalinitiation/Test_5_ApprovePaymentTermsForSupplierStatusNewSupplierPendingApproval.java" />
+        <option value="$PROJECT_DIR$/src/test/java/SOS/TestSuites/_9_Test_Suite_RequestedPaymentTermsCreationAndSubmission.java" />
+        <option value="$PROJECT_DIR$/src/test/java/SOS/Locators/PurchasingPage/ApproveSupplierPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/SOS/Tests/_12_PaymentTermsApprovalinitiation/Test_1_ApprovePaymentTermForSupplierStatusNew.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1965" />
-    <option name="y" value="24" />
-    <option name="width" value="1299" />
-    <option name="height" value="1000" />
+    <option name="x" value="1930" />
+    <option name="y" value="25" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -319,6 +269,13 @@
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="WebHelpers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Synovo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Synovo" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Synovo" type="b2602c69:ProjectViewProjectNode" />
@@ -377,27 +334,7 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="SOS" type="462c0819:PsiDirectoryNode" />
               <item name="Tests" type="462c0819:PsiDirectoryNode" />
-              <item name="_2_Supplier_Editing_Page_Tests" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Synovo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Synovo" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="SOS" type="462c0819:PsiDirectoryNode" />
-              <item name="Tests" type="462c0819:PsiDirectoryNode" />
-              <item name="_7_Supplier_Deletion_Deactivation" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Synovo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Synovo" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="SOS" type="462c0819:PsiDirectoryNode" />
-              <item name="Tests" type="462c0819:PsiDirectoryNode" />
-              <item name="_8_Supplier_Activation" type="462c0819:PsiDirectoryNode" />
+              <item name="_12_PaymentTermsApprovalinitiation" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Synovo" type="b2602c69:ProjectViewProjectNode" />
@@ -413,7 +350,6 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -421,7 +357,7 @@
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556287817558" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557140415055" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -435,84 +371,84 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.Test_6_ActivateSupplierWithStatusNewSupplierPendingApplier">
-    <configuration name="Editing_Supplier_Status_Rejected" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager">
+    <configuration name="Test_1_ApprovePaymentTermForSupplierStatusNew" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Synovo.test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="SOS.Tests._2_Supplier_Editing_Page_Tests.*" />
+          <option name="PATTERN" value="SOS.Tests._12_PaymentTermsApprovalinitiation.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="SOS.Tests._2_Supplier_Editing_Page_Tests" />
-      <option name="MAIN_CLASS_NAME" value="SOS.Tests._2_Supplier_Editing_Page_Tests.Editing_Supplier_Status_Rejected" />
+      <option name="PACKAGE_NAME" value="SOS.Tests._12_PaymentTermsApprovalinitiation" />
+      <option name="MAIN_CLASS_NAME" value="SOS.Tests._12_PaymentTermsApprovalinitiation.Test_1_ApprovePaymentTermForSupplierStatusNew" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test_3_Activate_Supplier_With_Status_Rejected" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Test_2_ApprovePaymentTermForSupplierStatusApproved" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Synovo.test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="SOS.Tests._8_Supplier_Activation.*" />
+          <option name="PATTERN" value="SOS.Tests._12_PaymentTermsApprovalinitiation.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="SOS.Tests._8_Supplier_Activation" />
-      <option name="MAIN_CLASS_NAME" value="SOS.Tests._8_Supplier_Activation.Test_3_Activate_Supplier_With_Status_Rejected" />
+      <option name="PACKAGE_NAME" value="SOS.Tests._12_PaymentTermsApprovalinitiation" />
+      <option name="MAIN_CLASS_NAME" value="SOS.Tests._12_PaymentTermsApprovalinitiation.Test_2_ApprovePaymentTermForSupplierStatusApproved" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test_4_Activate_Supplier_With_Status_Emergency" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Test_3_ApprovepaymentTermForSupplierStatusRejected" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Synovo.test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="SOS.Tests._8_Supplier_Activation.*" />
+          <option name="PATTERN" value="SOS.Tests._12_PaymentTermsApprovalinitiation.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="SOS.Tests._8_Supplier_Activation" />
-      <option name="MAIN_CLASS_NAME" value="SOS.Tests._8_Supplier_Activation.Test_4_Activate_Supplier_With_Status_Emergency" />
+      <option name="PACKAGE_NAME" value="SOS.Tests._12_PaymentTermsApprovalinitiation" />
+      <option name="MAIN_CLASS_NAME" value="SOS.Tests._12_PaymentTermsApprovalinitiation.Test_3_ApprovepaymentTermForSupplierStatusRejected" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test_5_ActivateSupplierWithStatusRejectedAsEmergency" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Test_5_ApprovePaymentTermsForSupplierStatusNewSupplierPendingApproval" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Synovo.test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="SOS.Tests._8_Supplier_Activation.*" />
+          <option name="PATTERN" value="SOS.Tests._12_PaymentTermsApprovalinitiation.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="SOS.Tests._8_Supplier_Activation" />
-      <option name="MAIN_CLASS_NAME" value="SOS.Tests._8_Supplier_Activation.Test_5_ActivateSupplierWithStatusRejectedAsEmergency" />
+      <option name="PACKAGE_NAME" value="SOS.Tests._12_PaymentTermsApprovalinitiation" />
+      <option name="MAIN_CLASS_NAME" value="SOS.Tests._12_PaymentTermsApprovalinitiation.Test_5_ApprovePaymentTermsForSupplierStatusNewSupplierPendingApproval" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test_6_ActivateSupplierWithStatusNewSupplierPendingApplier" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="_12_Test_Suite_RequestedPaymentTermsCreationAndSubmission" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Synovo.test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="SOS.Tests._8_Supplier_Activation.*" />
+          <option name="PATTERN" value="SOS.TestSuites.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="SOS.Tests._8_Supplier_Activation" />
-      <option name="MAIN_CLASS_NAME" value="SOS.Tests._8_Supplier_Activation.Test_6_ActivateSupplierWithStatusNewSupplierPendingApplier" />
+      <option name="PACKAGE_NAME" value="SOS.TestSuites" />
+      <option name="MAIN_CLASS_NAME" value="SOS.TestSuites._12_Test_Suite_RequestedPaymentTermsCreationAndSubmission" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.Test_6_ActivateSupplierWithStatusNewSupplierPendingApplier" />
-        <item itemvalue="JUnit.Test_5_ActivateSupplierWithStatusRejectedAsEmergency" />
-        <item itemvalue="JUnit.Test_4_Activate_Supplier_With_Status_Emergency" />
-        <item itemvalue="JUnit.Test_3_Activate_Supplier_With_Status_Rejected" />
-        <item itemvalue="JUnit.Editing_Supplier_Status_Rejected" />
+        <item itemvalue="JUnit._12_Test_Suite_RequestedPaymentTermsCreationAndSubmission" />
+        <item itemvalue="JUnit.Test_2_ApprovePaymentTermForSupplierStatusApproved" />
+        <item itemvalue="JUnit.Test_1_ApprovePaymentTermForSupplierStatusNew" />
+        <item itemvalue="JUnit.Test_5_ApprovePaymentTermsForSupplierStatusNewSupplierPendingApproval" />
+        <item itemvalue="JUnit.Test_3_ApprovepaymentTermForSupplierStatusRejected" />
       </list>
     </recent_temporary>
   </component>
@@ -530,35 +466,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Test_5_ActivateSupplierWithStatusRejectedAsEmergency - 2019.04.26 at 15h 42m 21s.xml">
-      <configuration name="Test_5_ActivateSupplierWithStatusRejectedAsEmergency" configurationId="JUnit" />
+    <history-entry file="Test_3_ApprovepaymentTermForSupplierStatusRejected - 2019.05.06 at 13h 14m 27s.xml">
+      <configuration name="Test_3_ApprovepaymentTermForSupplierStatusRejected" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Test_5_ActivateSupplierWithStatusRejectedAsEmergency - 2019.04.26 at 15h 43m 11s.xml">
-      <configuration name="Test_5_ActivateSupplierWithStatusRejectedAsEmergency" configurationId="JUnit" />
+    <history-entry file="Test_3_ApprovepaymentTermForSupplierStatusRejected - 2019.05.06 at 13h 15m 39s.xml">
+      <configuration name="Test_3_ApprovepaymentTermForSupplierStatusRejected" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Test_5_ActivateSupplierWithStatusRejectedAsEmergency - 2019.04.26 at 15h 43m 59s.xml">
-      <configuration name="Test_5_ActivateSupplierWithStatusRejectedAsEmergency" configurationId="JUnit" />
+    <history-entry file="Test_3_ApprovepaymentTermForSupplierStatusRejected - 2019.05.06 at 13h 20m 17s.xml">
+      <configuration name="Test_3_ApprovepaymentTermForSupplierStatusRejected" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Test_5_ActivateSupplierWithStatusRejectedAsEmergency - 2019.04.26 at 15h 45m 42s.xml">
-      <configuration name="Test_5_ActivateSupplierWithStatusRejectedAsEmergency" configurationId="JUnit" />
+    <history-entry file="Test_3_ApprovepaymentTermForSupplierStatusRejected - 2019.05.06 at 13h 24m 21s.xml">
+      <configuration name="Test_3_ApprovepaymentTermForSupplierStatusRejected" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Test_5_ActivateSupplierWithStatusRejectedAsEmergency - 2019.04.26 at 15h 46m 57s.xml">
-      <configuration name="Test_5_ActivateSupplierWithStatusRejectedAsEmergency" configurationId="JUnit" />
+    <history-entry file="Test_3_ApprovepaymentTermForSupplierStatusRejected - 2019.05.06 at 13h 26m 46s.xml">
+      <configuration name="Test_3_ApprovepaymentTermForSupplierStatusRejected" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Test_5_ActivateSupplierWithStatusRejectedAsEmergency - 2019.04.26 at 15h 47m 46s.xml">
-      <configuration name="Test_5_ActivateSupplierWithStatusRejectedAsEmergency" configurationId="JUnit" />
+    <history-entry file="Test_3_ApprovepaymentTermForSupplierStatusRejected - 2019.05.06 at 13h 29m 29s.xml">
+      <configuration name="Test_3_ApprovepaymentTermForSupplierStatusRejected" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Test_5_ActivateSupplierWithStatusRejectedAsEmergency - 2019.04.26 at 15h 48m 24s.xml">
-      <configuration name="Test_5_ActivateSupplierWithStatusRejectedAsEmergency" configurationId="JUnit" />
+    <history-entry file="Test_5_ApprovePaymentTermsForSupplierStatusNewSupplierPendingApproval - 2019.05.06 at 13h 41m 04s.xml">
+      <configuration name="Test_5_ApprovePaymentTermsForSupplierStatusNewSupplierPendingApproval" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Test_5_ActivateSupplierWithStatusRejectedAsEmergency - 2019.04.26 at 15h 49m 40s.xml">
-      <configuration name="Test_5_ActivateSupplierWithStatusRejectedAsEmergency" configurationId="JUnit" />
+    <history-entry file="_9_Test_Suite_RequestedPaymentTermsCreationAndSubmission - 2019.05.06 at 13h 50m 03s.xml">
+      <configuration name="_9_Test_Suite_RequestedPaymentTermsCreationAndSubmission" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Test_6_ActivateSupplierWithStatusNewSupplierPendingApplier - 2019.04.26 at 17h 04m 42s.xml">
-      <configuration name="Test_6_ActivateSupplierWithStatusNewSupplierPendingApplier" configurationId="JUnit" />
+    <history-entry file="Test_1_ApprovePaymentTermForSupplierStatusNew - 2019.05.06 at 13h 55m 08s.xml">
+      <configuration name="Test_1_ApprovePaymentTermForSupplierStatusNew" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Test_6_ActivateSupplierWithStatusNewSupplierPendingApplier - 2019.04.26 at 17h 05m 20s.xml">
-      <configuration name="Test_6_ActivateSupplierWithStatusNewSupplierPendingApplier" configurationId="JUnit" />
+    <history-entry file="Test_2_ApprovePaymentTermForSupplierStatusApproved - 2019.05.06 at 13h 57m 01s.xml">
+      <configuration name="Test_2_ApprovePaymentTermForSupplierStatusApproved" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -570,7 +506,7 @@
       <window_info id="UI Designer" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Image Layers" order="4" />
-      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.25266525" />
+      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.2947761" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="0" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
@@ -579,7 +515,7 @@
       <window_info anchor="bottom" id="Version Control" order="4" />
       <window_info anchor="bottom" id="Message" order="5" />
       <window_info anchor="bottom" id="Find" order="6" weight="0.32936078" />
-      <window_info active="true" anchor="bottom" id="Run" order="7" visible="true" weight="0.32936078" />
+      <window_info active="true" anchor="bottom" id="Run" order="7" visible="true" weight="0.2892741" />
       <window_info anchor="bottom" id="Debug" order="8" weight="0.3997833" />
       <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
@@ -596,90 +532,30 @@
     </layout>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/java/SOS/TestSuites/Test_Suite_Create_Suppliers.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/SOS/Locators/PurchasingPage/MatchingSupplierListPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="137" lean-forward="true" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="137" />
+        <state relative-caret-position="102">
+          <caret line="6" column="37" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="37" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/SOS/Tests/_2_Supplier_Editing_Page_Tests/Editing_Supplier_Status_New.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/SOS/Tests/_4_Supplier_Activity_Status/RejectedSupplierStatusShouldBeInActive.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="66" column="16" selection-start-line="66" selection-start-column="16" selection-end-line="66" selection-end-column="16" />
+        <state relative-caret-position="-201">
+          <caret line="67" lean-forward="true" selection-start-line="67" selection-end-line="67" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/SOS/TestSuites/Test_Suite_Edit_Suppliers.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/SOS/Tests/_4_Supplier_Activity_Status/ApprovedSupplierStatusShouldBeActive.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" lean-forward="true" selection-start-line="6" selection-end-line="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/SOS/Tests/_3_Supplier_View_Page_Tests/View_Supplier_Status_New.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="421">
-          <caret line="84" column="5" lean-forward="true" selection-start-line="82" selection-start-column="8" selection-end-line="84" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/SOS/TestSuites/Test_Suites_View_Suppliers.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/SOS/Tests/_3_Supplier_View_Page_Tests/View_Supplier_Status_Approved.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="411">
-          <caret line="154" column="90" lean-forward="true" selection-start-line="154" selection-start-column="90" selection-end-line="154" selection-end-column="141" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/SOS/Tests/_4_Supplier_Activity_Status/Approved_Supplier_Status_Should_Be_Active.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="153" column="13" lean-forward="true" selection-start-line="153" selection-start-column="8" selection-end-line="154" selection-end-column="103" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/SOS/Tests/_1_Create_Supplier_New_NewPendingApproval_Emergency_Approved_Reject/Create_Supplier_Status_Emergancy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="503">
-          <caret line="78" column="5" lean-forward="true" selection-start-line="25" selection-start-column="3" selection-end-line="78" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/SOS/Tests/_4_Supplier_Activity_Status/Rejected_Supplier_Status_Should_Be_InActive.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="472">
-          <caret line="114" column="8" lean-forward="true" selection-start-line="114" selection-start-column="8" selection-end-line="115" selection-end-column="103" />
+        <state relative-caret-position="489">
+          <caret line="154" column="103" lean-forward="true" selection-start-line="153" selection-start-column="8" selection-end-line="154" selection-end-column="103" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -688,18 +564,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/SOS/Tests/_5_Emergency_Supplier/Test_1_Create_Emergency_Supplier.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="75" column="5" selection-start-line="75" selection-start-column="5" selection-end-line="75" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/SOS/Tests/_5_Emergency_Supplier/Test_3_Sent_Rejected_Supplier_ACTIVATE_In_Emergency_Role.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="86" column="64" lean-forward="true" selection-start-line="86" selection-start-column="64" selection-end-line="86" selection-end-column="64" />
+        <state relative-caret-position="271">
+          <caret line="64" column="16" selection-start-line="64" selection-start-column="16" selection-end-line="64" selection-end-column="16" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -708,28 +574,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/SOS/Tests/_5_Emergency_Supplier/Test_2_Sent_Rejected_Supplier_For_Approval_In_Emergency_Role.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="503">
-          <caret line="123" column="5" lean-forward="true" selection-start-line="24" selection-start-column="4" selection-end-line="123" selection-end-column="5" />
+        <state relative-caret-position="292">
+          <caret line="109" column="84" lean-forward="true" selection-start-line="109" selection-start-column="84" selection-end-line="109" selection-end-column="84" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/SOS/Locators/PurchasingPage/EditSupplierPage.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/SOS/Tests/_5_Emergency_Supplier/Test_3_Sent_Rejected_Supplier_ACTIVATE_In_Emergency_Role.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="110" selection-start-line="13" selection-start-column="110" selection-end-line="13" selection-end-column="110" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/SOS/Tests/_1_Create_Supplier_New_NewPendingApproval_Emergency_Approved_Reject/Create_Supplier_Status_New.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="77" column="5" lean-forward="true" selection-start-line="24" selection-start-column="4" selection-end-line="77" selection-end-column="5" />
+        <state relative-caret-position="190">
+          <caret line="106" column="16" selection-start-line="106" selection-start-column="16" selection-end-line="106" selection-end-column="16" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -738,8 +594,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/SOS/Tests/_6_TBD_Supplier/Create_TBD_Supplier.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="89" column="59" lean-forward="true" selection-start-line="89" selection-start-column="59" selection-end-line="89" selection-end-column="59" />
+        <state relative-caret-position="64">
+          <caret line="65" lean-forward="true" selection-start-line="65" selection-end-line="65" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/SOS/TestSuites/_6_Test_Suite_TBD_Supplier.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="41" lean-forward="true" selection-start-line="9" selection-start-column="41" selection-end-line="9" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/SOS/TestSuites/_5_Test_Suite_Emergency_Supplier.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="12" selection-start-line="9" selection-end-line="11" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -748,28 +624,145 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/SOS/Tests/_7_Supplier_Deletion_Deactivation/Test_1_Delete_Supplier_Status_New_No_PO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="79" column="8" lean-forward="true" selection-start-line="79" selection-start-column="8" selection-end-line="79" selection-end-column="85" />
+        <state relative-caret-position="404">
+          <caret line="81" column="26" lean-forward="true" selection-start-line="77" selection-start-column="8" selection-end-line="81" selection-end-column="26" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/SOS/Tests/_3_Supplier_View_Page_Tests/View_Supplier_Status_New_Pending_Approval.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/SOS/Tests/_7_Supplier_Deletion_Deactivation/Test_2_Deactivate_Supplier_Status_New_No_PO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="81" column="66" lean-forward="true" selection-start-line="81" selection-start-column="66" selection-end-line="81" selection-end-column="66" />
+        <state relative-caret-position="453">
+          <caret line="81" column="81" lean-forward="true" selection-start-line="77" selection-start-column="7" selection-end-line="81" selection-end-column="81" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/SOS/Tests/_3_Supplier_View_Page_Tests/View_Supplier_Status_Rejected.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/SOS/Tests/_7_Supplier_Deletion_Deactivation/Test_3_Delete_Supplier_Status_New_Pending_Approval_No_PO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="438">
-          <caret line="129" column="221" selection-start-line="129" selection-start-column="8" selection-end-line="129" selection-end-column="221" />
+        <state relative-caret-position="198">
+          <caret line="68" column="16" selection-start-line="68" selection-start-column="16" selection-end-line="68" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/SOS/Tests/_7_Supplier_Deletion_Deactivation/Test_5_Delete_Supplier_Status_Approved_No_PO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="421">
+          <caret line="159" column="5" lean-forward="true" selection-start-line="159" selection-start-column="5" selection-end-line="159" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/SOS/Tests/_7_Supplier_Deletion_Deactivation/Test_8_Deactivate_Supplier_Status_Emergency_No_PO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="67" column="16" selection-start-line="67" selection-start-column="16" selection-end-line="67" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/SOS/Tests/_7_Supplier_Deletion_Deactivation/Test_6_Deactivate_Supplier_Status_Approved_No_PO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="138" column="16" selection-start-line="138" selection-start-column="16" selection-end-line="138" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/SOS/TestSuites/_4_TestSuiteSupplierActivityStatus.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" selection-start-line="7" selection-end-line="8" selection-end-column="111" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="43" column="37" lean-forward="true" selection-start-line="43" selection-start-column="37" selection-end-line="43" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/SOS/TestSuites/_7_Test_Suite_Supplier_Deletion_Deactivation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="118" lean-forward="true" selection-start-line="6" selection-end-line="9" selection-end-column="118" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/SOS/Tests/_8_Supplier_Activation/Test_1_Activate_Supplier_With_Status_New.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="404">
+          <caret line="152" column="90" lean-forward="true" selection-start-line="151" selection-start-column="7" selection-end-line="152" selection-end-column="90" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/SOS/Tests/_8_Supplier_Activation/Test_2_Activate_Supplier_With_Status_Approved.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="394">
+          <caret line="178" lean-forward="true" selection-start-line="176" selection-start-column="8" selection-end-line="178" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/SOS/Tests/_8_Supplier_Activation/Test_3_Activate_Supplier_With_Status_Rejected.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="428">
+          <caret line="186" lean-forward="true" selection-start-line="184" selection-start-column="7" selection-end-line="186" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/SOS/Tests/_8_Supplier_Activation/Test_5_ActivateSupplierWithStatusRejectedAsEmergency.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="119" column="81" lean-forward="true" selection-start-line="109" selection-start-column="8" selection-end-line="119" selection-end-column="81" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/SOS/Tests/_8_Supplier_Activation/Test_6_ActivateSupplierWithStatusNewSupplierPendingApplier.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="83" column="61" lean-forward="true" selection-start-line="83" selection-start-column="61" selection-end-line="83" selection-end-column="61" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/SOS/Tests/_7_Supplier_Deletion_Deactivation/Test_7_Delete_Supplier_Status_Emergency_No_PO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="66" column="16" selection-start-line="66" selection-start-column="16" selection-end-line="66" selection-end-column="16" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -786,155 +779,132 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/SOS/TestSuites/BasicSuites/Test_Suite_Create_Supplier_New_NewPendingApproval_Emergency_Rejected_Approved.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/SOS/TestSuites/BasicSuites/Test_Suite_Create_Approve_Reject_Save_Supplier.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/SOS/TestSuites/BasicSuites/Test_Suite_Approved_Rejected_New_supplier.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/SOS/Tests/_8_Supplier_Activation/Test_4_Activate_Supplier_With_Status_Emergency.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="37">
+          <caret line="58" lean-forward="true" selection-start-line="58" selection-end-line="58" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/SOS/Locators/PurchasingPage/EditSupplierPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="27" column="19" lean-forward="true" selection-start-line="27" selection-start-column="19" selection-end-line="27" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/SOS/Tests/_7_Supplier_Deletion_Deactivation/Test_4_Deactivate_Supplier_Status_New_Pending_Approval_No_PO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="90" column="79" lean-forward="true" selection-start-line="90" selection-start-column="79" selection-end-line="90" selection-end-column="79" />
+        <state relative-caret-position="353">
+          <caret line="84" lean-forward="true" selection-start-line="84" selection-end-line="84" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/SOS/Tests/_3_Supplier_View_Page_Tests/View_Supplier_Status_Emergency.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/logs/app.log">
+      <provider selected="true" editor-type-id="LogFileEditorProvider" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/SOS/Tests/_2_Supplier_Editing_Page_Tests/Editing_Supplier_Status_New.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="83" selection-end-column="5" />
+        <state relative-caret-position="521">
+          <caret line="53" column="29" selection-start-line="53" selection-start-column="25" selection-end-line="53" selection-end-column="67" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/SOS/Locators/MainPage/MainPageLocators.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/SOS/Tests/_1_Create_Supplier_New_NewPendingApproval_Emergency_Approved_Reject/Create_Supplier_Status_Emergancy.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="41" column="35" selection-start-line="41" selection-start-column="35" selection-end-line="41" selection-end-column="35" />
+        <state relative-caret-position="206">
+          <caret line="43" column="56" lean-forward="true" selection-start-line="43" selection-start-column="56" selection-end-line="43" selection-end-column="56" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/SYNC/Tests/System_Tests/InvoicingStatusTransmissionPageTests.java">
+    <entry file="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/junit/junit/4.12/a6c32b40bf3d76eca54e3c601e5d1470c86fcdfa/junit-4.12-sources.jar!/org/junit/Assert.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="58" column="15" lean-forward="true" selection-start-line="58" selection-start-column="15" selection-end-line="58" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/SOS/Tests/_2_Supplier_Editing_Page_Tests/Editing_Supplier_Status_Approved.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="76" column="19" selection-start-line="76" selection-start-column="19" selection-end-line="76" selection-end-column="19" />
+        <state relative-caret-position="210">
+          <caret line="51" selection-start-line="51" selection-end-line="51" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#1482#1483#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/SOS/Locators/PurchasingPage/ApproveSupplierPage.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/SOS/Locators/PurchasingPage/ApprovalProcessSelectionPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1139">
-          <caret line="74" column="42" selection-start-line="74" selection-start-column="42" selection-end-line="74" selection-end-column="42" />
+        <state relative-caret-position="306">
+          <caret line="22" column="50" lean-forward="true" selection-start-line="22" selection-start-column="50" selection-end-line="22" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/SOS/Tests/_2_Supplier_Editing_Page_Tests/Editing_Supplier_Status_Rejected.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="523">
+          <caret line="126" column="5" lean-forward="true" selection-start-line="24" selection-start-column="4" selection-end-line="126" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/SOS/Tests/_2_Supplier_Editing_Page_Tests/Editing_Supplier_Status_Emergency.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="81">
-          <caret line="66" column="16" selection-start-line="66" selection-start-column="16" selection-end-line="66" selection-end-column="16" />
+        <state relative-caret-position="540">
+          <caret line="86" column="5" lean-forward="true" selection-start-line="22" selection-start-column="4" selection-end-line="86" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/SOS/Tests/_12_PaymentTermsApprovalinitiation/Test_4_ApprovePaymentTermForSupplierStatusEmergency.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="59" column="4" lean-forward="true" selection-start-line="59" selection-start-column="4" selection-end-line="59" selection-end-column="4" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/SOS/Locators/PurchasingPage/CreateSupplierPage.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/SOS/Tests/_2_Supplier_Editing_Page_Tests/Editing_Supplier_Status_Approved.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2193">
-          <caret line="137" selection-start-line="137" selection-end-line="137" />
+        <state relative-caret-position="304">
+          <caret line="100" column="42" lean-forward="true" selection-start-line="100" selection-start-column="42" selection-end-line="100" selection-end-column="42" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/SOS/Tests/_7_Supplier_Deletion_Deactivation/Test_8_Deactivate_Supplier_Status_Emergency_No_PO.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/SOS/Tests/_2_Supplier_Editing_Page_Tests/Editing_Supplier_Status_New_Pending_Approval.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-633">
-          <caret line="25" column="28" selection-start-line="25" selection-start-column="28" selection-end-line="25" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/SYNC/Tests/System_Tests/FinanceSiteSettingsPageTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="571">
-          <caret line="105" lean-forward="true" selection-start-line="105" selection-end-line="105" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/WebHelpers/WebHelpers.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="265">
-          <caret line="33" column="45" lean-forward="true" selection-start-line="33" selection-start-column="45" selection-end-line="33" selection-end-column="45" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/SOS/Locators/LoginPage/LoginPageLocators.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="30" column="35" lean-forward="true" selection-start-line="30" selection-start-column="35" selection-end-line="30" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/SOS/Tests/_7_Supplier_Deletion_Deactivation/Test_2_Deactivate_Supplier_Status_New_No_PO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="71" column="33" selection-start-line="22" selection-start-column="4" selection-end-line="83" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/SOS/Tests/_1_Create_Supplier_New_NewPendingApproval_Emergency_Approved_Reject/Create_Supplier_Status_Approve.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="265">
-          <caret line="122" lean-forward="true" selection-start-line="89" selection-start-column="4" selection-end-line="134" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/SOS/Tests/_7_Supplier_Deletion_Deactivation/Test_6_Deactivate_Supplier_Status_Approved_No_PO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="61" lean-forward="true" selection-start-line="61" selection-end-line="61" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/SOS/Tests/_7_Supplier_Deletion_Deactivation/Test_5_Delete_Supplier_Status_Approved_No_PO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="268">
-          <caret line="150" lean-forward="true" selection-start-line="150" selection-end-line="150" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/SOS/Tests/_1_Create_Supplier_New_NewPendingApproval_Emergency_Approved_Reject/Create_Supplier_Status_Reject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="99" column="5" lean-forward="true" selection-start-line="26" selection-start-column="3" selection-end-line="99" selection-end-column="5" />
+        <state relative-caret-position="251">
+          <caret line="75" column="25" selection-start-line="22" selection-start-column="4" selection-end-line="92" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -943,139 +913,92 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/SOS/WebHelpers/WebHelpers.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="152" column="23" selection-start-line="152" selection-start-column="23" selection-end-line="152" selection-end-column="23" />
+        <state relative-caret-position="210">
+          <caret line="31" column="36" selection-start-line="31" selection-start-column="36" selection-end-line="31" selection-end-column="36" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/SOS/Tests/_2_Supplier_Editing_Page_Tests/Editing_Supplier_Status_Rejected.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/SOS/Tests/_1_Create_Supplier_New_NewPendingApproval_Emergency_Approved_Reject/Create_Supplier_Status_Approve.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="104" selection-start-line="104" selection-end-line="126" selection-end-column="5" />
+        <state relative-caret-position="401">
+          <caret line="100" column="15" lean-forward="true" selection-start-line="100" selection-start-column="8" selection-end-line="101" selection-end-column="59" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/SOS/Tests/_8_Supplier_Activation/Test_1_Activate_Supplier_With_Status_New.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/SOS/Locators/PurchasingPage/CreateSupplierPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-837">
-          <caret line="79" column="65" lean-forward="true" selection-start-line="79" selection-start-column="65" selection-end-line="79" selection-end-column="65" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="202">
+          <caret line="86" column="16" selection-start-line="86" selection-start-column="16" selection-end-line="86" selection-end-column="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/SOS/Tests/_7_Supplier_Deletion_Deactivation/Test_7_Delete_Supplier_Status_Emergency_No_PO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="503">
-          <caret line="87" column="5" lean-forward="true" selection-start-line="22" selection-start-column="3" selection-end-line="87" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/SOS/Locators/PurchasingPage/ApprovalProcessSelectionPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/SOS/Tests/_8_Supplier_Activation/Test_3_Activate_Supplier_With_Status_Rejected.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="78">
-          <caret line="64" lean-forward="true" selection-start-line="64" selection-end-line="64" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/SOS/Locators/PurchasingPage/MatchingSupplierListPage.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/SOS/TestSuites/_8_Test_Suite_Supplier_Activation.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
-          <caret line="6" column="37" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="37" />
+          <caret line="6" selection-start-line="6" selection-end-line="9" selection-end-column="10" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/SOS/Locators/PurchasingPage/SearchSuppliersPage.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/SOS/Tests/_12_PaymentTermsApprovalinitiation/Test_5_ApprovePaymentTermsForSupplierStatusNewSupplierPendingApproval.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="23" column="42" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/SOS/Locators/PurchasingPage/SupplierDetailPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="452">
-          <caret line="64" column="78" selection-start-line="64" selection-start-column="22" selection-end-line="64" selection-end-column="78" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/SOS/Tests/_8_Supplier_Activation/Test_2_Activate_Supplier_With_Status_Approved.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="309">
-          <caret line="73" column="15" lean-forward="true" selection-start-line="73" selection-start-column="8" selection-end-line="73" selection-end-column="133" />
+        <state relative-caret-position="438">
+          <caret line="83" column="59" lean-forward="true" selection-start-line="83" selection-start-column="59" selection-end-line="83" selection-end-column="59" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/SOS/Tests/_8_Supplier_Activation/Test_4_Activate_Supplier_With_Status_Emergency.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/SOS/TestSuites/_12_Test_Suite_RequestedPaymentTermsCreationAndSubmission.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="761">
-          <caret line="88" column="63" lean-forward="true" selection-start-line="88" selection-start-column="63" selection-end-line="88" selection-end-column="63" />
+        <state relative-caret-position="204">
+          <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/SOS/Tests/_2_Supplier_Editing_Page_Tests/Editing_Supplier_Status_New_Pending_Approval.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/SOS/Tests/_12_PaymentTermsApprovalinitiation/Test_3_ApprovepaymentTermForSupplierStatusRejected.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="74" column="17" lean-forward="true" selection-start-line="22" selection-start-column="4" selection-end-line="92" selection-end-column="5" />
+        <state relative-caret-position="312">
+          <caret line="94" column="8" lean-forward="true" selection-start-line="94" selection-start-column="8" selection-end-line="95" selection-end-column="59" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/SOS/Tests/_8_Supplier_Activation/Test_5_ActivateSupplierWithStatusRejectedAsEmergency.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/SOS/Tests/_12_PaymentTermsApprovalinitiation/Test_1_ApprovePaymentTermForSupplierStatusNew.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="265">
-          <caret line="95" selection-start-line="95" selection-end-line="95" />
+        <state relative-caret-position="373">
+          <caret line="89" column="116" lean-forward="true" selection-start-line="89" selection-start-column="116" selection-end-line="89" selection-end-column="116" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/SOS/Tests/_7_Supplier_Deletion_Deactivation/Test_3_Delete_Supplier_Status_New_Pending_Approval_No_PO.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/SOS/Tests/_12_PaymentTermsApprovalinitiation/Test_2_ApprovePaymentTermForSupplierStatusApproved.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="65" selection-start-line="65" selection-end-line="90" selection-end-column="5" />
+        <state relative-caret-position="406">
+          <caret line="113" selection-start-line="113" selection-end-line="113" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/SOS/Tests/_8_Supplier_Activation/Test_6_ActivateSupplierWithStatusNewSupplierPendingApplier.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/SOS/Locators/PurchasingPage/ApproveSupplierPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="79" column="55" selection-start-line="79" selection-start-column="55" selection-end-line="79" selection-end-column="55" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="421">
+          <caret line="96" column="42" selection-start-line="96" selection-start-column="42" selection-end-line="96" selection-end-column="42" />
         </state>
       </provider>
     </entry>
