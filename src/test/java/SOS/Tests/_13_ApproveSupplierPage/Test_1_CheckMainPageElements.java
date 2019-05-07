@@ -1,31 +1,26 @@
-package SOS.Tests._1_Create_Supplier_New_NewPendingApproval_Emergency_Approved_Reject;
+package SOS.Tests._13_ApproveSupplierPage;
 
 import SOS.Locators.LoginPage.LoginPageLocators;
 import SOS.Locators.MainPage.MainPageLocators;
 import SOS.Locators.PurchasingPage.*;
-//import com.sun.org.glassfish.gmbal.Description;
+import SOS.Tests._1_Create_Supplier_New_NewPendingApproval_Emergency_Approved_Reject.Create_Supplier_Status_Reject;
+import SOS.WebHelpers.WebHelpers;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.junit.*;
-//import org.junit.jupiter.api.DisplayName;
 import org.junit.runners.MethodSorters;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.util.concurrent.TimeUnit;
 
-import static SOS.WebHelpers.WebHelpers.*;
-import static WebHelpers.GettersAndSetters.getSupplierName;
-import static WebHelpers.GettersAndSetters.setSupplierName;
-import static WebHelpers.WebHelpers.clickButton;
-import static WebHelpers.WebHelpers.clickButtonIfEnable;
-import static WebHelpers.WebHelpers.clickElement;
-import static WebHelpers.WebHelpers.selectWebElementFromDropDownList;
-import static WebHelpers.WebHelpers.sendTextToMultipleWebElements;
-import static WebHelpers.WebHelpers.sendTextToWebElement;
+import static SOS.WebHelpers.WebHelpers.getTextFromWebElement;
+import static SOS.WebHelpers.WebHelpers.goToUrl;
+import static WebHelpers.GettersAndSetters.*;
+import static WebHelpers.WebHelpers.*;
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
-public class Create_Supplier_Status_Reject {
+public class Test_1_CheckMainPageElements {
     public static WebDriver driver = null;
     public static LoginPageLocators loginPageLocators = null;
     public static MainPageLocators mainPageLocators = null;
@@ -68,42 +63,55 @@ public class Create_Supplier_Status_Reject {
     @Test
     //@Description("Create Supplier")
     //@DisplayName("Create Supplier")
-    public void test_1_createSupplierWithStatusNewPendingApproval(){
+    public void test_1_createSupplierWithStatusNewSupplierPendingApproval(){
         clickButtonIfEnable(mainPageLocators.linkSupplier);
-        selectWebElementFromDropDownList(supplierSearchCreatePage.dropdownListSiteCode, "SALES"); // 130 - AGRO_FARMA;  SALES - DEMO;
+        selectWebElementFromDropDownList(supplierSearchCreatePage.dropdownListSiteCode, "130"); // 130 - AGRO_FARMA;  SALES - DEMO;
         clickButton(supplierSearchCreatePage.buttonCreate);
         createSupplierPage.fillUserDataTableAndSave2("asd@ukr.net", "Supplier_status_APPROVED_DEMO_SALES_", "","999-999-9999", "@ukr.net");
         clickButtonIfEnable(createSupplierPage.buttonSendForApproval);
         sendTextToWebElement(createSupplierPage.fieldComments, "Supplier was created and sent for approval with status New Supplier - Pending Approval");
         clickButtonIfEnable(createSupplierPage.buttonOKpopup);
+
+        setSupplierNumber(supplierDetailPage.fieldSupplierNumber);
         setSupplierName(supplierDetailPage.fieldSupplierName);
 
-        System.out.println("Supplier was created, his Number is: " + getTextFromWebElement(supplierDetailPage.fieldSupplierNumber));
-        System.out.println("Supplier name is : " + getSupplierName());
-        logger.info("Supplier name is : " + getSupplierName());
-        logger.info("Supplier was created, his Number is: " + getTextFromWebElement(supplierDetailPage.fieldSupplierNumber));
+        System.out.println("Supplier was created, his Number is: " + WebHelpers.getTextFromWebElement(supplierDetailPage.fieldSupplierNumber));
+        logger.info("Supplier was created, his Number is: " + WebHelpers.getTextFromWebElement(supplierDetailPage.fieldSupplierNumber));
         logger.info("------------------------------------------------------");
 
         Assert.assertEquals("Supplier Detail", createSupplierPage.textSupplierDetails.getText());
     }
 
     @Test
-    //@Description ("Find last Created Supplier (from \"test_1\") and Reject them")
-    //@DisplayName("Find last Created Supplier (from \"test_1\") and Reject them")
-    public void test_2_rejectSupplierWithStatusNewPendingApproval(){
-        clickButton(mainPageLocators.linkApproveSupplier);
-        selectWebElementFromDropDownList(approvalProcessSelection.dropdownlistSiteName, "DEMO SOS SITE"); // DEMO SOS SITE -- AGRO FARMA
-        findLastRawInTableAndClick2(driver, "//table[@id='approvalProcessData']/tbody/tr[last()]/td[last()]");
-        System.out.println("Suppliers number for rejecting is: " + getTextFromWebElement(approveSupplierPage.fieldSupplierNo));
-        logger.info("Supplier was chosen for Rejecting, his number is: " + getTextFromWebElement(approveSupplierPage.fieldSupplierNo));
-        clickButton(approveSupplierPage.buttonRejected);
-        sendTextToWebElement(approveSupplierPage.fieldCommentsAfterButtonREJECTED, "Supplier_was_rejected");
-        clickButton(approveSupplierPage.buttonOkAfterButtonREJECTED);
-        System.out.println("Supplier name is : " + getSupplierName());
-        logger.info("Supplier was Rejected");
+    public void test_2_createSupplierEmergency(){
+        clickButtonIfEnable(mainPageLocators.linkSupplier);
+        selectWebElementFromDropDownList(supplierSearchCreatePage.dropdownListSiteCode, "130"); // 130 - AGRO_FARMA;  SALES - DEMO;
+        clickButton(supplierSearchCreatePage.buttonCreate);
+        createSupplierPage.fillUserDataEmergencySupplier("asd@ukr.net","Supplier_Emergency_DEMO_SALES_", "123-123-1234", "@ukr.net", "Emergency supplier was created");
+        clickButtonIfEnable(createSupplierPage.buttonOKpopup);
+        System.out.println("Emergency Supplier was created, his number is: " + getTextFromWebElement(supplierDetailPage.fieldSupplierNumber));
+        logger.info("Emergency Supplier was created, his number is: " + getTextFromWebElement(supplierDetailPage.fieldSupplierNumber));
         logger.info("------------------------------------------------------");
 
-        Assert.assertEquals("Approval Process Selection", approvalProcessSelection.textInHeader.getText());
+        Assert.assertEquals("Supplier Detail", createSupplierPage.textSupplierDetails.getText());
     }
 
+    @Test
+    public void test_3_checkSiteCodeDropDownList(){
+        clickButtonIfEnable(mainPageLocators.linkApproveSupplier);
+        selectWebElementFromDropDownList(approvalProcessSelection.dropDownListSiteCode, "130");
+        //findLastRawInTableAndGetValue(driver, "//table[@id='approvalProcessData']/tbody/tr[last()]/td[1]");
+        setWebElementText(findLastRawInTableAndGetValue(driver, "//table[@id='approvalProcessData']/tbody/tr[last()]/td[1]"));
+
+        Assert.assertEquals("130", getWebElementValue(driver, "//table[@id='approvalProcessData']/tbody/tr[last()]/td[1]"));
+    }
+
+    @Test
+    public  void test_4(){
+        clickButtonIfEnable(mainPageLocators.linkApproveSupplier);
+        selectWebElementFromDropDownList(approvalProcessSelection.dropDownListSiteCode, "130");
+        System.out.println("site code is: " + getWebElementValue(driver, "//table[@id='approvalProcessData']/tbody/tr[last()]/td[1]"));
+        System.out.println("Supplier number is: " + getSupplierNumber());
+        System.out.println("Supplier name is: " + getSupplierName());
+    }
 }

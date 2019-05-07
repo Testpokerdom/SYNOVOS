@@ -16,6 +16,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import java.util.concurrent.TimeUnit;
 
 import static SOS.WebHelpers.WebHelpers.goToUrl;
+import static WebHelpers.GettersAndSetters.getSupplierName;
+import static WebHelpers.GettersAndSetters.setSupplierName;
 import static WebHelpers.WebHelpers.*;
 
 public class Create_Supplier_Status_New_Pending_Approval {
@@ -69,8 +71,13 @@ public class Create_Supplier_Status_New_Pending_Approval {
         clickButtonIfEnable(createSupplierPage.buttonSendForApproval);
         sendTextToWebElement(createSupplierPage.fieldComments, "Supplier was created and sent for approval with status New Supplier - Pending Approval");
         clickButtonIfEnable(createSupplierPage.buttonOKpopup);
+
+        setSupplierName(supplierDetailPage.fieldSupplierName);
+
         System.out.println("Supplier was created, his Number is: " + WebHelpers.getTextFromWebElement(supplierDetailPage.fieldSupplierNumber));
+        System.out.println("Supplier name is : " + getSupplierName());
         logger.info("Supplier was created, his Number is: " + WebHelpers.getTextFromWebElement(supplierDetailPage.fieldSupplierNumber));
+        logger.info("Supplier name is : " + getSupplierName());
         logger.info("------------------------------------------------------");
 
         Assert.assertEquals("Supplier Detail", createSupplierPage.textSupplierDetails.getText());

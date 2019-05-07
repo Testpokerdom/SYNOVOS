@@ -25,6 +25,8 @@ public class SupplierDetailPage extends CreateSupplierPage {
     //Saved User details from the Table
     @FindBy (xpath = "//table[@class='datagrid']/tbody[1]//td[contains(text(),'Supplier No:')]/following-sibling::td[1]")
     public WebElement fieldSupplierNumber;
+    @FindBy (xpath = "//table[@class='datagrid']/tbody[1]//td[contains(text(),'Supplier Name:')]/following-sibling::td[1]")
+    public WebElement fieldSupplierName;
     @FindBy (xpath = "//form[@id='command']//table//tbody//tr[21]/td[2]")
     public WebElement fieldTDBSupplier;
     @FindBy (name = "editActiveStatus")

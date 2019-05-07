@@ -16,6 +16,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.util.concurrent.TimeUnit;
 
+import static WebHelpers.GettersAndSetters.getSupplierName;
+import static WebHelpers.GettersAndSetters.setSupplierName;
 import static WebHelpers.WebHelpers.*;
 
 //import static SOS.WebHelpers.WebHelpers.*;
@@ -68,10 +70,15 @@ public class Create_Supplier_Status_New {
         clickButtonIfEnable(mainPageLocators.linkSupplier);
         selectWebElementFromDropDownList(supplierSearchCreatePage.dropdownListSiteCode, "SALES"); // 130 - AGRO_FARMA;  SALES - DEMO;
         clickButton(supplierSearchCreatePage.buttonCreate);
-        createSupplierPage.fillUserDataTableAndSave2("asd@ukr.net", "Supplier_status_APPROVED_DEMO_SALES_", "","999-999-9999", "@ukr.net");
+        createSupplierPage.fillUserDataTableAndSave2("asd@ukr.net", "Supplier_status_NEW_DEMO_SALES_", "","999-999-9999", "@ukr.net");
         clickButtonIfEnable(createSupplierPage.buttonSave);
-        System.out.println("Supplier was created, his Number is: " + WebHelpers.getTextFromWebElement(supplierDetailPage.fieldSupplierNumber));
-        logger.info("Supplier was created, his Number is: " + WebHelpers.getTextFromWebElement(supplierDetailPage.fieldSupplierNumber));
+
+        setSupplierName(supplierDetailPage.fieldSupplierName);
+
+        System.out.println("Supplier was created, his Number is: " + getTextFromWebElement(supplierDetailPage.fieldSupplierNumber));
+        System.out.println("Supplier name is : " + getSupplierName());
+        logger.info("Supplier was created, his Number is: " + getTextFromWebElement(supplierDetailPage.fieldSupplierNumber));
+        logger.info("Supplier name is : " + getSupplierName());
         logger.info("------------------------------------------------------");
 
         Assert.assertEquals("Supplier Detail", createSupplierPage.textSupplierDetails.getText());

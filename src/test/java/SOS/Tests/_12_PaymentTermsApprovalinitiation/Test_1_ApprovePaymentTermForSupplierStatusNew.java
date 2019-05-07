@@ -87,7 +87,7 @@ public class Test_1_ApprovePaymentTermForSupplierStatusNew {
         clickElement(mainPageLocators.tablePurchasing);
         clickWebElementIfEnable(mainPageLocators.linkApproveSupplier);
         Assert.assertEquals("Supplier Payment Terms Approval Process", approveSupplierListPage.fieldApprovalTypeLastString.getText());
-        Assert.assertTrue(WebHelpers.getTextFromWebElement(approveSupplierListPage.fielsComments).contains("(PT)"));
+        Assert.assertTrue(WebHelpers.getTextFromWebElement(approveSupplierListPage.fieldCommentsLastString).contains("(PT)"));
 
         approveSupplierPage.approveRequestedPaymentTermForSupplierWithStatusNEW(driver);
 

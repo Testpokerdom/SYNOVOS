@@ -273,6 +273,13 @@ public class WebHelpers {
 
     }
 
+    public static String findLastRawInTableAndGetValue (WebDriver driver, String xpath){
+        WebElement element = driver.findElement(By.xpath(xpath));
+        String a = element.getText();
+
+        return a;
+    }
+
     public static String getCurrentTimeUsingCalendar() {
         Calendar cal = Calendar.getInstance();
         Date date=cal.getTime();
