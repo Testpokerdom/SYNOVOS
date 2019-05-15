@@ -67,12 +67,12 @@ public class View_Supplier_Status_Emergency {
     @Test
     public void createSupplierEmergency(){
         clickButtonIfEnable(mainPageLocators.linkSupplier);
-        selectWebElementFromDropDownList(supplierSearchCreatePage.dropdownListSiteCode, "SALES"); // 130 - AGRO_FARMA;  SALES - DEMO;
+        selectWebElementFromDropDownList(supplierSearchCreatePage.dropdownListSiteCode, "130"); // 130 - AGRO_FARMA;  SALES - DEMO;
         clickButton(supplierSearchCreatePage.buttonCreate);
         createSupplierPage.fillUserDataEmergencySupplier("asd@ukr.net","Supplier_Emergency_DEMO_SALES_", "123-123-1234", "@ukr.net", "Emergency supplier was created");
         clickButtonIfEnable(createSupplierPage.buttonOKpopup);
-        System.out.println("Emergency Supplier was created, his number is: " + WebHelpers.getTextFromWebElement(supplierDetailPage.fieldSupplierNumber));
-        logger.info("Emergency Supplier was created, his number is: " + WebHelpers.getTextFromWebElement(supplierDetailPage.fieldSupplierNumber));
+        System.out.println("Emergency Supplier was created, his number is: " + getTextFromWebElement(supplierDetailPage.fieldSupplierNumber));
+        logger.info("Emergency Supplier was created, his number is: " + getTextFromWebElement(supplierDetailPage.fieldSupplierNumber));
         logger.info("------------------------------------------------------");
 
         Assert.assertEquals("Supplier Detail", createSupplierPage.textSupplierDetails.getText());

@@ -1,0 +1,740 @@
+14:04:06.579 INFO  WebHelpers -Send text to WebElement Login: "VBIBIKSU"
+14:04:06.711 INFO  WebHelpers -Send text to WebElement Password: "deadman11"
+14:04:08.058 INFO  WebHelpers -Click Button ""
+14:04:08.145 INFO  WebHelpers -Click WebElement "Purchasing "
+14:04:08.444 INFO  WebHelpers -Click Button  with value - "null" - Supplier - 
+14:04:09.385 INFO  WebHelpers -Click Button "Create"
+14:04:09.598 INFO  CreateSupplierPage -Field Remit To was field by value
+14:04:11.262 INFO  WebHelpers -Click Button  with value - "Send For Approval" -  - 
+14:04:11.606 INFO  WebHelpers -Send text to WebElement: "[[ChromeDriver: chrome on XP (49e7b2e1ab3b19b919f436ba4cb70755)] -> id: approvalCommentsHolder]". Text: " Supplier was created and sent for approval with status New Supplier - Pending Approval"
+14:04:12.230 INFO  WebHelpers -Click Button  with value - "null" - OK - 
+14:04:12.279 INFO  Create_Supplier_Status_Reject -Supplier was created, his Number is: S0450
+14:04:12.279 INFO  Create_Supplier_Status_Reject -------------------------------------------------------
+14:04:17.432 INFO  WebHelpers -Send text to WebElement Login: "VBIBIKSU"
+14:04:17.511 INFO  WebHelpers -Send text to WebElement Password: "deadman11"
+14:04:17.795 INFO  WebHelpers -Click Button ""
+14:04:17.894 INFO  WebHelpers -Click WebElement "Purchasing "
+14:04:18.128 INFO  WebHelpers -Click Button  with value - "null" - Supplier - 
+14:04:18.630 INFO  WebHelpers -Click Button "Create"
+14:04:18.793 INFO  CreateSupplierPage -Field Remit To was field by value
+14:04:20.187 INFO  WebHelpers -Click Button "Send For Approval"
+14:04:20.773 INFO  WebHelpers -Click Button  with value - "null" - OK - 
+14:04:20.824 INFO  Create_Supplier_Status_Reject -Emergency Supplier was created, his number is: S0451
+14:04:20.824 INFO  Create_Supplier_Status_Reject -------------------------------------------------------
+14:07:55.295 INFO  WebHelpers -Send text to WebElement Login: "VBIBIKSU"
+14:07:55.393 INFO  WebHelpers -Send text to WebElement Password: "deadman11"
+14:07:55.717 INFO  WebHelpers -Click Button ""
+14:07:55.814 INFO  WebHelpers -Click WebElement "Purchasing "
+14:07:56.049 INFO  WebHelpers -Click Button  with value - "null" - Supplier - 
+14:07:56.598 INFO  WebHelpers -Click Button "Create"
+14:07:56.736 INFO  CreateSupplierPage -Field Remit To was field by value
+14:07:58.217 INFO  WebHelpers -Click Button  with value - "Send For Approval" -  - 
+14:07:58.639 INFO  WebHelpers -Send text to WebElement: "[[ChromeDriver: chrome on XP (2a7657a2a7d19cb8bb8025cc9f52755c)] -> id: approvalCommentsHolder]". Text: " Supplier was created and sent for approval with status New Supplier - Pending Approval"
+14:07:59.130 INFO  WebHelpers -Click Button  with value - "null" - OK - 
+14:07:59.178 INFO  Create_Supplier_Status_Reject -Supplier was created, his Number is: S0008
+14:07:59.178 INFO  Create_Supplier_Status_Reject -------------------------------------------------------
+14:08:03.586 INFO  WebHelpers -Send text to WebElement Login: "VBIBIKSU"
+14:08:03.667 INFO  WebHelpers -Send text to WebElement Password: "deadman11"
+14:08:03.905 INFO  WebHelpers -Click Button ""
+14:08:03.999 INFO  WebHelpers -Click WebElement "Purchasing "
+14:08:04.275 INFO  WebHelpers -Click Button  with value - "null" - Supplier - 
+14:08:04.788 INFO  WebHelpers -Click Button "Create"
+14:08:04.977 INFO  CreateSupplierPage -Field Remit To was field by value
+14:08:06.464 INFO  WebHelpers -Click Button "Send For Approval"
+14:08:07.049 INFO  WebHelpers -Click Button  with value - "null" - OK - 
+14:08:07.098 INFO  Create_Supplier_Status_Reject -Emergency Supplier was created, his number is: S0009
+14:08:07.098 INFO  Create_Supplier_Status_Reject -------------------------------------------------------
+15:04:07.494 INFO  WebHelpers -Send text to WebElement Login: "VBIBIKSU"
+15:04:07.590 INFO  WebHelpers -Send text to WebElement Password: "deadman11"
+15:04:07.980 INFO  WebHelpers -Click Button ""
+15:04:08.071 INFO  WebHelpers -Click WebElement "Purchasing "
+15:04:08.877 INFO  WebHelpers -Click Button  with value - "null" - Approve Supplier - 
+15:11:29.731 INFO  WebHelpers -Send text to WebElement Login: "VBIBIKSU"
+15:11:29.852 INFO  WebHelpers -Send text to WebElement Password: "deadman11"
+15:11:30.369 INFO  WebHelpers -Click Button ""
+15:11:30.464 INFO  WebHelpers -Click WebElement "Purchasing "
+15:11:31.096 INFO  WebHelpers -Click Button  with value - "null" - Approve Supplier - 
+15:20:19.340 INFO  WebHelpers -Send text to WebElement Login: "VBIBIKSU"
+15:20:19.444 INFO  WebHelpers -Send text to WebElement Password: "deadman11"
+15:20:19.805 INFO  WebHelpers -Click Button ""
+15:20:19.912 INFO  WebHelpers -Click WebElement "Purchasing "
+15:20:20.594 INFO  WebHelpers -Click Button  with value - "null" - Approve Supplier - 
+15:29:30.756 INFO  WebHelpers -Send text to WebElement Login: "VBIBIKSU"
+15:29:30.869 INFO  WebHelpers -Send text to WebElement Password: "deadman11"
+15:29:31.230 INFO  WebHelpers -Click Button ""
+15:29:31.319 INFO  WebHelpers -Click WebElement "Purchasing "
+15:29:32.077 INFO  WebHelpers -Click Button  with value - "null" - Approve Supplier - 
+15:30:24.323 INFO  WebHelpers -Send text to WebElement Login: "VBIBIKSU"
+15:30:24.411 INFO  WebHelpers -Send text to WebElement Password: "deadman11"
+15:30:24.796 INFO  WebHelpers -Click Button ""
+15:30:24.897 INFO  WebHelpers -Click WebElement "Purchasing "
+15:30:25.571 INFO  WebHelpers -Click Button  with value - "null" - Approve Supplier - 
+15:31:07.099 INFO  WebHelpers -Send text to WebElement Login: "VBIBIKSU"
+15:31:07.199 INFO  WebHelpers -Send text to WebElement Password: "deadman11"
+15:31:07.555 INFO  WebHelpers -Click Button ""
+15:31:07.649 INFO  WebHelpers -Click WebElement "Purchasing "
+15:31:08.239 INFO  WebHelpers -Click Button  with value - "null" - Approve Supplier - 
+15:31:53.475 INFO  WebHelpers -Send text to WebElement Login: "VBIBIKSU"
+15:31:53.565 INFO  WebHelpers -Send text to WebElement Password: "deadman11"
+15:31:53.797 INFO  WebHelpers -Click Button ""
+15:31:53.889 INFO  WebHelpers -Click WebElement "Purchasing "
+15:31:54.376 INFO  WebHelpers -Click Button  with value - "null" - Approve Supplier - 
+15:58:19.470 INFO  WebHelpers -Send text to WebElement Login: "VBIBIKSU"
+15:58:19.568 INFO  WebHelpers -Send text to WebElement Password: "deadman11"
+15:58:20.171 INFO  WebHelpers -Click Button ""
+15:58:20.259 INFO  WebHelpers -Click WebElement "Purchasing "
+15:58:21.233 INFO  WebHelpers -Click Button  with value - "null" - Approve Supplier - 
+15:58:35.642 INFO  WebHelpers -Send text to WebElement Login: "VBIBIKSU"
+15:58:35.739 INFO  WebHelpers -Send text to WebElement Password: "deadman11"
+15:58:36.129 INFO  WebHelpers -Click Button ""
+15:58:36.219 INFO  WebHelpers -Click WebElement "Purchasing "
+15:58:36.878 INFO  WebHelpers -Click Button  with value - "null" - Approve Supplier - 
+15:59:53.299 INFO  WebHelpers -Send text to WebElement Login: "VBIBIKSU"
+15:59:53.396 INFO  WebHelpers -Send text to WebElement Password: "deadman11"
+15:59:53.820 INFO  WebHelpers -Click Button ""
+15:59:53.913 INFO  WebHelpers -Click WebElement "Purchasing "
+15:59:54.553 INFO  WebHelpers -Click Button  with value - "null" - Approve Supplier - 
+15:59:58.549 INFO  WebHelpers -Send text to WebElement Login: "VBIBIKSU"
+15:59:58.631 INFO  WebHelpers -Send text to WebElement Password: "deadman11"
+15:59:58.949 INFO  WebHelpers -Click Button ""
+15:59:59.039 INFO  WebHelpers -Click WebElement "Purchasing "
+16:00:47.541 INFO  WebHelpers -Send text to WebElement Login: "VBIBIKSU"
+16:00:47.640 INFO  WebHelpers -Send text to WebElement Password: "deadman11"
+16:00:47.982 INFO  WebHelpers -Click Button ""
+16:00:48.065 INFO  WebHelpers -Click WebElement "Purchasing "
+16:00:48.714 INFO  WebHelpers -Click Button  with value - "null" - Approve Supplier - 
+16:00:52.711 INFO  WebHelpers -Send text to WebElement Login: "VBIBIKSU"
+16:00:52.800 INFO  WebHelpers -Send text to WebElement Password: "deadman11"
+16:00:53.092 INFO  WebHelpers -Click Button ""
+16:00:53.245 INFO  WebHelpers -Click WebElement "Purchasing "
+16:00:53.779 INFO  WebHelpers -Click Button  with value - "null" - Approve Supplier - 
+16:46:56.294 INFO  WebHelpers -Send text to WebElement Login: "VBIBIKSU"
+16:46:56.386 INFO  WebHelpers -Send text to WebElement Password: "deadman11"
+16:46:58.173 INFO  WebHelpers -Click Button ""
+16:46:58.325 INFO  WebHelpers -Click WebElement "Purchasing "
+16:46:58.628 INFO  WebHelpers -Click Button  with value - "null" - Supplier - 
+16:46:59.718 INFO  WebHelpers -Click Button "Create"
+16:46:59.881 INFO  CreateSupplierPage -Field Remit To was field by value
+16:47:01.455 INFO  WebHelpers -Click Button  with value - "Send For Approval" -  - 
+16:47:15.500 INFO  WebHelpers -Send text to WebElement Login: "VBIBIKSU"
+16:47:15.663 INFO  WebHelpers -Send text to WebElement Password: "deadman11"
+16:47:44.932 INFO  WebHelpers -Send text to WebElement Login: "VBIBIKSU"
+16:47:45.044 INFO  WebHelpers -Send text to WebElement Password: "deadman11"
+16:47:45.366 INFO  WebHelpers -Click Button ""
+16:47:45.458 INFO  WebHelpers -Click WebElement "Purchasing "
+16:47:45.732 INFO  WebHelpers -Click Button  with value - "null" - Supplier - 
+16:47:46.414 INFO  WebHelpers -Click Button "Create"
+16:47:46.560 INFO  CreateSupplierPage -Field Remit To was field by value
+16:47:48.129 INFO  WebHelpers -Click Button  with value - "Send For Approval" -  - 
+16:47:48.484 INFO  WebHelpers -Send text to WebElement: "[[ChromeDriver: chrome on XP (af57315383d05f9e443c3850a53b5996)] -> id: approvalCommentsHolder]". Text: " Supplier was created and sent for approval with status New Supplier - Pending Approval"
+16:47:49.156 INFO  WebHelpers -Click Button  with value - "null" - OK - 
+16:49:27.621 INFO  WebHelpers -Send text to WebElement Login: "VBIBIKSU"
+16:49:27.711 INFO  WebHelpers -Send text to WebElement Password: "deadman11"
+16:49:28.204 INFO  WebHelpers -Click Button ""
+16:49:28.299 INFO  WebHelpers -Click WebElement "Purchasing "
+16:49:28.599 INFO  WebHelpers -Click Button  with value - "null" - Supplier - 
+16:49:29.290 INFO  WebHelpers -Click Button "Create"
+16:49:29.427 INFO  CreateSupplierPage -Field Remit To was field by value
+16:49:31.094 INFO  WebHelpers -Click Button  with value - "Send For Approval" -  - 
+16:49:31.494 INFO  WebHelpers -Send text to WebElement: "[[ChromeDriver: chrome on XP (68564cbb6d238e206ed02f63577d0dfd)] -> id: approvalCommentsHolder]". Text: " Supplier was created and sent for approval with status New Supplier - Pending Approval"
+16:49:32.046 INFO  WebHelpers -Click Button  with value - "null" - OK - 
+16:49:32.112 INFO  Create_Supplier_Status_Reject -Supplier was created, his Number is: S0011
+16:49:32.112 INFO  Create_Supplier_Status_Reject -------------------------------------------------------
+16:49:35.886 INFO  WebHelpers -Send text to WebElement Login: "VBIBIKSU"
+16:49:35.969 INFO  WebHelpers -Send text to WebElement Password: "deadman11"
+16:49:36.247 INFO  WebHelpers -Click Button ""
+16:49:36.339 INFO  WebHelpers -Click WebElement "Purchasing "
+16:49:36.590 INFO  WebHelpers -Click Button  with value - "null" - Supplier - 
+16:49:37.168 INFO  WebHelpers -Click Button "Create"
+16:49:37.326 INFO  CreateSupplierPage -Field Remit To was field by value
+16:49:38.723 INFO  WebHelpers -Click Button "Send For Approval"
+16:49:39.311 INFO  WebHelpers -Click Button  with value - "null" - OK - 
+16:49:39.354 INFO  Create_Supplier_Status_Reject -Emergency Supplier was created, his number is: S0012
+16:49:39.354 INFO  Create_Supplier_Status_Reject -------------------------------------------------------
+16:49:43.052 INFO  WebHelpers -Send text to WebElement Login: "VBIBIKSU"
+16:49:43.130 INFO  WebHelpers -Send text to WebElement Password: "deadman11"
+16:49:43.354 INFO  WebHelpers -Click Button ""
+16:49:43.448 INFO  WebHelpers -Click WebElement "Purchasing "
+16:49:44.038 INFO  WebHelpers -Click Button  with value - "null" - Approve Supplier - 
+16:49:48.034 INFO  WebHelpers -Send text to WebElement Login: "VBIBIKSU"
+16:49:48.113 INFO  WebHelpers -Send text to WebElement Password: "deadman11"
+16:49:48.345 INFO  WebHelpers -Click Button ""
+16:49:48.441 INFO  WebHelpers -Click WebElement "Purchasing "
+16:49:48.957 INFO  WebHelpers -Click Button  with value - "null" - Approve Supplier - 
+16:52:49.116 INFO  WebHelpers -Send text to WebElement Login: "VBIBIKSU"
+16:52:49.208 INFO  WebHelpers -Send text to WebElement Password: "deadman11"
+16:52:49.592 INFO  WebHelpers -Click Button ""
+16:52:49.687 INFO  WebHelpers -Click WebElement "Purchasing "
+16:52:49.951 INFO  WebHelpers -Click Button  with value - "null" - Supplier - 
+16:52:50.600 INFO  WebHelpers -Click Button "Create"
+16:52:50.733 INFO  CreateSupplierPage -Field Remit To was field by value
+16:52:52.230 INFO  WebHelpers -Click Button  with value - "Send For Approval" -  - 
+16:52:52.624 INFO  WebHelpers -Send text to WebElement: "[[ChromeDriver: chrome on XP (4ad9ed768b896cb0a9a78d1841756a4b)] -> id: approvalCommentsHolder]". Text: " Supplier was created and sent for approval with status New Supplier - Pending Approval"
+16:52:53.206 INFO  WebHelpers -Click Button  with value - "null" - OK - 
+16:52:53.271 INFO  Create_Supplier_Status_Reject -Supplier was created, his Number is: S0013
+16:52:53.271 INFO  Create_Supplier_Status_Reject -------------------------------------------------------
+16:52:57.034 INFO  WebHelpers -Send text to WebElement Login: "VBIBIKSU"
+16:52:57.124 INFO  WebHelpers -Send text to WebElement Password: "deadman11"
+16:52:57.345 INFO  WebHelpers -Click Button ""
+16:52:57.442 INFO  WebHelpers -Click WebElement "Purchasing "
+16:52:57.682 INFO  WebHelpers -Click Button  with value - "null" - Supplier - 
+16:52:58.245 INFO  WebHelpers -Click Button "Create"
+16:52:58.386 INFO  CreateSupplierPage -Field Remit To was field by value
+16:52:59.760 INFO  WebHelpers -Click Button "Send For Approval"
+16:53:00.440 INFO  WebHelpers -Click Button  with value - "null" - OK - 
+16:53:00.493 INFO  Create_Supplier_Status_Reject -Emergency Supplier was created, his number is: S0014
+16:53:00.493 INFO  Create_Supplier_Status_Reject -------------------------------------------------------
+16:53:04.292 INFO  WebHelpers -Send text to WebElement Login: "VBIBIKSU"
+16:53:04.372 INFO  WebHelpers -Send text to WebElement Password: "deadman11"
+16:53:04.615 INFO  WebHelpers -Click Button ""
+16:53:04.707 INFO  WebHelpers -Click WebElement "Purchasing "
+16:53:05.340 INFO  WebHelpers -Click Button  with value - "null" - Approve Supplier - 
+16:53:09.385 INFO  WebHelpers -Send text to WebElement Login: "VBIBIKSU"
+16:53:09.466 INFO  WebHelpers -Send text to WebElement Password: "deadman11"
+16:53:09.771 INFO  WebHelpers -Click Button ""
+16:53:09.872 INFO  WebHelpers -Click WebElement "Purchasing "
+16:53:10.446 INFO  WebHelpers -Click Button  with value - "null" - Approve Supplier - 
+16:56:20.341 INFO  WebHelpers -Send text to WebElement Login: "VBIBIKSU"
+16:56:20.440 INFO  WebHelpers -Send text to WebElement Password: "deadman11"
+16:56:20.833 INFO  WebHelpers -Click Button ""
+16:56:20.928 INFO  WebHelpers -Click WebElement "Purchasing "
+16:56:21.192 INFO  WebHelpers -Click Button  with value - "null" - Supplier - 
+16:56:21.832 INFO  WebHelpers -Click Button "Create"
+16:56:21.975 INFO  CreateSupplierPage -Field Remit To was field by value
+16:56:23.589 INFO  WebHelpers -Click Button  with value - "Send For Approval" -  - 
+16:56:24.049 INFO  WebHelpers -Send text to WebElement: "[[ChromeDriver: chrome on XP (4b2eee519f71159d3b6b3b7f9893c755)] -> id: approvalCommentsHolder]". Text: " Supplier was created and sent for approval with status New Supplier - Pending Approval"
+16:56:24.550 INFO  WebHelpers -Click Button  with value - "null" - OK - 
+16:56:24.617 INFO  Create_Supplier_Status_Reject -Supplier was created, his Number is: S0015
+16:56:24.618 INFO  Create_Supplier_Status_Reject -------------------------------------------------------
+16:56:28.728 INFO  WebHelpers -Send text to WebElement Login: "VBIBIKSU"
+16:56:28.835 INFO  WebHelpers -Send text to WebElement Password: "deadman11"
+16:56:29.184 INFO  WebHelpers -Click Button ""
+16:56:29.293 INFO  WebHelpers -Click WebElement "Purchasing "
+16:56:29.584 INFO  WebHelpers -Click Button  with value - "null" - Supplier - 
+16:56:30.562 INFO  WebHelpers -Click Button "Create"
+16:56:30.732 INFO  CreateSupplierPage -Field Remit To was field by value
+16:56:32.387 INFO  WebHelpers -Click Button "Send For Approval"
+16:56:33.030 INFO  WebHelpers -Click Button  with value - "null" - OK - 
+16:56:33.084 INFO  Create_Supplier_Status_Reject -Emergency Supplier was created, his number is: S0016
+16:56:33.084 INFO  Create_Supplier_Status_Reject -------------------------------------------------------
+16:56:36.948 INFO  WebHelpers -Send text to WebElement Login: "VBIBIKSU"
+16:56:37.043 INFO  WebHelpers -Send text to WebElement Password: "deadman11"
+16:56:37.266 INFO  WebHelpers -Click Button ""
+16:56:37.365 INFO  WebHelpers -Click WebElement "Purchasing "
+16:56:37.935 INFO  WebHelpers -Click Button  with value - "null" - Approve Supplier - 
+16:56:41.901 INFO  WebHelpers -Send text to WebElement Login: "VBIBIKSU"
+16:56:41.978 INFO  WebHelpers -Send text to WebElement Password: "deadman11"
+16:56:42.197 INFO  WebHelpers -Click Button ""
+16:56:42.279 INFO  WebHelpers -Click WebElement "Purchasing "
+16:56:42.879 INFO  WebHelpers -Click Button  with value - "null" - Approve Supplier - 
+17:07:36.534 INFO  WebHelpers -Send text to WebElement Login: "VBIBIKSU"
+17:07:36.625 INFO  WebHelpers -Send text to WebElement Password: "deadman11"
+17:07:37.036 INFO  WebHelpers -Click Button ""
+17:07:37.130 INFO  WebHelpers -Click WebElement "Purchasing "
+17:07:37.438 INFO  WebHelpers -Click Button  with value - "null" - Supplier - 
+17:07:37.983 INFO  WebHelpers -Click Button "Create"
+17:07:38.125 INFO  CreateSupplierPage -Field Remit To was field by value
+17:07:39.725 INFO  WebHelpers -Click Button  with value - "Send For Approval" -  - 
+17:07:40.032 INFO  WebHelpers -Send text to WebElement: "[[ChromeDriver: chrome on XP (2f51c891b64ee5090ef55c4f3d65ef4c)] -> id: approvalCommentsHolder]". Text: " Supplier was created and sent for approval with status New Supplier - Pending Approval"
+17:07:40.518 INFO  WebHelpers -Click Button  with value - "null" - OK - 
+17:07:40.609 INFO  Create_Supplier_Status_Reject -Supplier was created, his Number is: S0017
+17:07:40.609 INFO  Create_Supplier_Status_Reject -------------------------------------------------------
+17:07:44.283 INFO  WebHelpers -Send text to WebElement Login: "VBIBIKSU"
+17:07:44.379 INFO  WebHelpers -Send text to WebElement Password: "deadman11"
+17:07:44.612 INFO  WebHelpers -Click Button ""
+17:07:44.706 INFO  WebHelpers -Click WebElement "Purchasing "
+17:07:44.959 INFO  WebHelpers -Click Button  with value - "null" - Supplier - 
+17:07:45.522 INFO  WebHelpers -Click Button "Create"
+17:07:45.652 INFO  CreateSupplierPage -Field Remit To was field by value
+17:07:47.125 INFO  WebHelpers -Click Button "Send For Approval"
+17:07:47.739 INFO  WebHelpers -Click Button  with value - "null" - OK - 
+17:07:47.785 INFO  Create_Supplier_Status_Reject -Emergency Supplier was created, his number is: S0018
+17:07:47.785 INFO  Create_Supplier_Status_Reject -------------------------------------------------------
+17:07:51.659 INFO  WebHelpers -Send text to WebElement Login: "VBIBIKSU"
+17:07:51.749 INFO  WebHelpers -Send text to WebElement Password: "deadman11"
+17:07:54.445 INFO  WebHelpers -Click Button ""
+17:07:54.531 INFO  WebHelpers -Click WebElement "Purchasing "
+17:07:56.110 INFO  WebHelpers -Click Button  with value - "null" - Approve Supplier - 
+17:08:00.099 INFO  WebHelpers -Send text to WebElement Login: "VBIBIKSU"
+17:08:00.200 INFO  WebHelpers -Send text to WebElement Password: "deadman11"
+17:08:00.503 INFO  WebHelpers -Click Button ""
+17:08:00.588 INFO  WebHelpers -Click WebElement "Purchasing "
+17:08:01.186 INFO  WebHelpers -Click Button  with value - "null" - Approve Supplier - 
+17:30:55.511 INFO  WebHelpers -Send text to WebElement Login: "VBIBIKSU"
+17:30:55.599 INFO  WebHelpers -Send text to WebElement Password: "deadman11"
+17:30:55.927 INFO  WebHelpers -Click Button ""
+17:30:56.023 INFO  WebHelpers -Click WebElement "Purchasing "
+17:30:56.264 INFO  WebHelpers -Click Button  with value - "null" - Supplier - 
+17:30:56.850 INFO  WebHelpers -Click Button "Create"
+17:30:57.079 INFO  CreateSupplierPage -Field Remit To was field by value
+17:30:58.908 INFO  WebHelpers -Click Button "Send For Approval"
+17:30:59.569 INFO  WebHelpers -Click Button  with value - "null" - OK - 
+17:30:59.617 INFO  LoginPageTests -Supplier was created, his Number is: S0452
+17:30:59.617 INFO  LoginPageTests -------------------------------------------------------
+17:31:04.137 INFO  WebHelpers -Send text to WebElement Login: "VBIBIKSU"
+17:31:04.250 INFO  WebHelpers -Send text to WebElement Password: "deadman11"
+17:31:05.140 INFO  WebHelpers -Click Button ""
+17:31:05.220 INFO  WebHelpers -Click WebElement "Purchasing "
+17:31:06.182 INFO  WebHelpers -Click Button "null"
+17:31:07.524 INFO  LoginPageTests -Approved Supplier number is: S0452
+17:31:07.735 INFO  WebHelpers -Click WebElement " "
+17:31:07.825 INFO  WebHelpers -Click Button "Approve"
+17:31:08.509 INFO  WebHelpers -Click Button "null"
+17:31:08.510 INFO  LoginPageTests -Supplier successfully passed first approval stage..
+17:31:08.510 INFO  LoginPageTests -------------------------------------------------------
+17:31:13.032 INFO  WebHelpers -Send text to WebElement Login: "VBIBIKSU"
+17:31:13.117 INFO  WebHelpers -Send text to WebElement Password: "deadman11"
+17:31:13.609 INFO  WebHelpers -Click Button ""
+17:31:13.697 INFO  WebHelpers -Click WebElement "Purchasing "
+17:31:14.198 INFO  WebHelpers -Click Button "null"
+17:31:14.857 INFO  LoginPageTests -Supplier was approved, his number is: S0452
+17:31:15.528 INFO  WebHelpers -Click WebElement " "
+17:31:15.611 INFO  WebHelpers -Click Button "Approve"
+17:31:16.180 INFO  WebHelpers -Click Button "null"
+17:31:16.180 INFO  LoginPageTests -Supplier successfully passed second approval stage.
+17:31:16.180 INFO  LoginPageTests -------------------------------------------------------
+17:31:20.629 INFO  WebHelpers -Send text to WebElement Login: "VBIBIKSU"
+17:31:20.705 INFO  WebHelpers -Send text to WebElement Password: "deadman11"
+17:31:21.003 INFO  WebHelpers -Click Button  with value - "" -  - 
+17:31:21.130 INFO  WebHelpers -Click Button  with value - "null" - Purchasing - 
+17:31:21.352 INFO  WebHelpers -Click Button  with value - "null" - Supplier - 
+17:31:21.799 INFO  WebHelpers -Click Button "Create"
+17:31:21.949 INFO  CreateSupplierPage -Field Remit To was field by value
+17:31:23.380 INFO  WebHelpers -Click Button "Send For Approval"
+17:31:23.969 INFO  WebHelpers -Click Button  with value - "null" - OK - 
+17:31:24.021 INFO  Create_Supplier_Status_Emergancy -Emergency Supplier was created, his number is: S0453
+17:31:24.021 INFO  Create_Supplier_Status_Emergancy -------------------------------------------------------
+17:31:28.325 INFO  LoginPageTests -------------------------------------------------------
+17:31:28.487 INFO  WebHelpers -Open URL: http://localhost:8080/sos/splashScreen.sos
+17:31:28.633 INFO  WebHelpers -Send text to WebElement Login: "VBIBIKSU"
+17:31:28.742 INFO  WebHelpers -Send text to WebElement Password: "deadman11"
+17:31:28.976 INFO  WebHelpers -Click Button ""
+17:31:29.065 INFO  WebHelpers -Click WebElement "Purchasing "
+17:31:29.313 INFO  WebHelpers -Click Button  with value - "null" - Supplier - 
+17:31:29.969 INFO  WebHelpers -Click Button "Create"
+17:31:30.189 INFO  CreateSupplierPage -Field Remit To was field by value
+17:31:31.974 INFO  WebHelpers -Click Button  with value - "Save" -  - saveButton
+17:31:32.024 INFO  LoginPageTests -Supplier was created, his Number is: S0454
+17:31:32.024 INFO  LoginPageTests -------------------------------------------------------
+17:31:36.562 INFO  WebHelpers -Send text to WebElement Login: "VBIBIKSU"
+17:31:36.651 INFO  WebHelpers -Send text to WebElement Password: "deadman11"
+17:31:36.883 INFO  WebHelpers -Click Button ""
+17:31:36.973 INFO  WebHelpers -Click WebElement "Purchasing "
+17:31:37.214 INFO  WebHelpers -Click Button  with value - "null" - Supplier - 
+17:31:37.749 INFO  WebHelpers -Click Button "Create"
+17:31:37.888 INFO  CreateSupplierPage -Field Remit To was field by value
+17:31:39.395 INFO  WebHelpers -Click Button  with value - "Send For Approval" -  - 
+17:31:39.760 INFO  WebHelpers -Send text to WebElement: "[[ChromeDriver: chrome on XP (96eee1d22816ea835447c733f533c2c5)] -> id: approvalCommentsHolder]". Text: " Supplier was created and sent for approval with status New Supplier - Pending Approval"
+17:31:40.165 INFO  WebHelpers -Click Button  with value - "null" - OK - 
+17:31:40.212 INFO  Create_Supplier_Status_Reject -Supplier was created, his Number is: S0455
+17:31:40.212 INFO  Create_Supplier_Status_Reject -------------------------------------------------------
+17:31:44.706 INFO  WebHelpers -Send text to WebElement Login: "VBIBIKSU"
+17:31:44.785 INFO  WebHelpers -Send text to WebElement Password: "deadman11"
+17:31:45.099 INFO  WebHelpers -Click Button ""
+17:31:45.223 INFO  WebHelpers -Click WebElement "Purchasing "
+17:31:45.455 INFO  WebHelpers -Click Button  with value - "null" - Supplier - 
+17:31:45.947 INFO  WebHelpers -Click Button "Create"
+17:31:46.090 INFO  CreateSupplierPage -Field Remit To was field by value
+17:31:47.667 INFO  WebHelpers -Click Button  with value - "Send For Approval" -  - 
+17:31:48.082 INFO  WebHelpers -Send text to WebElement: "[[ChromeDriver: chrome on XP (7ba694d99d7fb7d11d17ec9181b696a5)] -> id: approvalCommentsHolder]". Text: " Supplier was created and sent for approval with status New Supplier - Pending Approval"
+17:31:48.457 INFO  WebHelpers -Click Button  with value - "null" - OK - 
+17:31:48.510 INFO  Create_Supplier_Status_Reject -Supplier was created, his Number is: S0456
+17:31:48.511 INFO  Create_Supplier_Status_Reject -------------------------------------------------------
+17:31:53.034 INFO  WebHelpers -Send text to WebElement Login: "VBIBIKSU"
+17:31:53.111 INFO  WebHelpers -Send text to WebElement Password: "deadman11"
+17:31:53.334 INFO  WebHelpers -Click Button ""
+17:31:53.424 INFO  WebHelpers -Click WebElement "Purchasing "
+17:31:54.013 INFO  WebHelpers -Click Button "null"
+17:31:54.585 INFO  Create_Supplier_Status_Reject -Supplier was chosen for Rejecting, his number is: S0456
+17:31:54.700 INFO  WebHelpers -Click Button "Reject"
+17:31:54.973 INFO  WebHelpers -Send text to WebElement: "[[ChromeDriver: chrome on XP (c7ee28ec41c0aa36a6028740048da633)] -> id: decisionCommentsHolder]". Text: " Supplier_was_rejected"
+17:31:55.374 INFO  WebHelpers -Click Button "null"
+17:31:55.374 INFO  Create_Supplier_Status_Reject -Supplier was Rejected
+17:31:55.374 INFO  Create_Supplier_Status_Reject -------------------------------------------------------
+17:45:10.591 INFO  LoginPageTests -------------------------------------------------------
+17:45:10.872 INFO  WebHelpers -Open URL: http://localhost:8080/sos/splashScreen.sos
+17:45:11.001 INFO  WebHelpers -Send text to WebElement Login: "VBIBIKSU"
+17:45:11.081 INFO  WebHelpers -Send text to WebElement Password: "deadman11"
+17:45:11.427 INFO  WebHelpers -Click Button ""
+17:45:11.524 INFO  WebHelpers -Click WebElement "Purchasing "
+17:45:11.769 INFO  WebHelpers -Click Button  with value - "null" - Supplier - 
+17:45:12.324 INFO  WebHelpers -Click Button "Create"
+17:45:12.477 INFO  CreateSupplierPage -Field Remit To was field by value
+17:45:14.381 INFO  WebHelpers -Click Button  with value - "Save" -  - saveButton
+17:45:14.433 INFO  LoginPageTests -Supplier was created, his Number is: S0457
+17:45:14.433 INFO  LoginPageTests -------------------------------------------------------
+17:45:24.259 INFO  LoginPageTests -------------------------------------------------------
+17:45:24.455 INFO  WebHelpers -Open URL: http://localhost:8080/sos/splashScreen.sos
+17:45:24.585 INFO  WebHelpers -Send text to WebElement Login: "VBIBIKSU"
+17:45:24.674 INFO  WebHelpers -Send text to WebElement Password: "deadman11"
+17:45:25.057 INFO  WebHelpers -Click Button ""
+17:45:25.172 INFO  WebHelpers -Click WebElement "Purchasing "
+17:45:25.448 INFO  WebHelpers -Click Button  with value - "null" - Supplier - 
+17:45:26.173 INFO  WebHelpers -Click Button "Create"
+17:45:26.326 INFO  CreateSupplierPage -Field Remit To was field by value
+17:45:28.310 INFO  WebHelpers -Click Button  with value - "Save" -  - saveButton
+17:45:28.362 INFO  LoginPageTests -Supplier was created, his Number is: S0458
+17:45:28.362 INFO  LoginPageTests -------------------------------------------------------
+18:11:08.920 INFO  LoginPageTests -------------------------------------------------------
+18:11:09.231 INFO  WebHelpers -Open URL: http://localhost:8080/sos/splashScreen.sos
+18:11:09.394 INFO  WebHelpers -Send text to WebElement Login: "VBIBIKSU"
+18:11:09.479 INFO  WebHelpers -Send text to WebElement Password: "deadman11"
+18:11:09.891 INFO  WebHelpers -Click Button ""
+18:11:09.989 INFO  WebHelpers -Click WebElement "Purchasing "
+18:11:10.322 INFO  WebHelpers -Click Button  with value - "null" - Supplier - 
+18:11:11.011 INFO  WebHelpers -Click Button "Create"
+18:11:11.198 INFO  CreateSupplierPage -Field Remit To was field by value
+18:11:13.215 INFO  WebHelpers -Click Button  with value - "Save" -  - saveButton
+18:11:13.267 INFO  LoginPageTests -Supplier was created, his Number is: S0459
+18:11:13.267 INFO  LoginPageTests -------------------------------------------------------
+18:18:15.370 INFO  WebHelpers -Send text to WebElement Login: "VBIBIKSU"
+18:18:15.457 INFO  WebHelpers -Send text to WebElement Password: "deadman11"
+18:18:16.654 INFO  WebHelpers -Click Button ""
+18:18:16.763 INFO  WebHelpers -Click WebElement "Purchasing "
+18:18:17.032 INFO  WebHelpers -Click Button  with value - "null" - Supplier - 
+18:18:17.598 INFO  WebHelpers -Click Button "Create"
+18:18:17.747 INFO  CreateSupplierPage -Field Remit To was field by value
+18:18:19.203 INFO  WebHelpers -Click Button "Send For Approval"
+18:18:19.894 INFO  WebHelpers -Click Button  with value - "null" - OK - 
+18:18:19.943 INFO  LoginPageTests -Supplier was created, his Number is: S0460
+18:18:19.944 INFO  LoginPageTests -------------------------------------------------------
+18:18:24.546 INFO  WebHelpers -Send text to WebElement Login: "VBIBIKSU"
+18:18:24.639 INFO  WebHelpers -Send text to WebElement Password: "deadman11"
+18:18:24.911 INFO  WebHelpers -Click Button ""
+18:18:25.023 INFO  WebHelpers -Click WebElement "Purchasing "
+18:18:25.524 INFO  WebHelpers -Click Button "null"
+18:18:26.136 INFO  LoginPageTests -Approved Supplier number is: S0460
+18:18:26.288 INFO  WebHelpers -Click WebElement " "
+18:18:26.379 INFO  WebHelpers -Click Button "Approve"
+18:18:27.060 INFO  WebHelpers -Click Button "null"
+18:18:27.060 INFO  LoginPageTests -Supplier successfully passed first approval stage..
+18:18:27.060 INFO  LoginPageTests -------------------------------------------------------
+18:18:31.601 INFO  WebHelpers -Send text to WebElement Login: "VBIBIKSU"
+18:18:31.677 INFO  WebHelpers -Send text to WebElement Password: "deadman11"
+18:18:31.897 INFO  WebHelpers -Click Button ""
+18:18:31.985 INFO  WebHelpers -Click WebElement "Purchasing "
+18:18:32.442 INFO  WebHelpers -Click Button "null"
+18:18:33.077 INFO  LoginPageTests -Supplier was approved, his number is: S0460
+18:18:33.713 INFO  WebHelpers -Click WebElement " "
+18:18:33.791 INFO  WebHelpers -Click Button "Approve"
+18:18:34.390 INFO  WebHelpers -Click Button "null"
+18:18:34.390 INFO  LoginPageTests -Supplier successfully passed second approval stage.
+18:18:34.390 INFO  LoginPageTests -------------------------------------------------------
+18:29:45.461 INFO  WebHelpers -Send text to WebElement Login: "VBIBIKSU"
+18:29:45.572 INFO  WebHelpers -Send text to WebElement Password: "deadman11"
+18:29:45.933 INFO  WebHelpers -Click Button ""
+18:29:46.033 INFO  WebHelpers -Click WebElement "Purchasing "
+18:29:46.262 INFO  WebHelpers -Click Button  with value - "null" - Supplier - 
+18:29:46.822 INFO  WebHelpers -Click Button "Create"
+18:29:46.969 INFO  CreateSupplierPage -Field Remit To was field by value
+18:29:48.533 INFO  WebHelpers -Click Button  with value - "Send For Approval" -  - 
+18:29:48.940 INFO  WebHelpers -Send text to WebElement: "[[ChromeDriver: chrome on XP (e32364e08653105935a90a6ed0ec4b53)] -> id: approvalCommentsHolder]". Text: " Supplier was created and sent for approval with status New Supplier - Pending Approval"
+18:29:49.382 INFO  WebHelpers -Click Button  with value - "null" - OK - 
+18:29:49.426 INFO  Create_Supplier_Status_Reject -Supplier was created, his Number is: S0461
+18:29:49.426 INFO  Create_Supplier_Status_Reject -------------------------------------------------------
+18:30:01.520 INFO  LoginPageTests -------------------------------------------------------
+18:30:02.005 INFO  WebHelpers -Open URL: http://localhost:8080/sos/splashScreen.sos
+18:30:02.214 INFO  WebHelpers -Send text to WebElement Login: "VBIBIKSU"
+18:30:02.326 INFO  WebHelpers -Send text to WebElement Password: "deadman11"
+18:30:02.626 INFO  WebHelpers -Click Button ""
+18:30:02.746 INFO  WebHelpers -Click WebElement "Purchasing "
+18:30:03.034 INFO  WebHelpers -Click Button  with value - "null" - Supplier - 
+18:30:03.579 INFO  WebHelpers -Click Button "Create"
+18:30:03.726 INFO  CreateSupplierPage -Field Remit To was field by value
+18:30:05.751 INFO  WebHelpers -Click Button  with value - "Save" -  - saveButton
+18:30:05.805 INFO  LoginPageTests -Supplier was created, his Number is: S0462
+18:30:05.805 INFO  LoginPageTests -------------------------------------------------------
+19:07:19.109 INFO  WebHelpers -Send text to WebElement Login: "VBIBIKSU"
+19:07:19.199 INFO  WebHelpers -Send text to WebElement Password: "deadman11"
+19:07:19.566 INFO  WebHelpers -Click Button ""
+19:07:19.669 INFO  WebHelpers -Click WebElement "Purchasing "
+19:07:20.004 INFO  WebHelpers -Click Button  with value - "null" - Supplier - 
+19:07:20.584 INFO  WebHelpers -Click Button "Create"
+19:07:20.733 INFO  CreateSupplierPage -Field Remit To was field by value
+19:07:22.212 INFO  WebHelpers -Click Button "Send For Approval"
+19:07:22.848 INFO  WebHelpers -Click Button  with value - "null" - OK - 
+19:07:22.900 INFO  LoginPageTests -Supplier was created, his Number is: S0463
+19:07:22.900 INFO  LoginPageTests -------------------------------------------------------
+19:07:27.420 INFO  WebHelpers -Send text to WebElement Login: "VBIBIKSU"
+19:07:27.513 INFO  WebHelpers -Send text to WebElement Password: "deadman11"
+19:07:27.804 INFO  WebHelpers -Click Button ""
+19:07:27.896 INFO  WebHelpers -Click WebElement "Purchasing "
+19:07:28.355 INFO  WebHelpers -Click Button "null"
+19:07:28.977 INFO  LoginPageTests -Approved Supplier number is: S0463
+19:07:29.151 INFO  WebHelpers -Click WebElement " "
+19:07:29.240 INFO  WebHelpers -Click Button "Approve"
+19:07:29.928 INFO  WebHelpers -Click Button "null"
+19:07:29.928 INFO  LoginPageTests -Supplier successfully passed first approval stage..
+19:07:29.928 INFO  LoginPageTests -------------------------------------------------------
+19:07:34.443 INFO  WebHelpers -Send text to WebElement Login: "VBIBIKSU"
+19:07:34.562 INFO  WebHelpers -Send text to WebElement Password: "deadman11"
+19:07:35.736 INFO  WebHelpers -Click Button ""
+19:07:35.825 INFO  WebHelpers -Click WebElement "Purchasing "
+19:07:36.865 INFO  WebHelpers -Click Button "null"
+19:07:38.747 INFO  LoginPageTests -Supplier was approved, his number is: S0463
+19:07:39.430 INFO  WebHelpers -Click WebElement " "
+19:07:39.517 INFO  WebHelpers -Click Button "Approve"
+19:07:40.282 INFO  WebHelpers -Click Button "null"
+19:07:40.282 INFO  LoginPageTests -Supplier successfully passed second approval stage.
+19:07:40.282 INFO  LoginPageTests -------------------------------------------------------
+19:07:44.854 INFO  WebHelpers -Send text to WebElement Login: "VBIBIKSU"
+19:07:44.965 INFO  WebHelpers -Send text to WebElement Password: "deadman11"
+19:07:45.275 INFO  WebHelpers -Click Button  with value - "" -  - 
+19:07:45.413 INFO  WebHelpers -Click Button  with value - "null" - Purchasing - 
+19:07:45.711 INFO  WebHelpers -Click Button  with value - "null" - Supplier - 
+19:07:46.221 INFO  WebHelpers -Click Button "Create"
+19:07:46.378 INFO  CreateSupplierPage -Field Remit To was field by value
+19:07:47.841 INFO  WebHelpers -Click Button "Send For Approval"
+19:07:48.473 INFO  WebHelpers -Click Button  with value - "null" - OK - 
+19:07:48.522 INFO  Create_Supplier_Status_Emergancy -Emergency Supplier was created, his number is: S0464
+19:07:48.522 INFO  Create_Supplier_Status_Emergancy -------------------------------------------------------
+19:07:52.787 INFO  LoginPageTests -------------------------------------------------------
+19:07:52.941 INFO  WebHelpers -Open URL: http://localhost:8080/sos/splashScreen.sos
+19:07:53.053 INFO  WebHelpers -Send text to WebElement Login: "VBIBIKSU"
+19:07:53.128 INFO  WebHelpers -Send text to WebElement Password: "deadman11"
+19:07:53.355 INFO  WebHelpers -Click Button ""
+19:07:53.442 INFO  WebHelpers -Click WebElement "Purchasing "
+19:07:53.671 INFO  WebHelpers -Click Button  with value - "null" - Supplier - 
+19:07:54.165 INFO  WebHelpers -Click Button "Create"
+19:07:54.305 INFO  CreateSupplierPage -Field Remit To was field by value
+19:07:56.240 INFO  WebHelpers -Click Button  with value - "Save" -  - saveButton
+19:07:56.288 INFO  LoginPageTests -Supplier was created, his Number is: S0465
+19:07:56.288 INFO  LoginPageTests -------------------------------------------------------
+19:08:00.652 INFO  WebHelpers -Send text to WebElement Login: "VBIBIKSU"
+19:08:00.740 INFO  WebHelpers -Send text to WebElement Password: "deadman11"
+19:08:00.974 INFO  WebHelpers -Click Button ""
+19:08:01.068 INFO  WebHelpers -Click WebElement "Purchasing "
+19:08:01.303 INFO  WebHelpers -Click Button  with value - "null" - Supplier - 
+19:08:01.870 INFO  WebHelpers -Click Button "Create"
+19:08:02.017 INFO  CreateSupplierPage -Field Remit To was field by value
+19:08:03.662 INFO  WebHelpers -Click Button  with value - "Send For Approval" -  - 
+19:08:04.094 INFO  WebHelpers -Send text to WebElement: "[[ChromeDriver: chrome on XP (5a559c4e280b926ee8c53d3b5ed63575)] -> id: approvalCommentsHolder]". Text: " Supplier was created and sent for approval with status New Supplier - Pending Approval"
+19:08:04.423 INFO  WebHelpers -Click Button  with value - "null" - OK - 
+19:08:04.466 INFO  Create_Supplier_Status_Reject -Supplier was created, his Number is: S0466
+19:08:04.466 INFO  Create_Supplier_Status_Reject -------------------------------------------------------
+19:08:08.949 INFO  WebHelpers -Send text to WebElement Login: "VBIBIKSU"
+19:08:09.031 INFO  WebHelpers -Send text to WebElement Password: "deadman11"
+19:08:09.252 INFO  WebHelpers -Click Button ""
+19:08:09.349 INFO  WebHelpers -Click WebElement "Purchasing "
+19:08:09.585 INFO  WebHelpers -Click Button  with value - "null" - Supplier - 
+19:08:10.193 INFO  WebHelpers -Click Button "Create"
+19:08:10.333 INFO  CreateSupplierPage -Field Remit To was field by value
+19:08:11.917 INFO  WebHelpers -Click Button  with value - "Send For Approval" -  - 
+19:08:12.320 INFO  WebHelpers -Send text to WebElement: "[[ChromeDriver: chrome on XP (3271b2c9f9ea1bd391d70105f2a48df6)] -> id: approvalCommentsHolder]". Text: " Supplier was created and sent for approval with status New Supplier - Pending Approval"
+19:08:12.682 INFO  WebHelpers -Click Button  with value - "null" - OK - 
+19:08:12.729 INFO  Create_Supplier_Status_Reject -Supplier was created, his Number is: S0467
+19:08:12.729 INFO  Create_Supplier_Status_Reject -------------------------------------------------------
+19:08:17.375 INFO  WebHelpers -Send text to WebElement Login: "VBIBIKSU"
+19:08:17.475 INFO  WebHelpers -Send text to WebElement Password: "deadman11"
+19:08:17.853 INFO  WebHelpers -Click Button ""
+19:08:17.953 INFO  WebHelpers -Click WebElement "Purchasing "
+19:08:18.487 INFO  WebHelpers -Click Button "null"
+19:08:19.092 INFO  Create_Supplier_Status_Reject -Supplier was chosen for Rejecting, his number is: S0467
+19:08:19.192 INFO  WebHelpers -Click Button "Reject"
+19:08:19.347 INFO  WebHelpers -Send text to WebElement: "[[ChromeDriver: chrome on XP (4caeb2d6ab595a0d6fa94d83e7bb9a15)] -> id: decisionCommentsHolder]". Text: " Supplier_was_rejected"
+19:08:19.710 INFO  WebHelpers -Click Button "null"
+19:08:19.711 INFO  Create_Supplier_Status_Reject -Supplier was Rejected
+19:08:19.711 INFO  Create_Supplier_Status_Reject -------------------------------------------------------
+19:09:00.664 INFO  LoginPageTests -------------------------------------------------------
+19:09:00.876 INFO  WebHelpers -Open URL: http://localhost:8080/sos/splashScreen.sos
+19:09:01.127 INFO  WebHelpers -Send text to WebElement Login: "VBIBIKSU"
+19:09:01.372 INFO  WebHelpers -Send text to WebElement Password: "deadman11"
+19:09:01.952 INFO  WebHelpers -Click Button ""
+19:09:02.043 INFO  WebHelpers -Click WebElement "Purchasing "
+19:09:02.303 INFO  WebHelpers -Click Button  with value - "null" - Supplier - 
+19:09:02.826 INFO  WebHelpers -Click Button "Create"
+19:09:02.978 INFO  CreateSupplierPage -Field Remit To was field by value
+19:09:05.115 INFO  WebHelpers -Click Button  with value - "Save" -  - saveButton
+19:09:05.165 INFO  LoginPageTests -Supplier was created, his Number is: S0468
+19:09:05.165 INFO  LoginPageTests -------------------------------------------------------
+19:10:34.520 INFO  LoginPageTests -------------------------------------------------------
+19:10:34.738 INFO  WebHelpers -Open URL: http://localhost:8080/sos/splashScreen.sos
+19:10:34.913 INFO  WebHelpers -Send text to WebElement Login: "VBIBIKSU"
+19:10:35.028 INFO  WebHelpers -Send text to WebElement Password: "deadman11"
+19:10:35.377 INFO  WebHelpers -Click Button ""
+19:10:35.478 INFO  WebHelpers -Click WebElement "Purchasing "
+19:10:35.726 INFO  WebHelpers -Click Button  with value - "null" - Supplier - 
+19:10:36.451 INFO  WebHelpers -Click Button "Create"
+19:10:36.612 INFO  CreateSupplierPage -Field Remit To was field by value
+19:10:38.586 INFO  WebHelpers -Click Button  with value - "Save" -  - saveButton
+19:10:38.637 INFO  LoginPageTests -Supplier was created, his Number is: S0469
+19:10:38.637 INFO  LoginPageTests -------------------------------------------------------
+19:42:27.254 INFO  LoginPageTests -------------------------------------------------------
+19:42:27.468 INFO  WebHelpers -Open URL: http://localhost:8080/sos/splashScreen.sos
+19:42:27.613 INFO  WebHelpers -Send text to WebElement Login: "VBIBIKSU"
+19:42:27.709 INFO  WebHelpers -Send text to WebElement Password: "deadman11"
+19:42:28.075 INFO  WebHelpers -Click Button ""
+19:42:28.167 INFO  WebHelpers -Click WebElement "Purchasing "
+19:42:28.413 INFO  WebHelpers -Click Button  with value - "null" - Supplier - 
+19:42:28.963 INFO  WebHelpers -Click Button "Create"
+19:42:29.111 INFO  CreateSupplierPage -Field Remit To was field by value
+19:42:31.112 INFO  WebHelpers -Click Button  with value - "Save" -  - saveButton
+19:42:31.165 INFO  WebHelpers -WebElement text "S0470" was received: 
+19:42:31.224 INFO  WebHelpers -WebElement text "S0470" was received: 
+19:42:31.224 INFO  LoginPageTests -Supplier was created, his Number is: S0470
+19:42:31.224 INFO  LoginPageTests -------------------------------------------------------
+19:50:00.075 INFO  WebHelpers -Send text to WebElement Login: "VBIBIKSU"
+19:50:00.163 INFO  WebHelpers -Send text to WebElement Password: "deadman11"
+19:50:00.484 INFO  WebHelpers -Click Button ""
+19:50:00.581 INFO  WebHelpers -Click WebElement "Purchasing "
+19:50:00.828 INFO  WebHelpers -Click Button  with value - "null" - Supplier - 
+19:50:01.322 INFO  WebHelpers -Click Button "Create"
+19:50:01.472 INFO  CreateSupplierPage -Field Remit To was field by value
+19:50:02.992 INFO  WebHelpers -Click Button "Send For Approval"
+19:50:03.691 INFO  WebHelpers -Click Button  with value - "null" - OK - 
+19:50:03.736 INFO  LoginPageTests -Supplier was created, his Number is: S0471
+19:50:03.737 INFO  LoginPageTests -------------------------------------------------------
+19:50:08.330 INFO  WebHelpers -Send text to WebElement Login: "VBIBIKSU"
+19:50:08.428 INFO  WebHelpers -Send text to WebElement Password: "deadman11"
+19:50:08.674 INFO  WebHelpers -Click Button ""
+19:50:08.767 INFO  WebHelpers -Click WebElement "Purchasing "
+19:50:09.346 INFO  WebHelpers -Click Button "null"
+19:50:10.053 INFO  LoginPageTests -Approved Supplier number is: S0469
+19:50:10.244 INFO  WebHelpers -Click WebElement " "
+19:50:10.336 INFO  WebHelpers -Click Button "Approve"
+19:50:10.946 INFO  WebHelpers -Click Button "null"
+19:50:10.946 INFO  LoginPageTests -Supplier successfully passed first approval stage..
+19:50:10.946 INFO  LoginPageTests -------------------------------------------------------
+19:50:15.494 INFO  WebHelpers -Send text to WebElement Login: "VBIBIKSU"
+19:50:15.581 INFO  WebHelpers -Send text to WebElement Password: "deadman11"
+19:50:15.803 INFO  WebHelpers -Click Button ""
+19:50:15.886 INFO  WebHelpers -Click WebElement "Purchasing "
+19:50:16.364 INFO  WebHelpers -Click Button "null"
+19:50:16.945 INFO  LoginPageTests -Supplier was approved, his number is: S0470
+20:02:51.576 INFO  WebHelpers -Send text to WebElement Login: "VBIBIKSU"
+20:02:51.672 INFO  WebHelpers -Send text to WebElement Password: "deadman11"
+20:02:52.129 INFO  WebHelpers -Click Button ""
+20:02:52.217 INFO  WebHelpers -Click WebElement "Purchasing "
+20:02:52.474 INFO  WebHelpers -Click Button  with value - "null" - Supplier - 
+20:02:53.102 INFO  WebHelpers -Click Button "Create"
+20:02:53.276 INFO  CreateSupplierPage -Field Remit To was field by value
+20:02:54.951 INFO  WebHelpers -Click Button  with value - "Send For Approval" -  - 
+20:02:55.567 INFO  WebHelpers -Send text to WebElement: "[[ChromeDriver: chrome on XP (42b2b0f29ca7b719202f1dd9b8b43891)] -> id: approvalCommentsHolder]". Text: " Supplier was created and sent for approval with status New Supplier - Pending Approval"
+20:02:56.097 INFO  WebHelpers -Click Button  with value - "null" - OK - 
+20:02:56.180 INFO  Create_Supplier_Status_Reject -Supplier was created, his Number is: S0472
+20:02:56.180 INFO  Create_Supplier_Status_Reject -Supplier name is : SUPPLIER_STATUS_APPROVED_DEMO_SALES_2019/05/07_0TT
+20:02:56.180 INFO  Create_Supplier_Status_Reject -------------------------------------------------------
+20:08:01.650 INFO  WebHelpers -Send text to WebElement Login: "VBIBIKSU"
+20:08:01.771 INFO  WebHelpers -Send text to WebElement Password: "deadman11"
+20:08:03.607 INFO  WebHelpers -Click Button ""
+20:08:03.694 INFO  WebHelpers -Click WebElement "Purchasing "
+20:08:03.962 INFO  WebHelpers -Click Button  with value - "null" - Supplier - 
+20:08:04.648 INFO  WebHelpers -Click Button "Create"
+20:08:04.798 INFO  CreateSupplierPage -Field Remit To was field by value
+20:08:06.370 INFO  WebHelpers -Click Button  with value - "Send For Approval" -  - 
+20:08:06.945 INFO  WebHelpers -Send text to WebElement: "[[ChromeDriver: chrome on XP (0408383844c12ab0d042d8dfbd7c485f)] -> id: approvalCommentsHolder]". Text: " Supplier was created and sent for approval with status New Supplier - Pending Approval"
+20:08:07.477 INFO  WebHelpers -Click Button  with value - "null" - OK - 
+20:08:07.538 INFO  Create_Supplier_Status_Reject -Supplier name is : SUPPLIER_STATUS_APPROVED_DEMO_SALES_2019/05/07_ETV
+20:08:07.554 INFO  Create_Supplier_Status_Reject -Supplier was created, his Number is: S0473
+20:08:07.554 INFO  Create_Supplier_Status_Reject -------------------------------------------------------
+20:08:11.966 INFO  WebHelpers -Send text to WebElement Login: "VBIBIKSU"
+20:08:12.044 INFO  WebHelpers -Send text to WebElement Password: "deadman11"
+20:08:12.385 INFO  WebHelpers -Click Button ""
+20:08:12.475 INFO  WebHelpers -Click WebElement "Purchasing "
+20:08:13.039 INFO  WebHelpers -Click Button "null"
+20:08:13.678 INFO  Create_Supplier_Status_Reject -Supplier was chosen for Rejecting, his number is: S0473
+20:08:13.790 INFO  WebHelpers -Click Button "Reject"
+20:08:13.961 INFO  WebHelpers -Send text to WebElement: "[[ChromeDriver: chrome on XP (64aff8d5fb3ab81ae347490066e90f38)] -> id: decisionCommentsHolder]". Text: " Supplier_was_rejected"
+20:08:14.370 INFO  WebHelpers -Click Button "null"
+20:08:14.370 INFO  Create_Supplier_Status_Reject -Supplier was Rejected
+20:08:14.370 INFO  Create_Supplier_Status_Reject -------------------------------------------------------
+20:09:05.564 INFO  WebHelpers -Send text to WebElement Login: "VBIBIKSU"
+20:09:05.657 INFO  WebHelpers -Send text to WebElement Password: "deadman11"
+20:09:06.262 INFO  WebHelpers -Click Button ""
+20:09:06.341 INFO  WebHelpers -Click WebElement "Purchasing "
+20:09:06.640 INFO  WebHelpers -Click Button  with value - "null" - Supplier - 
+20:09:07.495 INFO  WebHelpers -Click Button "Create"
+20:09:07.695 INFO  CreateSupplierPage -Field Remit To was field by value
+20:09:09.360 INFO  WebHelpers -Click Button  with value - "Send For Approval" -  - 
+20:09:09.746 INFO  WebHelpers -Send text to WebElement: "[[ChromeDriver: chrome on XP (57c2724f7bf705299f010cc5fe8ef11d)] -> id: approvalCommentsHolder]". Text: " Supplier was created and sent for approval with status New Supplier - Pending Approval"
+20:09:10.409 INFO  WebHelpers -Click Button  with value - "null" - OK - 
+20:09:10.470 INFO  Create_Supplier_Status_Reject -Supplier name is : SUPPLIER_STATUS_APPROVED_DEMO_SALES_2019/05/07_JDD
+20:09:10.490 INFO  Create_Supplier_Status_Reject -Supplier was created, his Number is: S0474
+20:09:10.490 INFO  Create_Supplier_Status_Reject -------------------------------------------------------
+20:09:15.134 INFO  WebHelpers -Send text to WebElement Login: "VBIBIKSU"
+20:09:15.239 INFO  WebHelpers -Send text to WebElement Password: "deadman11"
+20:09:15.553 INFO  WebHelpers -Click Button ""
+20:09:15.640 INFO  WebHelpers -Click WebElement "Purchasing "
+20:09:16.131 INFO  WebHelpers -Click Button "null"
+20:09:16.758 INFO  Create_Supplier_Status_Reject -Supplier was chosen for Rejecting, his number is: S0474
+20:09:16.867 INFO  WebHelpers -Click Button "Reject"
+20:09:17.013 INFO  WebHelpers -Send text to WebElement: "[[ChromeDriver: chrome on XP (cf651ff76de860f3479d5f15ea832141)] -> id: decisionCommentsHolder]". Text: " Supplier_was_rejected"
+20:09:17.404 INFO  WebHelpers -Click Button "null"
+20:09:17.404 INFO  Create_Supplier_Status_Reject -Supplier was Rejected
+20:09:17.404 INFO  Create_Supplier_Status_Reject -------------------------------------------------------
+20:56:50.777 INFO  WebHelpers -Send text to WebElement Login: "VBIBIKSU"
+20:56:50.897 INFO  WebHelpers -Send text to WebElement Password: "deadman11"
+20:56:51.832 INFO  WebHelpers -Click Button ""
+20:56:51.941 INFO  WebHelpers -Click WebElement "Purchasing "
+20:57:06.582 INFO  WebHelpers -Send text to WebElement Login: "VBIBIKSU"
+20:57:06.664 INFO  WebHelpers -Send text to WebElement Password: "deadman11"
+20:57:06.913 INFO  WebHelpers -Click Button ""
+20:57:07.006 INFO  WebHelpers -Click WebElement "Purchasing "
+20:57:07.790 INFO  WebHelpers -Click Button "null"
+20:57:08.387 INFO  LoginPageTests -Approved Supplier number is: S0469
+20:57:08.544 INFO  WebHelpers -Click WebElement " "
+20:57:08.622 INFO  WebHelpers -Click Button "Approve"
+20:57:13.182 INFO  WebHelpers -Send text to WebElement Login: "VBIBIKSU"
+20:57:13.295 INFO  WebHelpers -Send text to WebElement Password: "deadman11"
+20:57:13.522 INFO  WebHelpers -Click Button ""
+20:57:13.620 INFO  WebHelpers -Click WebElement "Purchasing "
+20:57:14.249 INFO  WebHelpers -Click Button "null"
+20:57:14.907 INFO  LoginPageTests -Supplier was approved, his number is: S0469
+20:58:02.425 INFO  WebHelpers -Send text to WebElement Login: "VBIBIKSU"
+20:58:02.511 INFO  WebHelpers -Send text to WebElement Password: "deadman11"
+20:58:02.864 INFO  WebHelpers -Click Button ""
+20:58:02.962 INFO  WebHelpers -Click WebElement "Purchasing "
+20:58:03.219 INFO  WebHelpers -Click Button  with value - "null" - Supplier - 
+20:58:03.834 INFO  WebHelpers -Click Button "Create"
+20:58:03.973 INFO  CreateSupplierPage -Field Remit To was field by value
+20:58:05.540 INFO  WebHelpers -Click Button "Send For Approval"
+20:58:06.281 INFO  WebHelpers -Click Button  with value - "null" - OK - 
+20:58:06.382 INFO  LoginPageTests -Supplier was created, his Number is: S0475
+20:58:06.382 INFO  LoginPageTests -------------------------------------------------------
+20:58:10.975 INFO  WebHelpers -Send text to WebElement Login: "VBIBIKSU"
+20:58:11.056 INFO  WebHelpers -Send text to WebElement Password: "deadman11"
+20:58:11.327 INFO  WebHelpers -Click Button ""
+20:58:11.412 INFO  WebHelpers -Click WebElement "Purchasing "
+20:58:12.028 INFO  WebHelpers -Click Button "null"
+20:58:12.606 INFO  LoginPageTests -Approved Supplier number is: S0469
+20:58:12.771 INFO  WebHelpers -Click WebElement " "
+20:58:12.829 INFO  WebHelpers -Click Button "Approve"
+20:58:17.230 INFO  WebHelpers -Send text to WebElement Login: "VBIBIKSU"
+20:58:17.326 INFO  WebHelpers -Send text to WebElement Password: "deadman11"
+20:58:17.680 INFO  WebHelpers -Click Button ""
+20:58:17.773 INFO  WebHelpers -Click WebElement "Purchasing "
+20:58:18.346 INFO  WebHelpers -Click Button "null"
+20:58:18.957 INFO  LoginPageTests -Supplier was approved, his number is: S0469
+20:59:21.208 INFO  WebHelpers -Send text to WebElement Login: "VBIBIKSU"
+20:59:21.298 INFO  WebHelpers -Send text to WebElement Password: "deadman11"
+20:59:21.615 INFO  WebHelpers -Click Button ""
+20:59:21.704 INFO  WebHelpers -Click WebElement "Purchasing "
+20:59:21.940 INFO  WebHelpers -Click Button  with value - "null" - Supplier - 
+20:59:22.438 INFO  WebHelpers -Click Button "Create"
+20:59:22.623 INFO  CreateSupplierPage -Field Remit To was field by value
+20:59:24.073 INFO  WebHelpers -Click Button "Send For Approval"
+20:59:24.684 INFO  WebHelpers -Click Button  with value - "null" - OK - 
+20:59:24.771 INFO  LoginPageTests -Supplier was created, his Number is: S0476
+20:59:24.772 INFO  LoginPageTests -------------------------------------------------------
+20:59:29.323 INFO  WebHelpers -Send text to WebElement Login: "VBIBIKSU"
+20:59:29.430 INFO  WebHelpers -Send text to WebElement Password: "deadman11"
+20:59:29.743 INFO  WebHelpers -Click Button ""
+20:59:29.856 INFO  WebHelpers -Click WebElement "Purchasing "
+20:59:30.347 INFO  WebHelpers -Click Button "null"
+20:59:30.912 INFO  LoginPageTests -Approved Supplier number is: S0476
+20:59:31.075 INFO  WebHelpers -Click WebElement " "
+20:59:31.170 INFO  WebHelpers -Click Button "Approve"
+20:59:31.874 INFO  WebHelpers -Click Button "null"
+20:59:31.874 INFO  LoginPageTests -Supplier successfully passed first approval stage..
+20:59:31.874 INFO  LoginPageTests -------------------------------------------------------
+20:59:36.738 INFO  WebHelpers -Send text to WebElement Login: "VBIBIKSU"
+20:59:36.825 INFO  WebHelpers -Send text to WebElement Password: "deadman11"
+20:59:37.038 INFO  WebHelpers -Click Button ""
+20:59:37.121 INFO  WebHelpers -Click WebElement "Purchasing "
+20:59:37.766 INFO  WebHelpers -Click Button "null"
+20:59:38.377 INFO  LoginPageTests -Supplier was approved, his number is: S0476
+20:59:43.277 INFO  WebHelpers -Click WebElement " "
+20:59:43.377 INFO  WebHelpers -Click Button "Approve"
+20:59:44.261 INFO  WebHelpers -Click Button "null"
+20:59:44.262 INFO  LoginPageTests -Supplier successfully passed second approval stage.
+20:59:44.262 INFO  LoginPageTests -------------------------------------------------------

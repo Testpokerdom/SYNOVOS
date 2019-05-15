@@ -16,6 +16,7 @@ public class GettersAndSetters {
     }
 
     public static void setSupplierNumber(WebElement suppNumber) {
+
         supplierNumber = suppNumber.getText();
     }
 

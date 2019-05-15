@@ -69,7 +69,7 @@ public class Editing_Supplier_Status_New_Pending_Approval {
     //@DisplayName("Create Supplier")
     public void createSupplierWithStatusNewSupplierPendingApproval(){
         clickButtonIfEnable(mainPageLocators.linkSupplier);
-        selectWebElementFromDropDownList(supplierSearchCreatePage.dropdownListSiteCode, "SALES"); // 130 - AGRO_FARMA;  SALES - DEMO;
+        selectWebElementFromDropDownList(supplierSearchCreatePage.dropdownListSiteCode, "130"); // 130 - AGRO_FARMA;  SALES - DEMO;
         clickButton(supplierSearchCreatePage.buttonCreate);
         createSupplierPage.fillUserDataTableAndSave2("asd@ukr.net", "Supplier_status_APPROVED_DEMO_SALES_", "","999-999-9999", "@ukr.net");
         clickButtonIfEnable(createSupplierPage.buttonSendForApproval);
@@ -88,7 +88,7 @@ public class Editing_Supplier_Status_New_Pending_Approval {
         //clickButtonIfEnable(editSupplierPage.buttonOkPopUpWindow);
 
         Assert.assertEquals("New Supplier - Pending Approval", WebHelpers.getTextFromWebElement(supplierDetailPage.fieldApprovalStatus)); // Approval status should be New Supplier - Pending Approval
-        Assert.assertTrue(WebHelpers.getTextFromWebElement(supplierDetailPage.fieldApprovalNotes).contains("04/19/2019 VBIBIKSU: JdeVendor has been changed from '1045000 " +
+        Assert.assertTrue(getTextFromWebElement(supplierDetailPage.fieldApprovalNotes).contains("JdeVendor has been changed from '1045000 " +
                 "--- Accu-Systems SALT LAKE CITY UT 84123' to '8205171 --- STEINER MANUFACTURING., INC.''."));
     }
 }

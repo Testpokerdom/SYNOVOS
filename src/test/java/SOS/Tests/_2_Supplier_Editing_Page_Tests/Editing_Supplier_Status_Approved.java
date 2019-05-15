@@ -71,7 +71,7 @@ public class Editing_Supplier_Status_Approved {
     //@DisplayName("createSupplierWithStatusNewPendingApproval")
     public void test_1_createSupplierWithStatusNewPendingApproval(){
         clickButtonIfEnable(mainPageLocators.linkSupplier);
-        selectWebElementFromDropDownList(supplierSearchCreatePage.dropdownListSiteCode, "SALES"); // 130 - AGRO_FARMA;  SALES - DEMO;
+        selectWebElementFromDropDownList(supplierSearchCreatePage.dropdownListSiteCode, "130"); // 130 - AGRO_FARMA;  SALES - DEMO;
         clickButton(supplierSearchCreatePage.buttonCreate);
         createSupplierPage.fillUserDataTableAndSave2("asd@ukr.net", "Supplier_status_APPROVED_DEMO_SALES_", "","999-999-9999", "@ukr.net");
 
@@ -91,7 +91,7 @@ public class Editing_Supplier_Status_Approved {
     //@DisplayName("stage_1_ApproveSupplierWithStatusNewPendingApproval")
     public void test_2_stage_1_ApproveSupplierWithStatusNewPendingApproval(){
         clickButton(mainPageLocators.linkApproveSupplier);
-        selectWebElementFromDropDownList(approveSupplierListPage.dropdownlistSiteName, "DEMO SOS SITE"); // AGRO FARMA / DEMO SOS SITE
+        selectWebElementFromDropDownList(approveSupplierListPage.dropdownlistSiteName, "AGRO FARMA"); // AGRO FARMA / DEMO SOS SITE
         findLastRawInTableAndClick2(driver, "//table[@id='approvalProcessData']/tbody/tr[last()]/td[last()]");
 
         System.out.println("Approved Supplier number is: " + SOS.WebHelpers.WebHelpers.getTextFromWebElement(approveSupplierPage.fieldSupplierNo));
@@ -110,7 +110,7 @@ public class Editing_Supplier_Status_Approved {
     //@DisplayName("stage_2_ApproveSupplierWithStatusNewPendingApproval")
     public void test_3_stage_2_ApproveSupplierWithStatusNewPendingApproval(){
         clickButton(mainPageLocators.linkApproveSupplier);
-        selectWebElementFromDropDownList(approveSupplierListPage.dropdownlistSiteName, "DEMO SOS SITE");
+        selectWebElementFromDropDownList(approveSupplierListPage.dropdownlistSiteName, "AGRO FARMA");
         findLastRawInTableAndClick2(driver, "//table[@id='approvalProcessData']/tbody/tr[last()]/td[last()]");
 
         System.out.println("Supplier was approved, his number is: " + SOS.WebHelpers.WebHelpers.getTextFromWebElement(approveSupplierPage.fieldSupplierNo));
@@ -132,9 +132,10 @@ public class Editing_Supplier_Status_Approved {
     @Test
     //@Description ("Change JDE Vendor field value to supplier with status Approved")
     //@DisplayName("Change JDE Vendor field value to supplier with status Approved")
-    public void test_4_ChangeJDEVendorfieldvalueToSupplierWithStatusApproved(){
+    public void test_4_ChangeJDEVendorForSupplierWithStatusApproved(){
         clickButton(mainPageLocators.linkSupplier);
-        WebHelpers.sendTextToWebElement(supplierSearchCreatePage.fieldSupplierNameCriterion, getCurrentTimeUsingCalendar2());
+        selectWebElementFromDropDownList(supplierSearchCreatePage.dropdownListSiteCode, "130"); // 130 - AGRO_FARMA;  SALES - DEMO;
+        sendTextToWebElement(supplierSearchCreatePage.fieldSupplierNameCriterion, getCurrentTimeUsingCalendar2());
         clickButtonIfEnable(supplierSearchCreatePage.buttonSearch);
         clickWebElementIfEnable(matchingSupplierListPage.buttonSupplier);
 
@@ -147,9 +148,9 @@ public class Editing_Supplier_Status_Approved {
         sendTextToWebElement(editSupplierPage.dropdown_listJDE_Vendor, "2352835"); //2352835
         clickButtonIfEnable(editSupplierPage.jdeVendor2);
         clickButtonIfEnable(editSupplierPage.buttonSave);
-        clickButtonIfEnable(editSupplierPage.buttonOkPopUpWindow);
+        //clickButtonIfEnable(editSupplierPage.buttonOkPopUpWindow);
 
-        Assert.assertEquals("New Supplier - Pending Approval", SOS.WebHelpers.WebHelpers.getTextFromWebElement(supplierDetailPage.fieldApprovalStatus));
+        Assert.assertEquals("Approved", SOS.WebHelpers.WebHelpers.getTextFromWebElement(supplierDetailPage.fieldApprovalStatus));
         Assert.assertTrue(SOS.WebHelpers.WebHelpers.getTextFromWebElement(supplierDetailPage.fieldApprovalNotes).contains("VBIBIKSU: JdeVendor has been changed from '1045000" +
                 " --- Accu-Systems SALT LAKE CITY UT 84123' to '2352835 --- Diversified Supply/Introl/RPM CINCINNATI OH 45263-2537''."));
     }

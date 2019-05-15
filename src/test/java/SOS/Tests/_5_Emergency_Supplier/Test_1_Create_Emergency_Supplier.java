@@ -17,6 +17,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import java.util.concurrent.TimeUnit;
 
 import static SOS.WebHelpers.WebHelpers.goToUrl;
+import static WebHelpers.GettersAndSetters.getSupplierName;
+import static WebHelpers.GettersAndSetters.setSupplierName;
 import static WebHelpers.WebHelpers.*;
 
 public class Test_1_Create_Emergency_Supplier {
@@ -64,12 +66,16 @@ public class Test_1_Create_Emergency_Supplier {
     @Test
     public void createSupplierEmergency(){
         clickButtonIfEnable(mainPageLocators.linkSupplier);
-        selectWebElementFromDropDownList(supplierSearchCreatePage.dropdownListSiteCode, "SALES"); // 130 - AGRO_FARMA;  SALES - DEMO;
+        selectWebElementFromDropDownList(supplierSearchCreatePage.dropdownListSiteCode, "130"); // 130 - AGRO_FARMA;  SALES - DEMO;
         clickButton(supplierSearchCreatePage.buttonCreate);
         createSupplierPage.fillUserDataEmergencySupplier("asd@ukr.net","Supplier_Emergency_DEMO_SALES_", "123-123-1234", "@ukr.net", "Emergency supplier was created");
         clickButtonIfEnable(createSupplierPage.buttonOKpopup);
-        System.out.println("Emergency Supplier was created, his number is: " + WebHelpers.getTextFromWebElement(supplierDetailPage.fieldSupplierNumber));
-        logger.info("Emergency Supplier was created, his number is: " + WebHelpers.getTextFromWebElement(supplierDetailPage.fieldSupplierNumber));
+        setSupplierName(supplierDetailPage.fieldSupplierName);
+
+        System.out.println("Emergency Supplier was created, his number is: " + getTextFromWebElement(supplierDetailPage.fieldSupplierNumber));
+        System.out.println("Emergency Supplier was created, his name is: " + getSupplierName());
+        logger.info("Emergency Supplier was created, his number is: " + getTextFromWebElement(supplierDetailPage.fieldSupplierNumber));
+        logger.info("Emergency Supplier was created, his name is: " + getSupplierName());
         logger.info("------------------------------------------------------");
 
         Assert.assertEquals("Supplier Detail", createSupplierPage.textSupplierDetails.getText());

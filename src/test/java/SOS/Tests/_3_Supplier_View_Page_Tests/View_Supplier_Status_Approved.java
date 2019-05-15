@@ -72,7 +72,7 @@ public class View_Supplier_Status_Approved {
     //@DisplayName("createSupplierWithStatusNewPendingApproval")
     public void test_1(){
         clickButtonIfEnable(mainPageLocators.linkSupplier);
-        selectWebElementFromDropDownList(supplierSearchCreatePage.dropdownListSiteCode, "SALES"); // 130 - AGRO_FARMA;  SALES - DEMO;
+        selectWebElementFromDropDownList(supplierSearchCreatePage.dropdownListSiteCode, "130"); // 130 - AGRO_FARMA;  SALES - DEMO;
         clickButton(supplierSearchCreatePage.buttonCreate);
         createSupplierPage.fillUserDataTableAndSave2("asd@ukr.net", "Supplier_status_APPROVED_DEMO_SALES_", "","999-999-9999", "@ukr.net");
 
@@ -92,7 +92,7 @@ public class View_Supplier_Status_Approved {
     //@DisplayName("stage_1_ApproveSupplierWithStatusNewPendingApproval")
     public void test_2(){
         clickButton(mainPageLocators.linkApproveSupplier);
-        selectWebElementFromDropDownList(approveSupplierListPage.dropdownlistSiteName, "DEMO SOS SITE"); // AGRO FARMA / DEMO SOS SITE
+        selectWebElementFromDropDownList(approveSupplierListPage.dropdownlistSiteName, "AGRO FARMA"); // AGRO FARMA / DEMO SOS SITE
         findLastRawInTableAndClick2(driver, "//table[@id='approvalProcessData']/tbody/tr[last()]/td[last()]");
 
         System.out.println("Approved Supplier number is: " + WebHelpers.getTextFromWebElement(approveSupplierPage.fieldSupplierNo));
@@ -115,7 +115,7 @@ public class View_Supplier_Status_Approved {
     //@DisplayName("stage_2_ApproveSupplierWithStatusNewPendingApproval")
     public void test_3(){
         clickButton(mainPageLocators.linkApproveSupplier);
-        selectWebElementFromDropDownList(approveSupplierListPage.dropdownlistSiteName, "DEMO SOS SITE");
+        selectWebElementFromDropDownList(approveSupplierListPage.dropdownlistSiteName, "AGRO FARMA");
         findLastRawInTableAndClick2(driver, "//table[@id='approvalProcessData']/tbody/tr[last()]/td[last()]");
 
         System.out.println("Supplier was approved, his number is: " + WebHelpers.getTextFromWebElement(approveSupplierPage.fieldSupplierNo));
@@ -139,6 +139,7 @@ public class View_Supplier_Status_Approved {
     //@DisplayName("Change JDE Vendor field value to supplier with status Approved")
     public void test_4(){
         clickButton(mainPageLocators.linkSupplier);
+        selectWebElementFromDropDownList(supplierSearchCreatePage.dropdownListSiteCode, "130"); // 130 - AGRO_FARMA;  SALES - DEMO;
         sendTextToWebElement(supplierSearchCreatePage.fieldSupplierNameCriterion, getCurrentTimeUsingCalendar2());
         clickButtonIfEnable(supplierSearchCreatePage.buttonSearch);
         clickWebElementIfEnable(matchingSupplierListPage.buttonSupplier);
@@ -150,7 +151,7 @@ public class View_Supplier_Status_Approved {
         Assert.assertEquals("Supplier Detail", createSupplierPage.textSupplierDetails.getText());
         Assert.assertEquals("ASD@UKR.NET", supplierDetailPage.fieldRemitTo.getText());
         Assert.assertEquals("Yes", supplierDetailPage.fieldProvidedW9.getText());
-        Assert.assertEquals("Approved", WebHelpers.getTextFromWebElement(supplierDetailPage.fieldApprovalStatus)); // Approval status should be Approved
+        Assert.assertEquals("Approved", getTextFromWebElement(supplierDetailPage.fieldApprovalStatus)); // Approval status should be Approved
         Assert.assertFalse(supplierDetailPage.buttonSendForApproval.isEnabled() == true); // Button Send For Approval should be inActive!!!!!
     }
 }

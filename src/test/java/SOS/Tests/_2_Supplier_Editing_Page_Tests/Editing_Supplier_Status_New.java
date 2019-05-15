@@ -66,7 +66,7 @@ public class Editing_Supplier_Status_New {
     @Test
     public void createSupplierWithStatusNew(){
         clickButtonIfEnable(mainPageLocators.linkSupplier);
-        selectWebElementFromDropDownList(supplierSearchCreatePage.dropdownListSiteCode, "SALES"); // 130 - AGRO_FARMA;  SALES - DEMO;
+        selectWebElementFromDropDownList(supplierSearchCreatePage.dropdownListSiteCode, "130"); // 130 - AGRO_FARMA;  SALES - DEMO;
         clickButton(supplierSearchCreatePage.buttonCreate);
         createSupplierPage.fillUserDataTableAndSave2("asd@ukr.net", "Supplier_status_New_DEMO_SALES_", "","999-999-9999", "@ukr.net");
         clickButtonIfEnable(createSupplierPage.buttonSave);
@@ -83,6 +83,8 @@ public class Editing_Supplier_Status_New {
         clickButtonIfEnable(editSupplierPage.buttonOkPopUpWindow);
 
         Assert.assertEquals("New Supplier - Pending Approval", WebHelpers.getTextFromWebElement(supplierDetailPage.fieldApprovalStatus)); // Approval status should be changed from New to New Supplier - Pending Approval
-        Assert.assertEquals("04/19/2019 VBIBIKSU: JdeVendor has been changed from '1045000 --- Accu-Systems SALT LAKE CITY UT 84123' to '8205171 --- STEINER MANUFACTURING., INC.''.", WebHelpers.getTextFromWebElement(supplierDetailPage.fieldApprovalNotes));
+        //Assert.assertEquals("04/19/2019 VBIBIKSU: JdeVendor has been changed from '1045000 --- Accu-Systems SALT LAKE CITY UT 84123' to '8205171 --- STEINER MANUFACTURING., INC.''.", getTextFromWebElement(supplierDetailPage.fieldApprovalNotes));
+        Assert.assertTrue(getTextFromWebElement(supplierDetailPage.fieldApprovalNotes).contains("JdeVendor has been changed from '1045000 --- Accu-Systems SALT LAKE CITY UT 84123' to '8205171 --- " +
+                "STEINER MANUFACTURING., INC.''."));
     }
 }

@@ -71,7 +71,7 @@ public class Editing_Supplier_Status_Rejected {
     //@DisplayName("createSupplierWithStatusNewPendingApproval")
     public void test_1(){
         clickButtonIfEnable(mainPageLocators.linkSupplier);
-        selectWebElementFromDropDownList(supplierSearchCreatePage.dropdownListSiteCode, "SALES"); // 130 - AGRO_FARMA;  SALES - DEMO;
+        selectWebElementFromDropDownList(supplierSearchCreatePage.dropdownListSiteCode, "130"); // 130 - AGRO_FARMA;  SALES - DEMO;
         clickButton(supplierSearchCreatePage.buttonCreate);
         createSupplierPage.fillUserDataTableAndSave2("asd@ukr.net", "Supplier_status_APPROVED_DEMO_SALES_", "","999-999-9999", "@ukr.net");
         clickButtonIfEnable(createSupplierPage.buttonSendForApproval);
@@ -89,7 +89,7 @@ public class Editing_Supplier_Status_Rejected {
     //@DisplayName("rejectSupplierWithStatusNewPendingApproval")
     public void test_2(){
         clickButton(mainPageLocators.linkApproveSupplier);
-        selectWebElementFromDropDownList(approvalProcessSelection.dropdownlistSiteName, "DEMO SOS SITE"); // DEMO SOS SITE -- AGRO FARMA
+        selectWebElementFromDropDownList(approvalProcessSelection.dropdownlistSiteName, "AGRO FARMA"); // DEMO SOS SITE -- AGRO FARMA
         findLastRawInTableAndClick2(driver, "//table[@id='approvalProcessData']/tbody/tr[last()]/td[last()]");
         System.out.println("Suppliers number for rejecting is: " + WebHelpers.getTextFromWebElement(approveSupplierPage.fieldSupplierNo));
         logger.info("Supplier was chosen for Rejecting, his number is: " + WebHelpers.getTextFromWebElement(approveSupplierPage.fieldSupplierNo));
@@ -107,15 +107,16 @@ public class Editing_Supplier_Status_Rejected {
     //@DisplayName("changeNameAndJDEVendorForRejectedSupplier")
     public void test_3(){
         clickButton(mainPageLocators.linkSupplier);
+        selectWebElementFromDropDownList(supplierSearchCreatePage.dropdownListSiteCode, "130"); // 130 - AGRO_FARMA;  SALES - DEMO;
         sendTextToWebElement(supplierSearchCreatePage.fieldSupplierNameCriterion, getCurrentTimeUsingCalendar2());
         clickWebElementIfEnable(supplierSearchCreatePage.radiobuttonInActiveStatus);
         clickButtonIfEnable(supplierSearchCreatePage.buttonSearch);
         clickButtonIfEnable(matchingSupplierListPage.buttonSupplier);
-        findLastRawInTableAndClick2(driver, "//table[@id='supplier']/tbody/tr[last()]/td[last()]");
-        System.out.println("Suppliers number is: " + WebHelpers.getTextFromWebElement(supplierDetailPage.fieldSupplierNumber));
-        logger.info("Supplier was chosen for Rejecting, his number is: " + WebHelpers.getTextFromWebElement(supplierDetailPage.fieldSupplierNumber));
+        findLastRawInTableAndClick2(driver, "//table[@id='supplier']/tbody/tr[last()]/td[last()]/a[@title='Edit Supplier']");
+        System.out.println("Suppliers number is: " + getTextFromWebElement(supplierDetailPage.fieldSupplierNumber));
+        logger.info("Supplier was chosen for Rejecting, his number is: " + getTextFromWebElement(supplierDetailPage.fieldSupplierNumber));
 
-        String approvalNotes = WebHelpers.getTextFromWebElement(supplierDetailPage.fieldApprovalNotes);
+        String approvalNotes = getTextFromWebElement(supplierDetailPage.fieldApprovalNotes);
         clickButtonIfEnable(supplierDetailPage.buttonEdit);
 
         sendTextToWebElement(editSupplierPage.dropdown_listJDE_Vendor, "2352835"); //2352835
