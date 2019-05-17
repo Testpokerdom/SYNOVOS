@@ -33,6 +33,8 @@ public class SupplierDetailPage extends CreateSupplierPage {
     public WebElement buttonActivate;
     @FindBy (xpath = "//input[@value='Deactivate']")
     public WebElement buttonDeactivate;
+    @FindBy (xpath = "//form[@id='command']//table//tbody//tr[21]/td[2]")
+    public WebElement fieldTBDSupplier;
     @FindBy (xpath = "//form[@id='command']//table//tbody//tr[22]//tr[1]//span[1]")
     public WebElement fieldStatus;
     @FindBy (xpath = "//form[@id='command']//table//tbody//tr[24]/td[2]")
@@ -43,6 +45,16 @@ public class SupplierDetailPage extends CreateSupplierPage {
     public WebElement fieldRemitTo;
     @FindBy (xpath = "//form[@id='command']//table//tbody//tr[30]/td[2]")
     public WebElement fieldProvidedW9;
+    @FindBy (xpath = "//td[@class='alignLeft']//td[1]//table[1]//tbody[1]//tr[2]//td[2]")
+    public WebElement fieldPrimaryContactName;
+    @FindBy (xpath = "//td[@class='alignLeft']//td[1]//table[1]//tbody[1]//tr[3]//td[2]")
+    public WebElement fieldPrimaryContactPhone;
+    @FindBy (xpath = "//td[@class='alignLeft']//td[1]//table[1]//tbody[1]//tr[7]//td[2]")
+    public WebElement fieldPrimaryContactEmail;
+    @FindBy (xpath = "//td[3]//table[1]//tbody[1]//tr[4]//td[2]")
+    public WebElement fieldAccounitngInfoJDEVendor;
+    @FindBy (xpath = "//td[3]//table[1]//tbody[1]//tr[5]//td[2]")
+    public WebElement fieldAccounitngInfoNetRevenueJDEVendor;
     @FindBy (xpath = "//form[@id='command']//input[@name='approve']")
     public WebElement buttonSendForApproval;
 

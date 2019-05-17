@@ -16,6 +16,13 @@ public class EditSupplierPage  extends SearchSuppliersPage {
     @FindBy (xpath = "//form[@id='supplierCRUDForm']//table[@class='datagrid gradientElement2']//tr[17]//td[2]")
     //@FindBy (id = "supplier.tbdSupplier")
     public WebElement fieldTBDSupplier;
+    @FindBy (id = "primaryContact.name")
+    public WebElement fieldContactName;
+    @FindBy (id = "primaryContact.phone")
+    public WebElement fieldContactPhone;
+    @FindBy (id = "primaryContact.email")
+    public WebElement fieldContactEmail;
+
 
     //JDE Vendor elements
     @FindBy(id = "jdeVendor")
