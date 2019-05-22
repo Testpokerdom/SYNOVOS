@@ -37,4 +37,11 @@ public class EditSupplierPage  extends SearchSuppliersPage {
     public WebElement buttonOkPopUpWindow;
     @FindBy (id = "approvalCommentsHolder")
     public WebElement fieldCommentsInPopUpWindow;
+
+    //Error messages
+    @FindBy (xpath = "//div[@class='error alignCenter']")
+    public WebElement headerErorMessage;
+    @FindBy (xpath = "//span[@id='supplier.jdeVendor.errors']")
+    public WebElement fieldJDEVendorErrorMessage;
+
 }

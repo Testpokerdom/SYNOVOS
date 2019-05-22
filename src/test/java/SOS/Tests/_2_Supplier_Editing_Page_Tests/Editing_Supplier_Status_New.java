@@ -14,6 +14,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.util.concurrent.TimeUnit;
 
+import static WebHelpers.GettersAndSetters.*;
 import static WebHelpers.WebHelpers.*;
 import static WebHelpers.WebHelpers.clickButtonIfEnable;
 
@@ -70,9 +71,11 @@ public class Editing_Supplier_Status_New {
         clickButton(supplierSearchCreatePage.buttonCreate);
         createSupplierPage.fillUserDataTableAndSave2("asd@ukr.net", "Supplier_status_New_DEMO_SALES_", "","999-999-9999", "@ukr.net");
         clickButtonIfEnable(createSupplierPage.buttonSave);
-        supplierNumber = WebHelpers.getTextFromWebElement(supplierDetailPage.fieldSupplierNumber);
-        System.out.println(supplierNumber);
-        logger.info(supplierNumber);
+        setSupplierNumber(supplierDetailPage.fieldSupplierNumber);
+        setSupplierNumber(supplierDetailPage.fieldSupplierName);
+        //supplierNumber = getTextFromWebElement(supplierDetailPage.fieldSupplierNumber);
+        System.out.println(getSupplierNumber() + " - " + getSupplierName());
+        logger.info(getSupplierNumber() + " - " + getSupplierName());
         logger.info("----");
         Assert.assertEquals("Supplier Detail", createSupplierPage.textSupplierDetails.getText());
 
@@ -82,7 +85,7 @@ public class Editing_Supplier_Status_New {
         clickButtonIfEnable(editSupplierPage.buttonSave);
         clickButtonIfEnable(editSupplierPage.buttonOkPopUpWindow);
 
-        Assert.assertEquals("New Supplier - Pending Approval", WebHelpers.getTextFromWebElement(supplierDetailPage.fieldApprovalStatus)); // Approval status should be changed from New to New Supplier - Pending Approval
+        Assert.assertEquals("New Supplier - Pending Approval", getTextFromWebElement(supplierDetailPage.fieldApprovalStatus)); // Approval status should be changed from New to New Supplier - Pending Approval
         //Assert.assertEquals("04/19/2019 VBIBIKSU: JdeVendor has been changed from '1045000 --- Accu-Systems SALT LAKE CITY UT 84123' to '8205171 --- STEINER MANUFACTURING., INC.''.", getTextFromWebElement(supplierDetailPage.fieldApprovalNotes));
         Assert.assertTrue(getTextFromWebElement(supplierDetailPage.fieldApprovalNotes).contains("JdeVendor has been changed from '1045000 --- Accu-Systems SALT LAKE CITY UT 84123' to '8205171 --- " +
                 "STEINER MANUFACTURING., INC.''."));

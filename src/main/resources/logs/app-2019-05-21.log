@@ -1,0 +1,55 @@
+14:56:45.625 INFO  WebHelpers -Send text to WebElement Login: "VBIBIKSU"
+14:56:46.056 INFO  WebHelpers -Send text to WebElement Password: "deadman11"
+14:56:47.360 INFO  WebHelpers -Click Button ""
+14:56:47.643 INFO  WebHelpers -Click WebElement "Purchasing "
+14:56:48.158 INFO  WebHelpers -Click Button  with value - "null" - Supplier - 
+14:56:49.966 INFO  WebHelpers -Click Button "Create"
+14:56:50.327 INFO  CreateSupplierPage -Field Remit To was field by value
+14:56:53.397 INFO  WebHelpers -Click Button "Save"
+14:56:54.768 INFO  LoginPageTests -Supplier was created, his Number is: SUPPLIER_STATUS_APPROVED_DEMO_SOS_2019/05/21_H3CCR
+14:56:54.768 INFO  LoginPageTests -------------------------------------------------------
+15:02:26.974 INFO  LoginPageTests -------------------------------------------------------
+15:02:27.289 INFO  WebHelpers -Open URL: http://localhost:8080/sos/splashScreen.sos
+15:02:27.550 INFO  WebHelpers -Send text to WebElement Login: "VBIBIKSU"
+15:02:27.726 INFO  WebHelpers -Send text to WebElement Password: "deadman11"
+15:02:28.773 INFO  WebHelpers -Click Button ""
+15:02:28.983 INFO  WebHelpers -Click WebElement "Purchasing "
+15:02:29.497 INFO  WebHelpers -Click Button  with value - "null" - Supplier - 
+15:02:30.854 INFO  WebHelpers -Click Button "Create"
+15:02:31.216 INFO  CreateSupplierPage -Field Remit To was field by value
+15:02:34.779 INFO  WebHelpers -Click Button  with value - "Save" -  - 
+15:02:34.941 INFO  WebHelpers -WebElement text "S0113" was received: 
+15:02:34.974 INFO  WebHelpers -WebElement text "S0113" was received: 
+15:02:34.974 INFO  LoginPageTests -Supplier was created, his Number is: S0113
+15:02:34.974 INFO  LoginPageTests -Supplier name is : SUPPLIER_STATUS_NEW_DEMO_SALES_2019/05/21_3GGIDYUO
+15:02:34.974 INFO  LoginPageTests -------------------------------------------------------
+15:57:19.780 INFO  LoginPageTests -------------------------------------------------------
+15:57:20.729 INFO  WebHelpers -Open URL: http://localhost:8080/sos/splashScreen.sos
+15:57:21.282 INFO  WebHelpers -Send text to WebElement Login: "VBIBIKSU"
+15:57:22.041 INFO  WebHelpers -Send text to WebElement Password: "deadman11"
+15:57:22.890 INFO  WebHelpers -Click Button ""
+15:57:23.306 INFO  WebHelpers -Click WebElement "Purchasing "
+15:57:23.827 INFO  WebHelpers -Click Button  with value - "null" - Supplier - 
+15:57:25.423 INFO  WebHelpers -Click Button "Create"
+15:57:25.975 INFO  CreateSupplierPage -Field Remit To was field by value
+15:57:30.283 INFO  WebHelpers -Click Button  with value - "Save" -  - 
+15:57:30.424 INFO  WebHelpers -WebElement text "S0114" was received: 
+15:57:30.452 INFO  WebHelpers -WebElement text "S0114" was received: 
+15:57:30.452 INFO  LoginPageTests -Supplier was created, his Number is: S0114
+15:57:30.452 INFO  LoginPageTests -Supplier name is : SUPPLIER_STATUS_NEW_DEMO_SALES_2019/05/21_L4ZGKSJW
+15:57:30.452 INFO  LoginPageTests -------------------------------------------------------
+16:34:41.463 INFO  LoginPageTests -------------------------------------------------------
+16:34:41.751 INFO  WebHelpers -Open URL: http://localhost:8080/sos/splashScreen.sos
+16:34:42.104 INFO  WebHelpers -Send text to WebElement Login: "VBIBIKSU"
+16:34:42.277 INFO  WebHelpers -Send text to WebElement Password: "deadman11"
+16:34:42.943 INFO  WebHelpers -Click Button ""
+16:34:43.128 INFO  WebHelpers -Click WebElement "Purchasing "
+16:34:43.623 INFO  WebHelpers -Click Button  with value - "null" - Supplier - 
+16:34:44.685 INFO  WebHelpers -Click Button "Create"
+16:34:45.014 INFO  CreateSupplierPage -Field Remit To was field by value
+16:34:47.920 INFO  WebHelpers -Click Button  with value - "Save" -  - 
+16:34:48.009 INFO  WebHelpers -WebElement text "S0115" was received: 
+16:34:48.034 INFO  WebHelpers -WebElement text "S0115" was received: 
+16:34:48.035 INFO  LoginPageTests -Supplier was created, his Number is: S0115
+16:34:48.035 INFO  LoginPageTests -Supplier name is : SUPPLIER_STATUS_NEW_DEMO_SALES_2019/05/21_HPXXF3UB
+16:34:48.035 INFO  LoginPageTests -------------------------------------------------------
