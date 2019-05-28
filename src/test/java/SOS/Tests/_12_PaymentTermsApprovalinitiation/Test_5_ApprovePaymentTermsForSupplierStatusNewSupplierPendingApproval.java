@@ -69,7 +69,7 @@ public class Test_5_ApprovePaymentTermsForSupplierStatusNewSupplierPendingApprov
     //@DisplayName("Create Supplier")
     public void sendSupplierWithStatusNewSupplierPendingApprovalForPaymentTermsApproval(){
         clickButtonIfEnable(mainPageLocators.linkSupplier);
-        selectWebElementFromDropDownList(supplierSearchCreatePage.dropdownListSiteCode, "SALES"); // 130 - AGRO_FARMA;  SALES - DEMO;
+        selectWebElementFromDropDownList(supplierSearchCreatePage.dropdownListSiteCode, "130"); // 130 - AGRO_FARMA;  SALES - DEMO;
         clickButton(supplierSearchCreatePage.buttonCreate);
         createSupplierPage.fillUserDataTableAndSave2("asd@ukr.net", "Supplier_status_APPROVED_DEMO_SALES_", "","999-999-9999", "@ukr.net");
         clickButtonIfEnable(createSupplierPage.buttonSendForApproval);

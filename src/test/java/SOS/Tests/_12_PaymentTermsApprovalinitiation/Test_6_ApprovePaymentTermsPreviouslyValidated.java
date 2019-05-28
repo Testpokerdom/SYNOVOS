@@ -14,12 +14,16 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.util.concurrent.TimeUnit;
 
+import static SOS.Locators.PurchasingPage.EditSupplierPage.supplierNameLogged;
+import static SOS.WebHelpers.WebHelpers.findLastRawInTableAndClick2;
 import static SOS.WebHelpers.WebHelpers.sendTextToWebElement;
+import static WebHelpers.GettersAndSetters.getSupplierName;
+import static WebHelpers.GettersAndSetters.setSupplierName;
 import static WebHelpers.WebHelpers.*;
-import static WebHelpers.WebHelpers.clickButtonIfEnable;
+import static WebHelpers.WebHelpers.clickWebElementIfEnable;
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
-public class Test_1_ApprovePaymentTermForSupplierStatusNew {
+public class Test_6_ApprovePaymentTermsPreviouslyValidated {
     public static WebDriver driver = null;
     public static LoginPageLocators loginPageLocators = null;
     public static MainPageLocators mainPageLocators = null;
@@ -29,8 +33,8 @@ public class Test_1_ApprovePaymentTermForSupplierStatusNew {
     public static ApproveSupplierPage approveSupplierPage = null;
     public static SupplierDetailPage supplierDetailPage = null;
     public static EditSupplierPage editSupplierPage= null;
-    public static final Logger logger = LogManager.getLogger(LoginPageTests.class);
-    public static String supplierNumber;
+    public static MatchingSupplierListPage matchingSupplierListPage = null;
+    public static final Logger logger = LogManager.getLogger(Test_6_ApprovePaymentTermsPreviouslyValidated.class);
 
     @Before
     public void beforEeach() {
@@ -47,6 +51,7 @@ public class Test_1_ApprovePaymentTermForSupplierStatusNew {
         approveSupplierPage = new ApproveSupplierPage(driver);
         supplierDetailPage = new SupplierDetailPage(driver);
         editSupplierPage = new EditSupplierPage(driver);
+        matchingSupplierListPage = new MatchingSupplierListPage(driver);
 
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.manage().window().maximize();
@@ -57,24 +62,23 @@ public class Test_1_ApprovePaymentTermForSupplierStatusNew {
         clickButton(loginPageLocators.buttonLogin);
         clickElement(mainPageLocators.tablePurchasing);
     }
-
+/*
     @After
     public void afterEach() {
 
         driver.quit();
     }
-
+*/
     @Test
-    public void createSupplierWithStatusNew(){
+    public void test_1_createSupplierWithStatusNew(){
         clickButtonIfEnable(mainPageLocators.linkSupplier);
         selectWebElementFromDropDownList(supplierSearchCreatePage.dropdownListSiteCode, "130"); // 130 - AGRO_FARMA;  SALES - DEMO;
         clickButton(supplierSearchCreatePage.buttonCreate);
         createSupplierPage.fillUserDataTableAndSave2("asd@ukr.net", "Supplier_status_New_DEMO_SALES_", "","999-999-9999", "@ukr.net");
         clickButtonIfEnable(createSupplierPage.buttonSave);
-        supplierNumber = WebHelpers.getTextFromWebElement(supplierDetailPage.fieldSupplierNumber);
-        System.out.println(supplierNumber);
-        logger.info(supplierNumber);
-        logger.info("----");
+        setSupplierName(supplierDetailPage.fieldSupplierName);
+
+        supplierNameLogged();
         Assert.assertEquals("Supplier Detail", createSupplierPage.textSupplierDetails.getText());
 
         clickButtonIfEnable(supplierDetailPage.buttonEdit);
@@ -93,4 +97,26 @@ public class Test_1_ApprovePaymentTermForSupplierStatusNew {
 
     }
 
+    @Test
+    public void test_2_sendForPaymentApprovalSupplierWithApprovedPreviouslyPaymentTerm(){
+        clickWebElementIfEnable(mainPageLocators.tablePurchasing);
+        clickWebElementIfEnable(mainPageLocators.linkSupplier);
+        selectWebElementFromDropDownList(supplierSearchCreatePage.dropdownListSiteCode, "130"); // 130 - AGRO_FARMA;  SALES - DEMO;
+        sendTextToWebElement(supplierSearchCreatePage.fieldSupplierNameCriterion, getSupplierName());
+        clickButtonIfEnable(supplierSearchCreatePage.buttonSearch);
+
+        supplierNameLogged();
+
+        //clickButtonIfEnable(matchingSupplierListPage.buttonSupplier);
+        findLastRawInTableAndClick2(driver, "//table[@id='supplier']/tbody/tr[last()]/td[last()]/a[@title='Edit Supplier']");
+        clickButtonIfEnable(supplierDetailPage.buttonEdit);
+        selectWebElementFromDropDownList(editSupplierPage.dropDownListRequestedPaymentTerms, "10"); //value 10 = "NET 25"
+        clickButtonIfEnable(editSupplierPage.buttonSendForApprovalPaymentTerms);
+
+        sendTextToWebElement(editSupplierPage.fieldCommentsInPopUpWindow, "The same required value was added");
+        clickButtonIfEnable(editSupplierPage.buttonOkPopUpWindow);
+
+        Assert.assertEquals("Current requested payment terms are already approved.", editSupplierPage.paymentTermsErrorInHeader.getText());
+        Assert.assertEquals("Current requested payment terms are already approved.", editSupplierPage.fieldRequestedpaymentTermsErrorMessage.getText());
+    }
 }

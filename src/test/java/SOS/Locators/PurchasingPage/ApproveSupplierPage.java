@@ -89,6 +89,8 @@ public class ApproveSupplierPage extends SearchSuppliersPage {
 
     public void approveRequestedPaymentTerm(WebDriver driver){
         findLastRawInTableAndClick2(driver, "//table[@id='approvalProcessData']/tbody/tr[last()]/td[last()]");
+        selectWebElementFromDropDownList(dropdownListpaymentTerms, "10"); //value 10 = "NET 25"
+        clickButtonIfEnable(checkBoxApproved);
         clickButtonIfEnable(buttonApprove);
         sendTextToWebElement(fieldCommentsAfterButtonCREATE, "Payment term was approved");
         clickButtonIfEnable(buttonOkAfterButtonCREATE_first_stage);

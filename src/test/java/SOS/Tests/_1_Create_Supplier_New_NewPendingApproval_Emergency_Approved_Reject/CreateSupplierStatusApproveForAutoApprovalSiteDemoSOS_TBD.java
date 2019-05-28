@@ -15,7 +15,9 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.util.concurrent.TimeUnit;
 
+import static SOS.WebHelpers.WebHelpers.getCurrentTimeUsingCalendar2;
 import static SOS.WebHelpers.WebHelpers.goToUrl;
+import static SOS.WebHelpers.WebHelpers.randomName2;
 import static WebHelpers.GettersAndSetters.getSupplierName;
 import static WebHelpers.GettersAndSetters.setSupplierName;
 import static WebHelpers.WebHelpers.*;
@@ -66,7 +68,7 @@ public class CreateSupplierStatusApproveForAutoApprovalSiteDemoSOS_TBD {
     @Test
     //@Description("createSupplierWithStatusNewPendingApproval")
     //@DisplayName("createSupplierWithStatusNewPendingApproval")
-    public void test_1_createSupplierWithStatusNewPendingApproval(){
+    public void test_1_createSupplierWithStatusAutoApproval(){
         clickButtonIfEnable(mainPageLocators.linkSupplier);
         selectWebElementFromDropDownList(supplierSearchCreatePage.dropdownListSiteCode, "SALES"); // 130 - AGRO_FARMA;  SALES - DEMO;
         clickButton(supplierSearchCreatePage.buttonCreate);
@@ -86,5 +88,30 @@ public class CreateSupplierStatusApproveForAutoApprovalSiteDemoSOS_TBD {
         Assert.assertEquals("Yes", supplierDetailPage.fieldTBDSupplier.getText());
         Assert.assertEquals("Active", supplierDetailPage.fieldStatus.getText());
         Assert.assertEquals("Approved", supplierDetailPage.fieldApprovalStatus.getText());
+    }
+
+    @Test
+    //@Description("createSupplierWithStatusNewPendingApproval")
+    //@DisplayName("createSupplierWithStatusNewPendingApproval")
+    public void test_2_createSupplierWithStatusAutoApprovalRequiredFieldsEmpty(){
+        clickButtonIfEnable(mainPageLocators.linkSupplier);
+        selectWebElementFromDropDownList(supplierSearchCreatePage.dropdownListSiteCode, "SALES"); // 130 - AGRO_FARMA;  SALES - DEMO;
+        clickButton(supplierSearchCreatePage.buttonCreate);
+        sendTextToWebElement(createSupplierPage.fieldSupplierName, "Supplier_status_APPROVED_DEMO_SOS_" + getCurrentTimeUsingCalendar2() + "_"  + randomName2());
+        clickButtonIfEnable(createSupplierPage.checkBoxTBD);
+
+        clickButton(createSupplierPage.buttonSave);
+        driver.switchTo().alert().accept();
+
+        setSupplierName(supplierDetailPage.fieldSupplierName);
+
+        System.out.println("Supplier was created, his name is: " + getSupplierName());
+        logger.info("Supplier was created, his Number is: " + getSupplierName());
+        logger.info("------------------------------------------------------");
+
+        Assert.assertEquals(" ", supplierDetailPage.fieldPrimaryContactName.getText()); // Name field should be empty
+        Assert.assertEquals(" ", supplierDetailPage.fieldPrimaryContactPhone.getText()); // Phone field should be empty
+        Assert.assertEquals(" ", supplierDetailPage.fieldPrimaryContactEmail.getText()); // Email field should be empty
+        Assert.assertEquals("None", supplierDetailPage.fieldAccounitngInfoJDEVendor.getText()); // JDEVendor field should be empty
     }
 }

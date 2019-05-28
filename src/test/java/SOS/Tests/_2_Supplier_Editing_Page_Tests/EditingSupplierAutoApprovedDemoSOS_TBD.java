@@ -110,12 +110,12 @@ public class EditingSupplierAutoApprovedDemoSOS_TBD {
         editSupplierPage.fieldContactPhone.clear();
         editSupplierPage.fieldContactEmail.clear();
         editSupplierPage.dropdown_listJDE_Vendor.clear();
-        Assert.assertTrue(editSupplierPage.buttonSendForApprovalPaymentTerms.isEnabled() == false);
+        Assert.assertTrue(editSupplierPage.buttonSendForApprovalPaymentTerms.isEnabled() == false); //Button send for approval should be disable
         clickButton(editSupplierPage.buttonSave);
 
-        Assert.assertEquals(" ", supplierDetailPage.fieldPrimaryContactName.getText());
-        Assert.assertEquals(" ", supplierDetailPage.fieldPrimaryContactPhone.getText());
-        Assert.assertEquals(" ", supplierDetailPage.fieldPrimaryContactEmail.getText());
-        Assert.assertEquals("None", supplierDetailPage.fieldAccounitngInfoJDEVendor.getText());
+        Assert.assertEquals(" ", supplierDetailPage.fieldPrimaryContactName.getText()); // Name field should be empty
+        Assert.assertEquals(" ", supplierDetailPage.fieldPrimaryContactPhone.getText()); // Phone field should be empty
+        Assert.assertEquals(" ", supplierDetailPage.fieldPrimaryContactEmail.getText()); // Email field should be empty
+        Assert.assertEquals("None", supplierDetailPage.fieldAccounitngInfoJDEVendor.getText()); // JDEVendor field should be empty
     }
 }

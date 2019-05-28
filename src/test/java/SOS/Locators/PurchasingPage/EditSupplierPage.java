@@ -1,16 +1,24 @@
 package SOS.Locators.PurchasingPage;
 
+
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
+import static WebHelpers.GettersAndSetters.getSupplierName;
+
 public class EditSupplierPage  extends SearchSuppliersPage {
+    public static final Logger logger = LogManager.getLogger(EditSupplierPage.class);
     public EditSupplierPage(WebDriver driver){
 
         super(driver);
     }
 
     //Main table
+    @FindBy (id = "requestedPaymentTerms")
+    public WebElement dropDownListRequestedPaymentTerms;
     @FindBy (id = "sendPaymentTermsForApproval")
     public WebElement buttonSendForApprovalPaymentTerms;
     @FindBy (xpath = "//form[@id='supplierCRUDForm']//table[@class='datagrid gradientElement2']//tr[17]//td[2]")
@@ -43,5 +51,16 @@ public class EditSupplierPage  extends SearchSuppliersPage {
     public WebElement headerErorMessage;
     @FindBy (xpath = "//span[@id='supplier.jdeVendor.errors']")
     public WebElement fieldJDEVendorErrorMessage;
+    @FindBy (id = "errors")
+    public WebElement paymentTermsErrorInHeader;
+    @FindBy (id = "supplier.requestedPaymentTerms.errors")
+    public WebElement fieldRequestedpaymentTermsErrorMessage;
+
+
+    public static void supplierNameLogged(){
+        System.out.println(getSupplierName());
+        logger.info(getSupplierName());
+        logger.info("----");
+    }
 
 }

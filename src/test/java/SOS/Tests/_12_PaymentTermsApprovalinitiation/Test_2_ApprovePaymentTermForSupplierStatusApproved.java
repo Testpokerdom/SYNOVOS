@@ -69,7 +69,7 @@ public class Test_2_ApprovePaymentTermForSupplierStatusApproved {
     @Test
     public void test_1_createSupplierWithStatusNewPendingApproval(){
         clickButtonIfEnable(mainPageLocators.linkSupplier);
-        selectWebElementFromDropDownList(supplierSearchCreatePage.dropdownListSiteCode, "SALES"); // 130 - AGRO_FARMA;  SALES - DEMO;
+        selectWebElementFromDropDownList(supplierSearchCreatePage.dropdownListSiteCode, "130"); // 130 - AGRO_FARMA;  SALES - DEMO;
         clickButton(supplierSearchCreatePage.buttonCreate);
         createSupplierPage.fillUserDataTableAndSave2("asd@ukr.net", "Supplier_status_APPROVED_DEMO_SALES_", "","999-999-9999", "@ukr.net");
 
@@ -87,11 +87,11 @@ public class Test_2_ApprovePaymentTermForSupplierStatusApproved {
     @Test
     public void test_2_stage_1_ApproveSupplierWithStatusNewPendingApproval(){
         clickButton(mainPageLocators.linkApproveSupplier);
-        selectWebElementFromDropDownList(approveSupplierListPage.dropdownlistSiteName, "DEMO SOS SITE"); // AGRO FARMA / DEMO SOS SITE
+        selectWebElementFromDropDownList(approveSupplierListPage.dropdownlistSiteName, "AGRO FARMA"); // AGRO FARMA / DEMO SOS SITE
         findLastRawInTableAndClick2(driver, "//table[@id='approvalProcessData']/tbody/tr[last()]/td[last()]");
 
-        System.out.println("Approved Supplier number is: " + SOS.WebHelpers.WebHelpers.getTextFromWebElement(approveSupplierPage.fieldSupplierNo));
-        logger.info("Approved Supplier number is: " + SOS.WebHelpers.WebHelpers.getTextFromWebElement(approveSupplierPage.fieldSupplierNo));
+        System.out.println("Approved Supplier number is: " + getTextFromWebElement(approveSupplierPage.fieldSupplierNo));
+        logger.info("Approved Supplier number is: " + getTextFromWebElement(approveSupplierPage.fieldSupplierNo));
 
         approveSupplierPage.choosePaymentTermsForSupplier("10", "Approved_Supplier_First_Stage");
 
@@ -104,7 +104,7 @@ public class Test_2_ApprovePaymentTermForSupplierStatusApproved {
     @Test
     public void test_3_stage_2_ApproveSupplierWithStatusNewPendingApproval(){
         clickButton(mainPageLocators.linkApproveSupplier);
-        selectWebElementFromDropDownList(approveSupplierListPage.dropdownlistSiteName, "DEMO SOS SITE");
+        selectWebElementFromDropDownList(approveSupplierListPage.dropdownlistSiteName, "AGRO FARMA");
         findLastRawInTableAndClick2(driver, "//table[@id='approvalProcessData']/tbody/tr[last()]/td[last()]");
 
         System.out.println("Supplier was approved, his number is: " + SOS.WebHelpers.WebHelpers.getTextFromWebElement(approveSupplierPage.fieldSupplierNo));
@@ -126,11 +126,12 @@ public class Test_2_ApprovePaymentTermForSupplierStatusApproved {
     @Test
     public void test_4_sendRequiredPaymentTermForApproveAndApprovePaymentTerm(){
         clickButton(mainPageLocators.linkSupplier);
+        selectWebElementFromDropDownList(supplierSearchCreatePage.dropdownListSiteCode, "130"); // 130 - AGRO_FARMA;  SALES - DEMO;
         sendTextToWebElement(supplierSearchCreatePage.fieldSupplierNameCriterion, getCurrentTimeUsingCalendar2());
         clickButtonIfEnable(supplierSearchCreatePage.buttonSearch);
         clickWebElementIfEnable(matchingSupplierListPage.buttonSupplier);
 
-        findLastRawInTableAndClick2(driver, "//table[@id='supplier']/tbody/tr[last()]/td[last()]");
+        findLastRawInTableAndClick2(driver, "//table[@id='supplier']/tbody/tr[last()]/td[last()]/a[@title='Edit Supplier']");
         System.out.println("Suppliers number is: " + SOS.WebHelpers.WebHelpers.getTextFromWebElement(supplierDetailPage.fieldSupplierNumber));
         logger.info("Supplier was chosen for Approve, his number is: " + SOS.WebHelpers.WebHelpers.getTextFromWebElement(supplierDetailPage.fieldSupplierNumber));
 
