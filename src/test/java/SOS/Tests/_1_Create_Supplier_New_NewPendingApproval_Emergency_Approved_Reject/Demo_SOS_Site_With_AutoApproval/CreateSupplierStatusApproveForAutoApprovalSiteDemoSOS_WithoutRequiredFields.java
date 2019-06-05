@@ -1,4 +1,4 @@
-package SOS.Tests._1_Create_Supplier_New_NewPendingApproval_Emergency_Approved_Reject;
+package SOS.Tests._1_Create_Supplier_New_NewPendingApproval_Emergency_Approved_Reject.Demo_SOS_Site_With_AutoApproval;
 
 import SOS.Locators.LoginPage.LoginPageLocators;
 import SOS.Locators.MainPage.MainPageLocators;
@@ -15,14 +15,15 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.util.concurrent.TimeUnit;
 
-import static SOS.WebHelpers.WebHelpers.getTextFromWebElement;
+import static SOS.WebHelpers.WebHelpers.getCurrentTimeUsingCalendar2;
 import static SOS.WebHelpers.WebHelpers.goToUrl;
-import static SOS.WebHelpers.WebHelpers.sendTextToWebElement;
+import static SOS.WebHelpers.WebHelpers.randomName2;
 import static WebHelpers.GettersAndSetters.getSupplierName;
 import static WebHelpers.GettersAndSetters.setSupplierName;
 import static WebHelpers.WebHelpers.*;
+import static WebHelpers.WebHelpers.clickButton;
 
-public class CreateSupplierStatusApproveForAutoApprovalSiteDemoSOS {
+public class CreateSupplierStatusApproveForAutoApprovalSiteDemoSOS_WithoutRequiredFields {
     public static WebDriver driver = null;
     public static LoginPageLocators loginPageLocators = null;
     public static MainPageLocators mainPageLocators = null;
@@ -67,11 +68,11 @@ public class CreateSupplierStatusApproveForAutoApprovalSiteDemoSOS {
     @Test
     //@Description("createSupplierWithStatusNewPendingApproval")
     //@DisplayName("createSupplierWithStatusNewPendingApproval")
-    public void test_1_createSupplierWithStatusApproved_ItShouldBeAutoApproved(){
+    public void test_1_createSupplierWithStatusNewPendingApproval(){
         clickButtonIfEnable(mainPageLocators.linkSupplier);
         selectWebElementFromDropDownList(supplierSearchCreatePage.dropdownListSiteCode, "SALES"); // 130 - AGRO_FARMA;  SALES - DEMO;
         clickButton(supplierSearchCreatePage.buttonCreate);
-        createSupplierPage.fillUserDataTableAndSave2("asd@ukr.net", "Supplier_status_APPROVED_DEMO_SOS_", "","999-999-9999", "@ukr.net");
+        sendTextToWebElement(createSupplierPage.fieldSupplierName, "Supplier_status_APPROVED_DEMO_SOS_" + getCurrentTimeUsingCalendar2() + "_"  + randomName2());
 
         clickButton(createSupplierPage.buttonSave);
         driver.switchTo().alert().accept();
@@ -85,5 +86,8 @@ public class CreateSupplierStatusApproveForAutoApprovalSiteDemoSOS {
         Assert.assertEquals("Supplier Detail", createSupplierPage.textSupplierDetails.getText());
         Assert.assertEquals("Active", supplierDetailPage.fieldStatus.getText());
         Assert.assertEquals("Approved", supplierDetailPage.fieldApprovalStatus.getText());
-    }
+        Assert.assertEquals(" ", supplierDetailPage.fieldPrimaryContactName.getText());
+        Assert.assertEquals(" ", supplierDetailPage.fieldPrimaryContactPhone.getText());
+        Assert.assertEquals(" ", supplierDetailPage.fieldPrimaryContactEmail.getText());
+}
 }

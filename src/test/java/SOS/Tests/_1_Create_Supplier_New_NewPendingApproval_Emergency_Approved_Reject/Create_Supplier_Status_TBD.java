@@ -15,15 +15,14 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.util.concurrent.TimeUnit;
 
-import static SOS.WebHelpers.WebHelpers.getCurrentTimeUsingCalendar2;
-import static SOS.WebHelpers.WebHelpers.goToUrl;
-import static SOS.WebHelpers.WebHelpers.randomName2;
 import static WebHelpers.GettersAndSetters.getSupplierName;
 import static WebHelpers.GettersAndSetters.setSupplierName;
 import static WebHelpers.WebHelpers.*;
-import static WebHelpers.WebHelpers.clickButton;
 
-public class CreateSupplierStatusApproveForAutoApprovalSiteDemoSOS_TBD {
+//import static SOS.WebHelpers.WebHelpers.*;
+//import static SOS.WebHelpers.WebHelpers.getTextFromWebElement;
+
+public class Create_Supplier_Status_TBD {
     public static WebDriver driver = null;
     public static LoginPageLocators loginPageLocators = null;
     public static MainPageLocators mainPageLocators = null;
@@ -52,11 +51,11 @@ public class CreateSupplierStatusApproveForAutoApprovalSiteDemoSOS_TBD {
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.manage().window().maximize();
 
+        logger.info("------------------------------------------------------");
         goToUrl(driver, "http://localhost:8080/sos/splashScreen.sos");
         sendTextToMultipleWebElements(loginPageLocators.fieldLogin, "VBIBIKSU", loginPageLocators.fieldPassword, "deadman11");
         clickButton(loginPageLocators.buttonLogin);
         clickElement(mainPageLocators.tablePurchasing);
-
     }
 
     @After
@@ -66,52 +65,23 @@ public class CreateSupplierStatusApproveForAutoApprovalSiteDemoSOS_TBD {
     }
 
     @Test
-    //@Description("createSupplierWithStatusNewPendingApproval")
-    //@DisplayName("createSupplierWithStatusNewPendingApproval")
-    public void test_1_createSupplierWithStatusAutoApproval(){
+    public void createSupplierWithStatusNew(){
         clickButtonIfEnable(mainPageLocators.linkSupplier);
-        selectWebElementFromDropDownList(supplierSearchCreatePage.dropdownListSiteCode, "SALES"); // 130 - AGRO_FARMA;  SALES - DEMO;
+        selectWebElementFromDropDownList(supplierSearchCreatePage.dropdownListSiteCode, "130"); // 130 - AGRO_FARMA;  SALES - DEMO;
         clickButton(supplierSearchCreatePage.buttonCreate);
-        createSupplierPage.fillUserDataTableAndSave2("asd@ukr.net", "Supplier_status_APPROVED_DEMO_SOS_", "","999-999-9999", "@ukr.net");
+        createSupplierPage.fillUserDataTableAndSave2("asd@ukr.net", "Supplier_status_NEW_DEMO_SALES_", "","999-999-9999", "@ukr.net");
         clickButtonIfEnable(createSupplierPage.checkBoxTBD);
-
-        clickButton(createSupplierPage.buttonSave);
-        driver.switchTo().alert().accept();
+        clickButtonIfEnable(createSupplierPage.buttonSave);
 
         setSupplierName(supplierDetailPage.fieldSupplierName);
 
-        System.out.println("Supplier was created, his name is: " + getSupplierName());
-        logger.info("Supplier was created, his Number is: " + getSupplierName());
+        System.out.println("Supplier was created, his Number is: " + getTextFromWebElement(supplierDetailPage.fieldSupplierNumber));
+        System.out.println("Supplier name is : " + getSupplierName());
+        logger.info("Supplier was created, his Number is: " + getTextFromWebElement(supplierDetailPage.fieldSupplierNumber));
+        logger.info("Supplier name is : " + getSupplierName());
         logger.info("------------------------------------------------------");
 
         Assert.assertEquals("Supplier Detail", createSupplierPage.textSupplierDetails.getText());
-        Assert.assertEquals("Yes", supplierDetailPage.fieldTBDSupplier.getText());
-        Assert.assertEquals("Active", supplierDetailPage.fieldStatus.getText());
-        Assert.assertEquals("Approved", supplierDetailPage.fieldApprovalStatus.getText());
-    }
-
-    @Test
-    //@Description("createSupplierWithStatusNewPendingApproval")
-    //@DisplayName("createSupplierWithStatusNewPendingApproval")
-    public void test_2_createSupplierWithStatusAutoApprovalRequiredFieldsEmpty(){
-        clickButtonIfEnable(mainPageLocators.linkSupplier);
-        selectWebElementFromDropDownList(supplierSearchCreatePage.dropdownListSiteCode, "SALES"); // 130 - AGRO_FARMA;  SALES - DEMO;
-        clickButton(supplierSearchCreatePage.buttonCreate);
-        sendTextToWebElement(createSupplierPage.fieldSupplierName, "Supplier_status_APPROVED_DEMO_SOS_" + getCurrentTimeUsingCalendar2() + "_"  + randomName2());
-        clickButtonIfEnable(createSupplierPage.checkBoxTBD);
-
-        clickButton(createSupplierPage.buttonSave);
-        driver.switchTo().alert().accept();
-
-        setSupplierName(supplierDetailPage.fieldSupplierName);
-
-        System.out.println("Supplier was created, his name is: " + getSupplierName());
-        logger.info("Supplier was created, his Number is: " + getSupplierName());
-        logger.info("------------------------------------------------------");
-
-        Assert.assertEquals(" ", supplierDetailPage.fieldPrimaryContactName.getText()); // Name field should be empty
-        Assert.assertEquals(" ", supplierDetailPage.fieldPrimaryContactPhone.getText()); // Phone field should be empty
-        Assert.assertEquals(" ", supplierDetailPage.fieldPrimaryContactEmail.getText()); // Email field should be empty
-        Assert.assertEquals("None", supplierDetailPage.fieldAccounitngInfoJDEVendor.getText()); // JDEVendor field should be empty
     }
 }
+

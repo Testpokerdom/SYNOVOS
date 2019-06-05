@@ -16,6 +16,8 @@ import java.util.concurrent.TimeUnit;
 
 import static SOS.WebHelpers.WebHelpers.findLastRawInTableAndClick2;
 import static SOS.WebHelpers.WebHelpers.sendTextToWebElement;
+import static WebHelpers.GettersAndSetters.getSupplierName;
+import static WebHelpers.GettersAndSetters.setSupplierName;
 import static WebHelpers.WebHelpers.*;
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
@@ -66,17 +68,20 @@ public class Test_1_Activate_Supplier_With_Status_New {
     @Test
     public void test_1_activateSupplierWithStatusNew(){
         clickButtonIfEnable(mainPageLocators.linkSupplier);
-        selectWebElementFromDropDownList(supplierSearchCreatePage.dropdownListSiteCode, "SALES"); // 130 - AGRO_FARMA;  SALES - DEMO;
+        selectWebElementFromDropDownList(supplierSearchCreatePage.dropdownListSiteCode, "130"); // 130 - AGRO_FARMA;  SALES - DEMO;
         clickButton(supplierSearchCreatePage.buttonCreate);
         createSupplierPage.fillUserDataTableAndSave2("asd@ukr.net", "Supplier_status_APPROVED_DEMO_SALES_", "","999-999-9999", "@ukr.net");
         clickButtonIfEnable(createSupplierPage.buttonSave);
+        setSupplierName(supplierDetailPage.fieldSupplierName);
 
-        System.out.println("Supplier was created, his Number is: " + SOS.WebHelpers.WebHelpers.getTextFromWebElement(supplierDetailPage.fieldSupplierNumber));
-        logger.info("Supplier was created, his Number is: " + SOS.WebHelpers.WebHelpers.getTextFromWebElement(supplierDetailPage.fieldSupplierNumber));
+        System.out.println("Supplier was created, his Number is: " + getSupplierName());
+        logger.info("Supplier was created, his Number is: " + getSupplierName());
         logger.info("---------  ---------------------------------------------");
 
         Assert.assertEquals("Supplier Detail", createSupplierPage.textSupplierDetails.getText());
+
         clickButtonIfEnable(supplierDetailPage.buttonDeactivate);
+
         Assert.assertEquals("Inactive", supplierDetailPage.fieldStatus.getText()); // Supplier with status New was Deactivated
         Assert.assertEquals("New", supplierDetailPage.fieldApprovalStatus.getText()); // Supplier with status New was Deactivated
         Assert.assertTrue(supplierDetailPage.buttonActivate.isEnabled() == true);
@@ -85,16 +90,16 @@ public class Test_1_Activate_Supplier_With_Status_New {
         sendTextToWebElement(supplierDetailPage.fieldCommnets, "Supplier will be activated");
         clickButtonIfEnable(supplierDetailPage.buttonOk);
 
-        Assert.assertEquals("Inactive", supplierDetailPage.fieldStatus.getText());
+        Assert.assertEquals("Active", supplierDetailPage.fieldStatus.getText());
         Assert.assertEquals("New Supplier - Pending Approval", supplierDetailPage.fieldApprovalStatus.getText());
         Assert.assertTrue(supplierDetailPage.buttonActivate.isEnabled() == true);
 
     }
 
     @Test
-    public void test_2_FirstApprovalStageForSupplierWithStatusApprovedAndInactive(){
+    public void test_2_FirstApprovalStageForSupplierWithStatusNewPendingApprovalAndInactive(){
         clickButton(mainPageLocators.linkApproveSupplier);
-        selectWebElementFromDropDownList(approveSupplierListPage.dropdownlistSiteName, "DEMO SOS SITE"); // AGRO FARMA / DEMO SOS SITE
+        selectWebElementFromDropDownList(approveSupplierListPage.dropdownlistSiteName, "AGRO FARMA"); // AGRO FARMA / DEMO SOS SITE
         findLastRawInTableAndClick2(driver, "//table[@id='approvalProcessData']/tbody/tr[last()]/td[last()]");
 
         System.out.println("Approved Supplier number is: " + SOS.WebHelpers.WebHelpers.getTextFromWebElement(approveSupplierPage.fieldSupplierNo));
@@ -117,7 +122,7 @@ public class Test_1_Activate_Supplier_With_Status_New {
     //@DisplayName("stage_2_ApproveSupplierWithStatusNewPendingApproval")
     public void test_3_SecondApprovalStageForSupplierWithStatusApprovedAndInactive(){
         clickButton(mainPageLocators.linkApproveSupplier);
-        selectWebElementFromDropDownList(approveSupplierListPage.dropdownlistSiteName, "DEMO SOS SITE");
+        selectWebElementFromDropDownList(approveSupplierListPage.dropdownlistSiteName, "AGRO FARMA");
         findLastRawInTableAndClick2(driver, "//table[@id='approvalProcessData']/tbody/tr[last()]/td[last()]");
 
         System.out.println("Supplier was approved, his number is: " + SOS.WebHelpers.WebHelpers.getTextFromWebElement(approveSupplierPage.fieldSupplierNo));
@@ -139,11 +144,11 @@ public class Test_1_Activate_Supplier_With_Status_New {
     @Test
     public void test_4_findApprovedSupplierAndCheckStatusAndApprovalStatus(){
         clickButton(mainPageLocators.linkSupplier);
-        //selectWebElementFromDropDownList(supplierSearchCreatePage.dropdownListSiteCode, "DEMO SOS SITE");
-        sendTextToWebElement(supplierSearchCreatePage.fieldSupplierNameCriterion, WebHelpers.getCurrentTimeUsingCalendar2());
+        selectWebElementFromDropDownList(supplierSearchCreatePage.dropdownListSiteCode, "130"); // 130 - AGRO_FARMA;  SALES - DEMO;
+        sendTextToWebElement(supplierSearchCreatePage.fieldSupplierNameCriterion, getSupplierName());
         clickButtonIfEnable(supplierSearchCreatePage.buttonSearch);
         clickButtonIfEnable(matchingSupplierListPage.buttonSupplier);
-        findLastRawInTableAndClick2(driver, "//table[@id='supplier']/tbody/tr[last()]/td[last()]");
+        findLastRawInTableAndClick2(driver, "//table[@id='supplier']/tbody/tr[last()]/td[last()]/a[@title='Edit Supplier']");
 
         System.out.println("Supplier was approved, his number is: " + SOS.WebHelpers.WebHelpers.getTextFromWebElement(supplierDetailPage.fieldSupplierNumber));
         logger.info("Supplier was approved, his number is: " + SOS.WebHelpers.WebHelpers.getTextFromWebElement(supplierDetailPage.fieldSupplierNumber));

@@ -1,10 +1,9 @@
-package SOS.Tests._2_Supplier_Editing_Page_Tests;
+package SOS.Tests._1_Create_Supplier_New_NewPendingApproval_Emergency_Approved_Reject.Demo_SOS_Site_With_AutoApproval;
 
 import SOS.Locators.LoginPage.LoginPageLocators;
 import SOS.Locators.MainPage.MainPageLocators;
 import SOS.Locators.PurchasingPage.*;
-import SOS.Tests._1_Create_Supplier_New_NewPendingApproval_Emergency_Approved_Reject.Create_Supplier_Status_Emergancy;
-import SOS.WebHelpers.WebHelpers;
+import SOS.Tests.LoginPage.LoginPageTests;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.junit.After;
@@ -16,10 +15,14 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.util.concurrent.TimeUnit;
 
+import static SOS.WebHelpers.WebHelpers.getTextFromWebElement;
 import static SOS.WebHelpers.WebHelpers.goToUrl;
+import static SOS.WebHelpers.WebHelpers.sendTextToWebElement;
+import static WebHelpers.GettersAndSetters.getSupplierName;
+import static WebHelpers.GettersAndSetters.setSupplierName;
 import static WebHelpers.WebHelpers.*;
 
-public class Editing_Supplier_Status_Emergency {
+public class CreateSupplierStatusApproveForAutoApprovalSiteDemoSOS {
     public static WebDriver driver = null;
     public static LoginPageLocators loginPageLocators = null;
     public static MainPageLocators mainPageLocators = null;
@@ -28,8 +31,7 @@ public class Editing_Supplier_Status_Emergency {
     public static ApprovalProcessSelectionPage approveSupplierListPage = null;
     public static ApproveSupplierPage approveSupplierPage = null;
     public static SupplierDetailPage supplierDetailPage = null;
-    public static EditSupplierPage editSupplierPage= null;
-    public static Logger logger = LogManager.getLogger(Create_Supplier_Status_Emergancy.class);
+    public static final Logger logger = LogManager.getLogger(LoginPageTests.class);
 
     @Before
     public void beforEeach() {
@@ -45,15 +47,14 @@ public class Editing_Supplier_Status_Emergency {
         approveSupplierListPage = new ApprovalProcessSelectionPage(driver);
         approveSupplierPage = new ApproveSupplierPage(driver);
         supplierDetailPage = new SupplierDetailPage(driver);
-        editSupplierPage = new EditSupplierPage(driver);
 
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.manage().window().maximize();
 
         goToUrl(driver, "http://localhost:8080/sos/splashScreen.sos");
         sendTextToMultipleWebElements(loginPageLocators.fieldLogin, "VBIBIKSU", loginPageLocators.fieldPassword, "deadman11");
-        clickButtonIfEnable(loginPageLocators.buttonLogin);
-        clickButtonIfEnable(mainPageLocators.tablePurchasing);
+        clickButton(loginPageLocators.buttonLogin);
+        clickElement(mainPageLocators.tablePurchasing);
 
     }
 
@@ -64,25 +65,25 @@ public class Editing_Supplier_Status_Emergency {
     }
 
     @Test
-    public void createSupplierEmergency(){
+    //@Description("createSupplierWithStatusNewPendingApproval")
+    //@DisplayName("createSupplierWithStatusNewPendingApproval")
+    public void test_1_createSupplierWithStatusApproved_ItShouldBeAutoApproved(){
         clickButtonIfEnable(mainPageLocators.linkSupplier);
-        selectWebElementFromDropDownList(supplierSearchCreatePage.dropdownListSiteCode, "130"); // 130 - AGRO_FARMA;  SALES - DEMO;
+        selectWebElementFromDropDownList(supplierSearchCreatePage.dropdownListSiteCode, "SALES"); // 130 - AGRO_FARMA;  SALES - DEMO;
         clickButton(supplierSearchCreatePage.buttonCreate);
-        createSupplierPage.fillUserDataEmergencySupplier("asd@ukr.net","Supplier_Emergency_DEMO_SALES_", "123-123-1234", "@ukr.net", "Emergency supplier was created");
-        clickButtonIfEnable(createSupplierPage.buttonOKpopup);
-        System.out.println("Emergency Supplier was created, his number is: " + WebHelpers.getTextFromWebElement(supplierDetailPage.fieldSupplierNumber));
-        logger.info("Emergency Supplier was created, his number is: " + WebHelpers.getTextFromWebElement(supplierDetailPage.fieldSupplierNumber));
+        createSupplierPage.fillUserDataTableAndSave2("asd@ukr.net", "Supplier_status_APPROVED_DEMO_SOS_", "","999-999-9999", "@ukr.net");
+
+        clickButton(createSupplierPage.buttonSave);
+        driver.switchTo().alert().accept();
+
+        setSupplierName(supplierDetailPage.fieldSupplierName);
+
+        System.out.println("Supplier was created, his name is: " + getSupplierName());
+        logger.info("Supplier was created, his Number is: " + getSupplierName());
         logger.info("------------------------------------------------------");
 
         Assert.assertEquals("Supplier Detail", createSupplierPage.textSupplierDetails.getText());
-
-        clickButtonIfEnable(supplierDetailPage.buttonEdit);
-        sendTextToWebElement(editSupplierPage.dropdown_listJDE_Vendor, "8205171");
-        clickButtonIfEnable(editSupplierPage.jdeVendor2);
-        clickButtonIfEnable(editSupplierPage.buttonSave);
-
-        Assert.assertEquals("Emergency", WebHelpers.getTextFromWebElement(supplierDetailPage.fieldApprovalStatus)); // Approval status should be Emergency
-        Assert.assertTrue(WebHelpers.getTextFromWebElement(supplierDetailPage.fieldApprovalNotes).contains("/2019 VBIBIKSU: JdeVendor has been changed from '1045000 --- Accu-Systems SALT LAKE CITY UT 84123'" +
-                " to '8205171 --- STEINER MANUFACTURING., INC.''."));
+        Assert.assertEquals("Active", supplierDetailPage.fieldStatus.getText());
+        Assert.assertEquals("Approved", supplierDetailPage.fieldApprovalStatus.getText());
     }
 }
