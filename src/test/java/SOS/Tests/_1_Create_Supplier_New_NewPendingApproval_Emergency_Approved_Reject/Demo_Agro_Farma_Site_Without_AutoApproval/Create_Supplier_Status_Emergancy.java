@@ -1,28 +1,28 @@
-package SOS.Tests._1_Create_Supplier_New_NewPendingApproval_Emergency_Approved_Reject;
+package SOS.Tests._1_Create_Supplier_New_NewPendingApproval_Emergency_Approved_Reject.Demo_Agro_Farma_Site_Without_AutoApproval;
 
 import SOS.Locators.LoginPage.LoginPageLocators;
 import SOS.Locators.MainPage.MainPageLocators;
 import SOS.Locators.PurchasingPage.*;
-import SOS.Tests.LoginPage.LoginPageTests;
+//import com.sun.org.glassfish.gmbal.Description;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
+//import org.junit.jupiter.api.DisplayName;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.util.concurrent.TimeUnit;
 
-import static WebHelpers.GettersAndSetters.getSupplierName;
-import static WebHelpers.GettersAndSetters.setSupplierName;
-import static WebHelpers.WebHelpers.*;
+import static SOS.WebHelpers.WebHelpers.*;
+import static WebHelpers.WebHelpers.clickButton;
+import static WebHelpers.WebHelpers.clickButtonIfEnable;
+import static WebHelpers.WebHelpers.selectWebElementFromDropDownList;
+import static WebHelpers.WebHelpers.sendTextToMultipleWebElements;
 
-//import static SOS.WebHelpers.WebHelpers.*;
-//import static SOS.WebHelpers.WebHelpers.getTextFromWebElement;
-
-public class Create_Supplier_Status_TBD {
+public class Create_Supplier_Status_Emergancy {
     public static WebDriver driver = null;
     public static LoginPageLocators loginPageLocators = null;
     public static MainPageLocators mainPageLocators = null;
@@ -31,7 +31,7 @@ public class Create_Supplier_Status_TBD {
     public static ApprovalProcessSelectionPage approveSupplierListPage = null;
     public static ApproveSupplierPage approveSupplierPage = null;
     public static SupplierDetailPage supplierDetailPage = null;
-    public static final Logger logger = LogManager.getLogger(LoginPageTests.class);
+    public static Logger logger = LogManager.getLogger(Create_Supplier_Status_Emergancy.class);
 
     @Before
     public void beforEeach() {
@@ -51,11 +51,11 @@ public class Create_Supplier_Status_TBD {
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.manage().window().maximize();
 
-        logger.info("------------------------------------------------------");
         goToUrl(driver, "http://localhost:8080/sos/splashScreen.sos");
         sendTextToMultipleWebElements(loginPageLocators.fieldLogin, "VBIBIKSU", loginPageLocators.fieldPassword, "deadman11");
-        clickButton(loginPageLocators.buttonLogin);
-        clickElement(mainPageLocators.tablePurchasing);
+        clickButtonIfEnable(loginPageLocators.buttonLogin);
+        clickButtonIfEnable(mainPageLocators.tablePurchasing);
+
     }
 
     @After
@@ -65,23 +65,16 @@ public class Create_Supplier_Status_TBD {
     }
 
     @Test
-    public void createSupplierWithStatusNew(){
+    public void createSupplierEmergency(){
         clickButtonIfEnable(mainPageLocators.linkSupplier);
         selectWebElementFromDropDownList(supplierSearchCreatePage.dropdownListSiteCode, "130"); // 130 - AGRO_FARMA;  SALES - DEMO;
         clickButton(supplierSearchCreatePage.buttonCreate);
-        createSupplierPage.fillUserDataTableAndSave2("asd@ukr.net", "Supplier_status_NEW_DEMO_SALES_", "","999-999-9999", "@ukr.net");
-        clickButtonIfEnable(createSupplierPage.checkBoxTBD);
-        clickButtonIfEnable(createSupplierPage.buttonSave);
-
-        setSupplierName(supplierDetailPage.fieldSupplierName);
-
-        System.out.println("Supplier was created, his Number is: " + getTextFromWebElement(supplierDetailPage.fieldSupplierNumber));
-        System.out.println("Supplier name is : " + getSupplierName());
-        logger.info("Supplier was created, his Number is: " + getTextFromWebElement(supplierDetailPage.fieldSupplierNumber));
-        logger.info("Supplier name is : " + getSupplierName());
+        createSupplierPage.fillUserDataEmergencySupplier("asd@ukr.net","Supplier_Emergency_DEMO_SALES_", "123-123-1234", "@ukr.net", "Emergency supplier was created");
+        clickButtonIfEnable(createSupplierPage.buttonOKpopup);
+        System.out.println("Emergency Supplier was created, his number is: " + getTextFromWebElement(supplierDetailPage.fieldSupplierNumber));
+        logger.info("Emergency Supplier was created, his number is: " + getTextFromWebElement(supplierDetailPage.fieldSupplierNumber));
         logger.info("------------------------------------------------------");
 
         Assert.assertEquals("Supplier Detail", createSupplierPage.textSupplierDetails.getText());
     }
 }
-

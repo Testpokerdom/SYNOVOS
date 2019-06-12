@@ -1,4 +1,4 @@
-package SOS.Tests._1_Create_Supplier_New_NewPendingApproval_Emergency_Approved_Reject;
+package SOS.Tests._1_Create_Supplier_New_NewPendingApproval_Emergency_Approved_Reject.Demo_Agro_Farma_Site_Without_AutoApproval;
 
 import SOS.Locators.LoginPage.LoginPageLocators;
 import SOS.Locators.MainPage.MainPageLocators;

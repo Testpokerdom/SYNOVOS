@@ -1,6 +1,6 @@
 package SOS.TestSuites.BasicSuites;
 
-import SOS.Tests._1_Create_Supplier_New_NewPendingApproval_Emergency_Approved_Reject.*;
+import SOS.Tests._1_Create_Supplier_New_NewPendingApproval_Emergency_Approved_Reject.Demo_Agro_Farma_Site_Without_AutoApproval.*;
 import org.junit.runner.RunWith;
 import org.junit.runners.Suite;
 
