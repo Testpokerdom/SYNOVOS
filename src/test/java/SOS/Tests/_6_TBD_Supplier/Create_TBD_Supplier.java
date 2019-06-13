@@ -57,13 +57,13 @@ public class Create_TBD_Supplier {
         clickElement(mainPageLocators.tablePurchasing);
     }
 
-
+/*
     @After
     public void afterEach() {
 
         driver.quit();
     }
-
+*/
     @Test
     public void createSupplierWithStatusNew(){
         clickButtonIfEnable(mainPageLocators.linkSupplier);
@@ -74,7 +74,7 @@ public class Create_TBD_Supplier {
 
         //Allert popup window elements
         //System.out.println("Allert window text is: " + driver.switchTo().alert().getText());
-        Assert.assertEquals("Saving the supplier as TBD supplier will make it approved rightaway. After that TBD status cannot be changed.", driver.switchTo().alert().getText()); // Current pop-up should contain text body specified in Assert
+        Assert.assertEquals("Saving the supplier as TBD supplier will make it approved right away. After that TBD status cannot be changed.", driver.switchTo().alert().getText()); // Current pop-up should contain text body specified in Assert
         driver.switchTo().alert().accept(); // click button Ok in Allert popup window
 
         System.out.println("Supplier was created, his Number is: " + WebHelpers.getTextFromWebElement(supplierDetailPage.fieldSupplierNumber));

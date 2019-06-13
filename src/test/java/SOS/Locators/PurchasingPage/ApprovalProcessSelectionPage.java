@@ -33,6 +33,10 @@ public class ApprovalProcessSelectionPage extends SearchSuppliersPage {
     public WebElement dropDownListModifiedBy;
     @FindBy (xpath = "filterFor_approvalProcessModifiedDate")
     public WebElement dropDownListModifiedOn;
+    @FindBy (xpath = "//div[@id='approvalProcessData_filter']//input[@type='search']")
+    public WebElement fieldFilterSearch;
+    @FindBy (xpath = "//th[@id='filterFor_supplierName']//select[@class='filter']")
+    public WebElement fieldSUpplierNameInTable;
 
 
 

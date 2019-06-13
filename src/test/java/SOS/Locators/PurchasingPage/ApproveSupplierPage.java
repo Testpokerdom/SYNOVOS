@@ -4,8 +4,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-import static SOS.WebHelpers.WebHelpers.findLastRawInTableAndClick2;
-import static SOS.WebHelpers.WebHelpers.sendTextToWebElement;
 import static WebHelpers.WebHelpers.*;
 import static WebHelpers.WebHelpers.clickButton;
 
@@ -34,6 +32,8 @@ public class ApproveSupplierPage extends SearchSuppliersPage {
     public WebElement fieldSupplierNo;
     @FindBy (id = "supplierName")
     public WebElement fieldSupplierName;
+    @FindBy (xpath = "//table[@class='datagrid gradientElement2']/tbody[1]/tr[2]/td[2]/input[@id='supplierName']")
+    public WebElement fieldSupplierName2;
 
     //Confirmation pop-up menu elements - button SAVE
     @FindBy (id = "approvalCommentsHolder")
@@ -81,8 +81,8 @@ public class ApproveSupplierPage extends SearchSuppliersPage {
 
     public void choosePaymentTermsForSupplier(String paymentTermsValue, String textCommentField){
         selectWebElementFromDropDownList(dropdownListpaymentTerms, paymentTermsValue); //value 10 = "NET 25"
-        clickElement(checkBoxApproved);
-        clickButton(buttonApprove);
+        clickButtonIfEnable(checkBoxApproved);
+        clickButtonIfEnable(buttonApprove);
         sendTextToWebElement(fieldCommentsAfterButtonCREATE, textCommentField); // Approved_Supplier_First_Stage
         clickButton(buttonOkAfterButtonCREATE_first_stage);
     }
@@ -91,6 +91,15 @@ public class ApproveSupplierPage extends SearchSuppliersPage {
         findLastRawInTableAndClick2(driver, "//table[@id='approvalProcessData']/tbody/tr[last()]/td[last()]");
         selectWebElementFromDropDownList(dropdownListpaymentTerms, "10"); //value 10 = "NET 25"
         clickButtonIfEnable(checkBoxApproved);
+        clickButtonIfEnable(buttonApprove);
+        sendTextToWebElement(fieldCommentsAfterButtonCREATE, "Payment term was approved");
+        clickButtonIfEnable(buttonOkAfterButtonCREATE_first_stage);
+    }
+
+    public void approveRequestedPaymentTermForApprovedSupplier(WebDriver driver, String paymentTermsValue){
+        findLastRawInTableAndClick2(driver, "//table[@id='approvalProcessData']/tbody/tr[last()]/td[last()]");
+        selectWebElementFromDropDownList(dropdownListpaymentTerms, paymentTermsValue); //value 10 = "NET 25"
+        //clickButtonIfEnable(checkBoxApproved);
         clickButtonIfEnable(buttonApprove);
         sendTextToWebElement(fieldCommentsAfterButtonCREATE, "Payment term was approved");
         clickButtonIfEnable(buttonOkAfterButtonCREATE_first_stage);

@@ -90,6 +90,8 @@ public class Test_6_ApprovePaymentTermsPreviouslyValidated {
 
         clickElement(mainPageLocators.tablePurchasing);
         clickWebElementIfEnable(mainPageLocators.linkApproveSupplier);
+        selectWebElementFromDropDownList(approveSupplierListPage.dropdownlistSiteName, "AGRO FARMA"); // AGRO FARMA / DEMO SOS SITE
+        selectWebElementFromDropDownList(approveSupplierListPage.fieldSUpplierNameInTable, getSupplierName());
         Assert.assertEquals("Supplier Payment Terms Approval Process", approveSupplierListPage.fieldApprovalTypeLastString.getText());
         Assert.assertTrue(WebHelpers.getTextFromWebElement(approveSupplierListPage.fieldCommentsLastString).contains("(PT)"));
 
@@ -119,4 +121,5 @@ public class Test_6_ApprovePaymentTermsPreviouslyValidated {
         Assert.assertEquals("Current requested payment terms are already approved.", editSupplierPage.paymentTermsErrorInHeader.getText());
         Assert.assertEquals("Current requested payment terms are already approved.", editSupplierPage.fieldRequestedpaymentTermsErrorMessage.getText());
     }
+
 }

@@ -18,6 +18,7 @@ import static SOS.WebHelpers.WebHelpers.findLastRawInTableAndClick2;
 import static SOS.WebHelpers.WebHelpers.getCurrentTimeUsingCalendar2;
 import static SOS.WebHelpers.WebHelpers.goToUrl;
 import static SOS.WebHelpers.WebHelpers.sendTextToWebElement;
+import static WebHelpers.GettersAndSetters.*;
 import static WebHelpers.WebHelpers.*;
 import static WebHelpers.WebHelpers.clickButtonIfEnable;
 
@@ -74,11 +75,16 @@ public class Test_3_ApprovepaymentTermForSupplierStatusRejected {
         selectWebElementFromDropDownList(supplierSearchCreatePage.dropdownListSiteCode, "130"); // 130 - AGRO_FARMA;  SALES - DEMO;
         clickButton(supplierSearchCreatePage.buttonCreate);
         createSupplierPage.fillUserDataTableAndSave2("asd@ukr.net", "Supplier_status_APPROVED_DEMO_SALES_", "","999-999-9999", "@ukr.net");
-        clickButtonIfEnable(createSupplierPage.buttonSendForApproval);
-        sendTextToWebElement(createSupplierPage.fieldComments, "Supplier was created and sent for approval with status New Supplier - Pending Approval");
+
+        clickButton(createSupplierPage.buttonSendForApproval);
+        sendTextToWebElement(createSupplierPage.fieldComments, "Send_for_approval_test_creation");
         clickButtonIfEnable(createSupplierPage.buttonOKpopup);
-        System.out.println("Supplier was created, his Number is: " + WebHelpers.getTextFromWebElement(supplierDetailPage.fieldSupplierNumber));
-        logger.info("Supplier was created, his Number is: " + WebHelpers.getTextFromWebElement(supplierDetailPage.fieldSupplierNumber));
+        setSupplierName(supplierDetailPage.fieldSupplierName);
+        setSupplierNumber(supplierDetailPage.fieldSupplierNumber);
+
+        System.out.println("Supplier was created, his Number is: " + getSupplierName());
+        System.out.println("Supplier was created, his Number is: " + getSupplierNumber());
+        logger.info("Supplier was created, his Number is: " + getSupplierName());
         logger.info("------------------------------------------------------");
 
         Assert.assertEquals("Supplier Detail", createSupplierPage.textSupplierDetails.getText());
@@ -87,10 +93,13 @@ public class Test_3_ApprovepaymentTermForSupplierStatusRejected {
     @Test
     public void test_2_rejectSupplierWithStatusNewPendingApproval(){
         clickButton(mainPageLocators.linkApproveSupplier);
-        selectWebElementFromDropDownList(approvalProcessSelection.dropdownlistSiteName, "AGRO FARMA"); // DEMO SOS SITE -- AGRO FARMA
-        findLastRawInTableAndClick2(driver, "//table[@id='approvalProcessData']/tbody/tr[last()]/td[last()]");
+        selectWebElementFromDropDownList(approveSupplierListPage.dropdownlistSiteName, "AGRO FARMA"); // AGRO FARMA / DEMO SOS SITE
+        selectWebElementFromDropDownList(approveSupplierListPage.fieldSUpplierNameInTable, getSupplierName());
+        findLastRawInTableAndClick2(driver, "//table[@id='approvalProcessData']/tbody/tr[1]/td[last()]");
+
         System.out.println("Suppliers number for rejecting is: " + getTextFromWebElement(approveSupplierPage.fieldSupplierNo));
         logger.info("Supplier was chosen for Rejecting, his number is: " + getTextFromWebElement(approveSupplierPage.fieldSupplierNo));
+
         selectWebElementFromDropDownList(approveSupplierPage.dropdownListpaymentTerms, "10"); //value 10 = "NET 25"
         clickElement(approveSupplierPage.checkBoxApproved);
         clickButton(approveSupplierPage.buttonRejected);
@@ -108,10 +117,9 @@ public class Test_3_ApprovepaymentTermForSupplierStatusRejected {
     public void test_3_approvePaymentTermForSupplierWithStatusRejected(){
         clickButton(mainPageLocators.linkSupplier);
         selectWebElementFromDropDownList(supplierSearchCreatePage.dropdownListSiteCode, "130"); // 130 - AGRO_FARMA;  SALES - DEMO;
-        sendTextToWebElement(supplierSearchCreatePage.fieldSupplierNameCriterion, getCurrentTimeUsingCalendar2());
+        sendTextToWebElement(supplierSearchCreatePage.fieldSupplierNameCriterion, getSupplierName());
         clickWebElementIfEnable(supplierSearchCreatePage.radiobuttonInActiveStatus);
         clickButtonIfEnable(supplierSearchCreatePage.buttonSearch);
-        clickButtonIfEnable(matchingSupplierListPage.buttonSupplier);
         findLastRawInTableAndClick2(driver, "//table[@id='supplier']/tbody/tr[last()]/td[last()]/a[@title='Edit Supplier']");
 
         System.out.println("Suppliers number is: " + getTextFromWebElement(supplierDetailPage.fieldSupplierNumber));
@@ -125,6 +133,8 @@ public class Test_3_ApprovepaymentTermForSupplierStatusRejected {
 
         clickElement(mainPageLocators.tablePurchasing);
         clickWebElementIfEnable(mainPageLocators.linkApproveSupplier);
+        selectWebElementFromDropDownList(approveSupplierListPage.dropdownlistSiteName, "AGRO FARMA"); // AGRO FARMA / DEMO SOS SITE
+        selectWebElementFromDropDownList(approveSupplierListPage.fieldSUpplierNameInTable, getSupplierName());
         Assert.assertEquals("Supplier Payment Terms Approval Process", approveSupplierListPage.fieldApprovalTypeLastString.getText());
         Assert.assertTrue(SOS.WebHelpers.WebHelpers.getTextFromWebElement(approveSupplierListPage.fieldCommentsLastString).contains("(PT)"));
 

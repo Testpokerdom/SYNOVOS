@@ -15,6 +15,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import java.util.concurrent.TimeUnit;
 
 import static SOS.WebHelpers.WebHelpers.sendTextToWebElement;
+import static WebHelpers.GettersAndSetters.*;
 import static WebHelpers.WebHelpers.*;
 import static WebHelpers.WebHelpers.clickButtonIfEnable;
 
@@ -57,13 +58,13 @@ public class Test_1_ApprovePaymentTermForSupplierStatusNew {
         clickButton(loginPageLocators.buttonLogin);
         clickElement(mainPageLocators.tablePurchasing);
     }
-
+/*
     @After
     public void afterEach() {
 
         driver.quit();
     }
-
+*/
     @Test
     public void createSupplierWithStatusNew(){
         clickButtonIfEnable(mainPageLocators.linkSupplier);
@@ -71,9 +72,11 @@ public class Test_1_ApprovePaymentTermForSupplierStatusNew {
         clickButton(supplierSearchCreatePage.buttonCreate);
         createSupplierPage.fillUserDataTableAndSave2("asd@ukr.net", "Supplier_status_New_DEMO_SALES_", "","999-999-9999", "@ukr.net");
         clickButtonIfEnable(createSupplierPage.buttonSave);
-        supplierNumber = WebHelpers.getTextFromWebElement(supplierDetailPage.fieldSupplierNumber);
-        System.out.println(supplierNumber);
-        logger.info(supplierNumber);
+
+        setSupplierName(supplierDetailPage.fieldSupplierName);
+
+        System.out.println(getSupplierName());
+        logger.info(getSupplierName());
         logger.info("----");
         Assert.assertEquals("Supplier Detail", createSupplierPage.textSupplierDetails.getText());
 
@@ -86,6 +89,8 @@ public class Test_1_ApprovePaymentTermForSupplierStatusNew {
 
         clickElement(mainPageLocators.tablePurchasing);
         clickWebElementIfEnable(mainPageLocators.linkApproveSupplier);
+        sendTextToWebElement(approveSupplierListPage.fieldFilterSearch, getSupplierName());
+        waitElementPresence(driver, 5,approveSupplierListPage.fieldApprovalTypeLastString);
         Assert.assertEquals("Supplier Payment Terms Approval Process", approveSupplierListPage.fieldApprovalTypeLastString.getText());
         Assert.assertTrue(WebHelpers.getTextFromWebElement(approveSupplierListPage.fieldCommentsLastString).contains("(PT)"));
 

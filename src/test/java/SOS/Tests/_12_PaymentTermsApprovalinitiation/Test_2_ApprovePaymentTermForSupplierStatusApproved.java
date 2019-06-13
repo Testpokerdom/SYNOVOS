@@ -8,6 +8,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.junit.*;
 import org.junit.runners.MethodSorters;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
@@ -15,7 +16,9 @@ import java.util.concurrent.TimeUnit;
 
 import static SOS.WebHelpers.WebHelpers.findLastRawInTableAndClick2;
 import static SOS.WebHelpers.WebHelpers.getCurrentTimeUsingCalendar2;
+import static SOS.WebHelpers.WebHelpers.getTextFromWebElement;
 import static SOS.WebHelpers.WebHelpers.sendTextToWebElement;
+import static WebHelpers.GettersAndSetters.*;
 import static WebHelpers.WebHelpers.*;
 import static WebHelpers.WebHelpers.clickButtonIfEnable;
 
@@ -76,9 +79,12 @@ public class Test_2_ApprovePaymentTermForSupplierStatusApproved {
         clickButton(createSupplierPage.buttonSendForApproval);
         sendTextToWebElement(createSupplierPage.fieldComments, "Send_for_approval_test_creation");
         clickButtonIfEnable(createSupplierPage.buttonOKpopup);
+        setSupplierName(supplierDetailPage.fieldSupplierName);
+        setSupplierNumber(supplierDetailPage.fieldSupplierNumber);
 
-        System.out.println("Supplier was created, his Number is: " + SOS.WebHelpers.WebHelpers.getTextFromWebElement(supplierDetailPage.fieldSupplierNumber));
-        logger.info("Supplier was created, his Number is: " + SOS.WebHelpers.WebHelpers.getTextFromWebElement(supplierDetailPage.fieldSupplierNumber));
+        System.out.println("Supplier was created, his Number is: " + getSupplierName());
+        System.out.println("Supplier was created, his Number is: " + getSupplierNumber());
+        logger.info("Supplier was created, his Number is: " + getSupplierName());
         logger.info("------------------------------------------------------");
 
         Assert.assertEquals("Supplier Detail", createSupplierPage.textSupplierDetails.getText());
@@ -88,11 +94,13 @@ public class Test_2_ApprovePaymentTermForSupplierStatusApproved {
     public void test_2_stage_1_ApproveSupplierWithStatusNewPendingApproval(){
         clickButton(mainPageLocators.linkApproveSupplier);
         selectWebElementFromDropDownList(approveSupplierListPage.dropdownlistSiteName, "AGRO FARMA"); // AGRO FARMA / DEMO SOS SITE
-        findLastRawInTableAndClick2(driver, "//table[@id='approvalProcessData']/tbody/tr[last()]/td[last()]");
+        selectWebElementFromDropDownList(approveSupplierListPage.fieldSUpplierNameInTable, getSupplierName());
+        findLastRawInTableAndClick2(driver, "//table[@id='approvalProcessData']/tbody/tr[1]/td[last()]"); // //table[@id='approvalProcessData']/tbody/tr[1]/td[last()] //table[@id='approvalProcessData']/tbody/tr[last()]/td[last()]
 
         System.out.println("Approved Supplier number is: " + getTextFromWebElement(approveSupplierPage.fieldSupplierNo));
         logger.info("Approved Supplier number is: " + getTextFromWebElement(approveSupplierPage.fieldSupplierNo));
 
+        //waitElementPresence(driver, 5, approveSupplierPage.fieldSupplierName);
         approveSupplierPage.choosePaymentTermsForSupplier("10", "Approved_Supplier_First_Stage");
 
         logger.info("Supplier successfully passed first approval stage..");
@@ -104,11 +112,12 @@ public class Test_2_ApprovePaymentTermForSupplierStatusApproved {
     @Test
     public void test_3_stage_2_ApproveSupplierWithStatusNewPendingApproval(){
         clickButton(mainPageLocators.linkApproveSupplier);
-        selectWebElementFromDropDownList(approveSupplierListPage.dropdownlistSiteName, "AGRO FARMA");
-        findLastRawInTableAndClick2(driver, "//table[@id='approvalProcessData']/tbody/tr[last()]/td[last()]");
+        selectWebElementFromDropDownList(approveSupplierListPage.dropdownlistSiteName, "AGRO FARMA"); // AGRO FARMA / DEMO SOS SITE
+        selectWebElementFromDropDownList(approveSupplierListPage.fieldSUpplierNameInTable, getSupplierName());
+        findLastRawInTableAndClick2(driver, "//table[@id='approvalProcessData']/tbody/tr[1]/td[last()]"); // //table[@id='approvalProcessData']/tbody/tr[1]/td[last()] //table[@id='approvalProcessData']/tbody/tr[last()]/td[last()]
 
-        System.out.println("Supplier was approved, his number is: " + SOS.WebHelpers.WebHelpers.getTextFromWebElement(approveSupplierPage.fieldSupplierNo));
-        logger.info("Supplier was approved, his number is: " + SOS.WebHelpers.WebHelpers.getTextFromWebElement(approveSupplierPage.fieldSupplierNo));
+        System.out.println("Supplier was approved, his number is: " + getTextFromWebElement(approveSupplierPage.fieldSupplierNo));
+        logger.info("Supplier was approved, his number is: " + getTextFromWebElement(approveSupplierPage.fieldSupplierNo));
 
         //selectWebElementFromDropDownList(createSupplierPage.dropdown_listJDE_Vendor, "6040");
         sendTextToWebElement(createSupplierPage.dropdown_listJDE_Vendor, "1045000");
@@ -127,13 +136,13 @@ public class Test_2_ApprovePaymentTermForSupplierStatusApproved {
     public void test_4_sendRequiredPaymentTermForApproveAndApprovePaymentTerm(){
         clickButton(mainPageLocators.linkSupplier);
         selectWebElementFromDropDownList(supplierSearchCreatePage.dropdownListSiteCode, "130"); // 130 - AGRO_FARMA;  SALES - DEMO;
-        sendTextToWebElement(supplierSearchCreatePage.fieldSupplierNameCriterion, getCurrentTimeUsingCalendar2());
+        sendTextToWebElement(supplierSearchCreatePage.fieldSupplierNameCriterion, getSupplierName());
         clickButtonIfEnable(supplierSearchCreatePage.buttonSearch);
-        clickWebElementIfEnable(matchingSupplierListPage.buttonSupplier);
+        //clickWebElementIfEnable(matchingSupplierListPage.buttonSupplier);
 
         findLastRawInTableAndClick2(driver, "//table[@id='supplier']/tbody/tr[last()]/td[last()]/a[@title='Edit Supplier']");
-        System.out.println("Suppliers number is: " + SOS.WebHelpers.WebHelpers.getTextFromWebElement(supplierDetailPage.fieldSupplierNumber));
-        logger.info("Supplier was chosen for Approve, his number is: " + SOS.WebHelpers.WebHelpers.getTextFromWebElement(supplierDetailPage.fieldSupplierNumber));
+        System.out.println("Suppliers number is: " + getTextFromWebElement(supplierDetailPage.fieldSupplierName));
+        logger.info("Supplier was chosen for Approve, his number is: " + getTextFromWebElement(supplierDetailPage.fieldSupplierName));
 
         clickButtonIfEnable(supplierDetailPage.buttonEdit);
 
@@ -145,9 +154,12 @@ public class Test_2_ApprovePaymentTermForSupplierStatusApproved {
 
         clickElement(mainPageLocators.tablePurchasing);
         clickWebElementIfEnable(mainPageLocators.linkApproveSupplier);
+        selectWebElementFromDropDownList(approveSupplierListPage.dropdownlistSiteName, "AGRO FARMA"); // AGRO FARMA / DEMO SOS SITE
+        selectWebElementFromDropDownList(approveSupplierListPage.fieldSUpplierNameInTable, getSupplierName());
         Assert.assertEquals("Supplier Payment Terms Approval Process", approveSupplierListPage.fieldApprovalTypeLastString.getText());
         Assert.assertTrue(SOS.WebHelpers.WebHelpers.getTextFromWebElement(approveSupplierListPage.fieldCommentsLastString).contains("(PT)"));
 
-        approveSupplierPage.approveRequestedPaymentTerm(driver);
+        approveSupplierPage.approveRequestedPaymentTermForApprovedSupplier(driver, "10");
     }
+
 }
