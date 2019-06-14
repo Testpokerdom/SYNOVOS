@@ -62,13 +62,13 @@ public class Test_6_ApprovePaymentTermsPreviouslyValidated {
         clickButton(loginPageLocators.buttonLogin);
         clickElement(mainPageLocators.tablePurchasing);
     }
-/*
+
     @After
     public void afterEach() {
 
         driver.quit();
     }
-*/
+
     @Test
     public void test_1_createSupplierWithStatusNew(){
         clickButtonIfEnable(mainPageLocators.linkSupplier);
@@ -95,7 +95,7 @@ public class Test_6_ApprovePaymentTermsPreviouslyValidated {
         Assert.assertEquals("Supplier Payment Terms Approval Process", approveSupplierListPage.fieldApprovalTypeLastString.getText());
         Assert.assertTrue(WebHelpers.getTextFromWebElement(approveSupplierListPage.fieldCommentsLastString).contains("(PT)"));
 
-        approveSupplierPage.approveRequestedPaymentTermForSupplierWithStatusNEW(driver);
+        approveSupplierPage.approveRequestedPaymentTermForSupplierWithStatusNEW(driver, "10");
 
     }
 

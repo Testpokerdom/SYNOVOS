@@ -68,7 +68,7 @@ public class Test_3_Delete_Supplier_Status_New_Pending_Approval_No_PO {
     //@DisplayName("Create Supplier")
     public void deleteSupplierWithStatusNewSupplierPendingApproval(){
         clickButtonIfEnable(mainPageLocators.linkSupplier);
-        selectWebElementFromDropDownList(supplierSearchCreatePage.dropdownListSiteCode, "SALES"); // 130 - AGRO_FARMA;  SALES - DEMO;
+        selectWebElementFromDropDownList(supplierSearchCreatePage.dropdownListSiteCode, "130"); // 130 - AGRO_FARMA;  SALES - DEMO;
         clickButton(supplierSearchCreatePage.buttonCreate);
         createSupplierPage.fillUserDataTableAndSave2("asd@ukr.net", "Supplier_status_APPROVED_DEMO_SALES_", "","999-999-9999", "@ukr.net");
         clickButtonIfEnable(createSupplierPage.buttonSendForApproval);

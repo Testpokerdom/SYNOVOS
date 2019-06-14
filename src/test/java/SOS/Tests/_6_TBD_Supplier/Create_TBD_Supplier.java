@@ -49,6 +49,7 @@ public class Create_TBD_Supplier {
 
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.manage().window().maximize();
+        driver.manage().deleteAllCookies();
 
         logger.info("------------------------------------------------------");
         goToUrl(driver, "http://localhost:8080/sos/splashScreen.sos");

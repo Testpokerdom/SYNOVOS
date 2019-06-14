@@ -17,6 +17,8 @@ import java.util.concurrent.TimeUnit;
 import static SOS.WebHelpers.WebHelpers.findLastRawInTableAndClick2;
 import static SOS.WebHelpers.WebHelpers.getCurrentTimeUsingCalendar2;
 import static SOS.WebHelpers.WebHelpers.sendTextToWebElement;
+import static WebHelpers.GettersAndSetters.getSupplierName;
+import static WebHelpers.GettersAndSetters.setSupplierName;
 import static WebHelpers.WebHelpers.*;
 import static WebHelpers.WebHelpers.clickButtonIfEnable;
 
@@ -79,8 +81,10 @@ public class View_Supplier_Status_Approved {
         clickButton(createSupplierPage.buttonSendForApproval);
         sendTextToWebElement(createSupplierPage.fieldComments, "Send_for_approval_test_creation");
         clickButtonIfEnable(createSupplierPage.buttonOKpopup);
+        setSupplierName(supplierDetailPage.fieldSupplierName);
 
         System.out.println("Supplier was created, his Number is: " + WebHelpers.getTextFromWebElement(supplierDetailPage.fieldSupplierNumber));
+        System.out.println("Supplier was created, his Number is: " + getSupplierName());
         logger.info("Supplier was created, his Number is: " + WebHelpers.getTextFromWebElement(supplierDetailPage.fieldSupplierNumber));
         logger.info("------------------------------------------------------");
 
@@ -140,11 +144,11 @@ public class View_Supplier_Status_Approved {
     public void test_4(){
         clickButton(mainPageLocators.linkSupplier);
         selectWebElementFromDropDownList(supplierSearchCreatePage.dropdownListSiteCode, "130"); // 130 - AGRO_FARMA;  SALES - DEMO;
-        sendTextToWebElement(supplierSearchCreatePage.fieldSupplierNameCriterion, getCurrentTimeUsingCalendar2());
+        sendTextToWebElement(supplierSearchCreatePage.fieldSupplierNameCriterion, getSupplierName());
         clickButtonIfEnable(supplierSearchCreatePage.buttonSearch);
-        clickWebElementIfEnable(matchingSupplierListPage.buttonSupplier);
+        //clickWebElementIfEnable(matchingSupplierListPage.buttonSupplier);
 
-        findLastRawInTableAndClick2(driver, "//table[@id='supplier']/tbody/tr[last()]/td[last()]");
+        findLastRawInTableAndClick2(driver, "//table[@id='supplier']/tbody/tr[last()]/td[last()]/a[@title='Edit Supplier']");
         System.out.println("Suppliers number is: " + WebHelpers.getTextFromWebElement(supplierDetailPage.fieldSupplierNumber));
         logger.info("Supplier was chosen for Approve, his number is: " + WebHelpers.getTextFromWebElement(supplierDetailPage.fieldSupplierNumber));
 

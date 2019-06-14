@@ -66,7 +66,7 @@ public class Test_4_Activate_Supplier_With_Status_Emergency {
     @Test
     public void test_1_deleteSupplierEmergency(){
         clickButtonIfEnable(mainPageLocators.linkSupplier);
-        selectWebElementFromDropDownList(supplierSearchCreatePage.dropdownListSiteCode, "SALES"); // 130 - AGRO_FARMA;  SALES - DEMO;
+        selectWebElementFromDropDownList(supplierSearchCreatePage.dropdownListSiteCode, "130"); // 130 - AGRO_FARMA;  SALES - DEMO;
         clickButton(supplierSearchCreatePage.buttonCreate);
         createSupplierPage.fillUserDataEmergencySupplier("asd@ukr.net","Supplier_Emergency_DEMO_SALES_", "123-123-1234", "@ukr.net", "Emergency supplier was created");
         clickButtonIfEnable(createSupplierPage.buttonOKpopup);

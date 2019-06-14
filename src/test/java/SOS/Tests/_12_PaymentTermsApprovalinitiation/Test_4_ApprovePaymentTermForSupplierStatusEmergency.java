@@ -7,6 +7,7 @@ import SOS.Tests._1_Create_Supplier_New_NewPendingApproval_Emergency_Approved_Re
 import SOS.WebHelpers.WebHelpers;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
@@ -56,13 +57,13 @@ public class Test_4_ApprovePaymentTermForSupplierStatusEmergency {
         clickButtonIfEnable(mainPageLocators.tablePurchasing);
 
     }
-/*
+
         @After
         public void afterEach() {
 
             driver.quit();
         }
-*/
+
     @Test
     public void createSupplierEmergency(){
         clickButtonIfEnable(mainPageLocators.linkSupplier);

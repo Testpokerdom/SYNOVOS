@@ -7,6 +7,7 @@ import SOS.Tests.LoginPage.LoginPageTests;
 import SOS.WebHelpers.WebHelpers;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
@@ -15,6 +16,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.util.concurrent.TimeUnit;
 
+import static WebHelpers.GettersAndSetters.setSupplierName;
 import static WebHelpers.WebHelpers.*;
 import static WebHelpers.WebHelpers.clickButtonIfEnable;
 
@@ -56,24 +58,26 @@ public class Test_6_ActivateSupplierWithStatusNewSupplierPendingApplier {
         clickButton(loginPageLocators.buttonLogin);
         clickElement(mainPageLocators.tablePurchasing);
     }
-/*
+
     @After
     public void afterEach() {
 
         driver.quit();
     }
-*/
+
     @Test
     //@Description("Create Supplier")
     //@DisplayName("Create Supplier")
     public void deleteSupplierWithStatusNewSupplierPendingApprovalStatusShouldBeChangedToInActive(){
         clickButtonIfEnable(mainPageLocators.linkSupplier);
-        selectWebElementFromDropDownList(supplierSearchCreatePage.dropdownListSiteCode, "SALES"); // 130 - AGRO_FARMA;  SALES - DEMO;
+        selectWebElementFromDropDownList(supplierSearchCreatePage.dropdownListSiteCode, "130"); // 130 - AGRO_FARMA;  SALES - DEMO;
         clickButton(supplierSearchCreatePage.buttonCreate);
         createSupplierPage.fillUserDataTableAndSave2("asd@ukr.net", "Supplier_status_APPROVED_DEMO_SALES_", "","999-999-9999", "@ukr.net");
         clickButtonIfEnable(createSupplierPage.buttonSendForApproval);
         sendTextToWebElement(createSupplierPage.fieldComments, "Supplier was created and sent for approval with status New Supplier - Pending Approval");
         clickButtonIfEnable(createSupplierPage.buttonOKpopup);
+        setSupplierName(supplierDetailPage.fieldSupplierName);
+
         System.out.println("Supplier was created, his Number is: " + WebHelpers.getTextFromWebElement(supplierDetailPage.fieldSupplierNumber));
         logger.info("Supplier was created, his Number is: " + WebHelpers.getTextFromWebElement(supplierDetailPage.fieldSupplierNumber));
         logger.info("------------------------------------------------------");
