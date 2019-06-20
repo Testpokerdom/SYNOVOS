@@ -57,13 +57,13 @@ public class Editing_Supplier_Status_New {
         clickButton(loginPageLocators.buttonLogin);
         clickElement(mainPageLocators.tablePurchasing);
     }
-
+/*
     @After
     public void afterEach() {
 
         driver.quit();
     }
-
+*/
     @Test
     public void createSupplierWithStatusNew(){
         clickButtonIfEnable(mainPageLocators.linkSupplier);
@@ -80,6 +80,7 @@ public class Editing_Supplier_Status_New {
         Assert.assertEquals("Supplier Detail", createSupplierPage.textSupplierDetails.getText());
 
         clickButtonIfEnable(supplierDetailPage.buttonEdit);
+        selectWebElementFromDropDownList(editSupplierPage.dropDownListRequestedPaymentTerms, "");
         sendTextToWebElement(editSupplierPage.dropdown_listJDE_Vendor, "8205171");
         clickButtonIfEnable(editSupplierPage.jdeVendor2);
         clickButtonIfEnable(editSupplierPage.buttonSave);
@@ -89,5 +90,7 @@ public class Editing_Supplier_Status_New {
         //Assert.assertEquals("04/19/2019 VBIBIKSU: JdeVendor has been changed from '1045000 --- Accu-Systems SALT LAKE CITY UT 84123' to '8205171 --- STEINER MANUFACTURING., INC.''.", getTextFromWebElement(supplierDetailPage.fieldApprovalNotes));
         Assert.assertTrue(getTextFromWebElement(supplierDetailPage.fieldApprovalNotes).contains("JdeVendor has been changed from '1045000 --- Accu-Systems SALT LAKE CITY UT 84123' to '8205171 --- " +
                 "STEINER MANUFACTURING., INC.''."));
+
+        clickButtonIfEnable(supplierDetailPage.buttonEdit);
     }
 }
