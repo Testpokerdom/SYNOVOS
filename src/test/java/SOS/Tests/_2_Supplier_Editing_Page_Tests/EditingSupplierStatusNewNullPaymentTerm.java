@@ -19,7 +19,7 @@ import static WebHelpers.WebHelpers.*;
 import static WebHelpers.WebHelpers.clickButtonIfEnable;
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
-public class Editing_Supplier_Status_New {
+public class EditingSupplierStatusNewNullPaymentTerm {
     public static WebDriver driver = null;
     public static LoginPageLocators loginPageLocators = null;
     public static MainPageLocators mainPageLocators = null;
@@ -80,7 +80,7 @@ public class Editing_Supplier_Status_New {
         Assert.assertEquals("Supplier Detail", createSupplierPage.textSupplierDetails.getText());
 
         clickButtonIfEnable(supplierDetailPage.buttonEdit);
-        selectWebElementFromDropDownList(editSupplierPage.dropDownListRequestedPaymentTerms, "");
+        selectWebElementFromDropDownList(editSupplierPage.dropDownListRequestedPaymentTerms, ""); // Set requested Payment term equels to "Null" value.
         sendTextToWebElement(editSupplierPage.dropdown_listJDE_Vendor, "8205171");
         clickButtonIfEnable(editSupplierPage.jdeVendor2);
         clickButtonIfEnable(editSupplierPage.buttonSave);
@@ -91,6 +91,13 @@ public class Editing_Supplier_Status_New {
         Assert.assertTrue(getTextFromWebElement(supplierDetailPage.fieldApprovalNotes).contains("JdeVendor has been changed from '1045000 --- Accu-Systems SALT LAKE CITY UT 84123' to '8205171 --- " +
                 "STEINER MANUFACTURING., INC.''."));
 
+
+        if(supplierDetailPage.buttonEdit.isEnabled() == true){
+            System.out.println("Button Edit is enable for click");
+        } else {
+            System.out.println("Button Edit is not enable for click");
+        }
         clickButtonIfEnable(supplierDetailPage.buttonEdit);
+        Assert.assertTrue(editSupplierPage.fieldSupplierName.getText() == getSupplierName());
     }
 }
