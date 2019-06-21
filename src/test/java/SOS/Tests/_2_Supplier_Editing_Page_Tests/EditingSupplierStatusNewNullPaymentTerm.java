@@ -57,13 +57,13 @@ public class EditingSupplierStatusNewNullPaymentTerm {
         clickButton(loginPageLocators.buttonLogin);
         clickElement(mainPageLocators.tablePurchasing);
     }
-/*
+
     @After
     public void afterEach() {
 
         driver.quit();
     }
-*/
+
     @Test
     public void createSupplierWithStatusNew(){
         clickButtonIfEnable(mainPageLocators.linkSupplier);
@@ -72,7 +72,7 @@ public class EditingSupplierStatusNewNullPaymentTerm {
         createSupplierPage.fillUserDataTableAndSave2("asd@ukr.net", "Supplier_status_New_DEMO_SALES_", "","999-999-9999", "@ukr.net");
         clickButtonIfEnable(createSupplierPage.buttonSave);
         setSupplierNumber(supplierDetailPage.fieldSupplierNumber);
-        setSupplierNumber(supplierDetailPage.fieldSupplierName);
+        setSupplierName(supplierDetailPage.fieldSupplierName);
         //supplierNumber = getTextFromWebElement(supplierDetailPage.fieldSupplierNumber);
         System.out.println(getSupplierNumber() + " - " + getSupplierName());
         logger.info(getSupplierNumber() + " - " + getSupplierName());
@@ -90,14 +90,15 @@ public class EditingSupplierStatusNewNullPaymentTerm {
         //Assert.assertEquals("04/19/2019 VBIBIKSU: JdeVendor has been changed from '1045000 --- Accu-Systems SALT LAKE CITY UT 84123' to '8205171 --- STEINER MANUFACTURING., INC.''.", getTextFromWebElement(supplierDetailPage.fieldApprovalNotes));
         Assert.assertTrue(getTextFromWebElement(supplierDetailPage.fieldApprovalNotes).contains("JdeVendor has been changed from '1045000 --- Accu-Systems SALT LAKE CITY UT 84123' to '8205171 --- " +
                 "STEINER MANUFACTURING., INC.''."));
+        Assert.assertEquals(supplierDetailPage.fieldRequestedPaymnetTerm.getText(), " "); // Requested payment term should be equals to the value ""
 
 
         if(supplierDetailPage.buttonEdit.isEnabled() == true){
+            clickButtonIfEnable(supplierDetailPage.buttonEdit);
             System.out.println("Button Edit is enable for click");
         } else {
             System.out.println("Button Edit is not enable for click");
         }
-        clickButtonIfEnable(supplierDetailPage.buttonEdit);
-        Assert.assertTrue(editSupplierPage.fieldSupplierName.getText() == getSupplierName());
+        Assert.assertEquals(editSupplierPage.fieldSupplierNumber.getText(), getSupplierNumber());
     }
 }

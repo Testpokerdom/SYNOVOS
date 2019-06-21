@@ -19,6 +19,8 @@ public class EditSupplierPage  extends SearchSuppliersPage {
     //Main table
     @FindBy (xpath = "//table[@class='datagrid gradientElement2']//tr[2]/td[2]")
     public WebElement fieldSupplierName;
+    @FindBy (xpath = "//table[@class='datagrid gradientElement2']//tr[1]/td[2]")
+    public WebElement fieldSupplierNumber;
     @FindBy (id = "requestedPaymentTerms")
     public WebElement dropDownListRequestedPaymentTerms;
     @FindBy (id = "sendPaymentTermsForApproval")

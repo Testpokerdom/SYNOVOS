@@ -4,13 +4,10 @@ import SOS.Locators.LoginPage.LoginPageLocators;
 import SOS.Locators.MainPage.MainPageLocators;
 import SOS.Locators.PurchasingPage.*;
 import SOS.Tests.LoginPage.LoginPageTests;
-import SOS.WebHelpers.WebHelpers;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.junit.After;
-import org.junit.Assert;
-import org.junit.Before;
-import org.junit.Test;
+import org.junit.*;
+import org.junit.runners.MethodSorters;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
@@ -18,9 +15,9 @@ import java.util.concurrent.TimeUnit;
 
 import static WebHelpers.GettersAndSetters.*;
 import static WebHelpers.WebHelpers.*;
-import static WebHelpers.WebHelpers.clickElement;
 
-public class Editing_Supplier_Status_New_Pending_Approval {
+@FixMethodOrder(MethodSorters.NAME_ASCENDING)
+public class EditingSupplierStatusNewCreditCardPaymentTerm {
     public static WebDriver driver = null;
     public static LoginPageLocators loginPageLocators = null;
     public static MainPageLocators mainPageLocators = null;
@@ -66,38 +63,38 @@ public class Editing_Supplier_Status_New_Pending_Approval {
     }
 
     @Test
-    //@Description("Create Supplier")
-    //@DisplayName("Create Supplier")
-    public void createSupplierWithStatusNewSupplierPendingApproval(){
+    public void createSupplierWithStatusNew(){
         clickButtonIfEnable(mainPageLocators.linkSupplier);
         selectWebElementFromDropDownList(supplierSearchCreatePage.dropdownListSiteCode, "130"); // 130 - AGRO_FARMA;  SALES - DEMO;
         clickButton(supplierSearchCreatePage.buttonCreate);
-        createSupplierPage.fillUserDataTableAndSave2("asd@ukr.net", "Supplier_status_APPROVED_DEMO_SALES_", "","999-999-9999", "@ukr.net");
-        clickButtonIfEnable(createSupplierPage.buttonSendForApproval);
-        sendTextToWebElement(createSupplierPage.fieldComments, "Supplier was created and sent for approval with status New Supplier - Pending Approval");
-        clickButtonIfEnable(createSupplierPage.buttonOKpopup);
-        setSupplierName(supplierDetailPage.fieldSupplierName);
+        createSupplierPage.fillUserDataTableAndSave2("asd@ukr.net", "Supplier_status_New_DEMO_SALES_", "","999-999-9999", "@ukr.net");
+        clickButtonIfEnable(createSupplierPage.buttonSave);
         setSupplierNumber(supplierDetailPage.fieldSupplierNumber);
-
-        System.out.println("Supplier was created, his Number is: " + WebHelpers.getTextFromWebElement(supplierDetailPage.fieldSupplierNumber));
-        System.out.println("Supplier was created, his Number is: " + WebHelpers.getTextFromWebElement(supplierDetailPage.fieldSupplierName));
-        logger.info("Supplier was created, his Number is: " + WebHelpers.getTextFromWebElement(supplierDetailPage.fieldSupplierNumber));
-        logger.info("------------------------------------------------------");
-
+        setSupplierName(supplierDetailPage.fieldSupplierName);
+        //supplierNumber = getTextFromWebElement(supplierDetailPage.fieldSupplierNumber);
+        System.out.println(getSupplierNumber() + " - " + getSupplierName());
+        logger.info(getSupplierNumber() + " - " + getSupplierName());
+        logger.info("----");
         Assert.assertEquals("Supplier Detail", createSupplierPage.textSupplierDetails.getText());
 
         clickButtonIfEnable(supplierDetailPage.buttonEdit);
-        selectWebElementFromDropDownList(editSupplierPage.dropDownListRequestedPaymentTerms, "1"); // Set requested Payment term equals to "Cash" value.
+        selectWebElementFromDropDownList(editSupplierPage.dropDownListRequestedPaymentTerms, "6"); // 6 = CREDIT CARD
+        //Add checking on the pop-up presents
+
+
+
+        selectWebElementFromDropDownList(editSupplierPage.dropDownListRequestedPaymentTerms, ""); // Set requested Payment term equels to "Null" value.
         sendTextToWebElement(editSupplierPage.dropdown_listJDE_Vendor, "8205171");
         clickButtonIfEnable(editSupplierPage.jdeVendor2);
         clickButtonIfEnable(editSupplierPage.buttonSave);
-        //clickButtonIfEnable(editSupplierPage.buttonOkPopUpWindow);
+        clickButtonIfEnable(editSupplierPage.buttonOkPopUpWindow);
 
-        Assert.assertEquals("New Supplier - Pending Approval", WebHelpers.getTextFromWebElement(supplierDetailPage.fieldApprovalStatus)); // Approval status should be New Supplier - Pending Approval
-        Assert.assertTrue(getTextFromWebElement(supplierDetailPage.fieldApprovalNotes).contains("JdeVendor has been changed from '1045000 " +
-                "--- Accu-Systems SALT LAKE CITY UT 84123' to '8205171 --- STEINER MANUFACTURING., INC.''."));
-        System.out.println("Requested paymnet term on the Edit Supplier page is: " + supplierDetailPage.fieldRequestedPaymnetTerm.getText());
-        Assert.assertEquals(supplierDetailPage.fieldRequestedPaymnetTerm.getText(), "CASH"); // Requested payment term should be equals to the value "Cash"
+        Assert.assertEquals("New Supplier - Pending Approval", getTextFromWebElement(supplierDetailPage.fieldApprovalStatus)); // Approval status should be changed from New to New Supplier - Pending Approval
+        //Assert.assertEquals("04/19/2019 VBIBIKSU: JdeVendor has been changed from '1045000 --- Accu-Systems SALT LAKE CITY UT 84123' to '8205171 --- STEINER MANUFACTURING., INC.''.", getTextFromWebElement(supplierDetailPage.fieldApprovalNotes));
+        Assert.assertTrue(getTextFromWebElement(supplierDetailPage.fieldApprovalNotes).contains("JdeVendor has been changed from '1045000 --- Accu-Systems SALT LAKE CITY UT 84123' to '8205171 --- " +
+                "STEINER MANUFACTURING., INC.''."));
+        Assert.assertEquals(supplierDetailPage.fieldRequestedPaymnetTerm.getText(), " "); // Requested payment term should be equals to the value ""
+
 
         if(supplierDetailPage.buttonEdit.isEnabled() == true){
             clickButtonIfEnable(supplierDetailPage.buttonEdit);

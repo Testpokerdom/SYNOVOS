@@ -27,6 +27,8 @@ public class SupplierDetailPage extends CreateSupplierPage {
     public WebElement fieldSupplierNumber;
     @FindBy (xpath = "//table[@class='datagrid']/tbody[1]//td[contains(text(),'Supplier Name:')]/following-sibling::td[1]")
     public WebElement fieldSupplierName;
+    @FindBy (xpath = "//table[@class= 'datagrid']//tr[14]/td[2]")
+    public WebElement fieldRequestedPaymnetTerm;
     @FindBy (xpath = "//form[@id='command']//table//tbody//tr[21]/td[2]")
     public WebElement fieldTDBSupplier;
     @FindBy (name = "editActiveStatus")

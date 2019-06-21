@@ -54,7 +54,7 @@ public class CreateSupplierPage extends SearchSuppliersPage {
     // Pop-up confirm/declame user creation
     @FindBy (id= "approvalCommentsHolder")
     public WebElement fieldComments;
-    @FindBy (xpath = "//div[@class='ui-dialog ui-widget ui-widget-content ui-corner-all ui-draggable ui-dialog-buttons']//span[contains(text(),'OK')]")
+    @FindBy (xpath = "//div[@class='ui-dialog-buttonpane ui-widget-content ui-helper-clearfix']//span[contains(text(),'OK')]")
     public WebElement buttonOKpopup;
     @FindBy (id = "emergencyHolder")
     public WebElement checkBoxEmergency;

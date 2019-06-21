@@ -94,12 +94,13 @@ public class EditingSupplierStatusApproved {
     public void test_2_stage_1_ApproveSupplierWithStatusNewPendingApproval(){
         clickButton(mainPageLocators.linkApproveSupplier);
         selectWebElementFromDropDownList(approveSupplierListPage.dropdownlistSiteName, "AGRO FARMA"); // AGRO FARMA / DEMO SOS SITE
-        findLastRawInTableAndClick2(driver, "//table[@id='approvalProcessData']/tbody/tr[last()]/td[last()]");
+        selectWebElementFromDropDownList(approveSupplierListPage.fieldSUpplierNameInTable, getSupplierName());
+        findLastRawInTableAndClick2(driver, "//table[@id='approvalProcessData']/tbody/tr[1]/td[last()]");
 
         System.out.println("Approved Supplier number is: " + SOS.WebHelpers.WebHelpers.getTextFromWebElement(approveSupplierPage.fieldSupplierNo));
         logger.info("Approved Supplier number is: " + SOS.WebHelpers.WebHelpers.getTextFromWebElement(approveSupplierPage.fieldSupplierNo));
 
-        approveSupplierPage.choosePaymentTermsForSupplier("10", "Approved_Supplier_First_Stage");
+        approveSupplierPage.choosePaymentTermsForSupplier("22", "Approved_Supplier_First_Stage"); //2% 15 NET 45 = 22
 
         logger.info("Supplier successfully passed first approval stage..");
         logger.info("------------------------------------------------------");
@@ -112,8 +113,9 @@ public class EditingSupplierStatusApproved {
     //@DisplayName("stage_2_ApproveSupplierWithStatusNewPendingApproval")
     public void test_3_stage_2_ApproveSupplierWithStatusNewPendingApproval(){
         clickButton(mainPageLocators.linkApproveSupplier);
-        selectWebElementFromDropDownList(approveSupplierListPage.dropdownlistSiteName, "AGRO FARMA");
-        findLastRawInTableAndClick2(driver, "//table[@id='approvalProcessData']/tbody/tr[last()]/td[last()]");
+        selectWebElementFromDropDownList(approveSupplierListPage.dropdownlistSiteName, "AGRO FARMA"); // AGRO FARMA / DEMO SOS SITE
+        selectWebElementFromDropDownList(approveSupplierListPage.fieldSUpplierNameInTable, getSupplierName());
+        findLastRawInTableAndClick2(driver, "//table[@id='approvalProcessData']/tbody/tr[1]/td[last()]");
 
         System.out.println("Supplier was approved, his number is: " + SOS.WebHelpers.WebHelpers.getTextFromWebElement(approveSupplierPage.fieldSupplierNo));
         logger.info("Supplier was approved, his number is: " + SOS.WebHelpers.WebHelpers.getTextFromWebElement(approveSupplierPage.fieldSupplierNo));
@@ -155,6 +157,7 @@ public class EditingSupplierStatusApproved {
         Assert.assertEquals("Approved", SOS.WebHelpers.WebHelpers.getTextFromWebElement(supplierDetailPage.fieldApprovalStatus));
         Assert.assertTrue(SOS.WebHelpers.WebHelpers.getTextFromWebElement(supplierDetailPage.fieldApprovalNotes).contains("VBIBIKSU: JdeVendor has been changed from '1045000" +
                 " --- Accu-Systems SALT LAKE CITY UT 84123' to '2352835 --- Diversified Supply/Introl/RPM CINCINNATI OH 45263-2537''."));
+        Assert.assertEquals(supplierDetailPage.fieldRequestedPaymnetTerm.getText(), "2% 15 NET 45");
     }
 
 }
